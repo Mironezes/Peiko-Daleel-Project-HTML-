@@ -25,7 +25,7 @@
 				<div class="container">
 					<div class="header_navigation_block row">
 						<div class="header_logo_column col-lg-3 col-md-12 col-sm-12 col-xs-12">
-							<a href="index.html"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
+							<a href="index.php"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
 							<button onclick = "void(0)" class="mobile_menu_icon hamburger hamburger--arrow blue" type="button">
 							<span class="hamburger-box">
 							<span class="hamburger-inner"></span>
@@ -86,11 +86,13 @@
 			</div>
 		</header>
 		<aside class="sitemap">
-			<a href="index.html">Главная</a>
-			<a href="categories-main.html">Категории - корневая</a>  
-			<a href="tag.html">Шаблон описания тега</a>  
-			<a href="suppliers-main.html">Поставщик - корневая</a>  
-			<a href="suppliers-profile.html">Поставщик - профиль</a>
+			<a href="index.php">Главная</a>
+			<a href="categories-main.php">Категории - корневая</a>
+			<!--         <a href="category-a.php">Категория А</a>
+				<a href="category-b.php">Категория Б</a> -->     
+			<a href="tag.php">Шаблон описания тега</a>  
+			<a href="suppliers-main.php">Поставщик - корневая</a>  
+			<a href="suppliers-profile.php">Поставщик - профиль</a>  
 		</aside>
 		<section class="breadcrumbs_wrapper">
 			<div class="container">
@@ -141,68 +143,72 @@
 										<h3>Forum</h3>
 									</div>
 									<div class="right_sidebar_articles_tiles_block row">
-										<div class="last_forum_messages_tile col-lg-12 col-sm-6">
-											<div class="last_forum_messages_tile_category">
-												<span class="last_forum_messages_tile_category__name">Category</span>
-												<span class="last_forum_messages_tile_category__title">Saudi Aramco awards contracts to L&T-led consortium</span>
-											</div>
-											<div class="last_forum_messages_tile_question">
-												<span class="last_forum_messages_tile_question__name">Question</span>
-												<span class="last_forum_messages_tile_question__title">What is the purpouse of drilling rings in gas supply industry</span>
-											</div>
-											<div class="last_forum_messages_tile_info">
-												<div class="last_forum_messages_tile_info_answers">
-													<img class="svg" src="assets/comment_icon.svg" alt="Изображение">
-													<span>118 answers</span>
+										<div class="col-lg-12 col-sm-6">
+											<div class="last_forum_messages_tile">
+												<div class="last_forum_messages_tile_category">
+													<span class="last_forum_messages_tile_category__name">Category</span>
+													<span class="last_forum_messages_tile_category__title">Saudi Aramco awards contracts to L&T-led consortium</span>
 												</div>
-												<div class="latest_news_tile_date">
-													<img class="svg" src="assets/publication_date_icon.svg" alt="Изображение">										
-													<span>24.01.2019</span>
+												<div class="last_forum_messages_tile_question">
+													<span class="last_forum_messages_tile_question__name">Question</span>
+													<span class="last_forum_messages_tile_question__title">What is the purpouse of drilling rings in gas supply industry</span>
 												</div>
-												<div class="latest_news_tile_link_block">
+												<div class="last_forum_messages_tile_info">
+													<div class="last_forum_messages_tile_info_answers">
+														<img class="svg" src="assets/comment_icon.svg" alt="Изображение">
+														<span>118 answers</span>
+													</div>
+													<div class="latest_news_tile_date">
+														<img class="svg" src="assets/publication_date_icon.svg" alt="Изображение">										
+														<span>24.01.2019</span>
+													</div>
+													<div class="latest_news_tile_link_block">
+														<a href="#">
+														<span>Go to Qeustion</span>
+														<img class="svg" src="assets/small_arrow_icon.svg" alt="Изображение">												
+														</a>	
+													</div>
+												</div>
+												<div class="latest_news_tile_link_block row">
 													<a href="#">
 													<span>Go to Qeustion</span>
 													<img class="svg" src="assets/small_arrow_icon.svg" alt="Изображение">												
 													</a>	
 												</div>
-											</div>
-											<div class="latest_news_tile_link_block row">
-												<a href="#">
-												<span>Go to Qeustion</span>
-												<img class="svg" src="assets/small_arrow_icon.svg" alt="Изображение">												
-												</a>	
 											</div>
 										</div>
-										<div class="last_forum_messages_tile col-lg-12 col-sm-6">
-											<div class="last_forum_messages_tile_category">
-												<span class="last_forum_messages_tile_category__name">Category</span>
-												<span class="last_forum_messages_tile_category__title">Saudi Aramco awards contracts to L&T-led consortium</span>
-											</div>
-											<div class="last_forum_messages_tile_question">
-												<span class="last_forum_messages_tile_question__name">Question</span>
-												<span class="last_forum_messages_tile_question__title">What is the purpouse of drilling rings in gas supply industry</span>
-											</div>
-											<div class="last_forum_messages_tile_info">
-												<div class="last_forum_messages_tile_info_answers">
-													<img class="svg" src="assets/comment_icon.svg" alt="Изображение">
-													<span>118 answers</span>
+										<div class="col-lg-12 col-sm-6">
+											<div class="last_forum_messages_tile">
+												<div class="last_forum_messages_tile_category">
+													<span class="last_forum_messages_tile_category__name">Category</span>
+													<span class="last_forum_messages_tile_category__title">Saudi Aramco awards contracts to L&T-led consortium</span>
 												</div>
-												<div class="latest_news_tile_date">
-													<img class="svg" src="assets/publication_date_icon.svg" alt="Изображение">										
-													<span>24.01.2019</span>
+												<div class="last_forum_messages_tile_question">
+													<span class="last_forum_messages_tile_question__name">Question</span>
+													<span class="last_forum_messages_tile_question__title">What is the purpouse of drilling rings in gas supply industry</span>
 												</div>
-												<div class="latest_news_tile_link_block">
+												<div class="last_forum_messages_tile_info">
+													<div class="last_forum_messages_tile_info_answers">
+														<img class="svg" src="assets/comment_icon.svg" alt="Изображение">
+														<span>118 answers</span>
+													</div>
+													<div class="latest_news_tile_date">
+														<img class="svg" src="assets/publication_date_icon.svg" alt="Изображение">										
+														<span>24.01.2019</span>
+													</div>
+													<div class="latest_news_tile_link_block">
+														<a href="#">
+														<span>Go to Qeustion</span>
+														<img class="svg" src="assets/small_arrow_icon.svg" alt="Изображение">												
+														</a>	
+													</div>
+												</div>
+												<div class="latest_news_tile_link_block row">
 													<a href="#">
 													<span>Go to Qeustion</span>
 													<img class="svg" src="assets/small_arrow_icon.svg" alt="Изображение">												
 													</a>	
 												</div>
-											</div>
-											<div class="latest_news_tile_link_block row">
-												<a href="#">
-												<span>Go to Qeustion</span>
-												<img class="svg" src="assets/small_arrow_icon.svg" alt="Изображение">												
-												</a>	
 											</div>
 										</div>
 									</div>
@@ -215,44 +221,48 @@
 										<h3>News & Expert Arcticles</h3>
 									</div>
 									<div class="right_sidebar_news_tiles_block row">
-										<a href="#" class="latest_news_tile col-lg-12 col-sm-6">
-											<div class="latest_news_tile_image">
-												<img src="img/news/01.jpg" alt="Изображение">
-											</div>
-											<div class="latest_news_tile_content">
-												<span class="latest_news_tile_category latest_news_tile_category__news">News</span>	
-												<h4 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h4>
-											</div>
-											<div class="latest_news_tile_content_info">
-												<div class="latest_news_tile_author">
-													<img class="svg" src="assets/author_icon.svg" alt="Изображение">
-													<span>Adam Boyshik</span>
+										<div class="col-lg-12 col-sm-6">
+											<a href="#" class="latest_news_tile">
+												<div class="latest_news_tile_image">
+													<img src="img/news/01.jpg" alt="Изображение">
 												</div>
-												<div class="latest_news_tile_date">
-													<img class="svg" src="assets/publication_date_icon.svg" alt="Изображение">										
-													<span>24.01.2019</span>
+												<div class="latest_news_tile_content">
+													<span class="latest_news_tile_category latest_news_tile_category__news">News</span>	
+													<h4 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h4>
 												</div>
-											</div>
-										</a>
-										<a href="#" class="latest_news_tile col-lg-12 col-sm-6">
-											<div class="latest_news_tile_image">
-												<img src="img/news/02.jpg" alt="Изображение">
-											</div>
-											<div class="latest_news_tile_content">
-												<span class="latest_news_tile_category latest_news_tile_category__news">News</span>	
-												<h4 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h4>
-											</div>
-											<div class="latest_news_tile_content_info">
-												<div class="latest_news_tile_author">
-													<img class="svg" src="assets/author_icon.svg" alt="Изображение">
-													<span>Adam Boyshik</span>
+												<div class="latest_news_tile_content_info">
+													<div class="latest_news_tile_author">
+														<img class="svg" src="assets/author_icon.svg" alt="Изображение">
+														<span>Adam Boyshik</span>
+													</div>
+													<div class="latest_news_tile_date">
+														<img class="svg" src="assets/publication_date_icon.svg" alt="Изображение">										
+														<span>24.01.2019</span>
+													</div>
 												</div>
-												<div class="latest_news_tile_date">
-													<img class="svg" src="assets/publication_date_icon.svg" alt="Изображение">										
-													<span>24.01.2019</span>
+											</a>
+										</div>
+										<div class="col-lg-12 col-sm-6">
+											<a href="#" class="latest_news_tile">
+												<div class="latest_news_tile_image">
+													<img src="img/news/02.jpg" alt="Изображение">
 												</div>
-											</div>
-										</a>
+												<div class="latest_news_tile_content">
+													<span class="latest_news_tile_category latest_news_tile_category__news">News</span>	
+													<h4 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h4>
+												</div>
+												<div class="latest_news_tile_content_info">
+													<div class="latest_news_tile_author">
+														<img class="svg" src="assets/author_icon.svg" alt="Изображение">
+														<span>Adam Boyshik</span>
+													</div>
+													<div class="latest_news_tile_date">
+														<img class="svg" src="assets/publication_date_icon.svg" alt="Изображение">										
+														<span>24.01.2019</span>
+													</div>
+												</div>
+											</a>
+										</div>
 									</div>
 								</div>
 								<div class="right_sidebar_articles_block">
@@ -260,44 +270,48 @@
 										<h3>Expert Arcticles</h3>
 									</div>
 									<div class="right_sidebar_articles_tiles_block row">
-										<a href="#" class="latest_news_tile col-lg-12 col-sm-6">
-											<div class="latest_news_tile_image">
-												<img src="img/news/01.jpg" alt="Изображение">
-											</div>
-											<div class="latest_news_tile_content">
-												<span class="latest_news_tile_category latest_news_tile_category__article">Expert Arcticles</span>	
-												<h4 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h4>
-											</div>
-											<div class="latest_news_tile_content_info">
-												<div class="latest_news_tile_author">
-													<img class="svg" src="assets/author_icon.svg" alt="Изображение">
-													<span>Adam Boyshik</span>
+										<div class="col-lg-12 col-sm-6">
+											<a href="#" class="latest_news_tile">
+												<div class="latest_news_tile_image">
+													<img src="img/news/01.jpg" alt="Изображение">
 												</div>
-												<div class="latest_news_tile_date">
-													<img class="svg" src="assets/publication_date_icon.svg" alt="Изображение">										
-													<span>24.01.2019</span>
+												<div class="latest_news_tile_content">
+													<span class="latest_news_tile_category latest_news_tile_category__article">Expert Arcticles</span>	
+													<h4 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h4>
 												</div>
-											</div>
-										</a>
-										<a href="#" class="latest_news_tile col-lg-12 col-sm-6">
-											<div class="latest_news_tile_image">
-												<img src="img/news/02.jpg" alt="Изображение">
-											</div>
-											<div class="latest_news_tile_content">
-												<span class="latest_news_tile_category latest_news_tile_category__article">Expert Arcticles</span>	
-												<h4 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h4>
-											</div>
-											<div class="latest_news_tile_content_info">
-												<div class="latest_news_tile_author">
-													<img class="svg" src="assets/author_icon.svg" alt="Изображение">
-													<span>Adam Boyshik</span>
+												<div class="latest_news_tile_content_info">
+													<div class="latest_news_tile_author">
+														<img class="svg" src="assets/author_icon.svg" alt="Изображение">
+														<span>Adam Boyshik</span>
+													</div>
+													<div class="latest_news_tile_date">
+														<img class="svg" src="assets/publication_date_icon.svg" alt="Изображение">										
+														<span>24.01.2019</span>
+													</div>
 												</div>
-												<div class="latest_news_tile_date">
-													<img class="svg" src="assets/publication_date_icon.svg" alt="Изображение">										
-													<span>24.01.2019</span>
+											</a>
+										</div>
+										<div class="col-lg-12 col-sm-6">
+											<a href="#" class="latest_news_tile">
+												<div class="latest_news_tile_image">
+													<img src="img/news/02.jpg" alt="Изображение">
 												</div>
-											</div>
-										</a>
+												<div class="latest_news_tile_content">
+													<span class="latest_news_tile_category latest_news_tile_category__article">Expert Arcticles</span>	
+													<h4 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h4>
+												</div>
+												<div class="latest_news_tile_content_info">
+													<div class="latest_news_tile_author">
+														<img class="svg" src="assets/author_icon.svg" alt="Изображение">
+														<span>Adam Boyshik</span>
+													</div>
+													<div class="latest_news_tile_date">
+														<img class="svg" src="assets/publication_date_icon.svg" alt="Изображение">										
+														<span>24.01.2019</span>
+													</div>
+												</div>
+											</a>
+										</div>
 									</div>
 								</div>
 							</aside>
@@ -340,9 +354,4 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
 		<script src="scripts/main.js"></script>
-		<script>
-			$(document).ready(function() {
-					$('select').niceSelect();
-			});
-		</script>	
 	</body>
