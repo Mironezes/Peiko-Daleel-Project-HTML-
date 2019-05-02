@@ -54,6 +54,7 @@ h4 {
 
 .homepage.page h2 {
 	font-size: 2em;
+	line-height: 1.25;
 	text-align: center;
 }
 
@@ -999,6 +1000,12 @@ input[type="search"]::-webkit-search-results-decoration {
 	border-radius: 5px;
 	color: #4B4C55;
 	background: #E8E8E8;
+	transition: .3s;
+}
+
+.categories_tags__short:hover, .categories_tags__long:hover {
+	color: #2E368F;
+	text-shadow: 0 0 1px #2E368F;
 }
 
 #main_page_categories_tile__first {
@@ -1242,9 +1249,20 @@ input[type="search"]::-webkit-search-results-decoration {
 	padding-left: 20px;
 }
 
+.testimonials_tiles_block_wrapper {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.testimonials_header {
+	position: relative;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
 .testimonials_wrapper .row {
-	width: 70%;
-	margin: 0 auto;
 	margin-bottom: 50px;
 	align-items: center;
 }
@@ -1293,6 +1311,9 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .testimonials_dots {
+	position: absolute;
+	bottom: 0;
+	right: 0;
 	text-align: right;
 }
 
@@ -1756,6 +1777,12 @@ select.main_categories_sorting {
 	border-radius: 3px;
 	background: #FFFFFF;
 	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+	transition: .3s;
+}
+
+.main_categories_tile:hover {
+	border: 1px solid #4F58B8;
+	box-shadow: 0px 0px 30px rgba(52, 56, 140, 0.2);
 }
 
 .main_categories_tile__title {
