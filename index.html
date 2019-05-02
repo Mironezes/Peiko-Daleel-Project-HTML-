@@ -26,11 +26,13 @@
 					<div class="header_navigation_block row">
 						<div class="header_logo_column col-lg-3 col-md-12 col-sm-12 col-xs-12">
 							<img class="logo" src="assets/header/logo__white.svg" alt="Логотип">
-							<button onclick = "void(0)" class="mobile_menu_icon hamburger hamburger--arrow" type="button">
-							<span class="hamburger-box">
-							<span class="hamburger-inner"></span>
-							</span>
-							</button>	
+							<div class="mobile_navigation_buttons_block">
+								<button onclick = "void(0)" class="mobile_menu_icon hamburger hamburger--arrow" type="button">
+								<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+								</span>
+								</button>						
+							</div>
 						</div>
 						<div class="header_navigation_column col-lg-9 col-md-12 col-sm-12 col-xs-12">
 							<div class="header_navigation_search">
@@ -59,17 +61,22 @@
 							<li class="desktop_toggle_menu__item white"><a href="#">Indices</a></li>
 							<li class="desktop_toggle_menu__item white"><a href="#">Contacts</a></li>
 						</ul>
-						<a href="#" class="button button__yellow"><img class="svg" src="assets/plus_icon.svg" alt="Изображение"> Add company</a>
+						<a href="#" class="button button__yellow">
+							<div class="button__icon">
+								<img class="svg" src="assets/plus_icon.svg" alt="Изображение">						
+							</div>
+							<span>Add company</span>
+						</a>
 					</div>
 				</div>
 			</div>
 			<div class="mobile_toggle_menu_block row">
 				<div class="container">
-					<div class="mobile_search_block">
-						<input type="search" placeholder="Search request" maxlength="100" required>		
-						<button>Search</button>					
-					</div>
 					<ul class="mobile_toggle_menu">
+						<li class="mobile_search_block">
+							<input type="search" placeholder="Search request" maxlength="100" required>		
+							<button>Search</button>					
+						</li>
 						<li class="mobile_toggle_menu__item"><a href="#">Suppliers</a></li>
 						<li class="mobile_toggle_menu__item"><a href="#">Intelligence</a></li>
 						<li class="mobile_toggle_menu__item"><a href="#">News</a></li>
@@ -86,11 +93,14 @@
 			</div>
 		</header>
 		<aside class="sitemap">
-			<a href="index.html">Главная</a>
-			<a href="categories-main.html">Категории - корневая</a>  
-			<a href="tag.html">Шаблон описания тега</a>  
-			<a href="suppliers-main.html">Поставщик - корневая</a>  
-			<a href="suppliers-profile.html">Поставщик - профиль</a>  
+			<a href="index.php">Главная</a>
+			<a href="categories-main.php">Категории - корневая</a>
+			<a href="category-a.php">Категория А</a>
+			<a href="category-b.php">Категория Б</a>     
+			<a href="tag.php">Шаблон описания тега</a>  
+			<a href="suppliers-main.php">Поставщик - корневая</a>  
+			<a href="suppliers-profile.php">Поставщик - профиль</a>  
+			<a href="news_page.php">Новость</a>          
 		</aside>
 		<section class="main_page_banner_wrapper">
 			<div class="container">
@@ -416,10 +426,10 @@
 		</section>
 		<section class="latest_news_wrapper">
 			<div class="container">
-				<div class="row">
+				<div class="latest_news_heading_block row">
 					<h2>News and Expert articles</h2>
 				</div>
-				<div class="row">
+				<div class="latest_news_tiles_block row">
 					<div class="col-lg-4 col-sm-6">
 						<a href="#" id="latest_news_tile__first" class="latest_news_tile">
 							<div class="latest_news_tile_image">
@@ -499,6 +509,11 @@
 						</a>
 					</div>
 				</div>
+				<div class="view_all_news_block row">
+					<a href="#" class="button load_more_button full_width">
+					<span>View All News (23)</span>
+					</a>
+				</div>
 			</div>
 		</section>
 		<section class="company_registration_banner_wrapper">
@@ -548,5 +563,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
 		<script src="scripts/main.js"></script>
+		<script src="scripts/mobile.js"></script>
 	</body>
 </html>
