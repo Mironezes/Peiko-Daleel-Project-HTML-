@@ -5,7 +5,7 @@
         if (y > 70) {
             if($('body').hasClass('homepage')) {
                 $('.header_wrapper').addClass('white');
-                $('.header_wrapper .logo').attr('src', '/assets/header/logo__dark.svg')
+                $('.header_wrapper .logo').attr('src', 'assets/header/logo__dark.svg')
                 $('.desktop_toggle_menu_icon').addClass('blue'); 
                 $('.desktop_toggle_menu__item').removeClass('white');                 
                 $('.desktop_toggle_menu__item').addClass('gray');  
@@ -16,7 +16,7 @@
           } else {
             if($('body').hasClass('homepage')) {
                 $('.header_wrapper').removeClass('white');        
-                $('.header_wrapper .logo').attr('src', '/assets/header/logo__white.svg') 
+                $('.header_wrapper .logo').attr('src', 'assets/header/logo__white.svg') 
                 $('.desktop_toggle_menu_icon').removeClass('blue');    
                 $('.desktop_toggle_menu__item').removeClass('gray');    
                 $('.desktop_toggle_menu__item').addClass('white');                                            
@@ -49,9 +49,9 @@
             $('.header_wrapper').toggleClass('white');
             $(this).toggleClass('blue');
             if ($('.header_wrapper').hasClass('white')) {
-                $('.logo').attr('src', '/assets/header/logo__dark.svg');
+                $('.logo').attr('src', 'assets/header/logo__dark.svg');
             } else {
-                $('.logo').attr('src', '/assets/header/logo__white.svg');
+                $('.logo').attr('src', 'assets/header/logo__white.svg');
             }
         }
 
