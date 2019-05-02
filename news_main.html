@@ -30,7 +30,7 @@
                         <a href="index.html"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
                         <button onclick="void(0)" class="mobile_menu_icon hamburger hamburger--arrow blue" type="button">
                             <span class="hamburger-box">
-					<span class="hamburger-inner"></span>
+                    <span class="hamburger-inner"></span>
                             </span>
                         </button>
                     </div>
@@ -43,7 +43,7 @@
                         <a href="#" class="button button__yellow">Registration</a>
                         <button onclick="void(0)" class="desktop_toggle_menu_icon hamburger hamburger--slider blue" type="button">
                             <span class="hamburger-box">
-					<span class="hamburger-inner"></span>
+                    <span class="hamburger-inner"></span>
                             </span>
                         </button>
                     </div>
@@ -110,6 +110,546 @@
                     <li class="breadcrumbs_list__item"><a href="/">Homepage</a></li>
                     <li class="breadcrumbs_list__item current"><span>News</span></li>
                 </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="main_content_wrapper">
+        <div class="container">
+
+            <div class="news_main_header_block row">
+                <h1>News</h1>
+
+                <div class="inner_page_search">
+                    <input type="search" placeholder="Search" maxlength="100" required>
+                    <button>Search</button>
+                </div>
+
+            </div>
+
+            <div class="suppliers_filting_block row">
+                <div class="suppliers_filters_block">
+                    <h3 class="suppliers_filters_block__title">Filters:</h3>
+
+                    <select name="main_categories_sorting" class="main_categories_sorting">
+                        <option value="location">Location</option>
+                    </select>
+
+                    <select name="main_categories_sorting" class="main_categories_sorting">
+                        <option value="verification-status">Verification status</option>
+                    </select>
+
+                    <select name="main_categories_sorting" class="main_categories_sorting">
+                        <option value="product-status">Product verification status</option>
+                    </select>
+
+                    <select name="main_categories_sorting" class="main_categories_sorting">
+                        <option value="product-status">Services & tags</option>
+                    </select>
+                </div>
+
+                <div class="suppliers_sorting_block">
+                    <span class="suppliers_sorting_block_title">Sort By:</span>
+
+                    <select name="main_categories_sorting" class="main_categories_sorting">
+                        <option value="popularity">Popularity</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="main_content_inner row">
+                <div class="news_tiles_block">
+
+                    <div class="latest_news_tiles_block row">
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" id="latest_news_tile__first" class="latest_news_tile">
+                                <div class="latest_news_tile_image">
+                                    <img src="img/news/01.jpg" alt="Изображение">
+                                </div>
+                                <div class="latest_news_tile_content">
+                                    <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
+                                    <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+                                    <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+                                </div>
+                                <div class="latest_news_tile_content_info">
+                                    <div class="latest_news_tile_author">
+                                        <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                        <span>Adam Boyshik</span>
+                                    </div>
+                                    <div class="latest_news_tile_views">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+                                    <div class="latest_news_tile_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" id="latest_news_tile__second" class="latest_news_tile">
+                                <div class="latest_news_tile_image">
+                                    <img src="img/news/01.jpg" alt="Изображение">
+                                </div>
+                                <div class="latest_news_tile_content">
+                                    <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
+                                    <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+                                    <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+                                </div>
+                                <div class="latest_news_tile_content_info">
+                                    <div class="latest_news_tile_author">
+                                        <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                        <span>Adam Boyshik</span>
+                                    </div>
+                                    <div class="latest_news_tile_views">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+                                    <div class="latest_news_tile_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" id="latest_news_tile__third" class="latest_news_tile">
+                                <div class="latest_news_tile_image">
+                                    <img src="img/news/01.jpg" alt="Изображение">
+                                </div>
+                                <div class="latest_news_tile_content">
+                                    <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
+                                    <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+                                    <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+                                </div>
+                                <div class="latest_news_tile_content_info">
+                                    <div class="latest_news_tile_author">
+                                        <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                        <span>Adam Boyshik</span>
+                                    </div>
+                                    <div class="latest_news_tile_views">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+                                    <div class="latest_news_tile_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="latest_news_tiles_block row">
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" id="latest_news_tile__first" class="latest_news_tile">
+                                <div class="latest_news_tile_image">
+                                    <img src="img/news/01.jpg" alt="Изображение">
+                                </div>
+                                <div class="latest_news_tile_content">
+                                    <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
+                                    <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+                                    <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+                                </div>
+                                <div class="latest_news_tile_content_info">
+                                    <div class="latest_news_tile_author">
+                                        <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                        <span>Adam Boyshik</span>
+                                    </div>
+                                    <div class="latest_news_tile_views">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+                                    <div class="latest_news_tile_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" id="latest_news_tile__second" class="latest_news_tile">
+                                <div class="latest_news_tile_image">
+                                    <img src="img/news/01.jpg" alt="Изображение">
+                                </div>
+                                <div class="latest_news_tile_content">
+                                    <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
+                                    <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+                                    <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+                                </div>
+                                <div class="latest_news_tile_content_info">
+                                    <div class="latest_news_tile_author">
+                                        <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                        <span>Adam Boyshik</span>
+                                    </div>
+                                    <div class="latest_news_tile_views">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+                                    <div class="latest_news_tile_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" id="latest_news_tile__third" class="latest_news_tile">
+                                <div class="latest_news_tile_image">
+                                    <img src="img/news/01.jpg" alt="Изображение">
+                                </div>
+                                <div class="latest_news_tile_content">
+                                    <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
+                                    <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+                                    <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+                                </div>
+                                <div class="latest_news_tile_content_info">
+                                    <div class="latest_news_tile_author">
+                                        <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                        <span>Adam Boyshik</span>
+                                    </div>
+                                    <div class="latest_news_tile_views">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+                                    <div class="latest_news_tile_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="latest_news_tiles_block row">
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" id="latest_news_tile__first" class="latest_news_tile">
+                                <div class="latest_news_tile_image">
+                                    <img src="img/news/01.jpg" alt="Изображение">
+                                </div>
+                                <div class="latest_news_tile_content">
+                                    <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
+                                    <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+                                    <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+                                </div>
+                                <div class="latest_news_tile_content_info">
+                                    <div class="latest_news_tile_author">
+                                        <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                        <span>Adam Boyshik</span>
+                                    </div>
+                                    <div class="latest_news_tile_views">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+                                    <div class="latest_news_tile_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" id="latest_news_tile__second" class="latest_news_tile">
+                                <div class="latest_news_tile_image">
+                                    <img src="img/news/01.jpg" alt="Изображение">
+                                </div>
+                                <div class="latest_news_tile_content">
+                                    <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
+                                    <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+                                    <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+                                </div>
+                                <div class="latest_news_tile_content_info">
+                                    <div class="latest_news_tile_author">
+                                        <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                        <span>Adam Boyshik</span>
+                                    </div>
+                                    <div class="latest_news_tile_views">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+                                    <div class="latest_news_tile_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" id="latest_news_tile__third" class="latest_news_tile">
+                                <div class="latest_news_tile_image">
+                                    <img src="img/news/01.jpg" alt="Изображение">
+                                </div>
+                                <div class="latest_news_tile_content">
+                                    <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
+                                    <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+                                    <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+                                </div>
+                                <div class="latest_news_tile_content_info">
+                                    <div class="latest_news_tile_author">
+                                        <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                        <span>Adam Boyshik</span>
+                                    </div>
+                                    <div class="latest_news_tile_views">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+                                    <div class="latest_news_tile_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="latest_news_tiles_block row">
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" id="latest_news_tile__first" class="latest_news_tile">
+                                <div class="latest_news_tile_image">
+                                    <img src="img/news/01.jpg" alt="Изображение">
+                                </div>
+                                <div class="latest_news_tile_content">
+                                    <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
+                                    <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+                                    <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+                                </div>
+                                <div class="latest_news_tile_content_info">
+                                    <div class="latest_news_tile_author">
+                                        <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                        <span>Adam Boyshik</span>
+                                    </div>
+                                    <div class="latest_news_tile_views">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+                                    <div class="latest_news_tile_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" id="latest_news_tile__second" class="latest_news_tile">
+                                <div class="latest_news_tile_image">
+                                    <img src="img/news/01.jpg" alt="Изображение">
+                                </div>
+                                <div class="latest_news_tile_content">
+                                    <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
+                                    <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+                                    <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+                                </div>
+                                <div class="latest_news_tile_content_info">
+                                    <div class="latest_news_tile_author">
+                                        <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                        <span>Adam Boyshik</span>
+                                    </div>
+                                    <div class="latest_news_tile_views">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+                                    <div class="latest_news_tile_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" id="latest_news_tile__third" class="latest_news_tile">
+                                <div class="latest_news_tile_image">
+                                    <img src="img/news/01.jpg" alt="Изображение">
+                                </div>
+                                <div class="latest_news_tile_content">
+                                    <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
+                                    <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+                                    <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+                                </div>
+                                <div class="latest_news_tile_content_info">
+                                    <div class="latest_news_tile_author">
+                                        <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                        <span>Adam Boyshik</span>
+                                    </div>
+                                    <div class="latest_news_tile_views">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+                                    <div class="latest_news_tile_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="latest_news_tiles_block row">
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" id="latest_news_tile__first" class="latest_news_tile">
+                                <div class="latest_news_tile_image">
+                                    <img src="img/news/01.jpg" alt="Изображение">
+                                </div>
+                                <div class="latest_news_tile_content">
+                                    <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
+                                    <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+                                    <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+                                </div>
+                                <div class="latest_news_tile_content_info">
+                                    <div class="latest_news_tile_author">
+                                        <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                        <span>Adam Boyshik</span>
+                                    </div>
+                                    <div class="latest_news_tile_views">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+                                    <div class="latest_news_tile_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" id="latest_news_tile__second" class="latest_news_tile">
+                                <div class="latest_news_tile_image">
+                                    <img src="img/news/01.jpg" alt="Изображение">
+                                </div>
+                                <div class="latest_news_tile_content">
+                                    <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
+                                    <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+                                    <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+                                </div>
+                                <div class="latest_news_tile_content_info">
+                                    <div class="latest_news_tile_author">
+                                        <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                        <span>Adam Boyshik</span>
+                                    </div>
+                                    <div class="latest_news_tile_views">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+                                    <div class="latest_news_tile_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" id="latest_news_tile__third" class="latest_news_tile">
+                                <div class="latest_news_tile_image">
+                                    <img src="img/news/01.jpg" alt="Изображение">
+                                </div>
+                                <div class="latest_news_tile_content">
+                                    <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
+                                    <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+                                    <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+                                </div>
+                                <div class="latest_news_tile_content_info">
+                                    <div class="latest_news_tile_author">
+                                        <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                        <span>Adam Boyshik</span>
+                                    </div>
+                                    <div class="latest_news_tile_views">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+                                    <div class="latest_news_tile_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="latest_news_tiles_block row">
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" id="latest_news_tile__first" class="latest_news_tile">
+                                <div class="latest_news_tile_image">
+                                    <img src="img/news/01.jpg" alt="Изображение">
+                                </div>
+                                <div class="latest_news_tile_content">
+                                    <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
+                                    <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+                                    <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+                                </div>
+                                <div class="latest_news_tile_content_info">
+                                    <div class="latest_news_tile_author">
+                                        <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                        <span>Adam Boyshik</span>
+                                    </div>
+                                    <div class="latest_news_tile_views">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+                                    <div class="latest_news_tile_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" id="latest_news_tile__second" class="latest_news_tile">
+                                <div class="latest_news_tile_image">
+                                    <img src="img/news/01.jpg" alt="Изображение">
+                                </div>
+                                <div class="latest_news_tile_content">
+                                    <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
+                                    <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+                                    <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+                                </div>
+                                <div class="latest_news_tile_content_info">
+                                    <div class="latest_news_tile_author">
+                                        <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                        <span>Adam Boyshik</span>
+                                    </div>
+                                    <div class="latest_news_tile_views">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+                                    <div class="latest_news_tile_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a href="#" id="latest_news_tile__third" class="latest_news_tile">
+                                <div class="latest_news_tile_image">
+                                    <img src="img/news/01.jpg" alt="Изображение">
+                                </div>
+                                <div class="latest_news_tile_content">
+                                    <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
+                                    <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+                                    <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+                                </div>
+                                <div class="latest_news_tile_content_info">
+                                    <div class="latest_news_tile_author">
+                                        <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                        <span>Adam Boyshik</span>
+                                    </div>
+                                    <div class="latest_news_tile_views">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+                                    <div class="latest_news_tile_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="load_more_button_block row">
+                        <a href="#" class="button load_more_button full_width">
+                            <div class="button__icon">
+                                <img class="svg" src="assets/load_icon.svg" alt="Изображение">
+                            </div>
+                            <span>Load More</span>
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
