@@ -134,15 +134,13 @@ $(function() {
 
 
 
+    if(window.matchMedia('screen and (min-width: 992px)').matches){
+        let tilesBlocktWidth = $('.main_categories_tiles_block').width();
+        let CategoriesSubMenuWidth = $('.main_categories_submenu_list').css('width', tilesBlocktWidth + 14);
+        let CategoriesMenuWidth = $('.main_categories_list').width();
+        let CategoriesSubMenuPosition = $('.main_categories_submenu_list').css('left', CategoriesMenuWidth);
+    }
 
-    let CategoriesMenuItemWidth = $('.main_categories_list__item ').width();
-    let CategoriesMenuItemHeight = $('.main_categories_list__item ').height();
-    let CategoriesSubMenuWidth = $('.main_categories_submenu_list').css('top', CategoriesMenuItemHeight);
-    let CategoriesMenuDropdownItem = $('.main_categories_list__dropdown_item');
-
-    CategoriesMenuDropdownItem.on("click", function() {
-        $(this).toggleClass("opened");
-    });
 
 
 
