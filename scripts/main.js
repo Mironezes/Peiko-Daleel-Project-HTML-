@@ -112,14 +112,14 @@ $(function() {
                 $('.header_wrapper').removeClass('mobile_transparent');
                 $('.header_wrapper').addClass('white');
                 $('.mobile_menu_icon').addClass('blue');
-                $('.header_wrapper .logo').attr('src', '/assets/header/logo__dark.svg');
+                $('.header_wrapper .logo').attr('src', 'assets/header/logo__dark.svg');
             }
         } else {
             if ($('body').hasClass('homepage')) {
                 $('.header_wrapper').removeClass('white');
                 $('.mobile_menu_icon').removeClass('blue');
                 $('.header_wrapper').addClass('mobile_transparent');
-                $('.header_wrapper .logo').attr('src', '/assets/header/logo__white.svg');
+                $('.header_wrapper .logo').attr('src', 'assets/header/logo__white.svg');
             }
         }
     }
