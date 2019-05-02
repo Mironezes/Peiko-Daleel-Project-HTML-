@@ -1,4 +1,4 @@
-===============================================================*/
+/* ===============================================================*/
 
 
 /*                         BASIC STYLING                         */
@@ -96,7 +96,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .page {
-	padding-top: 100px;
+	padding-top: 80px;
 	background: #F5F6F7;
 }
 
@@ -968,18 +968,18 @@ input[type="search"]::-webkit-search-results-decoration {
 	z-index: 4;
 }
 
-.main_page_categories_tile_tags__short {
+.categories_tags__short {
 	margin-right: 25px;
 }
 
-.main_page_categories_tile_tags__short,
-.main_page_categories_tile_tags__long {
+.categories_tags__short,
+.categories_tags__long {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: fit-content;
 	height: 38px;
-	padding: 0 14px;
+	padding: 0 10px;
 	font-size: 1em;
 	border-radius: 5px;
 	color: #4B4C55;
@@ -2164,10 +2164,49 @@ select.main_categories_sorting {
 /*===============================================================*/
 
 
-/*                     SUPPLIERS PROFILE PAGE                    */
+/*                         CATEGORIES  PAGE                      */
 
 
 /*===============================================================*/
+
+.category_page_banner_wrapper {
+	padding: 50px 0;
+	background: url('../img/categories/category_page_bg.jpg') no-repeat;
+	background-size: cover;
+}
+
+.category_page_banner_desc_block {
+	width: 85%;
+	margin-bottom: 30px;
+}
+
+.category_page_banner_desc_block * {
+	color: #FFF;
+}
+
+.category_page_banner_desc_block h1 {
+	margin-top: 0;
+	font-size: 2.5em;
+}
+
+.category_page_banner_desc_block p {
+	margin-bottom: 0;
+}
+
+.category_page_banner_tags_block {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.category_page_banner_tags_block a {
+	margin-bottom: 15px;
+}
+
+.category_page_banner_tags_block .categories_tags__short,
+.category_page_banner_tags_block .categories_tags__long {
+	margin-right: 15px;
+}
+
 .verified_suppliers_heading_block {
 	justify-content: center;
 }
@@ -2230,10 +2269,13 @@ select.main_categories_sorting {
 }
 
 .verified_suppliers_categories_arrow:hover svg path {
-	fill: #2E368F;
+	fill: #2E368F !important;
 }
 
 
+.mobile_verified_suppliers_categories_arrows_block {
+	display: none;
+}
 
 /**/
 
@@ -2400,6 +2442,9 @@ select.main_categories_sorting {
 	}
 	.suppliers_tile_company_links_column a:last-of-type {
 		margin-right: 0;
+	}
+	.verified_suppliers_slider {
+		width: 100%;
 	}
 }
 
@@ -2915,8 +2960,8 @@ select.main_categories_sorting {
 		width: 100%;
 		margin: 0;
 	}
-	.main_page_categories_tile_tags__short,
-	.main_page_categories_tile_tags__long {
+	.categories_tags__short,
+	.categories_tags__long {
 		font-size: .95em;
 	}
 	.last_forum_messages_tiles>div:nth-child(2n),
@@ -3060,6 +3105,26 @@ select.main_categories_sorting {
 		margin-bottom: 10px;
 	    justify-content: center; 
     	align-items: center; 
+	}
+	.category_page_banner_desc_block {
+		width: 100%;
+	}
+	.left_sidebar_wrapper {
+		margin-bottom: 25px;
+	}
+	..verified_suppliers_slider {
+		margin-bottom: 50px;
+	}
+	.verified_suppliers_categories_arrow {
+		display: none;
+		top: 0;
+	}
+	.mobile_verified_suppliers_categories_arrows_block,
+	.mobile_verified_suppliers_categories_arrows_block * {
+		display: flex;
+	}
+	.verified_suppliers_categories_prev_arrow {
+		margin-right: 25px;
 	}
 	.footer_logo_block svg {
 		width: 220px;
