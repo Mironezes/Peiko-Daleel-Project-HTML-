@@ -73,15 +73,17 @@ $(function() {
         responsive: {
             // breakpoint from 0 up
             0: {
+                center: true,
                 items: 1,
             },
             // breakpoint from 480 up
-            480: {
-                items: 2,
+           550: {
+                margin: 0,              
+                items: 3,
             },
             // breakpoint from 768 up
             768: {
-                items: 4,
+                items: 3,
             },
             992: {
                 items: 4
@@ -173,6 +175,22 @@ $(function() {
         $('.desktop_account_toggle_menu').removeClass('opened');
     });
 
+
+    $(function(){
+      $(".expert_intelligance_tile_text").each(function(i){
+
+        var maxAllowedSymbols = 462;
+
+        var currentSymbolsCount=$(this).text().length;
+
+        var currentSymbolsOverflow = maxAllowedSymbols - currentSymbolsCount;
+
+        if(currentSymbolsCount > maxAllowedSymbols)
+        {
+          $(this).text($(this).text().slice(0,currentSymbolsOverflow) + '...');
+        }
+      });       
+    });
 
 
 

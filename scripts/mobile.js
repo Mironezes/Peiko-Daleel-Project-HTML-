@@ -57,12 +57,11 @@
 
     })
 
-    if(window.matchMedia('screen and (max-width: 991px)').matches){
+
         let CategoriesMenuItemWidth = $('.main_categories_list__item ').width();
         let CategoriesMenuItemHeight = $('.main_categories_list__item ').height();
         let CategoriesSubMenuWidth = $('.main_categories_submenu_list').css('top', CategoriesMenuItemHeight);
         let CategoriesMenuDropdownItem = $('.main_categories_list__dropdown_item');
-    }
 
 
     CategoriesMenuDropdownItem.on("click", function() {

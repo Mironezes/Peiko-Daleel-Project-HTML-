@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!--[if lte IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<![endif]-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="apple-touch-icon-precomposed" href="apple_touch_icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.0/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Expert Intelligance | Daleel</title>
+</head>
+
+<body class="expert_intelligance page">
+    <header class="header_wrapper white">
+        <div class="header_navigation_block_wrapper">
+            <div class="container">
+                <div class="header_navigation_block row">
+                    <div class="header_logo_column col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <a href="index.php"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
+                        <button onclick="void(0)" class="mobile_menu_icon hamburger hamburger--arrow blue" type="button">
+                            <span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="header_navigation_column col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div class="header_navigation_search">
+                            <input type="search" placeholder="Search request" maxlength="100" required>
+                            <button>Search</button>
+                        </div>
+                        <a href="#" class="button button__blue">Log in</a>
+                        <a href="#" class="button button__yellow">Registration</a>
+                        <button onclick="void(0)" class="desktop_toggle_menu_icon hamburger hamburger--slider blue" type="button">
+                            <span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="desktop_toggle_menu_block_wrapper">
+            <div class="container">
+                <div class="desktop_toggle_menu_block row">
+                    <ul class="desktop_toggle_menu">
+                        <li class="desktop_toggle_menu__item"><a href="#">Suppliers</a></li>
+                        <li class="desktop_toggle_menu__item"><a href="#">Intelligence</a></li>
+                        <li class="desktop_toggle_menu__item"><a href="#">News</a></li>
+                        <li class="desktop_toggle_menu__item"><a href="#">Expert articles</a></li>
+                        <li class="desktop_toggle_menu__item"><a href="#">Indices</a></li>
+                        <li class="desktop_toggle_menu__item"><a href="#">Contacts</a></li>
+                    </ul>
+                    <a href="#" class="button button__yellow">
+                        <div class="button__icon">
+                            <img class="svg" src="assets/plus_icon.svg" alt="Изображение">
+                        </div>
+                        <span>Add company</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_toggle_menu_block row">
+            <div class="container">
+                <ul class="mobile_toggle_menu">
+                    <li class="mobile_search_block">
+                        <input type="search" placeholder="Search request" maxlength="100" required>
+                        <button>Search</button>
+                    </li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Suppliers</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Intelligence</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">News</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Expert articles</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Indices</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Contacts</a></li>
+                </ul>
+                <div class="mobile_toggle_buttons">
+                    <a href="#" class="button login_button button__blue">Log in</a>
+                    <a href="#" class="button registration_button button__yellow">Registration</a>
+                    <a href="#" class="button add_company_button button__yellow"><img class="svg" src="assets/plus_icon.svg" alt="Изображение"> Add company</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <aside class="sitemap">
+        <a href="index.php">Home</a>
+        <a href="categories-main.php">Category Main</a>
+        <a href="category-a.php">Category А</a>
+        <a href="category-b.php">Category B</a>
+        <a href="tag.php">Tag</a>
+        <a href="expert-intelligance.php">Expert Intelligance</a>
+        <a href="suppliers-main.php">Suppliers main page</a>
+        <a href="suppliers-profile.php">Suppliers profile</a>
+        <a href="news_main.php">News</a>
+        <a href="news_page.php">Expert Articles</a>
+
+    </aside>
+    <section class="breadcrumbs_wrapper">
+        <div class="container">
+            <div class="breadcrumbs_block row">
+                <ul class="breadcrumbs_list">
+                    <li class="breadcrumbs_list__item"><a href="/">Homepage</a></li>
+                    <li class="breadcrumbs_list__item current"><span>Expert Intelligance</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="main_content_wrapper">
+        <div class="container">
+
+            <div class="expert_intelligance_header_block row">
+                <h1>Expert Intelligance</h1>
+
+                <div class="inner_page_search">
+                    <input type="search" placeholder="Search" maxlength="100" required>
+                    <button>Search</button>
+                </div>
+
+            </div>
+
+            <div class="suppliers_filting_block row">
+                <div class="suppliers_filters_block">
+                    <h3 class="suppliers_filters_block__title">Filters:</h3>
+
+                    <select name="main_categories_sorting" class="main_categories_sorting">
+                        <option value="location">Location</option>
+                    </select>
+
+                    <select name="main_categories_sorting" class="main_categories_sorting">
+                        <option value="verification-status">Verification status</option>
+                    </select>
+
+                    <select name="main_categories_sorting" class="main_categories_sorting">
+                        <option value="product-status">Product verification status</option>
+                    </select>
+
+                    <select name="main_categories_sorting" class="main_categories_sorting">
+                        <option value="product-status">Services & tags</option>
+                    </select>
+                </div>
+
+                <div class="suppliers_sorting_block">
+                    <span class="suppliers_sorting_block_title">Sort By:</span>
+
+                    <select name="main_categories_sorting" class="main_categories_sorting">
+                        <option value="popularity">Popularity</option>
+                    </select>
+                </div>
+            </div>
+            <div class="main_content_inner row">
+                <div class="news_tiles_block">
+
+                    <div class="expert_intelligance_tile row">
+                        <div class="expert_intelligance_tile_header_block">
+                            <div class="expert_intelligance_tile_img">
+                                <img src="img/suppliers/supplier_logo.png" alt="Изображение">
+                            </div>
+                            <div class="expert_intelligance_tile_main_info">
+                                <h2>Rising Demand for OBN Seismic and Source/ 2D vessels</h2>
+
+                                <div class="verification_block">
+                                    <img src="assets/suppliers/verified_icon.svg" alt="Изображение" class=""> <span>Verified supplier</span>
+                                </div>
+
+                                <div class="article_statistics_block row">
+                                    <div class="article_statistics_block_author">
+                                        <h4>Reactive</h4>
+                                    </div>
+
+                                    <div class="article_statistics_block_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+
+                                    <div class="article_statistics_block_veiws">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+
+                                    <div class="article_statistics_block_comments">
+                                        <img class="svg" src="assets/news/comments_counter_icon.svg" alt="Изображение">
+                                        <span><i>485</i> Comments</span>
+                                    </div>
+
+                                    <div class="article_statistics_block_shares">
+                                        <img class="svg" src="assets/news/shares_counter_icon.svg" alt="Изображение">
+                                        <span><i>165</i> Sharings</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="verification_block">
+                                <img src="assets/suppliers/verified_icon.svg" alt="Изображение" class=""> <span>Verified supplier</span>
+                            </div>
+
+                        </div>
+
+                        <div class="expert_intelligance_tile_body_block">
+                            <p class="expert_intelligance_tile_text">ABERDEEN, UK – Rotech Subsea has won two contracts for work offshore Saudi Arabia.
+                                <br> The first program for the subsea excavation contractor – cable post-trenching – involved mobilization from Aberdeen of the TRS1-LD tool. This was followed by collection by the client from Rotech’s fabrication yard. Seeking talented team members who are passionate about changing the world, one solution at a time. Search for your new career at NOV and become part of something invisible lorem</p>
+                        </div>
+
+                        <div class="expert_intelligance_tile_footer_block">
+
+                            <div class="expert_intelligance_tile_tags">
+                                <a href="#" class="tag__short">#Connections</a>
+                                <a href="#" class="tag__short">#Casing</a>
+                                <a href="#" class="tag__long">#Casing Centrailizers</a>
+                                <a href="#" class="tag__short">#Pipe</a>
+                                <a href="#" class="tag__long">#Producting Tubing</a>
+                            </div>
+
+                            <div class="expert_intelligance_tile_read">
+                                <a href="#" class="button button__blue">Read</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="expert_intelligance_tile row">
+                        <div class="expert_intelligance_tile_header_block">
+                            <div class="expert_intelligance_tile_img">
+                                <img src="img/suppliers/supplier_logo.png" alt="Изображение">
+                            </div>
+                            <div class="expert_intelligance_tile_main_info">
+                                <h2>Rising Demand for OBN Seismic and Source/ 2D vessels</h2>
+
+                                <div class="verification_block">
+                                    <img src="assets/suppliers/verified_icon.svg" alt="Изображение" class=""> <span>Verified supplier</span>
+                                </div>
+
+                                <div class="article_statistics_block row">
+                                    <div class="article_statistics_block_author">
+                                        <h4>Reactive</h4>
+                                    </div>
+
+                                    <div class="article_statistics_block_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+
+                                    <div class="article_statistics_block_veiws">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+
+                                    <div class="article_statistics_block_comments">
+                                        <img class="svg" src="assets/news/comments_counter_icon.svg" alt="Изображение">
+                                        <span><i>485</i> Comments</span>
+                                    </div>
+
+                                    <div class="article_statistics_block_shares">
+                                        <img class="svg" src="assets/news/shares_counter_icon.svg" alt="Изображение">
+                                        <span><i>165</i> Sharings</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="verification_block">
+                                <img src="assets/suppliers/verified_icon.svg" alt="Изображение" class=""> <span>Verified supplier</span>
+                            </div>
+
+                        </div>
+
+                        <div class="expert_intelligance_tile_body_block">
+                            <p class="expert_intelligance_tile_text">ABERDEEN, UK – Rotech Subsea has won two contracts for work offshore Saudi Arabia.
+                                <br> The first program for the subsea excavation contractor – cable post-trenching – involved mobilization from Aberdeen of the TRS1-LD tool. This was followed by collection by the client from Rotech’s fabrication yard. Seeking talented team members who are passionate about changing the world, one solution at a time. Search for your new career at NOV and become part of something invisible lorem</p>
+                        </div>
+
+                        <div class="expert_intelligance_tile_footer_block">
+
+                            <div class="expert_intelligance_tile_tags">
+                                <a href="#" class="tag__short">#Connections</a>
+                                <a href="#" class="tag__short">#Casing</a>
+                                <a href="#" class="tag__long">#Casing Centrailizers</a>
+                                <a href="#" class="tag__short">#Pipe</a>
+                                <a href="#" class="tag__long">#Producting Tubing</a>
+                            </div>
+
+                            <div class="expert_intelligance_tile_read">
+                                <a href="#" class="button button__blue">Read</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="expert_intelligance_tile row">
+                        <div class="expert_intelligance_tile_header_block">
+                            <div class="expert_intelligance_tile_img">
+                                <img src="img/suppliers/supplier_logo.png" alt="Изображение">
+                            </div>
+                            <div class="expert_intelligance_tile_main_info">
+                                <h2>Rising Demand for OBN Seismic and Source/ 2D vessels</h2>
+
+                                <div class="verification_block">
+                                    <img src="assets/suppliers/verified_icon.svg" alt="Изображение" class=""> <span>Verified supplier</span>
+                                </div>
+
+                                <div class="article_statistics_block row">
+                                    <div class="article_statistics_block_author">
+                                        <h4>Reactive</h4>
+                                    </div>
+
+                                    <div class="article_statistics_block_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+
+                                    <div class="article_statistics_block_veiws">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+
+                                    <div class="article_statistics_block_comments">
+                                        <img class="svg" src="assets/news/comments_counter_icon.svg" alt="Изображение">
+                                        <span><i>485</i> Comments</span>
+                                    </div>
+
+                                    <div class="article_statistics_block_shares">
+                                        <img class="svg" src="assets/news/shares_counter_icon.svg" alt="Изображение">
+                                        <span><i>165</i> Sharings</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="verification_block">
+                                <img src="assets/suppliers/verified_icon.svg" alt="Изображение" class=""> <span>Verified supplier</span>
+                            </div>
+
+                        </div>
+
+                        <div class="expert_intelligance_tile_body_block">
+                            <p class="expert_intelligance_tile_text">ABERDEEN, UK – Rotech Subsea has won two contracts for work offshore Saudi Arabia.
+                                <br> The first program for the subsea excavation contractor – cable post-trenching – involved mobilization from Aberdeen of the TRS1-LD tool. This was followed by collection by the client from Rotech’s fabrication yard. Seeking talented team members who are passionate about changing the world, one solution at a time. Search for your new career at NOV and become part of something invisible lorem</p>
+                        </div>
+
+                        <div class="expert_intelligance_tile_footer_block">
+
+                            <div class="expert_intelligance_tile_tags">
+                                <a href="#" class="tag__short">#Connections</a>
+                                <a href="#" class="tag__short">#Casing</a>
+                                <a href="#" class="tag__long">#Casing Centrailizers</a>
+                                <a href="#" class="tag__short">#Pipe</a>
+                                <a href="#" class="tag__long">#Producting Tubing</a>
+                            </div>
+
+                            <div class="expert_intelligance_tile_read">
+                                <a href="#" class="button button__blue">Read</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="expert_intelligance_tile row">
+                        <div class="expert_intelligance_tile_header_block">
+                            <div class="expert_intelligance_tile_img">
+                                <img src="img/suppliers/supplier_logo.png" alt="Изображение">
+                            </div>
+                            <div class="expert_intelligance_tile_main_info">
+                                <h2>Rising Demand for OBN Seismic and Source/ 2D vessels</h2>
+
+                                <div class="verification_block">
+                                    <img src="assets/suppliers/verified_icon.svg" alt="Изображение" class=""> <span>Verified supplier</span>
+                                </div>
+
+                                <div class="article_statistics_block row">
+                                    <div class="article_statistics_block_author">
+                                        <h4>Reactive</h4>
+                                    </div>
+
+                                    <div class="article_statistics_block_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+
+                                    <div class="article_statistics_block_veiws">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+
+                                    <div class="article_statistics_block_comments">
+                                        <img class="svg" src="assets/news/comments_counter_icon.svg" alt="Изображение">
+                                        <span><i>485</i> Comments</span>
+                                    </div>
+
+                                    <div class="article_statistics_block_shares">
+                                        <img class="svg" src="assets/news/shares_counter_icon.svg" alt="Изображение">
+                                        <span><i>165</i> Sharings</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="verification_block">
+                                <img src="assets/suppliers/verified_icon.svg" alt="Изображение" class=""> <span>Verified supplier</span>
+                            </div>
+
+                        </div>
+
+                        <div class="expert_intelligance_tile_body_block">
+                            <p class="expert_intelligance_tile_text">ABERDEEN, UK – Rotech Subsea has won two contracts for work offshore Saudi Arabia.
+                                <br> The first program for the subsea excavation contractor – cable post-trenching – involved mobilization from Aberdeen of the TRS1-LD tool. This was followed by collection by the client from Rotech’s fabrication yard. Seeking talented team members who are passionate about changing the world, one solution at a time. Search for your new career at NOV and become part of something invisible lorem</p>
+                        </div>
+
+                        <div class="expert_intelligance_tile_footer_block">
+
+                            <div class="expert_intelligance_tile_tags">
+                                <a href="#" class="tag__short">#Connections</a>
+                                <a href="#" class="tag__short">#Casing</a>
+                                <a href="#" class="tag__long">#Casing Centrailizers</a>
+                                <a href="#" class="tag__short">#Pipe</a>
+                                <a href="#" class="tag__long">#Producting Tubing</a>
+                            </div>
+
+                            <div class="expert_intelligance_tile_read">
+                                <a href="#" class="button button__blue">Read</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="expert_intelligance_tile row">
+                        <div class="expert_intelligance_tile_header_block">
+                            <div class="expert_intelligance_tile_img">
+                                <img src="img/suppliers/supplier_logo.png" alt="Изображение">
+                            </div>
+                            <div class="expert_intelligance_tile_main_info">
+                                <h2>Rising Demand for OBN Seismic and Source/ 2D vessels</h2>
+
+                                <div class="verification_block">
+                                    <img src="assets/suppliers/verified_icon.svg" alt="Изображение" class=""> <span>Verified supplier</span>
+                                </div>
+
+                                <div class="article_statistics_block row">
+                                    <div class="article_statistics_block_author">
+                                        <h4>Reactive</h4>
+                                    </div>
+
+                                    <div class="article_statistics_block_date">
+                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                        <span>24.01.2019</span>
+                                    </div>
+
+                                    <div class="article_statistics_block_veiws">
+                                        <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                        <span>56251</span>
+                                    </div>
+
+                                    <div class="article_statistics_block_comments">
+                                        <img class="svg" src="assets/news/comments_counter_icon.svg" alt="Изображение">
+                                        <span><i>485</i> Comments</span>
+                                    </div>
+
+                                    <div class="article_statistics_block_shares">
+                                        <img class="svg" src="assets/news/shares_counter_icon.svg" alt="Изображение">
+                                        <span><i>165</i> Sharings</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="verification_block">
+                                <img src="assets/suppliers/verified_icon.svg" alt="Изображение" class=""> <span>Verified supplier</span>
+                            </div>
+
+                        </div>
+
+                        <div class="expert_intelligance_tile_body_block">
+                            <p class="expert_intelligance_tile_text">ABERDEEN, UK – Rotech Subsea has won two contracts for work offshore Saudi Arabia.
+                                <br> The first program for the subsea excavation contractor – cable post-trenching – involved mobilization from Aberdeen of the TRS1-LD tool. This was followed by collection by the client from Rotech’s fabrication yard. Seeking talented team members who are passionate about changing the world, one solution at a time. Search for your new career at NOV and become part of something invisible lorem</p>
+                        </div>
+
+                        <div class="expert_intelligance_tile_footer_block">
+
+                            <div class="expert_intelligance_tile_tags">
+                                <a href="#" class="tag__short">#Connections</a>
+                                <a href="#" class="tag__short">#Casing</a>
+                                <a href="#" class="tag__long">#Casing Centrailizers</a>
+                                <a href="#" class="tag__short">#Pipe</a>
+                                <a href="#" class="tag__long">#Producting Tubing</a>
+                            </div>
+
+                            <div class="expert_intelligance_tile_read">
+                                <a href="#" class="button button__blue">Read</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="load_more_button_block row">
+                        <a href="#" class="button load_more_button full_width">
+                            <div class="button__icon">
+                                <img class="svg" src="assets/load_icon.svg" alt="Изображение">
+                            </div>
+                            <span>Load More</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer_wrapper">
+        <div class="container">
+            <div class="footer_logo_block row">
+                <img class="svg" src="assets/header/logo__dark.svg" alt="Логотип">
+            </div>
+            <div class="footer_info_block row">
+                <div class="footer_info_about_us_column col-sm-4 col-xs-12">
+                    <h4 class="footer_info__title">About Us</h4>
+                    <p class="footer_info__desc">Daleel is a portal that provides unique business intelligence to make the best decisions and allows exchange of knowledge that our industry needs to best meet its requirements.</p>
+                </div>
+                <div class="footer_info_resources_column col-sm-4 col-xs-12">
+                    <h4 class="footer_info__title">Resources</h4>
+                    <ul class="footer_info_resources_list">
+                        <li class="footer_info_resources_list__item"><a href="#">Our Story and Why We Do It</a></li>
+                        <li class="footer_info_resources_list__item"><a href="#">Privacy Policy</a></li>
+                        <li class="footer_info_resources_list__item"><a href="#">Terms Of Use</a></li>
+                        <li class="footer_info_resources_list__item"><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer_info_block_newsletter_column col-sm-4 col-xs-12">
+                    <h4 class="footer_info__title">Newsletter</h4>
+                    <div class="footer_info_block_newsletter">
+                        <input type="email" placeholder="Email adress" maxlength="100" required>
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <span class="footer_info__copyright">© 2015 All rights reserved Daleel</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/mobile.js"></script>
+</body>
