@@ -138,7 +138,7 @@ $(function() {
 
     if(window.matchMedia('screen and (min-width: 992px)').matches){
         let tilesBlocktWidth = $('.main_categories_tiles_block').width();
-        let CategoriesSubMenuWidth = $('.main_categories_submenu_list').css('width', tilesBlocktWidth + 14);
+        let CategoriesSubMenuWidth = $('.main_categories_submenu_list').css('width', tilesBlocktWidth + 30);
         let CategoriesMenuWidth = $('.main_categories_list').width();
         let CategoriesSubMenuPosition = $('.main_categories_submenu_list').css('left', CategoriesMenuWidth);
     }
