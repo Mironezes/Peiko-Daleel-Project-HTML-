@@ -162,14 +162,30 @@ $(function() {
 
 
 
+    $('.header_navigation_search_toggle').click(function() {
+        $(this).find('.search_icon').toggleClass('visible');        
+        $(this).find('.close_icon').toggleClass('visible'); 
+        let toggleSubMenu = $('.desktop_toggle_menu_block_wrapper').toggleClass('opened');
+    })
+    let headerAccountButtonWidth = $('.header_account_button').width();
+    let desktopToggleMenuWidth = $('.desktop_toggle_menu').width();
+    let toggleMenuSearchBarWidth = $('.desktop_toggle_menu__search_bar').css('width', desktopToggleMenuWidth + 48 + 20);
+    let toggleMenuSearchButton = $('.desktop_toggle_menu__search_button').css('width', headerAccountButtonWidth + 45);
+
+
+
+
 
     $('.header_account_button').click(function(e) {
         e.stopPropagation()
-        let DesktopAcoountButtonWidth = $('.header_account_button ').width();
         $('.desktop_account_toggle_menu').toggleClass('opened');
         $(this).toggleClass('dropdown_rotation');
-        $('.desktop_account_toggle_menu').css('width', DesktopAcoountButtonWidth + 45);
+
     });
+    let DesktopAcoountButtonWidth = $('.header_account_button ').width();
+    $('.desktop_account_toggle_menu').css('width', DesktopAcoountButtonWidth + 45);
+
+
 
     $(document).click(function() {
         $('.desktop_account_toggle_menu').removeClass('opened');
