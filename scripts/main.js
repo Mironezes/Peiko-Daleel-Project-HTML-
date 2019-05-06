@@ -77,7 +77,7 @@ $(function() {
                 items: 1,
             },
             // breakpoint from 480 up
-           550: {
+           540: {
                 margin: 0,              
                 items: 3,
             },
@@ -141,6 +141,14 @@ $(function() {
         let CategoriesSubMenuWidth = $('.main_categories_submenu_list').css('width', tilesBlocktWidth + 30);
         let CategoriesMenuWidth = $('.main_categories_list').width();
         let CategoriesSubMenuPosition = $('.main_categories_submenu_list').css('left', CategoriesMenuWidth);
+
+
+        //Smooth scrolling with links
+        $('a[href*=\\#]').on('click', function(event){     
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top - 98}, 500);
+        });
+
     }
 
 
@@ -162,7 +170,8 @@ $(function() {
 
 
 
-    $('.header_navigation_search_toggle').click(function() {
+    $('.header_navigation_search_toggle').click(function(e) {
+        e.stopPropagation()
         $(this).find('.search_icon').toggleClass('visible');        
         $(this).find('.close_icon').toggleClass('visible'); 
         let toggleSubMenu = $('.desktop_toggle_menu_block_wrapper').toggleClass('opened');
