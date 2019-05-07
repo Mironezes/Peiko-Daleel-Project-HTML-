@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Suppliers Main | Daleel</title>
 </head>
@@ -162,6 +164,7 @@
                     </select>
 
                     <select name="main_categories_sorting" class="main_categories_sorting">
+                        <span>Verification status</span>
                         <option value="verification-status">Verification status</option>
                     </select>
 
@@ -366,43 +369,53 @@
 
                                 <div class="suppliers_tile_summary_review_diagrams_block">
                                     <div class="suppliers_tile_linear_block">
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria first">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 1</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator first"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
 
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria second">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 2</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator second"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
 
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria third">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 3</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator third"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
 
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria fourth">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 4</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator fourth"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
 
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria fifth">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 5</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator fifth"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
                                     </div>
 
                                     <div class="suppliers_tile_radial_block">
-                                        <div class="suppliers_tile_radial_criteria">
+                                        <div class="suppliers_tile_radial_criteria first">
                                             <img src="assets/suppliers/radial_review_icon_01.svg" alt="Изображение">
                                             <span>Of reviewers recommend this<br>supplier</span>
                                         </div>
-                                        <div class="suppliers_tile_radial_criteria">
+                                        <div class="suppliers_tile_radial_criteria first">
                                             <img src="assets/suppliers/radial_review_icon_02.svg" alt="Изображение">
                                             <span>Other option from review</span>
                                         </div>
@@ -599,43 +612,53 @@
 
                                 <div class="suppliers_tile_summary_review_diagrams_block">
                                     <div class="suppliers_tile_linear_block">
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria first">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 1</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator first"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
 
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria second">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 2</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator second"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
 
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria third">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 3</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator third"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
 
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria fourth">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 4</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator fourth"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
 
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria fifth">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 5</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator fifth"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
                                     </div>
 
                                     <div class="suppliers_tile_radial_block">
-                                        <div class="suppliers_tile_radial_criteria">
+                                        <div class="suppliers_tile_radial_criteria first">
                                             <img src="assets/suppliers/radial_review_icon_01.svg" alt="Изображение">
                                             <span>Of reviewers recommend this<br>supplier</span>
                                         </div>
-                                        <div class="suppliers_tile_radial_criteria">
+                                        <div class="suppliers_tile_radial_criteria first">
                                             <img src="assets/suppliers/radial_review_icon_02.svg" alt="Изображение">
                                             <span>Other option from review</span>
                                         </div>
@@ -832,43 +855,53 @@
 
                                 <div class="suppliers_tile_summary_review_diagrams_block">
                                     <div class="suppliers_tile_linear_block">
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria first">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 1</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator first"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
 
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria second">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 2</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator second"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
 
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria third">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 3</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator third"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
 
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria fourth">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 4</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator fourth"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
 
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria fifth">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 5</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator fifth"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
                                     </div>
 
                                     <div class="suppliers_tile_radial_block">
-                                        <div class="suppliers_tile_radial_criteria">
+                                        <div class="suppliers_tile_radial_criteria first">
                                             <img src="assets/suppliers/radial_review_icon_01.svg" alt="Изображение">
                                             <span>Of reviewers recommend this<br>supplier</span>
                                         </div>
-                                        <div class="suppliers_tile_radial_criteria">
+                                        <div class="suppliers_tile_radial_criteria first">
                                             <img src="assets/suppliers/radial_review_icon_02.svg" alt="Изображение">
                                             <span>Other option from review</span>
                                         </div>
@@ -1065,43 +1098,53 @@
 
                                 <div class="suppliers_tile_summary_review_diagrams_block">
                                     <div class="suppliers_tile_linear_block">
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria first">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 1</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator first"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
 
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria second">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 2</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator second"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
 
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria third">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 3</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator third"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
 
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria fourth">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 4</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator fourth"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
 
-                                        <div class="suppliers_tile_linear_criteria">
+                                        <div class="suppliers_tile_linear_criteria fifth">
                                             <span class="suppliers_tile_summary_review__criteria__name">Criteria 5</span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator fifth"></span>
+                                            <span class="suppliers_tile_summary_review__criteria__indicator">
+													<span class="suppliers_tile_summary_review__criteria__indicator_value"></span>
+                                            </span>
                                             <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
                                         </div>
                                     </div>
 
                                     <div class="suppliers_tile_radial_block">
-                                        <div class="suppliers_tile_radial_criteria">
+                                        <div class="suppliers_tile_radial_criteria first">
                                             <img src="assets/suppliers/radial_review_icon_01.svg" alt="Изображение">
                                             <span>Of reviewers recommend this<br>supplier</span>
                                         </div>
-                                        <div class="suppliers_tile_radial_criteria">
+                                        <div class="suppliers_tile_radial_criteria first">
                                             <img src="assets/suppliers/radial_review_icon_02.svg" alt="Изображение">
                                             <span>Other option from review</span>
                                         </div>
@@ -1164,6 +1207,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/mobile.js"></script>
 </body>

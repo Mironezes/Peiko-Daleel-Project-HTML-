@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Categories Main | Daleel</title>
 </head>
@@ -135,7 +137,7 @@
         <a href="news-page.html">Expert Articles</a>
         <a href="product-page.html">Product Page</a>
     </aside>
-    <section class="suppliers_profile_banner_wrapper">
+    <section class="suppliers_profile_banner_wrapper" style="background-image: url('../img/supplier_bg_img.jpg');">
         <div class="container">
             <div class="suppliers_profile_banner_inner">
 
@@ -146,6 +148,10 @@
                 <div class="suppliers_profile_content_column">
 
                     <div class="suppliers_profile_content_info_block">
+
+                        <div class="suppliers_profile_img_column">
+                            <img src="img/suppliers/supplier_logo.png" alt="Изображение">
+                        </div>
 
                         <div class="suppliers_profile_content_info_title">
                             <h1>National Oilwell Varco</h1>
@@ -223,15 +229,22 @@
                 <div id="overview" class="suppliers_detailed_info_block">
                     <div class="suppliers_detailed_info_overview_column col-lg-6">
                         <div class="suppliers_detailed_info_overview">
-                            <h2>Overview</h2>
+                            <div class="suppliers_detailed_info_overview__summary">
+                                <h2>Overview</h2>
 
-                            <p>Reactive is a global Digital Solutions Company. We deliver software engineering excellence to Fortune 500 and fast-growing organisations around the world.</p>
+                                <p>Reactive is a global Digital Solutions Company. We deliver software engineering excellence to Fortune 500 and fast-growing organisations around the world.</p>
 
-                            <p>Our 3,000+ Developers provide the clients with a range of services including Software development teams, QA, R&D, IoT, Big Data, Product development and Consulting.</p>
+                                <p>Our 3,000+ Developers provide the clients with a range of services including Software development teams, QA, R&D, IoT, Big Data, Product development and Consulting.</p>
 
-                            <p>What do you get with National Oilwell Varco?</p>
+                                <p>What do you get with National Oilwell Varco?</p>
 
-                            <p>Up to 50% savings compared to local resources Access to 357,000 IT specialists 90% retention rate in team</p>
+                                <p>Up to 50% savings compared to local resources Access to 357,000 IT specialists 90% retention rate in team</p>
+                            </div>
+
+                            <div class="suppliers_detailed_info_overview__detailed">
+                                <p>Reactive is a global Digital Solutions Company. We deliver software engineering excellence to Fortune 500 and fast-growing organisations around the world.</p>
+                                <p>Our 3,000+ Developers provide the clients with a range of services including Software development teams, QA, R&D, IoT, Big Data, Product development and Consulting.</p>
+                            </div>
 
                             <span class="suppliers_detailed_info_overview__show_more">Show more</spna>
 
@@ -295,7 +308,8 @@
                                 </div>
                             </div>
                             <div class="suppliers_tile_location_body">
-                                <img src="img/map_demo.png" alt="Изображение">
+                                <iframe src="https://snazzymaps.com/embed/153171" width="100%" height="340px" style="border:none;"></iframe>
+
                             </div>
                         </div>
 
@@ -558,6 +572,40 @@
                         <div class="suppliers_work_history_tiles_column">
                             <div class="suppliers_work_history_tiles">
                                 <div class="suppliers_work_history_tile">
+                                    <div class="suppliers_work_history_tile_modal">
+                                        <div class="suppliers_work_history_tile_modal_close_icon">
+                                            <img src="assets/close_icon.svg" alt="Изображение" class="svg">
+                                        </div>
+                                        <div class="suppliers_work_history_tile_modal_info_column">
+                                            <div class="suppliers_work_history_tile_modal_category">
+                                                <span>Category</span>
+                                                <h3>Seismic Survey and Data Acquisition</h3>
+                                                <p>Collars, Stabilizers, Lift Subs, Bit Jars, Crossover Subs, Float Subs</p>
+                                            </div>
+                                            <div class="suppliers_work_history_tile_modal_location">
+                                                <span>Location</span>
+                                                <h3>South Africa</h3>
+                                            </div>
+                                            <div class="suppliers_work_history_tile_modal_partner">
+                                                <span>Partner</span>
+                                                <h3>DALEEL</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="suppliers_work_history_tile_modal_overview_column">
+                                            <div class="suppliers_work_history_tile_modal_overview">
+                                                <span>Overview</span>
+                                                <h3>Maintenance of Oil suppliing ring in south Africa</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+                                                <div class="suppliers_work_history_tile_modal_link">
+                                                    <a href="#">
+                                                        <span>Show Details</span>
+                                                        <img class="svg" src="assets/small_arrow_icon.svg" alt="Изображение">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="suppliers_work_history_tile_inner">
                                         <span class="suppliers_work_history_tile__read_more">Click to read more details</span>
                                         <div class="suppliers_work_history_tile_img">
@@ -582,6 +630,40 @@
                                 </div>
 
                                 <div class="suppliers_work_history_tile">
+                                    <div class="suppliers_work_history_tile_modal">
+                                        <div class="suppliers_work_history_tile_modal_close_icon">
+                                            <img src="assets/close_icon.svg" alt="Изображение" class="svg">
+                                        </div>
+                                        <div class="suppliers_work_history_tile_modal_info_column">
+                                            <div class="suppliers_work_history_tile_modal_category">
+                                                <span>Category</span>
+                                                <h3>Seismic Survey and Data Acquisition</h3>
+                                                <p>Collars, Stabilizers, Lift Subs, Bit Jars, Crossover Subs, Float Subs</p>
+                                            </div>
+                                            <div class="suppliers_work_history_tile_modal_location">
+                                                <span>Location</span>
+                                                <h3>South Africa</h3>
+                                            </div>
+                                            <div class="suppliers_work_history_tile_modal_partner">
+                                                <span>Partner</span>
+                                                <h3>DALEEL</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="suppliers_work_history_tile_modal_overview_column">
+                                            <div class="suppliers_work_history_tile_modal_overview">
+                                                <span>Overview</span>
+                                                <h3>Maintenance of Oil suppliing ring in south Africa</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+                                                <div class="suppliers_work_history_tile_modal_link">
+                                                    <a href="#">
+                                                        <span>Show Details</span>
+                                                        <img class="svg" src="assets/small_arrow_icon.svg" alt="Изображение">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="suppliers_work_history_tile_inner">
                                         <span class="suppliers_work_history_tile__read_more">Click to read more details</span>
                                         <div class="suppliers_work_history_tile_img">
@@ -606,6 +688,40 @@
                                 </div>
 
                                 <div class="suppliers_work_history_tile">
+                                    <div class="suppliers_work_history_tile_modal">
+                                        <div class="suppliers_work_history_tile_modal_close_icon">
+                                            <img src="assets/close_icon.svg" alt="Изображение" class="svg">
+                                        </div>
+                                        <div class="suppliers_work_history_tile_modal_info_column">
+                                            <div class="suppliers_work_history_tile_modal_category">
+                                                <span>Category</span>
+                                                <h3>Seismic Survey and Data Acquisition</h3>
+                                                <p>Collars, Stabilizers, Lift Subs, Bit Jars, Crossover Subs, Float Subs</p>
+                                            </div>
+                                            <div class="suppliers_work_history_tile_modal_location">
+                                                <span>Location</span>
+                                                <h3>South Africa</h3>
+                                            </div>
+                                            <div class="suppliers_work_history_tile_modal_partner">
+                                                <span>Partner</span>
+                                                <h3>DALEEL</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="suppliers_work_history_tile_modal_overview_column">
+                                            <div class="suppliers_work_history_tile_modal_overview">
+                                                <span>Overview</span>
+                                                <h3>Maintenance of Oil suppliing ring in south Africa</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+                                                <div class="suppliers_work_history_tile_modal_link">
+                                                    <a href="#">
+                                                        <span>Show Details</span>
+                                                        <img class="svg" src="assets/small_arrow_icon.svg" alt="Изображение">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="suppliers_work_history_tile_inner">
                                         <span class="suppliers_work_history_tile__read_more">Click to read more details</span>
                                         <div class="suppliers_work_history_tile_img">
@@ -630,6 +746,40 @@
                                 </div>
 
                                 <div class="suppliers_work_history_tile">
+                                    <div class="suppliers_work_history_tile_modal">
+                                        <div class="suppliers_work_history_tile_modal_close_icon">
+                                            <img src="assets/close_icon.svg" alt="Изображение" class="svg">
+                                        </div>
+                                        <div class="suppliers_work_history_tile_modal_info_column">
+                                            <div class="suppliers_work_history_tile_modal_category">
+                                                <span>Category</span>
+                                                <h3>Seismic Survey and Data Acquisition</h3>
+                                                <p>Collars, Stabilizers, Lift Subs, Bit Jars, Crossover Subs, Float Subs</p>
+                                            </div>
+                                            <div class="suppliers_work_history_tile_modal_location">
+                                                <span>Location</span>
+                                                <h3>South Africa</h3>
+                                            </div>
+                                            <div class="suppliers_work_history_tile_modal_partner">
+                                                <span>Partner</span>
+                                                <h3>DALEEL</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="suppliers_work_history_tile_modal_overview_column">
+                                            <div class="suppliers_work_history_tile_modal_overview">
+                                                <span>Overview</span>
+                                                <h3>Maintenance of Oil suppliing ring in south Africa</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+                                                <div class="suppliers_work_history_tile_modal_link">
+                                                    <a href="#">
+                                                        <span>Show Details</span>
+                                                        <img class="svg" src="assets/small_arrow_icon.svg" alt="Изображение">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="suppliers_work_history_tile_inner">
                                         <span class="suppliers_work_history_tile__read_more">Click to read more details</span>
                                         <div class="suppliers_work_history_tile_img">
@@ -914,6 +1064,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/mobile.js"></script>
 </body>

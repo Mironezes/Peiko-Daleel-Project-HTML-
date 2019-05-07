@@ -166,16 +166,22 @@ $(function() {
     $('.desktop_toggle_menu_icon').click(function() {
         let toggleIcon = $(this).toggleClass('is-active');
         let toggleSubMenu = $('.desktop_toggle_menu_block_wrapper').toggleClass('opened');
-    })
+    });
 
 
 
-    $('.header_navigation_search_toggle').click(function(e) {
-        e.stopPropagation()
-        $(this).find('.search_icon').toggleClass('visible');        
-        $(this).find('.close_icon').toggleClass('visible'); 
-        let toggleSubMenu = $('.desktop_toggle_menu_block_wrapper').toggleClass('opened');
-    })
+
+    $('.header_navigation_search_toggle').each(function() {
+        $(this).click(function(e) {
+            e.stopPropagation();
+            $(this).find('.search_icon').toggleClass('visible');        
+            $(this).find('.close_icon').toggleClass('visible'); 
+            let toggleSubMenu = $('.desktop_toggle_menu_block_wrapper').toggleClass('opened');
+        });
+    });
+
+
+
     let headerAccountButtonWidth = $('.header_account_button').width();
     let desktopToggleMenuWidth = $('.desktop_toggle_menu').width();
     let toggleMenuSearchBarWidth = $('.desktop_toggle_menu__search_bar').css('width', desktopToggleMenuWidth + 48 + 20);
@@ -216,6 +222,36 @@ $(function() {
         }
       });       
     });
+
+
+
+    $('.suppliers_detailed_info_overview__show_more').click(function() {
+        $(this).remove();
+        $('.suppliers_detailed_info_overview__detailed').addClass('opened');
+    });
+
+
+
+    $('.suppliers_work_history_tiles').each(function() {
+        $('.suppliers_work_history_tile').click(function(e) {
+            e.stopPropagation();
+            let suppliersWorkHistoryTilesWidth = $('.suppliers_work_history_tiles').width();
+            let suppliersWorkHistoryTilesHeight = $('.suppliers_work_history_tiles').height();
+            $(this).find('.suppliers_work_history_tile_modal').css({'width': suppliersWorkHistoryTilesWidth, 'height': suppliersWorkHistoryTilesHeight});
+            $(this).find('.suppliers_work_history_tile_modal').addClass('opened');
+        });
+
+        $(document).click(function() {
+            $('.suppliers_work_history_tile_modal').removeClass('opened');
+        });
+
+    });
+
+    $('.suppliers_work_history_tile_modal_close_icon').click(function(e){
+        $(this).parent('.suppliers_work_history_tile_modal').toggleClass('opened');
+        e.stopPropagation();
+    });
+
 
 
 
