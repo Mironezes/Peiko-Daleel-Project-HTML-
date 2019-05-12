@@ -5,6 +5,8 @@ $(document).ready(function() {
         items: 1,
         loop: true,
         margin: 10,
+        autoplay: true,
+        autoplayTimeout: 10000,
         dotsContainer: '.testimonials_dots'
     });
 
@@ -26,6 +28,7 @@ $(document).ready(function() {
         items: 9,
         loop: true,
         margin: 20,
+        autoplay: true,
         responsive: {
             // breakpoint from 0 up
             0: {
@@ -63,6 +66,7 @@ $(document).ready(function() {
         items: 4,
         loop: true,
         margin: 0,
+        autoplay: true,
         responsive: {
             // breakpoint from 0 up
             0: {
@@ -71,6 +75,7 @@ $(document).ready(function() {
             },
             // breakpoint from 480 up
             540: {
+                center: true,
                 margin: 0,
                 items: 3,
             },
@@ -127,32 +132,21 @@ $(document).ready(function() {
 
 
 
-    if (window.matchMedia('screen and (min-width: 992px)').matches) {
-        let tilesBlocktWidth = $('.main_categories_tiles_block').width();
-        let CategoriesSubMenuWidth = $('.main_categories_submenu_list').css('width', tilesBlocktWidth + 30);
-        let CategoriesMenuWidth = $('.main_categories_list').width();
-        let CategoriesSubMenuPosition = $('.main_categories_submenu_list').css('left', CategoriesMenuWidth);
 
-
-        function suppliersFixedMenu() {
-            $('.page_fixed_menu_list a[href*=\\#]').on('click', function(event) {
-                event.preventDefault();
-                $('html,body').animate({
-                    scrollTop: $(this.hash).offset().top - 160
-                }, 500);
-            });
-        }
-        suppliersFixedMenu();
-
+    function suppliersFixedMenu() {
+        $('.page_fixed_menu_list a[href*=\\#]').on('click', function(event) {
+            event.preventDefault();
+            $('html,body').animate({
+                scrollTop: $(this.hash).offset().top - 160
+            }, 500);
+        });
     }
-
-
 
     function suppliersMenu() {
         $('.suppliers_profile_banner_menu_list a[href*=\\#], .product_page_banner_menu_list a[href*=\\#]').on('click', function(event) {
             event.preventDefault();
             $('html,body').animate({
-                 scrollTop: $(this.hash).offset().top - 98
+                scrollTop: $(this.hash).offset().top - 98
             }, 500);
         });
     }
@@ -441,8 +435,47 @@ $(document).ready(function() {
     pageNavScroll();
 
 
-    let suppliersMaterialsPhotoHeight__Getter = $('.suppliers_materials_block .suppliers_materials_tile_photo img').height();
-    let suppliersMaterialsVideoHeight__Setter = $('.suppliers_materials_block .suppliers_materials_tile_video iframe').css('height', suppliersMaterialsPhotoHeight__Getter);
+
+
+
+    $('.suppliers_sorting_by_block .main_categories_sorting_element input[type="radio"]').each(function() {
+
+        let sortBy__default_type = $('.suppliers_sorting_by_block .main_categories_sorting_element input[type="radio"]:checked').val();
+        let sortBy__default_title = $('.suppliers_sorting_by_block .main_categories_sorting__title span').html(sortBy__default_type);
+
+        $(this).on('click', function() {
+            let sortBy__set_type = $(this).val();
+            let sortBy__set_title = $('.suppliers_sorting_by_block .main_categories_sorting__title span').html(sortBy__set_type);
+        });
+    });
+
+
+    function categoriesMenu__Desktop_Settings() {
+        let tilesBlockWidth = $('.main_categories_tiles_block').width();
+        let CategoriesSubMenuWidth = $('.main_categories_submenu_list').css('width', tilesBlockWidth + 30);
+        CategoriesSubMenuWidth.css('top', '0');        
+        let CategoriesMenuWidth = $('.main_categories_list').width();
+        let CategoriesSubMenuPosition = $('.main_categories_submenu_list').css('left', CategoriesMenuWidth);
+    }
+
+
+
+    $(window).on('load resize', function () {
+
+    	let suppliersMaterialsPhotoHeight__getter = $('.suppliers_materials_block .suppliers_materials_tile_photo img').height();
+    	let suppliersMaterialsVideoHeight__setter = $('.suppliers_materials_block .suppliers_materials_tile_video iframe').css('height', suppliersMaterialsPhotoHeight__getter);
+
+
+        if (window.matchMedia('screen and (min-width: 768px)').matches) {
+        	categoriesMenu__Desktop_Settings();
+        }
+        if (window.matchMedia('screen and (min-width: 992px)').matches) {
+            suppliersFixedMenu();
+        }
+
+    });
+
+
 
 
     $('img.svg').each(function() {
