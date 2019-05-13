@@ -174,6 +174,17 @@ $(document).ready(function() {
     }
 
 
+    function suppliersSortingByBlockStyling() {
+        let suppliersSortingByBlock = $('.suppliers_sorting_by_block');
+        let mainCategoriesSortingLabelWidth  = $('.suppliers_sorting_by_block .main_categories_sorting').width();
+        let mainCategoriesSortingLabelHeight  = $('.suppliers_sorting_by_block .main_categories_sorting').height();
+        let mainCategoriesSortingBlock = $('.suppliers_sorting_by_block .main_categories_sorting_block');
+
+        mainCategoriesSortingBlock.css('width', mainCategoriesSortingLabelWidth);
+        mainCategoriesSortingBlock.css('top', mainCategoriesSortingLabelHeight + 2);       
+    }
+
+
     $(window).on('load resize', function () {
         if (window.matchMedia('screen and (max-width: 767px)').matches) {
             suppliersOfficesBlock__Mobile_Settings();
@@ -187,6 +198,8 @@ $(document).ready(function() {
 
         if (window.matchMedia('screen and (max-width: 991px)').matches) {
             $('.mobile_left_sidebar_menu__hidden').hide();
+
+            suppliersSortingByBlockStyling()
 
             if($('body').hasClass('suppliers_profile') || $('body').hasClass('product')) {
                 $('.main_content_inner section').addClass('toggled_section collapsed');

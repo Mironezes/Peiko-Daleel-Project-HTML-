@@ -1952,7 +1952,7 @@ input[type=search]::-webkit-search-results-decoration {
 	margin-bottom: 0
 }
 
-.suppliers_filting_block {
+.suppliers_filting_desktop_block {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
@@ -2137,7 +2137,7 @@ input[type=search]::-webkit-search-results-decoration {
 	margin-bottom: 40px
 }
 
-.suppliers_filting_block>div {
+.suppliers_filting_desktop_block>div {
 	display: flex;
 	align-items: center
 }
@@ -4818,6 +4818,9 @@ p.expert_intelligance_tile_text {
 	.last_forum_messages_tile_inner>div:last-of-type {
 		display: none
 	}
+	.suppliers_filting_mobile_block {
+		display: none;
+	}
 }
 
 @media (min-width:992px) and (max-width:1366px) {
@@ -5470,11 +5473,35 @@ p.expert_intelligance_tile_text {
 	}
 	.suppliers_tile_location_offices_tiles {
 		overflow: hidden
+	}
+	.suppliers_filting_desktop_block {
+		display: none
 	}	
+	.suppliers_filting_mobile_block {
+		display: flex;
+    	justify-content: space-between;
+    	margin-bottom: 25px;		
+	}
+	.suppliers_filting_mobile_toggle  {
+	    position: relative;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    width: 220px;
+	    height: 48px;
+	    margin-right: 20px;
+	    border: 1px solid #eceeee;
+	    border-radius: 5px;
+	    background: #fff;
+	    transition: .3s;		
+	}
+	.suppliers_filting_mobile_block .suppliers_sorting_by_block .main_categories_sorting_block {
+		border-radius: 5px;
+	}
 	.footer_info_resources_list {
 		columns: 1
 	}
-}
+} 
 
 @media (min-width:320px) and (max-width:767px) {
 	html {
@@ -5634,9 +5661,6 @@ p.expert_intelligance_tile_text {
 		text-align: center;
 		justify-content: center
 	}
-	.main_categories_sorting_block {
-		display: none
-	}
 	.main_categories_submenu_list {
 		columns: 1
 	}
@@ -5647,7 +5671,7 @@ p.expert_intelligance_tile_text {
 		height: unset;
 		margin-bottom: 30px
 	}
-	.suppliers_filting_block {
+	.suppliers_filting_desktop_block {
 		display: none
 	}
 	.suppliers_sorting_block_title {
@@ -6114,11 +6138,6 @@ p.expert_intelligance_tile_text {
 	text-decoration: underline
 }
 
-@media (min-width:320px) and (max-width:991px) {
-	.suppliers_filting_block {
-		display: none
-	}
-}
 
 @media (min-width:320px) and (max-width:991px) {
 	.product .main_content_inner,

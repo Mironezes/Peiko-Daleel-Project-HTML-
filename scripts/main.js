@@ -234,7 +234,7 @@ $(document).ready(function() {
         let toggleMenuSearchButton = $('.desktop_toggle_menu__search_button').css('width', headerAccountButtonWidth + 45);
 
 
-        let supplierFiltingBlockWidth = $('.suppliers_filting_block').width();
+        let supplierFiltingBlockWidth = $('.suppliers_filting_desktop_block').width();
         let mainCategoriesSortingServicesBlock = $('.main_categories_sorting_services .main_categories_sorting_block ').css('width', supplierFiltingBlockWidth + 42);
 
 
