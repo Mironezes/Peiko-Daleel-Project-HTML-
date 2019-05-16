@@ -141,12 +141,12 @@
                 <h1>Suppliers main page</h1>
             </div>
 
-            <div class="suppliers_filting_desktop_block">
+            <div class="suppliers_filtering_desktop_block">
                 <div class="suppliers_filters_block">
                     <h3 class="suppliers_filters_block__title">Filters:</h3>
 
                     <div class="main_categories_sorting main_categories_sorting_location">
-                        <div class="main_categories_sorting__title"><span>Location</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg"></div>
+                        <div class="main_categories_sorting__title"><span>Region</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg"></div>
                         <form class="main_categories_sorting_block" autocomplete="off">
                             <div class="main_categories_sorting_location_country_column">
 
@@ -391,289 +391,619 @@
                         </form>
                     </div>
 
-                    <div class="main_categories_sorting main_categories_sorting_verification_status">
-                        <div class="main_categories_sorting__title"><span>Verification status</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg"></div>
+                    <div class="main_categories_sorting main_categories_sorting_location">
+                        <div class="main_categories_sorting__title"><span>Major Clients</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg"></div>
                         <form class="main_categories_sorting_block" autocomplete="off">
-                            <h4>Verification status</h4>
+                            <div class="main_categories_sorting_location_country_column">
 
-                            <div class="main_categories_sorting_element">
-                                <label> Yes
-                                    <input class="main_categories_sorting_element__checkbox" type="radio" name="VerificationStatusSort" checked>
-                                    <span class="main_categories_sorting_element__radiomark"></span>
-                                </label>
+                                <h4>Country</h4>
+
+                                <div class="main_categories_sorting_element">
+                                    <label> United States
+                                        <input class="main_categories_sorting_element__checkbox" type="checkbox" checked>
+                                        <span class="main_categories_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="main_categories_sorting_element">
+                                    <label> France
+                                        <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                        <span class="main_categories_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="main_categories_sorting_element">
+                                    <label> Canada
+                                        <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                        <span class="main_categories_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="main_categories_sorting_element">
+                                    <label> Uganda
+                                        <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                        <span class="main_categories_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="main_categories_sorting_element">
+                                    <label> Japan
+                                        <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                        <span class="main_categories_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="main_categories_sorting_element">
+                                    <label> China
+                                        <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                        <span class="main_categories_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="main_categories_sorting_element">
+                                    <label> UK
+                                        <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                        <span class="main_categories_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="main_categories_sorting_element">
+                                    <label> Ukraine
+                                        <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                        <span class="main_categories_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="main_categories_sorting_element">
+                                    <label> South Korea
+                                        <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                        <span class="main_categories_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
                             </div>
+                            <div class="main_categories_sorting_location_city_column">
+                                <h4>City</h4>
 
-                            <div class="main_categories_sorting_element">
-                                <label> No
-                                    <input class="main_categories_sorting_element__checkbox" type="radio" name="VerificationStatusSort">
-                                    <span class="main_categories_sorting_element__radiomark"></span>
-                                </label>
+                                <div class="main_categories_sorting_location_city_wrapper">
+
+                                    <div class="main_categories_sorting_location_city">
+
+                                        <h4>United States:</h4>
+
+                                        <div class="main_categories_sorting_element">
+                                            <label> Miami
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> San Francisco
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Nashville
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Boston
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Seatle
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="main_categories_sorting_location_city">
+
+                                        <h4>France:</h4>
+
+                                        <div class="main_categories_sorting_element">
+                                            <label> Paris
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Marsel
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Leon
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="main_categories_sorting_location_city">
+
+                                        <h4>United Kingdom:</h4>
+
+                                        <div class="main_categories_sorting_element">
+                                            <label> Paris
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Marsel
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="main_categories_sorting_location_city">
+
+                                        <h4>Egypt:</h4>
+
+                                        <div class="main_categories_sorting_element">
+                                            <label> Sharm-El-Sheikh
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Hurgada
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Nashville
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Boston
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Seatle
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="main_categories_sorting_location_city">
+
+                                        <h4>United Kingdom:</h4>
+
+                                        <div class="main_categories_sorting_element">
+                                            <label> Paris
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Marsel
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="main_categories_sorting_location_city">
+
+                                        <h4>Egypt:</h4>
+
+                                        <div class="main_categories_sorting_element">
+                                            <label> Sharm-El-Sheikh
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Hurgada
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Nashville
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Boston
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Seatle
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"><img src="assets/check_icon__white.svg" alt="Изображение" class="svg"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="main_categories_sorting_buttons">
+                                <span class="button button__white main_categories_filter_cancel">Cancel</span>
+                                <button class="button button__blue main_categories_show_companies_button">Show <span>44</span> companies</button>
                             </div>
                         </form>
-                    </div>
-
-                    <div class="main_categories_sorting main_categories_sorting_product_verification_status">
-                        <div class="main_categories_sorting__title"><span>Product verification status</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg"></div>
-
-                        <form class="main_categories_sorting_block" autocomplete="off">
-                            <h4>Product verification status</h4>
-
-                            <div class="main_categories_sorting_element">
-                                <label> Yes
-                                    <input class="main_categories_sorting_element__checkbox" type="radio" name="VerificationStatusSort" checked>
-                                    <span class="main_categories_sorting_element__radiomark"></span>
-                                </label>
-                            </div>
-
-                            <div class="main_categories_sorting_element">
-                                <label> No
-                                    <input class="main_categories_sorting_element__checkbox" type="radio" name="VerificationStatusSort">
-                                    <span class="main_categories_sorting_element__radiomark"></span>
-                                </label>
-                            </div>
-                        </form>
-
                     </div>
 
                     <div class="main_categories_sorting main_categories_sorting_services">
-                        <div class="main_categories_sorting__title"><span>Services & tags</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg">
+                        <div class="main_categories_sorting__title"><span>Products & Services</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg">
                         </div>
                         <form class="main_categories_sorting_block" autocomplete="off">
-                            <div class="main_categories_sorting_location_country_column">
+                            <div class="main_categories_sorting_services_checkbox_block">
+                                <div class="main_categories_sorting_services_checkbox_categories_column">
+                                    <h4>Main categories</h4>
 
-                                <h4>Country</h4>
+                                    <div class="main_categories_sorting_elements_wrapper">
+                                        <div class="main_categories_sorting_element">
+                                            <label> Drilling & Completion
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox" checked>
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Production
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Rotating & Static Equipment
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Bulk Materials, Chemicals, Paints and Oils
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Subsea Services & Pipeline Equipment
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Seismic, Survey And Positioning
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Inspection And Testing
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Logistics And Transport
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Marine
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Engineering, Consultancy And Professional Services
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Construction, Maintenance, & Overhaul
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Multidiscipline & Turnkey Services
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Other Support Services
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                <div class="main_categories_sorting_element">
-                                    <label> United States
-                                        <input class="main_categories_sorting_element__checkbox" type="checkbox" checked>
-                                        <span class="main_categories_sorting_element__checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="main_categories_sorting_element">
-                                    <label> France
-                                        <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                        <span class="main_categories_sorting_element__checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="main_categories_sorting_element">
-                                    <label> Canada
-                                        <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                        <span class="main_categories_sorting_element__checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="main_categories_sorting_element">
-                                    <label> Uganda
-                                        <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                        <span class="main_categories_sorting_element__checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="main_categories_sorting_element">
-                                    <label> Japan
-                                        <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                        <span class="main_categories_sorting_element__checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="main_categories_sorting_element">
-                                    <label> China
-                                        <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                        <span class="main_categories_sorting_element__checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="main_categories_sorting_element">
-                                    <label> UK
-                                        <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                        <span class="main_categories_sorting_element__checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="main_categories_sorting_element">
-                                    <label> Ukraine
-                                        <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                        <span class="main_categories_sorting_element__checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="main_categories_sorting_element">
-                                    <label> South Korea
-                                        <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                        <span class="main_categories_sorting_element__checkmark"></span>
-                                    </label>
+                                <div class="main_categories_sorting_services_checkbox_services_column">
+                                    <h4>Services</h4>
+
+                                    <div class="main_categories_sorting_elements_wrapper">
+                                        <div class="main_categories_sorting_element">
+                                            <label> Drill String Tools & Equipment
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox" checked>
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> OCTG & Accessories
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Wellhead, Christmas Tree & Accessories
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Port Harcourt
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Van Alstyne
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Louisiana
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Dubai
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Ras Al Khaimah
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> HOMBORSUND
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Port Harcourt
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Van Alstyne
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Louisiana
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Kavala
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Drill String Tools & Equipment
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox" checked>
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> OCTG & Accessories
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Wellhead, Christmas Tree & Accessories
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Port Harcourt
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Van Alstyne
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Louisiana
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Dubai
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Ras Al Khaimah
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> HOMBORSUND
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Port Harcourt
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Van Alstyne
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Louisiana
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Kavala
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Drill String Tools & Equipment
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox" checked>
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> OCTG & Accessories
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Wellhead, Christmas Tree & Accessories
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Port Harcourt
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Van Alstyne
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Louisiana
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Dubai
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Ras Al Khaimah
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> HOMBORSUND
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Port Harcourt
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Van Alstyne
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Louisiana
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Kavala
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Louisiana
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="main_categories_sorting_element">
+                                            <label> Kavala
+                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
+                                                <span class="main_categories_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="main_categories_sorting_location_city_column">
-                                <h4>City</h4>
+                            <div class="main_categories_sorting_services_toggles_block">
+                                <h4>Main categories</h4>
 
-                                <div class="main_categories_sorting_location_city_wrapper">
-
-                                    <div class="main_categories_sorting_location_city">
-
-                                        <h4>United States:</h4>
-
-                                        <div class="main_categories_sorting_element">
-                                            <label> Miami
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="main_categories_sorting_element">
-                                            <label> San Francisco
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="main_categories_sorting_element">
-                                            <label> Nashville
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="main_categories_sorting_element">
-                                            <label> Boston
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="main_categories_sorting_element">
-                                            <label> Seatle
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="main_categories_sorting_location_city">
-
-                                        <h4>France:</h4>
-
-                                        <div class="main_categories_sorting_element">
-                                            <label> Paris
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="main_categories_sorting_element">
-                                            <label> Marsel
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="main_categories_sorting_element">
-                                            <label> Leon
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="main_categories_sorting_location_city">
-
-                                        <h4>United Kingdom:</h4>
-
-                                        <div class="main_categories_sorting_element">
-                                            <label> Paris
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="main_categories_sorting_element">
-                                            <label> Marsel
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="main_categories_sorting_location_city">
-
-                                        <h4>Egypt:</h4>
-
-                                        <div class="main_categories_sorting_element">
-                                            <label> Sharm-El-Sheikh
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="main_categories_sorting_element">
-                                            <label> Hurgada
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="main_categories_sorting_element">
-                                            <label> Nashville
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="main_categories_sorting_element">
-                                            <label> Boston
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="main_categories_sorting_element">
-                                            <label> Seatle
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="main_categories_sorting_location_city">
-
-                                        <h4>United Kingdom:</h4>
-
-                                        <div class="main_categories_sorting_element">
-                                            <label> Paris
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="main_categories_sorting_element">
-                                            <label> Marsel
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="main_categories_sorting_location_city">
-
-                                        <h4>Egypt:</h4>
-
-                                        <div class="main_categories_sorting_element">
-                                            <label> Sharm-El-Sheikh
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="main_categories_sorting_element">
-                                            <label> Hurgada
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="main_categories_sorting_element">
-                                            <label> Nashville
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="main_categories_sorting_element">
-                                            <label> Boston
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="main_categories_sorting_element">
-                                            <label> Seatle
-                                                <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                                <span class="main_categories_sorting_element__checkmark"><img src="assets/check_icon__white.svg" alt="Изображение" class="svg"></span>
-                                            </label>
-                                        </div>
-
-                                    </div>
-
+                                <div class="main_categories_sorting_services_toggles_list">
+                                    <button class="button active">All Results</button>
+                                    <button class="button">News</button>
+                                    <button class="button">Expert Articles</button>
+                                    <button class="button">Companies</button>
+                                    <button class="button">Categories</button>
+                                    <button class="button">Tags</button>
+                                    <button class="button">All Results</button>
+                                    <button class="button">News</button>
+                                    <button class="button">Expert Articles</button>
+                                    <button class="button">Companies</button>
+                                    <button class="button">Categories</button>
+                                    <button class="button">Tags</button>
+                                    <button class="button">All Results</button>
+                                    <button class="button">News</button>
+                                    <button class="button">Expert Articles</button>
+                                    <button class="button">Companies</button>
+                                    <button class="button">Categories</button>
+                                    <button class="button">Tags</button>
                                 </div>
+
                             </div>
                             <div class="main_categories_sorting_buttons">
                                 <span class="button button__white main_categories_filter_cancel">Cancel</span>
@@ -681,71 +1011,55 @@
                             </div>
                         </form>
                     </div>
-                </div>
 
-                <div class="suppliers_sorting_by_block">
-                    <span class="suppliers_sorting_by__title">Sort By:</span>
-
-                    <div class="main_categories_sorting">
-                        <div class="main_categories_sorting__title"><span></span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg"></div>
-
+                    <div class="main_categories_sorting main_categories_sorting_verifed_track_record">
+                        <div class="main_categories_sorting__title"><span>Verified Track Record</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg"></div>
                         <form class="main_categories_sorting_block" autocomplete="off">
+                            <h4>Verified Track Record</h4>
 
                             <div class="main_categories_sorting_element">
-                                <label> Popularity
-                                    <input class="main_categories_sorting_element__checkbox" type="radio" name="SortByFilter" value="Popularity" checked>
+                                <label> Yes
+                                    <input class="main_categories_sorting_element__checkbox" type="radio" name="VerificationStatusSort" checked>
                                     <span class="main_categories_sorting_element__radiomark"></span>
                                 </label>
                             </div>
 
                             <div class="main_categories_sorting_element">
-                                <label> Name
-                                    <input class="main_categories_sorting_element__checkbox" type="radio" name="SortByFilter" value="Name">
-                                    <span class="main_categories_sorting_element__radiomark"></span>
-                                </label>
-                            </div>
-
-                            <div class="main_categories_sorting_element">
-                                <label> Date
-                                    <input class="main_categories_sorting_element__checkbox" type="radio" name="SortByFilter" value="Date">
+                                <label> No
+                                    <input class="main_categories_sorting_element__checkbox" type="radio" name="VerificationStatusSort">
                                     <span class="main_categories_sorting_element__radiomark"></span>
                                 </label>
                             </div>
                         </form>
                     </div>
+
+                    <div class="main_categories_sorting main_categories_sorting_product_perfomance_data">
+                        <div class="main_categories_sorting__title"><span>Verified Perfomance Data</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg"></div>
+
+                        <form class="main_categories_sorting_block" autocomplete="off">
+                            <h4>Verified Perfomance Data</h4>
+
+                            <div class="main_categories_sorting_element">
+                                <label> Yes
+                                    <input class="main_categories_sorting_element__checkbox" type="radio" name="VerificationStatusSort" checked>
+                                    <span class="main_categories_sorting_element__radiomark"></span>
+                                </label>
+                            </div>
+
+                            <div class="main_categories_sorting_element">
+                                <label> No
+                                    <input class="main_categories_sorting_element__checkbox" type="radio" name="VerificationStatusSort">
+                                    <span class="main_categories_sorting_element__radiomark"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="suppliers_filting_mobile_block">
-                <button class="suppliers_filting_mobile_toggle button">Filters</button>
-
-                <div class="suppliers_sorting_by_block">
-                    <div class="main_categories_sorting">
-                        <div class="main_categories_sorting__title"><span></span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg"></div>
-                        <form class="main_categories_sorting_block" autocomplete="off">
-                            <div class="main_categories_sorting_element">
-                                <label> Popularity
-                                    <input class="main_categories_sorting_element__checkbox" type="radio" name="SortByFilter" value="Popularity" checked>
-                                    <span class="main_categories_sorting_element__radiomark"></span>
-                                </label>
-                            </div>
-
-                            <div class="main_categories_sorting_element">
-                                <label> Name
-                                    <input class="main_categories_sorting_element__checkbox" type="radio" name="SortByFilter" value="Name">
-                                    <span class="main_categories_sorting_element__radiomark"></span>
-                                </label>
-                            </div>
-
-                            <div class="main_categories_sorting_element">
-                                <label> Date
-                                    <input class="main_categories_sorting_element__checkbox" type="radio" name="SortByFilter" value="Date">
-                                    <span class="main_categories_sorting_element__radiomark"></span>
-                                </label>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+            <div class="suppliers_filtering_mobile_block">
+                <button class="suppliers_filtering_mobile_toggle button">Filters</button>
             </div>
 
             <div class="main_content_inner row">
@@ -1548,6 +1862,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/mobile.js"></script>
     <script src="scripts/curcle_chart.js"></script>

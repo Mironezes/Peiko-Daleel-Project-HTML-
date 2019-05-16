@@ -246,8 +246,8 @@ $(document).ready(function() {
         let toggleMenuSearchButton = $('.desktop_toggle_menu__search_button').css('width', headerAccountButtonWidth + 45);
 
 
-        let supplierFiltingBlockWidth = $('.suppliers_filting_desktop_block').width();
-        let mainCategoriesSortingServicesBlock = $('.main_categories_sorting_services .main_categories_sorting_block ').css('width', supplierFiltingBlockWidth + 42);
+        let supplierfilteringBlockWidth = $('.suppliers_filtering_desktop_block').width();
+        let mainCategoriesSortingServicesBlock = $('.main_categories_sorting_services .main_categories_sorting_block ').css('width', supplierfilteringBlockWidth + 42);
 
 
         $('.header_account_button').on("click", function(e) {
@@ -473,9 +473,57 @@ $(document).ready(function() {
 
 
     function searchPageFilters__Desktop_Settings() {
-        let searchPageFiltingBlock__button = $('.search_page_filting_block button');
+        let searchPagefilteringBlock__button = $('.search_page_filtering_block button');
     }
     searchPageFilters__Desktop_Settings();
+
+
+
+    function yesNoFiltersWidth__Desktop_Settings() {
+        let mainCategoriesSortingProductPerfomanceDataLabelWidth = $('.main_categories_sorting_product_perfomance_data').width(); 
+        let mainCategoriesSortingVerifiedTrackRecordLabelWidth = $('.main_categories_sorting_verifed_track_record').width();
+
+
+        $('.main_categories_sorting_product_perfomance_data .main_categories_sorting_block').css('width', mainCategoriesSortingProductPerfomanceDataLabelWidth);
+        $('.main_categories_sorting_verifed_track_record .main_categories_sorting_block').css('width', mainCategoriesSortingVerifiedTrackRecordLabelWidth);
+    }   
+
+
+
+    function searchPageToggleFilters () {
+        let searchPagefilteringAllResults = $('.search_page_filtering__all_results');
+        let searchPageFilteringBlock = $('.search_page_filtering_block');
+        let searchPageFilteringButton = $('.search_page_filtering_block button');
+        let searchPageFilteringButton__default = $('#search_page_filtering__all_results');
+
+
+        $(searchPageFilteringButton).on('click', function() {
+            searchPageFilteringButton__default.removeClass('active');
+            let searchPageFilteringButtonActive = $('.search_page_filtering_block button.active');
+
+            if ($(this).hasClass('active')) {
+                searchPageToggleFiltersRemove($(this));                
+            }
+            else {
+                searchPageToggleFiltersAdd($(this));               
+            }
+            if(searchPageFilteringButtonActive.length == 4) {
+                    $(this).removeClass('active');   
+                    searchPageFilteringButtonActive.each(function() {
+                        $(this).removeClass('active');   
+                    });
+                    searchPageFilteringButton__default.addClass('active');                      
+            }
+        });
+
+
+    }
+    function searchPageToggleFiltersAdd(button) {
+        button.addClass('active');
+    }
+    function searchPageToggleFiltersRemove(button) {  
+        button.removeClass('active');
+    }
 
 
 
@@ -490,10 +538,11 @@ $(document).ready(function() {
         }
         if (window.matchMedia('screen and (min-width: 992px)').matches) {
             suppliersFixedMenu();
+            yesNoFiltersWidth__Desktop_Settings();
+            searchPageToggleFilters ()
         }
 
     });
-
 
 
 
@@ -530,6 +579,60 @@ $(document).ready(function() {
         }, 'xml');
 
     });
+
+
+
+
+    let leftSidebarMenuHeight = $('.left_sidebar_menu').height();
+    let leftSidebarMenuWrapperHeight = $('.left_sidebar_menu_wrapper').css('height', leftSidebarMenuHeight);
+    let leftSidebarMenuWidth  = $('.left_sidebar_menu_icon').width();
+    let leftSidebarMenuWrapperWidth = $('.left_sidebar_menu_wrapper').css('width', leftSidebarMenuWidth + 2); 
+
+
+    let leftSidebarMenuIcon = $('.left_sidebar_menu_icon');
+    leftSidebarMenuIcon.hover(function(){
+        let leftSidebarMenu = $('.left_sidebar_menu');
+        if(leftSidebarMenu.hasClass('opened')) {
+            leftSidebarMenu.removeClass('opened');
+        }
+        else {
+            leftSidebarMenu.addClass('opened');            
+        }
+    });
+
+
+
+var waypoint1 = new Waypoint({
+  element: $('.start_fixed_category_menu_toggler'),
+  handler: function(direction) {
+
+    let leftSidebarMenuWrapper = $('.left_sidebar_menu_wrapper');
+        if (direction === 'down') {
+                $('.left_sidebar_menu_wrapper').addClass('fixed');        
+        } else {
+             if (leftSidebarMenuWrapper.hasClass('fixed') || leftSidebarMenuWrapper.hasClass('end')) {
+                $('.left_sidebar_menu_wrapper').removeClass('fixed');
+                $('.left_sidebar_menu_wrapper').removeClass('end');
+            }
+        }
+    }
+})
+
+var waypoint2 = new Waypoint({
+    element: $('.end_fixed_category_menu_toggler'),
+    handler: function(direction) {
+        let leftSidebarMenuWrapper = $('.left_sidebar_menu_wrapper');    
+
+        if (direction === 'down') {
+           $('.left_sidebar_menu_wrapper').removeClass('fixed');      
+           $('.left_sidebar_menu_wrapper').addClass('end');  
+        }
+        else {
+           $('.left_sidebar_menu_wrapper').addClass('fixed');      
+           $('.left_sidebar_menu_wrapper').removeClass('end');  
+        }
+    }
+})
 
 
 });
