@@ -83,8 +83,9 @@ $(document).ready(function() {
                 items: 3,
             },
             992: {
-                items: 6,
-                center: true
+                items: 5,
+                center: true,
+                margin: 20
             }
 
         }
