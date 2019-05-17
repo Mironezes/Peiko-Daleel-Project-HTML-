@@ -1,148 +1,348 @@
-
-
-
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<!--[if lte IE 9]>
+
+<head>
+    <!--[if lte IE 9]>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 <![endif]-->
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-<link rel="apple-touch-icon-precomposed" href="apple_touch_icon.png" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-<link rel="stylesheet" href="css/style.css">		
-		<title>Subscribe Plan | Daleel</title>
-	</head>
-	<body class="subscribe_plan inner_page authorized">
-		<header class="header_wrapper white">
-	<div class="header_navigation_block_wrapper">
-		<div class="container">
-			<div class="header_navigation_block">
-				<div class="header_logo_column">
-					<a href="index.html"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
-					<button onclick = "void(0)" class="mobile_menu_icon hamburger hamburger--arrow blue" type="button">
-					<span class="hamburger-box">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="apple-touch-icon-precomposed" href="apple_touch_icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Subscribe Plan | Daleel</title>
+</head>
+
+<body class="subscribe_plan inner_page">
+    <header class="header_wrapper white">
+        <div class="header_navigation_block_wrapper">
+            <div class="container">
+                <div class="header_navigation_block">
+                    <div class="header_logo_column">
+                        <a href="index.html"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
+                        <button onclick="void(0)" class="mobile_menu_icon hamburger hamburger--arrow blue" type="button">
+                            <span class="hamburger-box">
 					<span class="hamburger-inner"></span>
-					</span>
-					</button>	
-				</div>
-				<div class="header_navigation_column">
-					<div class="header_navigation_search">
-						<input type="search" placeholder="Search request" maxlength="100" required>		
-						<button>Search</button>					
-					</div>
-					<a href="#" class="button button__blue">Log in</a>
-					<a href="#" class="button button__yellow">Registration</a>
-					<button onclick = "void(0)" class="desktop_toggle_menu_icon hamburger hamburger--slider blue" type="button">
-					<span class="hamburger-box">
+                            </span>
+                        </button>
+                    </div>
+                    <div class="header_navigation_column">
+                        <div class="header_navigation_search">
+                            <input type="search" placeholder="Search request" maxlength="100" required>
+                            <button>Search</button>
+                        </div>
+                        <a href="#" class="button button__blue">Log in</a>
+                        <a href="#" class="button button__yellow">Registration</a>
+                        <button onclick="void(0)" class="desktop_toggle_menu_icon hamburger hamburger--slider blue" type="button">
+                            <span class="hamburger-box">
 					<span class="hamburger-inner"></span>
-					</span>
-					</button>						
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="desktop_toggle_menu_block_wrapper">
-		<div class="container">
-			<div class="desktop_toggle_menu_block">
-				<ul class="desktop_toggle_menu">
-					<li class="desktop_toggle_menu__item"><a href="#">Suppliers</a></li>
-					<li class="desktop_toggle_menu__item"><a href="#">Intelligence</a></li>
-					<li class="desktop_toggle_menu__item"><a href="#">News</a></li>
-					<li class="desktop_toggle_menu__item"><a href="#">Expert articles</a></li>
-					<li class="desktop_toggle_menu__item"><a href="#">Indices</a></li>
-					<li class="desktop_toggle_menu__item"><a href="#">Contacts</a></li>
-				</ul>
-				<a href="#" class="button button__yellow">
-					<div class="button__icon">
-						<img class="svg" src="assets/plus_icon.svg" alt="Изображение"> 					
-					</div>
-					<span>Add company</span>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="mobile_toggle_menu_block">
-		<div class="container">
-			<ul class="mobile_toggle_menu">
-				<li class="mobile_search_block">
-					<input type="search" placeholder="Search request" maxlength="100" required>		
-					<button>Search</button>					
-				</li>
-				<li class="mobile_toggle_menu__item"><a href="#">Suppliers</a></li>
-				<li class="mobile_toggle_menu__item"><a href="#">Intelligence</a></li>
-				<li class="mobile_toggle_menu__item"><a href="#">News</a></li>
-				<li class="mobile_toggle_menu__item"><a href="#">Expert articles</a></li>
-				<li class="mobile_toggle_menu__item"><a href="#">Indices</a></li>
-				<li class="mobile_toggle_menu__item"><a href="#">Contacts</a></li>
-			</ul>
-			<div class="mobile_toggle_buttons">
-				<a href="#" class="button login_button button__blue">Log in</a>
-				<a href="#" class="button registration_button button__yellow">Registration</a>
-				<a href="#" class="button add_company_button button__yellow"><img class="svg" src="assets/plus_icon.svg" alt="Изображение"> Add company</a>							
-			</div>
-		</div>
-	</div>
-</header>
-		<section class="category_page_banner_wrapper" style="background-image: url('img/categories/category_page_bg.jpg');">
-			<div class="container">
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="desktop_toggle_menu_block_wrapper">
+            <div class="container">
+                <div class="desktop_toggle_menu_block">
+                    <ul class="desktop_toggle_menu">
+                        <li class="desktop_toggle_menu__item"><a href="#">Suppliers</a></li>
+                        <li class="desktop_toggle_menu__item"><a href="#">Intelligence</a></li>
+                        <li class="desktop_toggle_menu__item"><a href="#">News</a></li>
+                        <li class="desktop_toggle_menu__item"><a href="#">Expert articles</a></li>
+                        <li class="desktop_toggle_menu__item"><a href="#">Indices</a></li>
+                        <li class="desktop_toggle_menu__item"><a href="#">Contacts</a></li>
+                    </ul>
+                    <a href="#" class="button button__yellow">
+                        <div class="button__icon">
+                            <img class="svg" src="assets/plus_icon.svg" alt="Изображение">
+                        </div>
+                        <span>Add company</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_toggle_menu_block">
+            <div class="container">
+                <ul class="mobile_toggle_menu">
+                    <li class="mobile_search_block">
+                        <input type="search" placeholder="Search request" maxlength="100" required>
+                        <button>Search</button>
+                    </li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Suppliers</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Intelligence</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">News</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Expert articles</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Indices</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Contacts</a></li>
+                </ul>
+                <div class="mobile_toggle_buttons">
+                    <a href="#" class="button login_button button__blue">Log in</a>
+                    <a href="#" class="button registration_button button__yellow">Registration</a>
+                    <a href="#" class="button add_company_button button__yellow"><img class="svg" src="assets/plus_icon.svg" alt="Изображение"> Add company</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-			</div>
-		</section>
+    <section class="subscribe_page_banner_wrapper" style="background-image: url('img/subscribe_plan_bg.jpg');">
+        <div class="container">
+            <h1>Getting Attention of the Right People at the Right Time</h1>
+            <p>Staying active online helps you to shape decisions in the today’s Internet and technology savvy world. At
+                <br> Daleel we’ve created a hub that helps buyers to make better-informed decisions and in the same time
+                <br> empowers suppliers to show up in front of buyers at the right time with the right offering.</p>
 
-		<section class="main_content_wrapper">
-			<div class="container">
-				<div class="main_content_inner">
-					
-				</div>	
-			</div>
-		</section>
+            <a href="#" class="button button__yellow">Get Started</a>
 
+        </div>
+    </section>
 
-		<footer class="footer_wrapper">
-	<div class="container">
-		<div class="footer_logo_block">
-			<img class="svg" src="assets/header/logo__dark.svg" alt="Логотип">
-		</div>
-		<div class="footer_info_block">
-			<div class="footer_info_about_us_column">
-				<h4 class="footer_info__title">About Us</h4>
-				<p class="footer_info__desc">Daleel is a portal that provides unique business intelligence to make the best decisions and allows exchange of knowledge that our industry needs to best meet its requirements.</p>
-			</div>
-			<div class="footer_info_resources_column">
-				<h4 class="footer_info__title">Resources</h4>
-				<ul class="footer_info_resources_list">
-					<li class="footer_info_resources_list__item"><a href="#">Our Story and Why We Do It</a></li>
-					<li class="footer_info_resources_list__item"><a href="#">Privacy Policy</a></li>
-					<li class="footer_info_resources_list__item"><a href="#">Terms Of Use</a></li>
-					<li class="footer_info_resources_list__item"><a href="#">Contacts</a></li>
-				</ul>
-			</div>
-			<div class="footer_info_block_newsletter_column">
-				<h4 class="footer_info__title">Newsletter</h4>
-				<div class="footer_info_block_newsletter">
-					<input type="email" placeholder="Email adress" maxlength="100" required>
-					<button type="submit">Subscribe</button>
-				</div>
-				<span class="footer_info__copyright">© 2015 All rights reserved Daleel</span>											
-			</div>
-		</div>
-	</div>
-</footer>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-<script src="scripts/main.js"></script>
-<script src="scripts/mobile.js"></script>
-<script src="scripts/curcle_chart.js"></script>	</body>
+    <section class="main_content_wrapper">
+        <div class="container">
+            <div class="main_content_inner">
+                <section class="subscribe_page_why_daleel_block">
+                    <h2>Why DALEEL</h2>
+
+                    <p>Buying behavior of B2B buyers is changing. What used to be the dominant thinking years ago may not apply
+                        <br> today, given the amount of information available and an ease of access. Here is how it is changing and how the
+                        <br> Daleel Hub matches those trends.</p>
+
+                    <div class="subscribe_page_why_daleel_table">
+                        <div class="subscribe_page_why_daleel_table_minds_column">
+                            <div class="subscribe_page_why_daleel_table_minds_column_header">
+                                <h2>Mind of new Buyer</h2>
+                            </div>
+                            <div class="subscribe_page_why_daleel_table_minds_column_body">
+                                <div id="subscribe_page_why_daleel_table_minds_first" class="subscribe_page_why_daleel_table_section">
+                                    <div class="subscribe_page_why_daleel_table_section_inner">
+                                        <h3>Read and Research Independently</h3>
+                                        <ul>
+                                            <li>94% of B2B buyers conduct research at some
+                                                <br> point during the process</li>
+                                            <li>59% of B2B buyers prefer to conduct research
+                                                <br> online, rather than contact a supplier</li>
+                                            <li>65% of buyers engage a sales rep only after
+                                                <br> they made their purchase decision</li>
+                                            <li>70% of buyers use social media as a research
+                                                <br> tool
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div id="subscribe_page_why_daleel_table_minds_second" class="subscribe_page_why_daleel_table_section">
+                                    <div class="subscribe_page_why_daleel_table_section_inner">
+                                        <h3>Trust & Referrals of highest importance</h3>
+                                        <ul>
+                                            <li>95% buyers trust Peers and colleagues with
+                                                <br> 86% trusting Independent content</li>
+                                            <li>Word-of-mouth from peers, influences 90%
+                                                <br> of B2B buying decisions</li>
+                                            <li>Over 50% used social media to engage
+                                                <br> with peers on the subject of their
+                                                <br> research.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div id="subscribe_page_why_daleel_table_minds_third" class="subscribe_page_why_daleel_table_section">
+                                    <div class="subscribe_page_why_daleel_table_section_inner">
+                                        <h3>Want Accessible & Actionable info</h3>
+                                        <ul>
+                                            <li>Buyers’ aspirations to achieve his/ her
+                                                <br> objectives
+                                            </li>
+                                            <li>Require insights that are easy and quick to
+                                                <br> implement
+                                            </li>
+                                            <li>Avoid uncertainty that may damage their
+                                                <br> personal and professional reputation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="subscribe_page_why_daleel_table_we_match_column">
+                            <div class="subscribe_page_why_daleel_table_we_match_column_header">
+                                <h2>How we match it</h2>
+                            </div>
+                            <div class="subscribe_page_why_daleel_table_we_match_column_body">
+                                <div id="subscribe_page_why_daleel_table_we_match_first" class="subscribe_page_why_daleel_table_section">
+                                    <div class="subscribe_page_why_daleel_table_section_inner">
+                                        <h3>Comprehensive & Unbiased content for entire Exploration & Production Industry</h3>
+                                        <ul>
+                                            <li>Intelligence on entire categories of spend</li>
+                                            <li>Trusted and Verifiable sources</li>
+                                            <li>Produced by Procurement people for
+                                                <br> Procurement people</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div id="subscribe_page_why_daleel_table_we_match_second" class="subscribe_page_why_daleel_table_section">
+                                    <div class="subscribe_page_why_daleel_table_section_inner">
+                                        <h3>Review. Referral and Q&A Platform</h3>
+                                        <ul>
+                                            <li>Supplier Verification &amp; Supplier-
+                                                <br> Recommendation feature (beta)</li>
+                                            <li>A hub for people seeking answers to their day-
+                                                <br> day work and career related questions</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div id="subscribe_page_why_daleel_table_we_match_third" class="subscribe_page_why_daleel_table_section">
+                                    <div class="subscribe_page_why_daleel_table_section_inner">
+                                        <h3>Practical & Digested Insights</h3>
+                                        <ul>
+                                            <li>Actionable recommendations</li>
+                                            <li>Easy-to-understand `xxxx</li>
+                                            <li>Ideas that has a great potential to show early
+                                                <br> and quick wins</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="subscribe_page_choose_perfect_plan_block">
+                    <h2>Choose a Perfect Plan that Fits Your Business</h2>
+
+                </section>
+
+                <section class="subscribe_page_why_i_need_it_block">
+                    <div class="subscribe_page_why_i_need_it_left_column">
+                        <div class="subscribe_page_why_i_need_it_section">
+                            <h2>WHY SHALL I BE ON DALEEL HUB</h2>
+                            <p>The Daleel Hub has a network of buyers all coming to find out what, how and where to buy particular goods and services.</p>
+                            <p>They key benefits to you are:</p>
+                            <p>1. Understand where the growth for your business is and how to improve your success rate</p>
+                            <p>2. Show up in front of buyers at the right time with the right offering</p>
+                            <p>3. Your online trade show and access to the largest and most capital-intensive industry in the world</p>
+                        </div>
+
+                        <div class="subscribe_page_why_i_need_it_section">
+                            <h2>WHO IS USING DALEEL HUB</h2>
+                            <p>The Daleel Hub is used around the world, by buyers &amp; users from various oil companies, including super-majors, NOCs, IOCs, and EPC contractors large and small. Additionally, we support other companies from the financial services and the professional training sectors. We have growing network of 160 registered users and receive over 2,500 visitors to the site each month, who are mainly looking for 1) Suppliers and Contractors, 2) Prices & Trends 3) Latest technology success stories</p>
+                        </div>
+                    </div>
+
+                    <div class="subscribe_page_why_i_need_it_right_column">
+                        <div class="subscribe_page_why_i_need_it_section">
+                            <h2>WHAT IS ROI FOR ME</h2>
+                            <p>Although ROI is specific to a company, the return and value
+                                <br> the Daleel Hub brings is significant*.</p>
+                        </div>
+
+                        <div class="subscribe_page_why_i_need_it_section">
+                            <img src="img/why_i_need_it_diagram.png" alt="Изображение">
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="subscribe_page_faq_block">
+
+                    <h2>FAQ</h2>
+
+                    <div class="subscribe_page_faq_accordions">
+                        <div class="subscribe_page_faq_accordion">
+                            <div class="subscribe_page_faq_accordions_header">
+                                <h3>WHY IS DALEEL HUB DIFFERENT FROM OTHERS</h3>
+                            </div>
+                            <div class="subscribe_page_faq_accordions_body opened">
+                                <p>As a trusted source of intelligence to potential buyers and end-users, the Daleel Hub has become the go-to-place for a large and diverse audience.</p>
+                                <p>1. We know Buyers’ behavior and what helps them to have stronger job security and career progression. In addition, in the world of overwhelming workload, we’ve learnt what type of an online resource works best for them, to achieve their personal growth and objectives. 2. We aim to provide critical business intelligence to make the best decisions for all, allowing exchange of knowledge that Oil&amp; Gas industry needs to best met its requirements. 3. The portal collects community-collected information and creates “digital trust” that helps all parties to achieve their objectives and make sound decisions.</p>
+                            </div>
+                        </div>
+
+                        <div class="subscribe_page_faq_accordion">
+                            <div class="subscribe_page_faq_accordions_header">
+                                <h3>WHY IS DALEEL HUB DIFFERENT FROM OTHERS</h3>
+                            </div>
+                            <div class="subscribe_page_faq_accordions_body">
+                                <p>As a trusted source of intelligence to potential buyers and end-users, the Daleel Hub has become the go-to-place for a large and diverse audience.</p>
+                                <p>1. We know Buyers’ behavior and what helps them to have stronger job security and career progression. In addition, in the world of overwhelming workload, we’ve learnt what type of an online resource works best for them, to achieve their personal growth and objectives. 2. We aim to provide critical business intelligence to make the best decisions for all, allowing exchange of knowledge that Oil&amp; Gas industry needs to best met its requirements. 3. The portal collects community-collected information and creates “digital trust” that helps all parties to achieve their objectives and make sound decisions.</p>
+                            </div>
+                        </div>
+
+                        <div class="subscribe_page_faq_accordion">
+                            <div class="subscribe_page_faq_accordions_header">
+                                <h3>WHY IS DALEEL HUB DIFFERENT FROM OTHERS</h3>
+                            </div>
+                            <div class="subscribe_page_faq_accordions_body">
+                                <p>As a trusted source of intelligence to potential buyers and end-users, the Daleel Hub has become the go-to-place for a large and diverse audience.</p>
+                                <p>1. We know Buyers’ behavior and what helps them to have stronger job security and career progression. In addition, in the world of overwhelming workload, we’ve learnt what type of an online resource works best for them, to achieve their personal growth and objectives. 2. We aim to provide critical business intelligence to make the best decisions for all, allowing exchange of knowledge that Oil&amp; Gas industry needs to best met its requirements. 3. The portal collects community-collected information and creates “digital trust” that helps all parties to achieve their objectives and make sound decisions.</p>
+                            </div>
+                        </div>
+
+                        <div class="subscribe_page_faq_accordion">
+                            <div class="subscribe_page_faq_accordions_header">
+                                <h3>WHY IS DALEEL HUB DIFFERENT FROM OTHERS</h3>
+                            </div>
+                            <div class="subscribe_page_faq_accordions_body">
+                                <p>As a trusted source of intelligence to potential buyers and end-users, the Daleel Hub has become the go-to-place for a large and diverse audience.</p>
+                                <p>1. We know Buyers’ behavior and what helps them to have stronger job security and career progression. In addition, in the world of overwhelming workload, we’ve learnt what type of an online resource works best for them, to achieve their personal growth and objectives. 2. We aim to provide critical business intelligence to make the best decisions for all, allowing exchange of knowledge that Oil&amp; Gas industry needs to best met its requirements. 3. The portal collects community-collected information and creates “digital trust” that helps all parties to achieve their objectives and make sound decisions.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer_wrapper">
+        <div class="container">
+            <div class="footer_logo_block">
+                <img class="svg" src="assets/header/logo__dark.svg" alt="Логотип">
+            </div>
+            <div class="footer_info_block">
+                <div class="footer_info_about_us_column">
+                    <h4 class="footer_info__title">About Us</h4>
+                    <p class="footer_info__desc">Daleel is a portal that provides unique business intelligence to make the best decisions and allows exchange of knowledge that our industry needs to best meet its requirements.</p>
+                </div>
+                <div class="footer_info_resources_column">
+                    <h4 class="footer_info__title">Resources</h4>
+                    <ul class="footer_info_resources_list">
+                        <li class="footer_info_resources_list__item"><a href="#">Our Story and Why We Do It</a></li>
+                        <li class="footer_info_resources_list__item"><a href="#">Privacy Policy</a></li>
+                        <li class="footer_info_resources_list__item"><a href="#">Terms Of Use</a></li>
+                        <li class="footer_info_resources_list__item"><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer_info_block_newsletter_column">
+                    <h4 class="footer_info__title">Newsletter</h4>
+                    <div class="footer_info_block_newsletter">
+                        <input type="email" placeholder="Email adress" maxlength="100" required>
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <span class="footer_info__copyright">© 2015 All rights reserved Daleel</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/mobile.js"></script>
+    <script src="scripts/curcle_chart.js"></script>
+</body>

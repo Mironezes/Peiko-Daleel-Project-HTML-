@@ -470,14 +470,6 @@ $(document).ready(function() {
     }
 
 
-
-    function searchPageFilters__Desktop_Settings() {
-        let searchPagefilteringBlock__button = $('.search_page_filtering_block button');
-    }
-    searchPageFilters__Desktop_Settings();
-
-
-
     function yesNoFiltersWidth__Desktop_Settings() {
         let mainCategoriesSortingProductPerfomanceDataLabelWidth = $('.main_categories_sorting_product_perfomance_data').width();
         let mainCategoriesSortingVerifiedTrackRecordLabelWidth = $('.main_categories_sorting_verifed_track_record').width();
@@ -490,39 +482,80 @@ $(document).ready(function() {
 
 
     function searchPageToggleFilters() {
-        let searchPagefilteringAllResults = $('.search_page_filtering__all_results');
-        let searchPageFilteringBlock = $('.search_page_filtering_block');
         let searchPageFilteringButton = $('.search_page_filtering_block button');
         let searchPageFilteringButton__default = $('#search_page_filtering__all_results');
-
+        let searchPageFilteringButtonActive = $('.search_page_filtering_block button.active');
+        let searchPageFilteringButtonActiveCounter = 0;
 
         $(searchPageFilteringButton).on('click', function() {
             searchPageFilteringButton__default.removeClass('active');
             let searchPageFilteringButtonActive = $('.search_page_filtering_block button.active');
 
-            if ($(this).hasClass('active')) {
-                searchPageToggleFiltersRemove($(this));
-            } else {
-                searchPageToggleFiltersAdd($(this));
+            if (searchPageFilteringButton__default.hasClass('active')) {
+                $(searchPageFilteringButton__default).removeClass('active');
+                searchPageFilteringButtonActiveCounter -= 1;
             }
-            if (searchPageFilteringButtonActive.length == 4) {
-                $(this).removeClass('active');
-                searchPageFilteringButtonActive.each(function() {
-                    $(this).removeClass('active');
-                });
+
+            if ($(this).hasClass('active')) {
+                ToggleFiltersRemove($(this), searchPageFilteringButtonActiveCounter.length);
+                searchPageFilteringButtonActiveCounter -= 1;
+            } else {
+                ToggleFiltersAdd($(this), searchPageFilteringButtonActiveCounter.length);
+                searchPageFilteringButtonActiveCounter += 1;
+            }
+
+            if (searchPageFilteringButtonActiveCounter == searchPageFilteringButton.length - 1) {
+                searchPageFilteringButtonActiveCounter = 1;
+                searchPageFilteringButton.removeClass('active');
                 searchPageFilteringButton__default.addClass('active');
             }
+
+            console.log('TOTAL:' + searchPageFilteringButton.length)
+            console.log('ACTIVE:' + searchPageFilteringButtonActiveCounter);
+
         });
-
-
     }
 
-    function searchPageToggleFiltersAdd(button) {
+
+
+    function accountPageToggleFilters() {
+        let accountPageFilteringButton = $('.account_page_filtering_block button');
+        let accountPageFilteringButton__default = $('#account_page_filtering__all_results');
+        let accountPageFilteringButtonActiveCounter = 1;
+        let accountPageFilteringButtonActive = $('.account_page_filtering_block button.active');
+
+        $(accountPageFilteringButton).on('click', function() {
+
+            if (accountPageFilteringButton__default.hasClass('active')) {
+                $(accountPageFilteringButton__default).removeClass('active');
+                accountPageFilteringButtonActiveCounter -= 1;
+            }
+
+            if ($(this).hasClass('active')) {
+                ToggleFiltersRemove($(this), accountPageFilteringButtonActiveCounter.length);
+                accountPageFilteringButtonActiveCounter -= 1;
+            } else {
+                ToggleFiltersAdd($(this), accountPageFilteringButtonActiveCounter.length);
+                accountPageFilteringButtonActiveCounter += 1;
+            }
+
+            if (accountPageFilteringButtonActiveCounter == accountPageFilteringButton.length - 1) {
+                accountPageFilteringButtonActiveCounter = 1;
+                accountPageFilteringButton.removeClass('active');
+                accountPageFilteringButton__default.addClass('active');
+            }
+        });
+    }
+
+
+    function ToggleFiltersAdd(button, counter) {
         button.addClass('active');
+        counter++;
     }
 
-    function searchPageToggleFiltersRemove(button) {
+    function ToggleFiltersRemove(button, counter) {
         button.removeClass('active');
+        counter--;
     }
 
 
@@ -539,44 +572,10 @@ $(document).ready(function() {
         if (window.matchMedia('screen and (min-width: 992px)').matches) {
             suppliersFixedMenu();
             yesNoFiltersWidth__Desktop_Settings();
-            searchPageToggleFilters()
+            searchPageToggleFilters();
+            accountPageToggleFilters();
+            subscribePlan_DaleelTable__Desktop_Settings();
         }
-
-    });
-
-
-
-    $('img.svg').each(function() {
-        let $img = $(this);
-        let imgID = $img.attr('id');
-        let imgClass = $img.attr('class');
-        let imgURL = $img.attr('src');
-
-        $.get(imgURL, function(data) {
-            // Get the SVG tag, ignore the rest
-            let $svg = $(data).find('svg');
-
-            // Add replaced image's ID to the new SVG
-            if (typeof imgID !== 'undefined') {
-                $svg = $svg.attr('id', imgID);
-            }
-            // Add replaced image's classes to the new SVG
-            if (typeof imgClass !== 'undefined') {
-                $svg = $svg.attr('class', imgClass + ' replaced-svg');
-            }
-
-            // Remove any invalid XML tags as per http://validator.w3.org
-            $svg = $svg.removeAttr('xmlns:a');
-
-            // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
-            if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-                $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
-            }
-
-            // Replace image with new SVG
-            $img.replaceWith($svg);
-
-        }, 'xml');
 
     });
 
@@ -614,7 +613,7 @@ $(document).ready(function() {
                 $('.left_sidebar_menu__item a').parent().removeClass('active');
                 $('.left_sidebar_menu__item a[href*=\\#' + id + ']').parent().addClass('active');
             }
-        });        
+        });
     }
     $(window).scroll(function() {
         categoryPageNavHightlightOnScroll();
@@ -623,3 +622,78 @@ $(document).ready(function() {
 
 
 });
+
+
+
+function accountTabs() {
+    $('.account_tabs_header').on('click', 'span:not(.active)', function() {
+        $(this)
+            .addClass('active').siblings().removeClass('active').closest('.account_tabs_block').find('.account_tab_content').removeClass('active').eq($(this).index()).addClass('active');
+    });
+}
+accountTabs();
+
+
+
+function subscribePlan_DaleelTable__Desktop_Settings() {
+    let subscribePageWhyDaleelTableMindsFirstHeight = $('#subscribe_page_why_daleel_table_minds_first').height();
+    let subscribePageWhyDaleelTableMindsSecondHeight = $('#subscribe_page_why_daleel_table_minds_second').height();
+    let subscribePageWhyDaleelTableMindsThirdHeight = $('#subscribe_page_why_daleel_table_minds_third').height();
+
+    let subscribePageWhyDaleelTableWeMathFirst = $('#subscribe_page_why_daleel_table_we_match_first').css('height', subscribePageWhyDaleelTableMindsFirstHeight + 1);
+    let subscribePageWhyDaleelTableWeMathSecond = $('#subscribe_page_why_daleel_table_we_match_second').css('height', subscribePageWhyDaleelTableMindsSecondHeight + 1);
+    let subscribePageWhyDaleelTableWeMathThird = $('#subscribe_page_why_daleel_table_we_match_third').css('height', subscribePageWhyDaleelTableMindsThirdHeight);
+}
+
+
+
+$('img.svg').each(function() {
+    let $img = $(this);
+    let imgID = $img.attr('id');
+    let imgClass = $img.attr('class');
+    let imgURL = $img.attr('src');
+
+    $.get(imgURL, function(data) {
+        // Get the SVG tag, ignore the rest
+        let $svg = $(data).find('svg');
+
+        // Add replaced image's ID to the new SVG
+        if (typeof imgID !== 'undefined') {
+            $svg = $svg.attr('id', imgID);
+        }
+        // Add replaced image's classes to the new SVG
+        if (typeof imgClass !== 'undefined') {
+            $svg = $svg.attr('class', imgClass + ' replaced-svg');
+        }
+
+        // Remove any invalid XML tags as per http://validator.w3.org
+        $svg = $svg.removeAttr('xmlns:a');
+
+        // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+        if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+            $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+        }
+
+        // Replace image with new SVG
+        $img.replaceWith($svg);
+
+    }, 'xml');
+
+});
+
+
+function subscribePageAccordions() {
+    let subscribePageFaqDccordionsHeader = $('.subscribe_page_faq_accordions_header');
+    let subscribePageFaqAccordionsBody = $('.subscribe_page_faq_accordions_body')
+
+    subscribePageFaqDccordionsHeader.on('click', function() {
+        if($(this).parent().find(subscribePageFaqAccordionsBody).hasClass('opened')) {
+            $(this).parent().find(subscribePageFaqAccordionsBody).removeClass('opened');
+        }
+        else {
+            $(this).parent().find(subscribePageFaqAccordionsBody).addClass('opened');           
+        }
+
+    });
+}
+subscribePageAccordions();
