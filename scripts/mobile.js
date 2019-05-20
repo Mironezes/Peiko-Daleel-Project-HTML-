@@ -197,7 +197,7 @@ $(document).ready(function() {
 
             suppliersSortingByBlockStyling()
 
-            if($('body').hasClass('suppliers_profile') || $('body').hasClass('product')) {
+            if($('div').hasClass('suppliers_profile') || $('div').hasClass('product')) {
                 $('.main_content_inner section').addClass('toggled_section collapsed');
 
                 $('.toggled_section_heading').each(function() {
@@ -211,7 +211,7 @@ $(document).ready(function() {
                 });  
             }
 
-            if($('body').hasClass('category_a') || $('body').hasClass('category_b') ) {
+            if($('div').hasClass('category_a') || $('div').hasClass('category_b') ) {
                     $('.main_content_inner section').each(function() {
                         $(this).addClass('toggled_section collapsed');
                     });
@@ -229,7 +229,7 @@ $(document).ready(function() {
         }
 
         if(window.matchMedia('screen and (min-width: 992px)').matches) { 
-            if($('body').hasClass('suppliers_profile') || $('body').hasClass('product') ) {
+            if($('div').hasClass('suppliers_profile') || $('div').hasClass('product') ) {
                 $('.main_content_inner section').removeClass('toggled_section collapsed');
 
                 $('toggled_section_inner_content').each(function() {
@@ -237,7 +237,7 @@ $(document).ready(function() {
                 });  
             }
 
-            if($('body').hasClass('category_a') || $('body').hasClass('category_b') ) {
+            if($('div').hasClass('category_a') || $('div').hasClass('category_b') ) {
                 $('.main_content_inner section').removeClass('toggled_section collapsed');
 
                 $('toggled_section_inner_content').each(function() {
