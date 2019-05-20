@@ -8,7 +8,7 @@ $(document).ready(function() {
             if ($('div').hasClass('homepage')) {
                 $('.header_wrapper').addClass('white');
                 $('.header_wrapper .logo').attr('src', 'assets/header/logo__dark.svg')
-                $('.desktop_toggle_menu_icon').addClass('blue');
+                $('.mobile_menu_icon ').addClass('blue');
                 $('.desktop_toggle_menu__item').removeClass('white');
                 $('.desktop_toggle_menu__item').addClass('gray');
             }
@@ -19,7 +19,7 @@ $(document).ready(function() {
             if ($('div').hasClass('homepage')) {
                 $('.header_wrapper').removeClass('white');
                 $('.header_wrapper .logo').attr('src', 'assets/header/logo__white.svg')
-                $('.desktop_toggle_menu_icon').removeClass('blue');
+                $('.mobile_menu_icon ').removeClass('blue');
                 $('.desktop_toggle_menu__item').removeClass('gray');
                 $('.desktop_toggle_menu__item').addClass('white');
             }
