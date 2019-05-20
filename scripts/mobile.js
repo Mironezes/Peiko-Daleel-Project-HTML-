@@ -9,8 +9,6 @@ $(document).ready(function() {
                 $('.header_wrapper').addClass('white');
                 $('.header_wrapper .logo').attr('src', 'assets/header/logo__dark.svg')
                 $('.mobile_menu_icon ').addClass('blue');
-                $('.desktop_toggle_menu__item').removeClass('white');
-                $('.desktop_toggle_menu__item').addClass('gray');
             }
             $('.header_navigation_block').addClass('opened');
 
@@ -20,8 +18,6 @@ $(document).ready(function() {
                 $('.header_wrapper').removeClass('white');
                 $('.header_wrapper .logo').attr('src', 'assets/header/logo__white.svg')
                 $('.mobile_menu_icon ').removeClass('blue');
-                $('.desktop_toggle_menu__item').removeClass('gray');
-                $('.desktop_toggle_menu__item').addClass('white');
             }
             $('.header_navigation_block').removeClass('opened');
         }
