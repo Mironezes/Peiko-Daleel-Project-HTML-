@@ -108,18 +108,20 @@ $(document).ready(function() {
 
         let y = window.scrollY;
         if (y > 80) {
-            if ($('body').hasClass('homepage')) {
+            if ($('div').hasClass('homepage')) {
                 $('.header_wrapper').removeClass('mobile_transparent');
                 $('.header_wrapper').addClass('white');
-                $('.mobile_menu_icon').addClass('blue');
+                $('.desktop_toggle_menu_icon').addClass('blue');
                 $('.header_wrapper .logo').attr('src', 'assets/header/logo__dark.svg');
+                $('.desktop_toggle_menu__item').removeClass('white');
             }
         } else {
-            if ($('body').hasClass('homepage')) {
+            if ($('div').hasClass('homepage')) {
                 $('.header_wrapper').removeClass('white');
-                $('.mobile_menu_icon').removeClass('blue');
+                $('.desktop_toggle_menu_icon').removeClass('blue');
                 $('.header_wrapper').addClass('mobile_transparent');
                 $('.header_wrapper .logo').attr('src', 'assets/header/logo__white.svg');
+                $('.desktop_toggle_menu__item').addClass('white');
             }
         }
     }
@@ -667,19 +669,18 @@ $(document).ready(function() {
     function subscribePageAccordions() {
         let subscribePageFaqAccordionsHeader = $('.subscribe_page_faq_accordions_header');
         let subscribePageFaqAccordionsBody = $('.subscribe_page_faq_accordions_body');
-        let subscribePageFaqAccordionsBodyInner = $('.subscribe_page_faq_accordions_body_inner');
         let subscribePageFaqAccordionsBodyMaxHeightLimiter = 500;
 
-        subscribePageFaqAccordionsHeader.on('click', function() {
-            if ($(this).parent().find(subscribePageFaqAccordionsBody).hasClass('opened')) {
-                $(this).removeClass('active');
-                $(this).parent().find(subscribePageFaqAccordionsBody).removeClass('opened');
-            } else {
-                $(this).addClass('active');
-                $(this).parent().find(subscribePageFaqAccordionsBody).addClass('opened');
+        $('.subscribe_page_faq_accordions_header').on('click', function() {
 
-            }
+            subscribePageFaqAccordionsBody.removeClass('opened');
+            subscribePageFaqAccordionsHeader.removeClass('active');
+
+            $(this).addClass('active');
+            $(this).parent().find(subscribePageFaqAccordionsBody).addClass('opened');
         });
+
+
 
         $('.subscribe_page_faq_accordion').each(function() {
             let accordionHeightValue = $(this).find('.subscribe_page_faq_accordions_body_inner').css('height');
@@ -689,10 +690,7 @@ $(document).ready(function() {
                 $(this).find('.subscribe_page_faq_accordions_body').addClass('scrolled');
             }
         });
-
     }
-
-
 
 
     $('img.svg').each(function() {
@@ -731,8 +729,8 @@ $(document).ready(function() {
 
     function choosePerfectPlanTable__Desktop_Settings() {
         let tableHeadSectionHeight = $('.subscribe_page_choose_perfect_plan_second_column .choose_perfect_plan_table_cell__head').height();
-        let tableHeadSectionPadding = 30; 
-        let tableHeadSectionTitleHeight= $('.subscribe_page_choose_perfect_plan_third_column .choose_perfect_plan_table_cell__head h3').height();
+        let tableHeadSectionPadding = 30;
+        let tableHeadSectionTitleHeight = $('.subscribe_page_choose_perfect_plan_third_column .choose_perfect_plan_table_cell__head h3').height();
         $('.choose_perfect_plan_table_cell__head').each(function() {
             $(this).css('height', tableHeadSectionHeight + (tableHeadSectionPadding * 2));
             $(this).find('h3').css('height', tableHeadSectionTitleHeight);

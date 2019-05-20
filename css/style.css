@@ -1331,7 +1331,8 @@ input[type=search]::-webkit-search-results-decoration {
 
 .last_forum_messages_tile_info {
 	display: flex;
-	justify-content: space-between
+	justify-content: space-between;
+	margin-bottom: 15px;
 }
 
 .last_forum_messages_tile_info>div {
@@ -6917,6 +6918,33 @@ span.search_page__search_results {
 	.subscribe_page_why_daleel_table_minds_column_header:after {
 		content: none;
 	}
+	.subscribe_page_choose_perfect_plan_column:not(.subscribe_page_choose_perfect_plan_first_column) {
+		width: 100%;
+	}
+	.subscribe_page_choose_perfect_plan_column {
+		margin-bottom: 25px;
+	}
+	.choose_perfect_plan_table__value,
+	.choose_perfect_plan_table__listing_value {
+		margin-left: 0;
+		margin-right: inherit;
+	}
+	.choose_perfect_plan_table__value img,
+	.choose_perfect_plan_table__listing_value {
+		margin-right: 15px;
+	}
+	.choose_perfect_plan_table__listing_value {
+		font-size: 1em;
+	}
+	.choose_perfect_plan_table_cell {
+		height: unset;
+	}	
+	.choose_perfect_plan_table__mobile_title {
+		display: block;
+	}
+	.subscribe_page_choose_perfect_plan_first_column {
+		display: none;
+	}	
 	.footer_info_resources_list {
 		columns: 1
 	}
@@ -7556,12 +7584,6 @@ span.search_page__search_results {
 	.subscribe_page_faq_accordions_header {
 		padding-right: 50px;
 	}
-	.choose_perfect_plan_table__mobile_title {
-		display: block;
-	}
-	.subscribe_page_choose_perfect_plan_first_column {
-		display: none;
-	}
 	.all_reviews_buttons_block {
 		flex-direction: column;
 	}
@@ -7596,24 +7618,6 @@ span.search_page__search_results {
 	}
 	.choose_perfect_plan_table__mobile_collpse>.choose_perfect_plan_table_cell {
 		width: 100% !important;
-	}
-	.subscribe_page_choose_perfect_plan_column:not(.subscribe_page_choose_perfect_plan_first_column) {
-		width: 100%;
-	}
-	.subscribe_page_choose_perfect_plan_column {
-		margin-bottom: 25px;
-	}
-	.choose_perfect_plan_table__value,
-	.choose_perfect_plan_table__listing_value {
-		margin-left: 0;
-		margin-right: inherit;
-	}
-	.choose_perfect_plan_table__value img,
-	.choose_perfect_plan_table__listing_value {
-		margin-right: 15px;
-	}
-	.choose_perfect_plan_table__listing_value {
-		font-size: 1em;
 	}
 	.footer_logo_block svg {
 		width: 220px;
