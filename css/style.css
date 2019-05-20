@@ -6665,6 +6665,9 @@ span.search_page__search_results {
 		width: 0;
 		height: 0
 	}
+	.header_wrapper.mobile_transparent {
+		background: transparent !important;
+	}
 	.mobile_transparent::before {
 		content: '';
 		position: absolute;
