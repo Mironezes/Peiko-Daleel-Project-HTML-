@@ -513,7 +513,7 @@ $(document).ready(function() {
         $('.main_categories_submenu_list').each(function() {
         	mainCategoriesListChildrenCount = $(this).children().length;
         	if (mainCategoriesListChildrenCount == 1) {
-        		$(this).css('columns', '1');
+        		$(this).addClass('one_column');
         	}
         });
     }

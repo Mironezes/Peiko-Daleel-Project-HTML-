@@ -136,19 +136,19 @@ input[type=search]::-webkit-search-results-decoration {
 	-webkit-appearance: none
 }
 
+body {
+	background: #f5f6f7
+}
+
 .inner_page {
 	padding-top: 88px;
-	background: #f5f6f7
 }
 
 .homepage {
 	padding-top: 0;
-	background: 0 0
+	background: #FFF;
 }
 
-.row {
-	margin: 0
-}
 
 @media (min-width:992px) {
 	.inner_page .row>div:first-of-type {
@@ -1584,6 +1584,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 .latest_news_tile_inner {
+	width: 100%;
 	flex-direction: column;
 	padding: 20px;
 	border: 1px solid #eceeee;
@@ -1907,6 +1908,11 @@ input[type=search]::-webkit-search-results-decoration {
 	opacity: 0;
 	z-index: 2
 }
+
+.main_categories_submenu_list.one_column {
+	columns: 1;
+}
+
 
 .main_categories_submenu_list li:hover a {
 	color: #FFF;
@@ -5522,9 +5528,7 @@ span.search_page__search_results {
 	border-radius: 5px;
 }
 
-.common_filtering_mobile_block {
-	display: none;
-}
+
 
 .common_filters_block {
 	display: flex;
@@ -5873,6 +5877,9 @@ span.search_page__search_results {
 	.suppliers_tile_company_img_column {
 		padding: 0 50px
 	}
+	.common_filtering_mobile_block {
+		display: none;
+	}	
 }
 
 @media (min-width:992px) and (max-width:1320px) {
@@ -5927,9 +5934,6 @@ span.search_page__search_results {
 	}
 	.latest_news_tile_link_block span {
 		font-size: 1em
-	}
-	.latest_news_tile_author {
-		display: none!important
 	}
 	#main_page_categories_tile__third {
 		height: 235px
@@ -6096,9 +6100,6 @@ span.search_page__search_results {
 	}
 	.expert_intelligance_tile_header_block .verification_block.mobile {
 		display: none
-	}
-	.common_filtering_mobile_block {
-		display: none;
 	}
 	.last_forum_messages_tile_inner>.latest_news_tile_link_block {
 		display: none;
@@ -6585,6 +6586,36 @@ span.search_page__search_results {
 	}
 }
 
+@media (min-width: 320px) and (max-width: 1320px) {
+	.latest_news_tile_author {
+		display: none!important
+	}	
+	.common_filtering_desktop_block {
+		display: none
+	}
+	.common_filtering_mobile_block {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 25px;
+	}
+	.common_filtering_mobile_toggle {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 220px;
+		height: 48px;
+		margin-right: 20px;
+		border: 1px solid #eceeee;
+		border-radius: 5px;
+		background: #FFF;
+		transition: .3s;
+	}
+	.common_filtering_mobile_block .common_sorting_by_block .main_categories_sorting_block {
+		border-radius: 5px;
+	}	
+}
+
 @media (min-width:320px) and (max-width:1199px) {
 	.news_single_header_block h1 {
 		margin-bottom: 20px
@@ -6721,10 +6752,6 @@ span.search_page__search_results {
 		font-weight: 600;
 		text-align: center
 	}
-	.right_sidebar_forum_block h3 {
-		font-size: 2em;
-		font-weight: 700
-	}
 	.main_categories_list__item>a::before {
 		transform: rotate(90deg)
 	}
@@ -6754,7 +6781,9 @@ span.search_page__search_results {
 		-o-transition: .3s
 	}
 	.suppliers_main .main_content_inner {
-		padding: 0
+	    padding: 0;
+	    background: transparent;
+	    border: 0;
 	}
 	.suppliers_tile_company_highlights_column {
 		display: none
@@ -6823,30 +6852,6 @@ span.search_page__search_results {
 	}
 	.suppliers_tile_location_offices_tiles {
 		overflow: hidden
-	}
-	.common_filtering_desktop_block {
-		display: none
-	}
-	.common_filtering_mobile_block {
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: 25px;
-	}
-	.common_filtering_mobile_toggle {
-		position: relative;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 220px;
-		height: 48px;
-		margin-right: 20px;
-		border: 1px solid #eceeee;
-		border-radius: 5px;
-		background: #FFF;
-		transition: .3s;
-	}
-	.common_filtering_mobile_block .common_sorting_by_block .main_categories_sorting_block {
-		border-radius: 5px;
 	}
 	.product .main_content_inner,
 	.suppliers_profile .main_content_inner {
@@ -6983,15 +6988,30 @@ span.search_page__search_results {
 	.header_text_block {
 		padding-top: 200px
 	}
+	.homepage .latest_news_tile_author {
+		display: none;
+	}
 	.main_content_wrapper {
 		padding-top: 50px
 	}
-	.main_categories .main_content_inner {
-		border: 0;
-		background: 0 0
+	.main_categories_list>li {
+		position: relative;
 	}
-	.main_categories .main_content_inner {
+	.main_categories .main_content_inner,
+	.search .main_content_inner  {
+		border: 0;
+		background: unset;
 		padding: 0
+	}
+	.main_categories_header_block {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.main_categories_header_block h1 {
+		margin-bottom: 25px;
+	}
+	.load_more_button_block {
+		margin-bottom: 25px;
 	}
 	.category .main_content_inner {
 		padding: 30px 0px
@@ -7079,9 +7099,9 @@ span.search_page__search_results {
 	.latest_news_tile_image {
 		height: 160px
 	}
-	.latest_news_tile_author {
+/*	.latest_news_tile_author {
 		display: none!important
-	}
+	}*/
 	.last_forum_messages_tile_info {
 		margin-bottom: 20px
 	}
