@@ -5,7 +5,7 @@ $(document).ready(function() {
         let y = window.scrollY;
 
         if (y > 70) {
-            if ($('body').hasClass('homepage')) {
+            if ($('div').hasClass('homepage')) {
                 $('.header_wrapper').addClass('white');
                 $('.header_wrapper .logo').attr('src', 'assets/header/logo__dark.svg')
                 $('.desktop_toggle_menu_icon').addClass('blue');
@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 
         } else {
-            if ($('body').hasClass('homepage')) {
+            if ($('div').hasClass('homepage')) {
                 $('.header_wrapper').removeClass('white');
                 $('.header_wrapper .logo').attr('src', 'assets/header/logo__white.svg')
                 $('.desktop_toggle_menu_icon').removeClass('blue');
