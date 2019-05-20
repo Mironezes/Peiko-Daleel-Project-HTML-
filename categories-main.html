@@ -40,7 +40,7 @@
                             <button>Search</button>
                         </div>
                         <a href="#" class="button button__blue">Log in</a>
-                        <a href="#" class="button button__yellow">Registration</a>
+                        <a href="#" class="button button__yellow">Sign up</a>
                         <button onclick="void(0)" class="desktop_toggle_menu_icon hamburger hamburger--slider blue" type="button">
                             <span class="hamburger-box">
 					<span class="hamburger-inner"></span>
@@ -108,15 +108,41 @@
             <div class="main_content_inner">
                 <div class="main_categories_header_block">
                     <h1>Main Categories</h1>
-                    <div class="main_categories_sorting_block">
-                        <label for="main_categories_sorting">Sort By:</label>
-                        <div class="main_categories_sorting_block">
-                            <select name="main_categories_sorting" class="main_categories_sorting">
-                                <option value="news">News</option>
-                                <option value="articles">Articles</option>
-                                <option value="companies">Companies</option>
-                                <option value="topics">Topics</option>
-                            </select>
+                    <div class="common_sorting_by_block">
+                        <span class="common_sorting_by__title">Sort By:</span>
+
+                        <div class="common_sorting">
+                            <div class="common_sorting__title"><span></span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg"></div>
+
+                            <form class="common_sorting_block">
+                                <div class="common_sorting_element">
+                                    <label> News
+                                        <input class="common_sorting_element__checkbox" type="radio" name="SortingBySort" value="News" checked>
+                                        <span class="common_sorting_element__radiomark"></span>
+                                    </label>
+                                </div>
+
+                                <div class="common_sorting_element">
+                                    <label> Articles
+                                        <input class="common_sorting_element__checkbox" type="radio" value="Articles" name="SortingBySort">
+                                        <span class="common_sorting_element__radiomark"></span>
+                                    </label>
+                                </div>
+
+                                <div class="common_sorting_element">
+                                    <label> Companies
+                                        <input class="common_sorting_element__checkbox" type="radio" value="Companies" name="SortingBySort">
+                                        <span class="common_sorting_element__radiomark"></span>
+                                    </label>
+                                </div>
+
+                                <div class="common_sorting_element">
+                                    <label> Topics
+                                        <input class="common_sorting_element__checkbox" type="radio" value="Topics" name="SortingBySort">
+                                        <span class="common_sorting_element__radiomark"></span>
+                                    </label>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

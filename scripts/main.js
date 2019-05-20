@@ -352,7 +352,7 @@ $(document).ready(function() {
 
 
 
-    function tabsFilter() {
+    function SuppliersPageFilterBlock() {
         $('.main_categories_sorting__title').on("click", function(e) {
 
             e.stopPropagation();
@@ -387,7 +387,46 @@ $(document).ready(function() {
             }
         });
     }
-    tabsFilter();
+    SuppliersPageFilterBlock();
+
+
+    function CommonPageFilterBlock() {
+        $('.common_sorting__title').on("click", function(e) {
+
+            e.stopPropagation();
+
+            if ($(this).siblings('.common_sorting_block').hasClass('opened')) {
+                $(this).siblings('.common_sorting_block').removeClass('opened');
+                $(this).parent('.common_sorting').removeClass('active');
+            } else {
+                $('.common_sorting_block').removeClass('opened');
+                $('.common_sorting').removeClass('active');
+
+                if (!($(this).siblings('.common_sorting_block').hasClass('opened'))) {
+                    $(this).siblings('.common_sorting_block').addClass('opened');
+                    $(this).parent('.common_sorting').addClass('active');
+                } else {
+                    $(this).siblings('.common_sorting_block').removeClass('opened');
+                    $(this).parent('.common_sorting').removeClass('active');
+                }
+            }
+        });
+
+        $('.common_filter_cancel').on("click", function() {
+            $('.common_sorting_block').removeClass('opened');
+            $('.common_sorting').removeClass('active');
+        });
+
+
+        $(document).on("click", function(event) {
+            if ($(event.target).closest('.common_sorting_block').length == 0) {
+                $('.common_sorting_block').removeClass('opened');
+                $('.common_sorting').removeClass('active');
+            }
+        });
+    }
+    CommonPageFilterBlock();
+
 
 
 
@@ -448,14 +487,14 @@ $(document).ready(function() {
 
 
 
-    $('.suppliers_sorting_by_block .main_categories_sorting_element input[type="radio"]').each(function() {
+    $('.common_sorting_by_block .common_sorting_element input[type="radio"]').each(function() {
 
-        let sortBy__default_type = $('.suppliers_sorting_by_block .main_categories_sorting_element input[type="radio"]:checked').val();
-        let sortBy__default_title = $('.suppliers_sorting_by_block .main_categories_sorting__title span').html(sortBy__default_type);
+        let sortBy__default_type = $('.common_sorting_by_block .common_sorting_element input[type="radio"]:checked').val();
+        let sortBy__default_title = $('.common_sorting_by_block .common_sorting__title span').html(sortBy__default_type);
 
         $(this).on('click', function() {
             let sortBy__set_type = $(this).val();
-            let sortBy__set_title = $('.suppliers_sorting_by_block .main_categories_sorting__title span').html(sortBy__set_type);
+            let sortBy__set_title = $('.common_sorting_by_block .common_sorting__title span').html(sortBy__set_type);
         });
     });
 
@@ -468,6 +507,7 @@ $(document).ready(function() {
         let CategoriesMenuWidth = $('.main_categories_list').width();
         let CategoriesSubMenuPosition = $('.main_categories_submenu_list').css('left', CategoriesMenuWidth);
     }
+
 
 
     function yesNoFiltersWidth__Desktop_Settings() {
@@ -548,6 +588,7 @@ $(document).ready(function() {
     }
 
 
+
     function ToggleFiltersAdd(button, counter) {
         button.addClass('active');
         counter++;
@@ -557,27 +598,6 @@ $(document).ready(function() {
         button.removeClass('active');
         counter--;
     }
-
-
-
-    $(window).on('load resize', function() {
-
-        let suppliersMaterialsPhotoHeight__getter = $('.suppliers_materials_block .suppliers_materials_tile_photo img').height();
-        let suppliersMaterialsVideoHeight__setter = $('.suppliers_materials_block .suppliers_materials_tile_video iframe').css('height', suppliersMaterialsPhotoHeight__getter);
-
-
-        if (window.matchMedia('screen and (min-width: 768px)').matches) {
-            categoriesMenu__Desktop_Settings();
-        }
-        if (window.matchMedia('screen and (min-width: 992px)').matches) {
-            suppliersFixedMenu();
-            yesNoFiltersWidth__Desktop_Settings();
-            searchPageToggleFilters();
-            accountPageToggleFilters();
-            subscribePlan_DaleelTable__Desktop_Settings();
-        }
-
-    });
 
 
 
@@ -621,79 +641,125 @@ $(document).ready(function() {
     categoryPageNavScroll();
 
 
-});
+
+    function accountTabs() {
+        $('.account_tabs_header').on('click', 'span:not(.active)', function() {
+            $(this)
+                .addClass('active').siblings().removeClass('active').closest('.account_tabs_block').find('.account_tab_content').removeClass('active').eq($(this).index()).addClass('active');
+        });
+    }
+    accountTabs();
 
 
 
-function accountTabs() {
-    $('.account_tabs_header').on('click', 'span:not(.active)', function() {
-        $(this)
-            .addClass('active').siblings().removeClass('active').closest('.account_tabs_block').find('.account_tab_content').removeClass('active').eq($(this).index()).addClass('active');
+    function subscribePlan_DaleelTable__Desktop_Settings() {
+        let subscribePageWhyDaleelTableMindsFirstHeight = $('#subscribe_page_why_daleel_table_minds_first').height();
+        let subscribePageWhyDaleelTableMindsSecondHeight = $('#subscribe_page_why_daleel_table_minds_second').height();
+        let subscribePageWhyDaleelTableMindsThirdHeight = $('#subscribe_page_why_daleel_table_minds_third').height();
+
+        let subscribePageWhyDaleelTableWeMathFirst = $('#subscribe_page_why_daleel_table_we_match_first').css('height', subscribePageWhyDaleelTableMindsFirstHeight + 1);
+        let subscribePageWhyDaleelTableWeMathSecond = $('#subscribe_page_why_daleel_table_we_match_second').css('height', subscribePageWhyDaleelTableMindsSecondHeight + 1);
+        let subscribePageWhyDaleelTableWeMathThird = $('#subscribe_page_why_daleel_table_we_match_third').css('height', subscribePageWhyDaleelTableMindsThirdHeight);
+    }
+
+
+
+    function subscribePageAccordions() {
+        let subscribePageFaqAccordionsHeader = $('.subscribe_page_faq_accordions_header');
+        let subscribePageFaqAccordionsBody = $('.subscribe_page_faq_accordions_body');
+        let subscribePageFaqAccordionsBodyInner = $('.subscribe_page_faq_accordions_body_inner');
+        let subscribePageFaqAccordionsBodyMaxHeightLimiter = 500;
+
+        subscribePageFaqAccordionsHeader.on('click', function() {
+            if ($(this).parent().find(subscribePageFaqAccordionsBody).hasClass('opened')) {
+                $(this).removeClass('active');
+                $(this).parent().find(subscribePageFaqAccordionsBody).removeClass('opened');
+            } else {
+                $(this).addClass('active');
+                $(this).parent().find(subscribePageFaqAccordionsBody).addClass('opened');
+
+            }
+        });
+
+        $('.subscribe_page_faq_accordion').each(function() {
+            let accordionHeightValue = $(this).find('.subscribe_page_faq_accordions_body_inner').css('height');
+            let accordionHeightValue_parsed = parseInt(accordionHeightValue);
+
+            if (accordionHeightValue_parsed > subscribePageFaqAccordionsBodyMaxHeightLimiter) {
+                $(this).find('.subscribe_page_faq_accordions_body').addClass('scrolled');
+            }
+        });
+
+    }
+
+
+
+
+    $('img.svg').each(function() {
+        let $img = $(this);
+        let imgID = $img.attr('id');
+        let imgClass = $img.attr('class');
+        let imgURL = $img.attr('src');
+
+        $.get(imgURL, function(data) {
+            // Get the SVG tag, ignore the rest
+            let $svg = $(data).find('svg');
+
+            // Add replaced image's ID to the new SVG
+            if (typeof imgID !== 'undefined') {
+                $svg = $svg.attr('id', imgID);
+            }
+            // Add replaced image's classes to the new SVG
+            if (typeof imgClass !== 'undefined') {
+                $svg = $svg.attr('class', imgClass + ' replaced-svg');
+            }
+
+            // Remove any invalid XML tags as per http://validator.w3.org
+            $svg = $svg.removeAttr('xmlns:a');
+
+            // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
+            if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+                $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+            }
+
+            // Replace image with new SVG
+            $img.replaceWith($svg);
+
+        }, 'xml');
     });
-}
-accountTabs();
 
 
-
-function subscribePlan_DaleelTable__Desktop_Settings() {
-    let subscribePageWhyDaleelTableMindsFirstHeight = $('#subscribe_page_why_daleel_table_minds_first').height();
-    let subscribePageWhyDaleelTableMindsSecondHeight = $('#subscribe_page_why_daleel_table_minds_second').height();
-    let subscribePageWhyDaleelTableMindsThirdHeight = $('#subscribe_page_why_daleel_table_minds_third').height();
-
-    let subscribePageWhyDaleelTableWeMathFirst = $('#subscribe_page_why_daleel_table_we_match_first').css('height', subscribePageWhyDaleelTableMindsFirstHeight + 1);
-    let subscribePageWhyDaleelTableWeMathSecond = $('#subscribe_page_why_daleel_table_we_match_second').css('height', subscribePageWhyDaleelTableMindsSecondHeight + 1);
-    let subscribePageWhyDaleelTableWeMathThird = $('#subscribe_page_why_daleel_table_we_match_third').css('height', subscribePageWhyDaleelTableMindsThirdHeight);
-}
-
+    function choosePerfectPlanTable__Desktop_Settings() {
+        let tableHeadSectionHeight = $('.subscribe_page_choose_perfect_plan_second_column .choose_perfect_plan_table_cell__head').height();
+        let tableHeadSectionPadding = 30; 
+        let tableHeadSectionTitleHeight= $('.subscribe_page_choose_perfect_plan_third_column .choose_perfect_plan_table_cell__head h3').height();
+        $('.choose_perfect_plan_table_cell__head').each(function() {
+            $(this).css('height', tableHeadSectionHeight + (tableHeadSectionPadding * 2));
+            $(this).find('h3').css('height', tableHeadSectionTitleHeight);
+        });
+    }
 
 
-$('img.svg').each(function() {
-    let $img = $(this);
-    let imgID = $img.attr('id');
-    let imgClass = $img.attr('class');
-    let imgURL = $img.attr('src');
+    $(window).on('load resize', function() {
 
-    $.get(imgURL, function(data) {
-        // Get the SVG tag, ignore the rest
-        let $svg = $(data).find('svg');
+        let suppliersMaterialsPhotoHeight__getter = $('.suppliers_materials_block .suppliers_materials_tile_photo img').height();
+        let suppliersMaterialsVideoHeight__setter = $('.suppliers_materials_block .suppliers_materials_tile_video iframe').css('height', suppliersMaterialsPhotoHeight__getter);
 
-        // Add replaced image's ID to the new SVG
-        if (typeof imgID !== 'undefined') {
-            $svg = $svg.attr('id', imgID);
+        subscribePageAccordions();
+
+        if (window.matchMedia('screen and (min-width: 768px)').matches) {
+            categoriesMenu__Desktop_Settings();
+            subscribePlan_DaleelTable__Desktop_Settings();
+            choosePerfectPlanTable__Desktop_Settings();
         }
-        // Add replaced image's classes to the new SVG
-        if (typeof imgClass !== 'undefined') {
-            $svg = $svg.attr('class', imgClass + ' replaced-svg');
-        }
-
-        // Remove any invalid XML tags as per http://validator.w3.org
-        $svg = $svg.removeAttr('xmlns:a');
-
-        // Check if the viewport is set, if the viewport is not set the SVG wont't scale.
-        if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
-            $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
-        }
-
-        // Replace image with new SVG
-        $img.replaceWith($svg);
-
-    }, 'xml');
-
-});
-
-
-function subscribePageAccordions() {
-    let subscribePageFaqDccordionsHeader = $('.subscribe_page_faq_accordions_header');
-    let subscribePageFaqAccordionsBody = $('.subscribe_page_faq_accordions_body')
-
-    subscribePageFaqDccordionsHeader.on('click', function() {
-        if($(this).parent().find(subscribePageFaqAccordionsBody).hasClass('opened')) {
-            $(this).parent().find(subscribePageFaqAccordionsBody).removeClass('opened');
-        }
-        else {
-            $(this).parent().find(subscribePageFaqAccordionsBody).addClass('opened');           
+        if (window.matchMedia('screen and (min-width: 992px)').matches) {
+            suppliersFixedMenu();
+            yesNoFiltersWidth__Desktop_Settings();
+            searchPageToggleFilters();
+            accountPageToggleFilters();
         }
 
     });
-}
-subscribePageAccordions();
+
+
+});

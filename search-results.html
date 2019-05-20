@@ -1,1425 +1,1437 @@
-
-
-
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<!--[if lte IE 9]>
+
+<head>
+    <!--[if lte IE 9]>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 <![endif]-->
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-<link rel="apple-touch-icon-precomposed" href="apple_touch_icon.png" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-<link rel="stylesheet" href="css/style.css">		
-		<title>Search Page | Daleel</title>
-	</head>
-	<body class="search inner_page authorized">
-        <header class="header_wrapper white logined">
-    <div class="header_navigation_block_wrapper">
-        <div class="container">
-            <div class="header_navigation_block">
-                <div class="header_logo_column">
-                    <a href="index.html"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
-                    <div class="mobile_navigation_buttons_block">
-                        <button onclick="void(0)" class="mobile_account_icon" type="button"><img src="assets/header_logined/account_icon.svg" alt="Изображение" class="svg"></button>
-                        <button onclick="void(0)" class="mobile_menu_icon hamburger hamburger--arrow blue" type="button"> <span class="hamburger-box"><span class="hamburger-inner"></span> </span>
-                        </button>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="apple-touch-icon-precomposed" href="apple_touch_icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Search Page | Daleel</title>
+</head>
+
+<body class="search inner_page authorized">
+    <header class="header_wrapper white logined">
+        <div class="header_navigation_block_wrapper">
+            <div class="container">
+                <div class="header_navigation_block">
+                    <div class="header_logo_column">
+                        <a href="index.php"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
+                        <div class="mobile_navigation_buttons_block">
+                            <button onclick="void(0)" class="mobile_account_icon" type="button"><img src="assets/header_logined/account_icon.svg" alt="Изображение" class="svg"></button>
+                            <button onclick="void(0)" class="mobile_menu_icon hamburger hamburger--arrow blue" type="button"> <span class="hamburger-box"><span class="hamburger-inner"></span> </span>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="header_navigation_column">
-                    <ul class="desktop_toggle_menu">
-                        <li class="desktop_toggle_menu__item"><a href="#">Suppliers</a></li>
-                        <li class="desktop_toggle_menu__item"><a href="#">Intelligence</a></li>
-                        <li class="desktop_toggle_menu__item"><a href="#">News</a></li>
-                        <li class="desktop_toggle_menu__item"><a href="#">Expert articles</a></li>
-                        <li class="desktop_toggle_menu__item"><a href="#">Indices</a></li>
-                    </ul>
-                    <div class="header_navigation_search_toggle">
-                        <img src="assets/header_logined/search_icon_blue.svg" alt="Изображение" class="svg search_icon visible">
-                        <img src="assets/close_icon.svg" alt="Изображение" class="svg close_icon">                     
-                    </div>
-                    <button class="button button__yellow header_account_button">
-                        <div class="button__icon"> <img class="svg" src="assets/header_logined/account_icon.svg" alt="Изображение"> </div><span>Account</span> </button>
-                    <div class="desktop_account_toggle_menu">
-                        <ul>
-                            <li><a href="#"><div class="button__icon"> <img class="svg" src="assets/header_logined/account_icon.svg" alt="Изображение"> </div><span>Profile</span> </a>
-                            </li>
-                            <li><a href="#"><div class="button__icon"> <img class="svg" src="assets/header_logined/settings_icon.svg" alt="Изображение"> </div><span>Settings</span> </a>
-                            </li>
-                            <li><a href="#"><div class="button__icon"> <img class="svg" src="assets/header_logined/faq_icon.svg" alt="Изображение"> </div><span>FAQ</span> </a>
-                            </li>
-                            <li class="desktop_account_toggle_menu__logout"><a href="#"> <div class="button__icon"> <img class="svg" src="assets/header_logined/logout_icon.svg" alt="Изображение"> </div><span>Log Out</span> </a>
-                            </li>
+                    <div class="header_navigation_column">
+                        <ul class="desktop_toggle_menu">
+                            <li class="desktop_toggle_menu__item"><a href="#">Suppliers</a></li>
+                            <li class="desktop_toggle_menu__item"><a href="#">Intelligence</a></li>
+                            <li class="desktop_toggle_menu__item"><a href="#">News</a></li>
+                            <li class="desktop_toggle_menu__item"><a href="#">Expert articles</a></li>
+                            <li class="desktop_toggle_menu__item"><a href="#">Indices</a></li>
                         </ul>
+                        <div class="header_navigation_search_toggle">
+                            <img src="assets/header_logined/search_icon_blue.svg" alt="Изображение" class="svg search_icon visible">
+                            <img src="assets/close_icon.svg" alt="Изображение" class="svg close_icon">
+                        </div>
+                        <button class="button button__yellow header_account_button">
+                            <div class="button__icon"> <img class="svg" src="assets/header_logined/account_icon.svg" alt="Изображение"> </div><span>Account</span> </button>
+                        <div class="desktop_account_toggle_menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="button__icon"> <img class="svg" src="assets/header_logined/account_icon.svg" alt="Изображение"> </div><span>Profile</span> </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="button__icon"> <img class="svg" src="assets/header_logined/settings_icon.svg" alt="Изображение"> </div><span>Settings</span> </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="button__icon"> <img class="svg" src="assets/header_logined/faq_icon.svg" alt="Изображение"> </div><span>FAQ</span> </a>
+                                </li>
+                                <li class="desktop_account_toggle_menu__logout">
+                                    <a href="#">
+                                        <div class="button__icon"> <img class="svg" src="assets/header_logined/logout_icon.svg" alt="Изображение"> </div><span>Log Out</span> </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="desktop_toggle_menu_block_wrapper">
+        <div class="desktop_toggle_menu_block_wrapper">
+            <div class="container">
+                <div class="desktop_toggle_menu_block">
+                    <input type="search" placeholder="Search request" maxlength="100" class="desktop_toggle_menu__search_bar" required>
+                    <button class="button button__blue desktop_toggle_menu__search_button">Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_account_toggle_menu_block">
+            <div class="container">
+                <ul class="mobile_account_toggle_menu">
+                    <li class="mobile_toggle_menu__item">
+                        <a href="#">
+                            <div class="button__icon"><img class="svg" src="assets/header_logined/account_icon.svg" alt="Изображение"></div><span>Profile</span></a>
+                    </li>
+                    <li class="mobile_toggle_menu__item">
+                        <a href="#">
+                            <div class="button__icon"><img class="svg" src="assets/header_logined/settings_icon.svg" alt="Изображение"></div><span>Settings</span></a>
+                    </li>
+                    <li class="mobile_toggle_menu__item">
+                        <a href="#">
+                            <div class="button__icon"><img class="svg" src="assets/header_logined/faq_icon.svg" alt="Изображение"></div><span>FAQ</span> </a>
+                    </li>
+                    <li class="mobile_toggle_menu__item desktop_account_toggle_menu__logout">
+                        <a href="#">
+                            <div class="button__icon"><img class="svg" src="assets/header_logined/logout_icon.svg" alt="Изображение"> </div><span>Log Out</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobile_toggle_menu_block">
+            <div class="container">
+                <ul class="mobile_toggle_menu">
+                    <li class="mobile_search_block">
+                        <input type="search" placeholder="Search request" maxlength="100" required>
+                        <button>Search</button>
+                    </li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Suppliers</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Intelligence</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">News</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Expert articles</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Indices</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Contacts</a></li>
+                </ul>
+                <div class="mobile_toggle_buttons"> <a href="#" class="button login_button button__blue">Log in</a> <a href="#" class="button registration_button button__yellow">Registration</a>
+                    <a href="#" class="button add_company_button button__yellow"><img class="svg" src="assets/plus_icon.svg" alt="Изображение"> Add company</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="breadcrumbs_wrapper">
         <div class="container">
-            <div class="desktop_toggle_menu_block">
-                <input type="search" placeholder="Search request" maxlength="100" class="desktop_toggle_menu__search_bar" required>               
-                <button class="button button__blue desktop_toggle_menu__search_button">Search</button>
+            <div class="breadcrumbs_block row">
+                <ul class="breadcrumbs_list">
+                    <li class="breadcrumbs_list__item"><a href="/">Homepage</a></li>
+                    <li class="breadcrumbs_list__item current"><span>Search Results</span></li>
+                </ul>
             </div>
         </div>
-    </div>
-    <div class="mobile_account_toggle_menu_block">
+    </section>
+
+    <section class="main_content_wrapper">
         <div class="container">
-            <ul class="mobile_account_toggle_menu">
-                <li class="mobile_toggle_menu__item"><a href="#"><div class="button__icon"><img class="svg" src="assets/header_logined/account_icon.svg" alt="Изображение"></div><span>Profile</span></a>
-                </li>
-                <li class="mobile_toggle_menu__item"><a href="#"><div class="button__icon"><img class="svg" src="assets/header_logined/settings_icon.svg" alt="Изображение"></div><span>Settings</span></a>
-                </li>
-                <li class="mobile_toggle_menu__item"><a href="#"><div class="button__icon"><img class="svg" src="assets/header_logined/faq_icon.svg" alt="Изображение"></div><span>FAQ</span> </a>
-                </li>
-                <li class="mobile_toggle_menu__item desktop_account_toggle_menu__logout"><a href="#"><div class="button__icon"><img class="svg" src="assets/header_logined/logout_icon.svg" alt="Изображение"> </div><span>Log Out</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="mobile_toggle_menu_block">
-        <div class="container">
-            <ul class="mobile_toggle_menu">
-                <li class="mobile_search_block">
-                    <input type="search" placeholder="Search request" maxlength="100" required>
-                    <button>Search</button>
-                </li>
-                <li class="mobile_toggle_menu__item"><a href="#">Suppliers</a></li>
-                <li class="mobile_toggle_menu__item"><a href="#">Intelligence</a></li>
-                <li class="mobile_toggle_menu__item"><a href="#">News</a></li>
-                <li class="mobile_toggle_menu__item"><a href="#">Expert articles</a></li>
-                <li class="mobile_toggle_menu__item"><a href="#">Indices</a></li>
-                <li class="mobile_toggle_menu__item"><a href="#">Contacts</a></li>
-            </ul>
-            <div class="mobile_toggle_buttons"> <a href="#" class="button login_button button__blue">Log in</a> <a href="#" class="button registration_button button__yellow">Registration</a>
-                <a href="#" class="button add_company_button button__yellow"><img class="svg" src="assets/plus_icon.svg" alt="Изображение"> Add company</a>
+
+            <div class="search_page_header_block">
+                <h1>Search topic: <span class="search_page__search_topic">“Daleel”</span></h1>
+                <span class="search_page__search_results">Found <span class="search_page__search_results__counter">14</span> results</span>
             </div>
-        </div>
-    </div>
-</header>
-		<section class="breadcrumbs_wrapper">
-			<div class="container">
-				<div class="breadcrumbs_block row">
-					<ul class="breadcrumbs_list">
-						<li class="breadcrumbs_list__item"><a href="/">Homepage</a></li>
-						<li class="breadcrumbs_list__item current"><span>Search Results</span></li>
-					</ul> 
-				</div>
-			</div>
-		</section>
-		
-		<section class="main_content_wrapper">
-			<div class="container">
 
-                    <div class="search_page_header_block">
-                        <h1>Search topic: <span class="search_page__search_topic">“Daleel”</span></h1>
-						<span class="search_page__search_results">Found <span class="search_page__search_results__counter">14</span> results</span>
-                    </div>
+            <div class="common_filtering_desktop_block">
 
-					<div class="suppliers_filtering_desktop_block">
-
-    <div class="search_page_filtering_block">
-        <button id="search_page_filtering__all_results" class="button active">All Results</button>
-        <button class="button">News</button>
-        <button class="button">Expert Articles</button>
-        <button class="button">Companies</button>
-        <button class="button">Categories</button>
-        <button class="button">Tags</button>
-    </div>
-
-
-    <div class="suppliers_filters_block">
-        <h3 class="suppliers_filters_block__title">Filters:</h3>
-
-        <div class="main_categories_sorting main_categories_sorting_location">
-            <div class="main_categories_sorting__title"><span>Region</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg"></div>
-            <form class="main_categories_sorting_block" autocomplete="off">
-                <div class="main_categories_sorting_location_country_column">
-
-                    <h4>Country</h4>
-
-                    <div class="main_categories_sorting_element">
-                        <label> United States
-                            <input class="main_categories_sorting_element__checkbox" type="checkbox" checked>
-                            <span class="main_categories_sorting_element__checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="main_categories_sorting_element">
-                        <label> France
-                            <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                            <span class="main_categories_sorting_element__checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="main_categories_sorting_element">
-                        <label> Canada
-                            <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                            <span class="main_categories_sorting_element__checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="main_categories_sorting_element">
-                        <label> Uganda
-                            <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                            <span class="main_categories_sorting_element__checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="main_categories_sorting_element">
-                        <label> Japan
-                            <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                            <span class="main_categories_sorting_element__checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="main_categories_sorting_element">
-                        <label> China
-                            <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                            <span class="main_categories_sorting_element__checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="main_categories_sorting_element">
-                        <label> UK
-                            <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                            <span class="main_categories_sorting_element__checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="main_categories_sorting_element">
-                        <label> Ukraine
-                            <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                            <span class="main_categories_sorting_element__checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="main_categories_sorting_element">
-                        <label> South Korea
-                            <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                            <span class="main_categories_sorting_element__checkmark"></span>
-                        </label>
-                    </div>
-                </div>
-                <div class="main_categories_sorting_location_city_column">
-                    <h4>City</h4>
-
-                    <div class="main_categories_sorting_location_city_wrapper">
-
-                        <div class="main_categories_sorting_location_city">
-
-                            <h4>United States:</h4>
-
-                            <div class="main_categories_sorting_element">
-                                <label> Miami
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> San Francisco
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Nashville
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Boston
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Seatle
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="main_categories_sorting_location_city">
-
-                            <h4>France:</h4>
-
-                            <div class="main_categories_sorting_element">
-                                <label> Paris
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Marsel
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Leon
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="main_categories_sorting_location_city">
-
-                            <h4>United Kingdom:</h4>
-
-                            <div class="main_categories_sorting_element">
-                                <label> Paris
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Marsel
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="main_categories_sorting_location_city">
-
-                            <h4>Egypt:</h4>
-
-                            <div class="main_categories_sorting_element">
-                                <label> Sharm-El-Sheikh
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Hurgada
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Nashville
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Boston
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Seatle
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-
-                        </div>
-
-                        <div class="main_categories_sorting_location_city">
-
-                            <h4>United Kingdom:</h4>
-
-                            <div class="main_categories_sorting_element">
-                                <label> Paris
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Marsel
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="main_categories_sorting_location_city">
-
-                            <h4>Egypt:</h4>
-
-                            <div class="main_categories_sorting_element">
-                                <label> Sharm-El-Sheikh
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Hurgada
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Nashville
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Boston
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Seatle
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"><img src="assets/check_icon__white.svg" alt="Изображение" class="svg"></span>
-                                </label>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="main_categories_sorting_buttons">
-                    <span class="button button__white main_categories_filter_cancel">Cancel</span>
-                    <button class="button button__blue main_categories_show_companies_button">Show <span>44</span> companies</button>
-                </div>
-            </form>
-        </div>
-
-        <div class="main_categories_sorting main_categories_sorting_location">
-            <div class="main_categories_sorting__title"><span>Major Clients</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg"></div>
-            <form class="main_categories_sorting_block" autocomplete="off">
-                <div class="main_categories_sorting_location_country_column">
-
-                    <h4>Country</h4>
-
-                    <div class="main_categories_sorting_element">
-                        <label> United States
-                            <input class="main_categories_sorting_element__checkbox" type="checkbox" checked>
-                            <span class="main_categories_sorting_element__checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="main_categories_sorting_element">
-                        <label> France
-                            <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                            <span class="main_categories_sorting_element__checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="main_categories_sorting_element">
-                        <label> Canada
-                            <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                            <span class="main_categories_sorting_element__checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="main_categories_sorting_element">
-                        <label> Uganda
-                            <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                            <span class="main_categories_sorting_element__checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="main_categories_sorting_element">
-                        <label> Japan
-                            <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                            <span class="main_categories_sorting_element__checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="main_categories_sorting_element">
-                        <label> China
-                            <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                            <span class="main_categories_sorting_element__checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="main_categories_sorting_element">
-                        <label> UK
-                            <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                            <span class="main_categories_sorting_element__checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="main_categories_sorting_element">
-                        <label> Ukraine
-                            <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                            <span class="main_categories_sorting_element__checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="main_categories_sorting_element">
-                        <label> South Korea
-                            <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                            <span class="main_categories_sorting_element__checkmark"></span>
-                        </label>
-                    </div>
-                </div>
-                <div class="main_categories_sorting_location_city_column">
-                    <h4>City</h4>
-
-                    <div class="main_categories_sorting_location_city_wrapper">
-
-                        <div class="main_categories_sorting_location_city">
-
-                            <h4>United States:</h4>
-
-                            <div class="main_categories_sorting_element">
-                                <label> Miami
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> San Francisco
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Nashville
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Boston
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Seatle
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="main_categories_sorting_location_city">
-
-                            <h4>France:</h4>
-
-                            <div class="main_categories_sorting_element">
-                                <label> Paris
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Marsel
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Leon
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="main_categories_sorting_location_city">
-
-                            <h4>United Kingdom:</h4>
-
-                            <div class="main_categories_sorting_element">
-                                <label> Paris
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Marsel
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="main_categories_sorting_location_city">
-
-                            <h4>Egypt:</h4>
-
-                            <div class="main_categories_sorting_element">
-                                <label> Sharm-El-Sheikh
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Hurgada
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Nashville
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Boston
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Seatle
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-
-                        </div>
-
-                        <div class="main_categories_sorting_location_city">
-
-                            <h4>United Kingdom:</h4>
-
-                            <div class="main_categories_sorting_element">
-                                <label> Paris
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Marsel
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="main_categories_sorting_location_city">
-
-                            <h4>Egypt:</h4>
-
-                            <div class="main_categories_sorting_element">
-                                <label> Sharm-El-Sheikh
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Hurgada
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Nashville
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Boston
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Seatle
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"><img src="assets/check_icon__white.svg" alt="Изображение" class="svg"></span>
-                                </label>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="main_categories_sorting_buttons">
-                    <span class="button button__white main_categories_filter_cancel">Cancel</span>
-                    <button class="button button__blue main_categories_show_companies_button">Show <span>44</span> companies</button>
-                </div>
-            </form>
-        </div>
-
-        <div class="main_categories_sorting main_categories_sorting_services">
-            <div class="main_categories_sorting__title"><span>Products & Services</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg">
-            </div>
-            <form class="main_categories_sorting_block" autocomplete="off">
-                <div class="main_categories_sorting_services_checkbox_block">
-                    <div class="main_categories_sorting_services_checkbox_categories_column">
-                        <h4>Main categories</h4>        
-
-                        <div class="main_categories_sorting_elements_wrapper">
-                            <div class="main_categories_sorting_element">
-                                <label> Drilling & Completion
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox" checked>
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Production
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Rotating & Static Equipment
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Bulk Materials, Chemicals, Paints and Oils
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Subsea Services & Pipeline Equipment
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Seismic, Survey And Positioning
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Inspection And Testing
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Logistics And Transport
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Marine
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Engineering, Consultancy And Professional Services
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Construction, Maintenance, & Overhaul
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Multidiscipline & Turnkey Services
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Other Support Services
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="main_categories_sorting_services_checkbox_services_column">
-                        <h4>Services</h4>  
-    
-                        <div class="main_categories_sorting_elements_wrapper">
-                            <div class="main_categories_sorting_element">
-                                <label> Drill String Tools & Equipment
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox" checked>
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> OCTG & Accessories
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Wellhead, Christmas Tree & Accessories
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Port Harcourt
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Van Alstyne
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Louisiana
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Dubai
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Ras Al Khaimah
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> HOMBORSUND
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Port Harcourt
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Van Alstyne
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Louisiana
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Kavala
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Drill String Tools & Equipment
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox" checked>
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> OCTG & Accessories
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Wellhead, Christmas Tree & Accessories
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Port Harcourt
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Van Alstyne
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Louisiana
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Dubai
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Ras Al Khaimah
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> HOMBORSUND
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Port Harcourt
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Van Alstyne
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Louisiana
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Kavala
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Drill String Tools & Equipment
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox" checked>
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> OCTG & Accessories
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Wellhead, Christmas Tree & Accessories
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Port Harcourt
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Van Alstyne
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Louisiana
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Dubai
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Ras Al Khaimah
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> HOMBORSUND
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Port Harcourt
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Van Alstyne
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Louisiana
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Kavala
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Louisiana
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="main_categories_sorting_element">
-                                <label> Kavala
-                                    <input class="main_categories_sorting_element__checkbox" type="checkbox">
-                                    <span class="main_categories_sorting_element__checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="main_categories_sorting_services_toggles_block">
-                    <h4>Main categories</h4>
-
-                    <div class="main_categories_sorting_services_toggles_list">
-                        <button class="button active">All Results</button>
-                        <button class="button">News</button>
-                        <button class="button">Expert Articles</button>
-                        <button class="button">Companies</button>
-                        <button class="button">Categories</button>
-                        <button class="button">Tags</button>
-                        <button class="button">All Results</button>
-                        <button class="button">News</button>
-                        <button class="button">Expert Articles</button>
-                        <button class="button">Companies</button>
-                        <button class="button">Categories</button>
-                        <button class="button">Tags</button>
-                        <button class="button">All Results</button>
-                        <button class="button">News</button>
-                        <button class="button">Expert Articles</button>
-                        <button class="button">Companies</button>
-                        <button class="button">Categories</button>
-                        <button class="button">Tags</button>
-                    </div>
-
-                </div>
-                <div class="main_categories_sorting_buttons">
-                    <span class="button button__white main_categories_filter_cancel">Cancel</span>
-                    <button class="button button__blue main_categories_show_companies_button">Show <span>44</span> companies</button>
-                </div>
-            </form>            
-        </div>
-
-        <div class="main_categories_sorting main_categories_sorting_verifed_track_record">
-            <div class="main_categories_sorting__title"><span>Verified Track Record</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg"></div>
-            <form class="main_categories_sorting_block" autocomplete="off">
-                <h4>Verified Track Record</h4>
-
-                <div class="main_categories_sorting_element">
-                    <label> Yes
-                        <input class="main_categories_sorting_element__checkbox" type="radio" name="VerificationStatusSort" checked>
-                        <span class="main_categories_sorting_element__radiomark"></span>
-                    </label>
+                <div class="search_page_filtering_block">
+                    <button id="search_page_filtering__all_results" class="button active">All Results</button>
+                    <button class="button">News</button>
+                    <button class="button">Expert Articles</button>
+                    <button class="button">Companies</button>
+                    <button class="button">Intelligence</button>
                 </div>
 
-                <div class="main_categories_sorting_element">               
-                    <label> No
-                        <input class="main_categories_sorting_element__checkbox" type="radio" name="VerificationStatusSort">
-                        <span class="main_categories_sorting_element__radiomark"></span>
-                    </label>
-                </div>              
-            </form>            
-        </div>
+                <div class="common_filters_block">
+                    <h3 class="common_filters_block__title">Filters:</h3>
 
-        <div class="main_categories_sorting main_categories_sorting_product_perfomance_data">
-            <div class="main_categories_sorting__title"><span>Verified Perfomance Data</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg"></div>
+                    <div class="common_sorting common_sorting_region">
+                        <div class="common_sorting__title"><span>Region</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg"></div>
+                        <form class="common_sorting_block" autocomplete="off">
+                            <div class="common_sorting_location_country_column">
 
-            <form class="main_categories_sorting_block" autocomplete="off">
-                <h4>Verified Perfomance Data</h4>
+                                <h4>Country</h4>
 
-                <div class="main_categories_sorting_element">
-                    <label> Yes
-                        <input class="main_categories_sorting_element__checkbox" type="radio" name="VerificationStatusSort" checked>
-                        <span class="main_categories_sorting_element__radiomark"></span>
-                    </label>
-                </div>
-
-                <div class="main_categories_sorting_element">
-                    <label> No
-                        <input class="main_categories_sorting_element__checkbox" type="radio" name="VerificationStatusSort">
-                        <span class="main_categories_sorting_element__radiomark"></span>
-                    </label>
-                </div>              
-            </form>  
-        </div>
-
-    </div>
-</div>
-
-<div class="suppliers_filtering_mobile_block">
-    <button class="suppliers_filtering_mobile_toggle button">Filters</button>
-</div>
-
-                    <div class="main_content_inner search_tiles_block">	
-  						<a href="#" class="search_results_tile search_results_company_tile">
-	<div class="search_results_tile_inner">
-		<div class="search_results_tile_header">
-			<div class="search_results_tile_header_img_column">
-				<img src="img/search_results/company_img.png" alt="Изображение">
-			</div>		
-			<div class="search_results_tile_header_info_column">	
-				<div class="search_results_company_tile_verification">
-					<span class="search_results_company_tile__category_name">Company</span>		
-					<img src="assets/suppliers/verified_icon.svg" alt="Изображение">		
-				</div>
-				<div class="search_results_company_tile_company_name">
-					<h2>National Oilwell Varco</h2>				
-				</div>				
-			</div>
-		</div>
-	
-		<div class="search_results_tile_content">
-			<span>Asset Maintenance & Integrity</span>
-			<span>Borehole Enlargement Systems</span>
-		</div>
-	</div>
-</a>    
-  						<a href="#" class="search_results_tile search_results_news_tile">
-	<div class="search_results_tile_inner">
-		<div class="search_results_tile_header">
-			<div class="search_results_tile_header_img_column">
-				<img src="img/search_results/news_img.png" alt="Изображение">
-			</div>		
-			<div class="search_results_tile_header_info_column">	
-				<span class="search_results_company_tile__category_name">News</span>			
-				<div class="search_results_company_tile_company_name">
-					<h2>Saudi Aramco awards contracts to L&T-led consortium</h2>				
-				</div>				
-			</div>
-		</div>
-	
-		<div class="search_results_tile_content latest_news_tile_content_info">
-                <div class="latest_news_tile_author">
-                    <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
-                    <span>Adam Boyshik</span>
-                </div>
-                <div class="latest_news_tile_views">
-                    <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
-                    <span>56251</span>
-                </div>
-                <div class="latest_news_tile_date">
-                    <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
-                    <span>24.01.2019</span>
-                </div>			
-		</div>
-	</div>
-</a>    
-  						<a href="#" class="search_results_tile search_results_article_tile">
-    <div class="search_results_tile_inner">
-        <div class="search_results_tile_header">
-            <div class="search_results_tile_header_img_column">
-                <img src="img/search_results/article_img.png" alt="Изображение">
-            </div>      
-            <div class="search_results_tile_header_info_column">    
-                <span class="search_results_company_tile__category_name">Expert article</span>            
-                <div class="search_results_company_tile_company_name">
-                    <h2>Saudi Aramco awards contracts to L&T-led consortium</h2>                
-                </div>              
-            </div>
-        </div>
-    
-        <div class="search_results_tile_content latest_news_tile_content_info">
-                <div class="latest_news_tile_author">
-                    <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
-                    <span>Adam Boyshik</span>
-                </div>
-                <div class="latest_news_tile_views">
-                    <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
-                    <span>56251</span>
-                </div>
-                <div class="latest_news_tile_date">
-                    <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
-                    <span>24.01.2019</span>
-                </div>          
-        </div>
-    </div>
-</a>  
-  						<a href="#" class="search_results_tile search_results_tag_tile">
-	<div class="search_results_tile_inner">
-		<div class="search_results_tile_header">
-			<div class="search_results_tile_header_img_column">
-				<img src="img/search_results/tag_img.png" alt="Изображение">
-			</div>		
-			<div class="search_results_tile_header_info_column">	
-				<span class="search_results_company_tile__category_name">Tags</span>			
-				<div class="search_results_company_tile_company_name">
-					<h2>E-Logging & Perforation</h2>				
-				</div>				
-			</div>
-		</div>
-	
-		<div class="search_results_tile_content">
-			<span>Artificial Lift - Summary</span>
-			<span>Comenting Services</span>
-		</div>
-	</div>
-</a>  						<a href="#" class="search_results_tile search_results_company_tile">
-	<div class="search_results_tile_inner">
-		<div class="search_results_tile_header">
-			<div class="search_results_tile_header_img_column">
-				<img src="img/search_results/company_img.png" alt="Изображение">
-			</div>		
-			<div class="search_results_tile_header_info_column">	
-				<div class="search_results_company_tile_verification">
-					<span class="search_results_company_tile__category_name">Company</span>		
-					<img src="assets/suppliers/verified_icon.svg" alt="Изображение">		
-				</div>
-				<div class="search_results_company_tile_company_name">
-					<h2>National Oilwell Varco</h2>				
-				</div>				
-			</div>
-		</div>
-	
-		<div class="search_results_tile_content">
-			<span>Asset Maintenance & Integrity</span>
-			<span>Borehole Enlargement Systems</span>
-		</div>
-	</div>
-</a>    
-  						<a href="#" class="search_results_tile search_results_news_tile">
-	<div class="search_results_tile_inner">
-		<div class="search_results_tile_header">
-			<div class="search_results_tile_header_img_column">
-				<img src="img/search_results/news_img.png" alt="Изображение">
-			</div>		
-			<div class="search_results_tile_header_info_column">	
-				<span class="search_results_company_tile__category_name">News</span>			
-				<div class="search_results_company_tile_company_name">
-					<h2>Saudi Aramco awards contracts to L&T-led consortium</h2>				
-				</div>				
-			</div>
-		</div>
-	
-		<div class="search_results_tile_content latest_news_tile_content_info">
-                <div class="latest_news_tile_author">
-                    <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
-                    <span>Adam Boyshik</span>
-                </div>
-                <div class="latest_news_tile_views">
-                    <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
-                    <span>56251</span>
-                </div>
-                <div class="latest_news_tile_date">
-                    <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
-                    <span>24.01.2019</span>
-                </div>			
-		</div>
-	</div>
-</a>    
-  						<a href="#" class="search_results_tile search_results_article_tile">
-    <div class="search_results_tile_inner">
-        <div class="search_results_tile_header">
-            <div class="search_results_tile_header_img_column">
-                <img src="img/search_results/article_img.png" alt="Изображение">
-            </div>      
-            <div class="search_results_tile_header_info_column">    
-                <span class="search_results_company_tile__category_name">Expert article</span>            
-                <div class="search_results_company_tile_company_name">
-                    <h2>Saudi Aramco awards contracts to L&T-led consortium</h2>                
-                </div>              
-            </div>
-        </div>
-    
-        <div class="search_results_tile_content latest_news_tile_content_info">
-                <div class="latest_news_tile_author">
-                    <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
-                    <span>Adam Boyshik</span>
-                </div>
-                <div class="latest_news_tile_views">
-                    <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
-                    <span>56251</span>
-                </div>
-                <div class="latest_news_tile_date">
-                    <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
-                    <span>24.01.2019</span>
-                </div>          
-        </div>
-    </div>
-</a>  
-  						<a href="#" class="search_results_tile search_results_tag_tile">
-	<div class="search_results_tile_inner">
-		<div class="search_results_tile_header">
-			<div class="search_results_tile_header_img_column">
-				<img src="img/search_results/tag_img.png" alt="Изображение">
-			</div>		
-			<div class="search_results_tile_header_info_column">	
-				<span class="search_results_company_tile__category_name">Tags</span>			
-				<div class="search_results_company_tile_company_name">
-					<h2>E-Logging & Perforation</h2>				
-				</div>				
-			</div>
-		</div>
-	
-		<div class="search_results_tile_content">
-			<span>Artificial Lift - Summary</span>
-			<span>Comenting Services</span>
-		</div>
-	</div>
-</a>  						<a href="#" class="search_results_tile search_results_company_tile">
-	<div class="search_results_tile_inner">
-		<div class="search_results_tile_header">
-			<div class="search_results_tile_header_img_column">
-				<img src="img/search_results/company_img.png" alt="Изображение">
-			</div>		
-			<div class="search_results_tile_header_info_column">	
-				<div class="search_results_company_tile_verification">
-					<span class="search_results_company_tile__category_name">Company</span>		
-					<img src="assets/suppliers/verified_icon.svg" alt="Изображение">		
-				</div>
-				<div class="search_results_company_tile_company_name">
-					<h2>National Oilwell Varco</h2>				
-				</div>				
-			</div>
-		</div>
-	
-		<div class="search_results_tile_content">
-			<span>Asset Maintenance & Integrity</span>
-			<span>Borehole Enlargement Systems</span>
-		</div>
-	</div>
-</a>    
-  						<a href="#" class="search_results_tile search_results_news_tile">
-	<div class="search_results_tile_inner">
-		<div class="search_results_tile_header">
-			<div class="search_results_tile_header_img_column">
-				<img src="img/search_results/news_img.png" alt="Изображение">
-			</div>		
-			<div class="search_results_tile_header_info_column">	
-				<span class="search_results_company_tile__category_name">News</span>			
-				<div class="search_results_company_tile_company_name">
-					<h2>Saudi Aramco awards contracts to L&T-led consortium</h2>				
-				</div>				
-			</div>
-		</div>
-	
-		<div class="search_results_tile_content latest_news_tile_content_info">
-                <div class="latest_news_tile_author">
-                    <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
-                    <span>Adam Boyshik</span>
-                </div>
-                <div class="latest_news_tile_views">
-                    <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
-                    <span>56251</span>
-                </div>
-                <div class="latest_news_tile_date">
-                    <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
-                    <span>24.01.2019</span>
-                </div>			
-		</div>
-	</div>
-</a>    
-  						<a href="#" class="search_results_tile search_results_article_tile">
-    <div class="search_results_tile_inner">
-        <div class="search_results_tile_header">
-            <div class="search_results_tile_header_img_column">
-                <img src="img/search_results/article_img.png" alt="Изображение">
-            </div>      
-            <div class="search_results_tile_header_info_column">    
-                <span class="search_results_company_tile__category_name">Expert article</span>            
-                <div class="search_results_company_tile_company_name">
-                    <h2>Saudi Aramco awards contracts to L&T-led consortium</h2>                
-                </div>              
-            </div>
-        </div>
-    
-        <div class="search_results_tile_content latest_news_tile_content_info">
-                <div class="latest_news_tile_author">
-                    <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
-                    <span>Adam Boyshik</span>
-                </div>
-                <div class="latest_news_tile_views">
-                    <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
-                    <span>56251</span>
-                </div>
-                <div class="latest_news_tile_date">
-                    <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
-                    <span>24.01.2019</span>
-                </div>          
-        </div>
-    </div>
-</a>  
-  						<a href="#" class="search_results_tile search_results_tag_tile">
-	<div class="search_results_tile_inner">
-		<div class="search_results_tile_header">
-			<div class="search_results_tile_header_img_column">
-				<img src="img/search_results/tag_img.png" alt="Изображение">
-			</div>		
-			<div class="search_results_tile_header_info_column">	
-				<span class="search_results_company_tile__category_name">Tags</span>			
-				<div class="search_results_company_tile_company_name">
-					<h2>E-Logging & Perforation</h2>				
-				</div>				
-			</div>
-		</div>
-	
-		<div class="search_results_tile_content">
-			<span>Artificial Lift - Summary</span>
-			<span>Comenting Services</span>
-		</div>
-	</div>
-</a>  						  				    						  
-
-                        <div class="load_more_button_block">
-                            <a href="#" class="button load_more_button full_width">
-                                <div class="button__icon">
-                                    <img class="svg" src="assets/load_icon.svg" alt="Изображение">
+                                <div class="common_sorting_element">
+                                    <label> United States
+                                        <input class="common_sorting_element__checkbox" type="checkbox" checked>
+                                        <span class="common_sorting_element__checkmark"></span>
+                                    </label>
                                 </div>
-                                <span>Load More</span>
-                            </a>
+                                <div class="common_sorting_element">
+                                    <label> France
+                                        <input class="common_sorting_element__checkbox" type="checkbox">
+                                        <span class="common_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="common_sorting_element">
+                                    <label> Canada
+                                        <input class="common_sorting_element__checkbox" type="checkbox">
+                                        <span class="common_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="common_sorting_element">
+                                    <label> Uganda
+                                        <input class="common_sorting_element__checkbox" type="checkbox">
+                                        <span class="common_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="common_sorting_element">
+                                    <label> Japan
+                                        <input class="common_sorting_element__checkbox" type="checkbox">
+                                        <span class="common_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="common_sorting_element">
+                                    <label> China
+                                        <input class="common_sorting_element__checkbox" type="checkbox">
+                                        <span class="common_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="common_sorting_element">
+                                    <label> UK
+                                        <input class="common_sorting_element__checkbox" type="checkbox">
+                                        <span class="common_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="common_sorting_element">
+                                    <label> Ukraine
+                                        <input class="common_sorting_element__checkbox" type="checkbox">
+                                        <span class="common_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="common_sorting_element">
+                                    <label> South Korea
+                                        <input class="common_sorting_element__checkbox" type="checkbox">
+                                        <span class="common_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="common_sorting_location_city_column">
+                                <h4>City</h4>
+
+                                <div class="common_sorting_location_city_wrapper">
+
+                                    <div class="common_sorting_location_city">
+
+                                        <h4>United States:</h4>
+
+                                        <div class="common_sorting_element">
+                                            <label> Miami
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> San Francisco
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Nashville
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Boston
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Seatle
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="common_sorting_location_city">
+
+                                        <h4>France:</h4>
+
+                                        <div class="common_sorting_element">
+                                            <label> Paris
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Marsel
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Leon
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="common_sorting_location_city">
+
+                                        <h4>United Kingdom:</h4>
+
+                                        <div class="common_sorting_element">
+                                            <label> Paris
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Marsel
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="common_sorting_location_city">
+
+                                        <h4>Egypt:</h4>
+
+                                        <div class="common_sorting_element">
+                                            <label> Sharm-El-Sheikh
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Hurgada
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Nashville
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Boston
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Seatle
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="common_sorting_location_city">
+
+                                        <h4>United Kingdom:</h4>
+
+                                        <div class="common_sorting_element">
+                                            <label> Paris
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Marsel
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="common_sorting_location_city">
+
+                                        <h4>Egypt:</h4>
+
+                                        <div class="common_sorting_element">
+                                            <label> Sharm-El-Sheikh
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Hurgada
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Nashville
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Boston
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Seatle
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"><img src="assets/check_icon__white.svg" alt="Изображение" class="svg"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="common_sorting_buttons">
+                                <span class="button button__white common_filter_cancel">Cancel</span>
+                                <button class="button button__blue common_show_companies_button">Show <span>44</span> companies</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="common_sorting common_sorting_clients">
+                        <div class="common_sorting__title"><span>Major Clients</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg"></div>
+                        <form class="common_sorting_block" autocomplete="off">
+                            <div class="common_sorting_location_country_column">
+
+                                <h4>Country</h4>
+
+                                <div class="common_sorting_element">
+                                    <label> United States
+                                        <input class="common_sorting_element__checkbox" type="checkbox" checked>
+                                        <span class="common_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="common_sorting_element">
+                                    <label> France
+                                        <input class="common_sorting_element__checkbox" type="checkbox">
+                                        <span class="common_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="common_sorting_element">
+                                    <label> Canada
+                                        <input class="common_sorting_element__checkbox" type="checkbox">
+                                        <span class="common_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="common_sorting_element">
+                                    <label> Uganda
+                                        <input class="common_sorting_element__checkbox" type="checkbox">
+                                        <span class="common_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="common_sorting_element">
+                                    <label> Japan
+                                        <input class="common_sorting_element__checkbox" type="checkbox">
+                                        <span class="common_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="common_sorting_element">
+                                    <label> China
+                                        <input class="common_sorting_element__checkbox" type="checkbox">
+                                        <span class="common_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="common_sorting_element">
+                                    <label> UK
+                                        <input class="common_sorting_element__checkbox" type="checkbox">
+                                        <span class="common_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="common_sorting_element">
+                                    <label> Ukraine
+                                        <input class="common_sorting_element__checkbox" type="checkbox">
+                                        <span class="common_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="common_sorting_element">
+                                    <label> South Korea
+                                        <input class="common_sorting_element__checkbox" type="checkbox">
+                                        <span class="common_sorting_element__checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="common_sorting_location_city_column">
+                                <h4>City</h4>
+
+                                <div class="common_sorting_location_city_wrapper">
+
+                                    <div class="common_sorting_location_city">
+
+                                        <h4>United States:</h4>
+
+                                        <div class="common_sorting_element">
+                                            <label> Miami
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> San Francisco
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Nashville
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Boston
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Seatle
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="common_sorting_location_city">
+
+                                        <h4>France:</h4>
+
+                                        <div class="common_sorting_element">
+                                            <label> Paris
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Marsel
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Leon
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="common_sorting_location_city">
+
+                                        <h4>United Kingdom:</h4>
+
+                                        <div class="common_sorting_element">
+                                            <label> Paris
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Marsel
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="common_sorting_location_city">
+
+                                        <h4>Egypt:</h4>
+
+                                        <div class="common_sorting_element">
+                                            <label> Sharm-El-Sheikh
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Hurgada
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Nashville
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Boston
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Seatle
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="common_sorting_location_city">
+
+                                        <h4>United Kingdom:</h4>
+
+                                        <div class="common_sorting_element">
+                                            <label> Paris
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Marsel
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="common_sorting_location_city">
+
+                                        <h4>Egypt:</h4>
+
+                                        <div class="common_sorting_element">
+                                            <label> Sharm-El-Sheikh
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Hurgada
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Nashville
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Boston
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Seatle
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"><img src="assets/check_icon__white.svg" alt="Изображение" class="svg"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="common_sorting_buttons">
+                                <span class="button button__white common_filter_cancel">Cancel</span>
+                                <button class="button button__blue common_show_companies_button">Show <span>44</span> companies</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="common_sorting common_sorting_services">
+                        <div class="common_sorting__title"><span>Products & Services</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg">
+                        </div>
+                        <form class="common_sorting_block" autocomplete="off">
+                            <div class="common_sorting_services_checkbox_block">
+                                <div class="common_sorting_services_checkbox_categories_column">
+                                    <h4>Main categories</h4>
+
+                                    <div class="common_sorting_elements_wrapper">
+                                        <div class="common_sorting_element">
+                                            <label> Drilling & Completion
+                                                <input class="common_sorting_element__checkbox" type="checkbox" checked>
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Production
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Rotating & Static Equipment
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Bulk Materials, Chemicals, Paints and Oils
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Subsea Services & Pipeline Equipment
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Seismic, Survey And Positioning
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Inspection And Testing
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Logistics And Transport
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Marine
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Engineering, Consultancy And Professional Services
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Construction, Maintenance, & Overhaul
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Multidiscipline & Turnkey Services
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Other Support Services
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="common_sorting_services_checkbox_services_column">
+                                    <h4>Services</h4>
+
+                                    <div class="common_sorting_elements_wrapper">
+                                        <div class="common_sorting_element">
+                                            <label> Drill String Tools & Equipment
+                                                <input class="common_sorting_element__checkbox" type="checkbox" checked>
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> OCTG & Accessories
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Wellhead, Christmas Tree & Accessories
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Port Harcourt
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Van Alstyne
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Louisiana
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Dubai
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Ras Al Khaimah
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> HOMBORSUND
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Port Harcourt
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Van Alstyne
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Louisiana
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Kavala
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Drill String Tools & Equipment
+                                                <input class="common_sorting_element__checkbox" type="checkbox" checked>
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> OCTG & Accessories
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Wellhead, Christmas Tree & Accessories
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Port Harcourt
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Van Alstyne
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Louisiana
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Dubai
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Ras Al Khaimah
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> HOMBORSUND
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Port Harcourt
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Van Alstyne
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Louisiana
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Kavala
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Drill String Tools & Equipment
+                                                <input class="common_sorting_element__checkbox" type="checkbox" checked>
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> OCTG & Accessories
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Wellhead, Christmas Tree & Accessories
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Port Harcourt
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Van Alstyne
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Louisiana
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Dubai
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Ras Al Khaimah
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> HOMBORSUND
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Port Harcourt
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Van Alstyne
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Louisiana
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Kavala
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Louisiana
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="common_sorting_element">
+                                            <label> Kavala
+                                                <input class="common_sorting_element__checkbox" type="checkbox">
+                                                <span class="common_sorting_element__checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="common_sorting_services_toggles_block">
+                                <h4>Main categories</h4>
+
+                                <div class="common_sorting_services_toggles_list">
+                                    <button class="button active">All Results</button>
+                                    <button class="button">News</button>
+                                    <button class="button">Expert Articles</button>
+                                    <button class="button">Companies</button>
+                                    <button class="button">Categories</button>
+                                    <button class="button">Tags</button>
+                                    <button class="button">All Results</button>
+                                    <button class="button">News</button>
+                                    <button class="button">Expert Articles</button>
+                                    <button class="button">Companies</button>
+                                    <button class="button">Categories</button>
+                                    <button class="button">Tags</button>
+                                    <button class="button">All Results</button>
+                                    <button class="button">News</button>
+                                    <button class="button">Expert Articles</button>
+                                    <button class="button">Companies</button>
+                                    <button class="button">Categories</button>
+                                    <button class="button">Tags</button>
+                                </div>
+
+                            </div>
+                            <div class="common_sorting_buttons">
+                                <span class="button button__white common_filter_cancel">Cancel</span>
+                                <button class="button button__blue common_show_companies_button">Show <span>44</span> companies</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="common_sorting common_sorting_verifed_track_record">
+                        <div class="common_sorting__title"><span>Verified Track Record</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg"></div>
+                        <form class="common_sorting_block" autocomplete="off">
+                            <h4>Verified Track Record</h4>
+
+                            <div class="common_sorting_element">
+                                <label> Yes
+                                    <input class="common_sorting_element__checkbox" type="radio" name="VerificationStatusSort" checked>
+                                    <span class="common_sorting_element__radiomark"></span>
+                                </label>
+                            </div>
+
+                            <div class="common_sorting_element">
+                                <label> No
+                                    <input class="common_sorting_element__checkbox" type="radio" name="VerificationStatusSort">
+                                    <span class="common_sorting_element__radiomark"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="common_sorting common_sorting_product_perfomance_data">
+                        <div class="common_sorting__title"><span>Verified Perfomance Data</span> <img src="assets/drop_down_arrow_icon.svg" alt="Изображение" class="svg"></div>
+
+                        <form class="common_sorting_block" autocomplete="off">
+                            <h4>Verified Perfomance Data</h4>
+
+                            <div class="common_sorting_element">
+                                <label> Yes
+                                    <input class="common_sorting_element__checkbox" type="radio" name="VerificationStatusSort" checked>
+                                    <span class="common_sorting_element__radiomark"></span>
+                                </label>
+                            </div>
+
+                            <div class="common_sorting_element">
+                                <label> No
+                                    <input class="common_sorting_element__checkbox" type="radio" name="VerificationStatusSort">
+                                    <span class="common_sorting_element__radiomark"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="common_filtering_mobile_block">
+                <button class="common_filtering_mobile_toggle button">Filters</button>
+            </div>
+
+            <div class="main_content_inner search_tiles_block">
+                <a href="#" class="search_results_tile search_results_company_tile">
+                    <div class="search_results_tile_inner">
+                        <div class="search_results_tile_header">
+                            <div class="search_results_tile_header_img_column">
+                                <img src="img/search_results/company_img.png" alt="Изображение">
+                            </div>
+                            <div class="search_results_tile_header_info_column">
+                                <div class="search_results_company_tile_verification">
+                                    <span class="search_results_company_tile__category_name">Company</span>
+                                    <img src="assets/suppliers/verified_icon.svg" alt="Изображение">
+                                </div>
+                                <div class="search_results_company_tile_company_name">
+                                    <h2>National Oilwell Varco</h2>
+                                </div>
+                            </div>
                         </div>
 
+                        <div class="search_results_tile_content">
+                            <span>Asset Maintenance & Integrity</span>
+                            <span>Borehole Enlargement Systems</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search_results_tile search_results_news_tile">
+                    <div class="search_results_tile_inner">
+                        <div class="search_results_tile_header">
+                            <div class="search_results_tile_header_img_column">
+                                <img src="img/search_results/news_img.png" alt="Изображение">
+                            </div>
+                            <div class="search_results_tile_header_info_column">
+                                <span class="search_results_company_tile__category_name">News</span>
+                                <div class="search_results_company_tile_company_name">
+                                    <h2>Saudi Aramco awards contracts to L&T-led consortium</h2>
+                                </div>
+                            </div>
+                        </div>
 
-				</div>
-			</div>
-		</section>		
+                        <div class="search_results_tile_content latest_news_tile_content_info">
+                            <div class="latest_news_tile_author">
+                                <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                <span>Adam Boyshik</span>
+                            </div>
+                            <div class="latest_news_tile_views">
+                                <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                <span>56251</span>
+                            </div>
+                            <div class="latest_news_tile_date">
+                                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                <span>24.01.2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search_results_tile search_results_article_tile">
+                    <div class="search_results_tile_inner">
+                        <div class="search_results_tile_header">
+                            <div class="search_results_tile_header_img_column">
+                                <img src="img/search_results/article_img.png" alt="Изображение">
+                            </div>
+                            <div class="search_results_tile_header_info_column">
+                                <span class="search_results_company_tile__category_name">Expert article</span>
+                                <div class="search_results_company_tile_company_name">
+                                    <h2>Saudi Aramco awards contracts to L&T-led consortium</h2>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="search_results_tile_content latest_news_tile_content_info">
+                            <div class="latest_news_tile_author">
+                                <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                <span>Adam Boyshik</span>
+                            </div>
+                            <div class="latest_news_tile_views">
+                                <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                <span>56251</span>
+                            </div>
+                            <div class="latest_news_tile_date">
+                                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                <span>24.01.2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search_results_tile search_results_tag_tile">
+                    <div class="search_results_tile_inner">
+                        <div class="search_results_tile_header">
+                            <div class="search_results_tile_header_img_column">
+                                <img src="img/search_results/tag_img.png" alt="Изображение">
+                            </div>
+                            <div class="search_results_tile_header_info_column">
+                                <span class="search_results_company_tile__category_name">Tags</span>
+                                <div class="search_results_company_tile_company_name">
+                                    <h2>E-Logging & Perforation</h2>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="search_results_tile_content">
+                            <span>Artificial Lift - Summary</span>
+                            <span>Comenting Services</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search_results_tile search_results_company_tile">
+                    <div class="search_results_tile_inner">
+                        <div class="search_results_tile_header">
+                            <div class="search_results_tile_header_img_column">
+                                <img src="img/search_results/company_img.png" alt="Изображение">
+                            </div>
+                            <div class="search_results_tile_header_info_column">
+                                <div class="search_results_company_tile_verification">
+                                    <span class="search_results_company_tile__category_name">Company</span>
+                                    <img src="assets/suppliers/verified_icon.svg" alt="Изображение">
+                                </div>
+                                <div class="search_results_company_tile_company_name">
+                                    <h2>National Oilwell Varco</h2>
+                                </div>
+                            </div>
+                        </div>
 
-		<footer class="footer_wrapper">
-	<div class="container">
-		<div class="footer_logo_block">
-			<img class="svg" src="assets/header/logo__dark.svg" alt="Логотип">
-		</div>
-		<div class="footer_info_block">
-			<div class="footer_info_about_us_column">
-				<h4 class="footer_info__title">About Us</h4>
-				<p class="footer_info__desc">Daleel is a portal that provides unique business intelligence to make the best decisions and allows exchange of knowledge that our industry needs to best meet its requirements.</p>
-			</div>
-			<div class="footer_info_resources_column">
-				<h4 class="footer_info__title">Resources</h4>
-				<ul class="footer_info_resources_list">
-					<li class="footer_info_resources_list__item"><a href="#">Our Story and Why We Do It</a></li>
-					<li class="footer_info_resources_list__item"><a href="#">Privacy Policy</a></li>
-					<li class="footer_info_resources_list__item"><a href="#">Terms Of Use</a></li>
-					<li class="footer_info_resources_list__item"><a href="#">Contacts</a></li>
-				</ul>
-			</div>
-			<div class="footer_info_block_newsletter_column">
-				<h4 class="footer_info__title">Newsletter</h4>
-				<div class="footer_info_block_newsletter">
-					<input type="email" placeholder="Email adress" maxlength="100" required>
-					<button type="submit">Subscribe</button>
-				</div>
-				<span class="footer_info__copyright">© 2015 All rights reserved Daleel</span>											
-			</div>
-		</div>
-	</div>
-</footer>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-<script src="scripts/main.js"></script>
-<script src="scripts/mobile.js"></script>
-<script src="scripts/curcle_chart.js"></script>
+                        <div class="search_results_tile_content">
+                            <span>Asset Maintenance & Integrity</span>
+                            <span>Borehole Enlargement Systems</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search_results_tile search_results_news_tile">
+                    <div class="search_results_tile_inner">
+                        <div class="search_results_tile_header">
+                            <div class="search_results_tile_header_img_column">
+                                <img src="img/search_results/news_img.png" alt="Изображение">
+                            </div>
+                            <div class="search_results_tile_header_info_column">
+                                <span class="search_results_company_tile__category_name">News</span>
+                                <div class="search_results_company_tile_company_name">
+                                    <h2>Saudi Aramco awards contracts to L&T-led consortium</h2>
+                                </div>
+                            </div>
+                        </div>
 
-	</body>
+                        <div class="search_results_tile_content latest_news_tile_content_info">
+                            <div class="latest_news_tile_author">
+                                <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                <span>Adam Boyshik</span>
+                            </div>
+                            <div class="latest_news_tile_views">
+                                <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                <span>56251</span>
+                            </div>
+                            <div class="latest_news_tile_date">
+                                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                <span>24.01.2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search_results_tile search_results_article_tile">
+                    <div class="search_results_tile_inner">
+                        <div class="search_results_tile_header">
+                            <div class="search_results_tile_header_img_column">
+                                <img src="img/search_results/article_img.png" alt="Изображение">
+                            </div>
+                            <div class="search_results_tile_header_info_column">
+                                <span class="search_results_company_tile__category_name">Expert article</span>
+                                <div class="search_results_company_tile_company_name">
+                                    <h2>Saudi Aramco awards contracts to L&T-led consortium</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="search_results_tile_content latest_news_tile_content_info">
+                            <div class="latest_news_tile_author">
+                                <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                <span>Adam Boyshik</span>
+                            </div>
+                            <div class="latest_news_tile_views">
+                                <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                <span>56251</span>
+                            </div>
+                            <div class="latest_news_tile_date">
+                                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                <span>24.01.2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search_results_tile search_results_tag_tile">
+                    <div class="search_results_tile_inner">
+                        <div class="search_results_tile_header">
+                            <div class="search_results_tile_header_img_column">
+                                <img src="img/search_results/tag_img.png" alt="Изображение">
+                            </div>
+                            <div class="search_results_tile_header_info_column">
+                                <span class="search_results_company_tile__category_name">Tags</span>
+                                <div class="search_results_company_tile_company_name">
+                                    <h2>E-Logging & Perforation</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="search_results_tile_content">
+                            <span>Artificial Lift - Summary</span>
+                            <span>Comenting Services</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search_results_tile search_results_company_tile">
+                    <div class="search_results_tile_inner">
+                        <div class="search_results_tile_header">
+                            <div class="search_results_tile_header_img_column">
+                                <img src="img/search_results/company_img.png" alt="Изображение">
+                            </div>
+                            <div class="search_results_tile_header_info_column">
+                                <div class="search_results_company_tile_verification">
+                                    <span class="search_results_company_tile__category_name">Company</span>
+                                    <img src="assets/suppliers/verified_icon.svg" alt="Изображение">
+                                </div>
+                                <div class="search_results_company_tile_company_name">
+                                    <h2>National Oilwell Varco</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="search_results_tile_content">
+                            <span>Asset Maintenance & Integrity</span>
+                            <span>Borehole Enlargement Systems</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search_results_tile search_results_news_tile">
+                    <div class="search_results_tile_inner">
+                        <div class="search_results_tile_header">
+                            <div class="search_results_tile_header_img_column">
+                                <img src="img/search_results/news_img.png" alt="Изображение">
+                            </div>
+                            <div class="search_results_tile_header_info_column">
+                                <span class="search_results_company_tile__category_name">News</span>
+                                <div class="search_results_company_tile_company_name">
+                                    <h2>Saudi Aramco awards contracts to L&T-led consortium</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="search_results_tile_content latest_news_tile_content_info">
+                            <div class="latest_news_tile_author">
+                                <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                <span>Adam Boyshik</span>
+                            </div>
+                            <div class="latest_news_tile_views">
+                                <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                <span>56251</span>
+                            </div>
+                            <div class="latest_news_tile_date">
+                                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                <span>24.01.2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search_results_tile search_results_article_tile">
+                    <div class="search_results_tile_inner">
+                        <div class="search_results_tile_header">
+                            <div class="search_results_tile_header_img_column">
+                                <img src="img/search_results/article_img.png" alt="Изображение">
+                            </div>
+                            <div class="search_results_tile_header_info_column">
+                                <span class="search_results_company_tile__category_name">Expert article</span>
+                                <div class="search_results_company_tile_company_name">
+                                    <h2>Saudi Aramco awards contracts to L&T-led consortium</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="search_results_tile_content latest_news_tile_content_info">
+                            <div class="latest_news_tile_author">
+                                <img class="svg" src="assets/news/author_icon.svg" alt="Изображение">
+                                <span>Adam Boyshik</span>
+                            </div>
+                            <div class="latest_news_tile_views">
+                                <img class="svg" src="assets/news/view_counter_icon.svg" alt="Изображение">
+                                <span>56251</span>
+                            </div>
+                            <div class="latest_news_tile_date">
+                                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Изображение">
+                                <span>24.01.2019</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="search_results_tile search_results_tag_tile">
+                    <div class="search_results_tile_inner">
+                        <div class="search_results_tile_header">
+                            <div class="search_results_tile_header_img_column">
+                                <img src="img/search_results/tag_img.png" alt="Изображение">
+                            </div>
+                            <div class="search_results_tile_header_info_column">
+                                <span class="search_results_company_tile__category_name">Tags</span>
+                                <div class="search_results_company_tile_company_name">
+                                    <h2>E-Logging & Perforation</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="search_results_tile_content">
+                            <span>Artificial Lift - Summary</span>
+                            <span>Comenting Services</span>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="load_more_button_block">
+                    <a href="#" class="button load_more_button full_width">
+                        <div class="button__icon">
+                            <img class="svg" src="assets/load_icon.svg" alt="Изображение">
+                        </div>
+                        <span>Load More</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer_wrapper">
+        <div class="container">
+            <div class="footer_logo_block">
+                <img class="svg" src="assets/header/logo__dark.svg" alt="Логотип">
+            </div>
+            <div class="footer_info_block">
+                <div class="footer_info_about_us_column">
+                    <h4 class="footer_info__title">About Us</h4>
+                    <p class="footer_info__desc">Daleel is a portal that provides unique business intelligence to make the best decisions and allows exchange of knowledge that our industry needs to best meet its requirements.</p>
+                </div>
+                <div class="footer_info_resources_column">
+                    <h4 class="footer_info__title">Resources</h4>
+                    <ul class="footer_info_resources_list">
+                        <li class="footer_info_resources_list__item"><a href="#">Our Story and Why We Do It</a></li>
+                        <li class="footer_info_resources_list__item"><a href="#">Privacy Policy</a></li>
+                        <li class="footer_info_resources_list__item"><a href="#">Terms Of Use</a></li>
+                        <li class="footer_info_resources_list__item"><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer_info_block_newsletter_column">
+                    <h4 class="footer_info__title">Newsletter</h4>
+                    <div class="footer_info_block_newsletter">
+                        <input type="email" placeholder="Email adress" maxlength="100" required>
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <span class="footer_info__copyright">© 2015 All rights reserved Daleel</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/mobile.js"></script>
+    <script src="scripts/curcle_chart.js"></script>
+
+</body>
