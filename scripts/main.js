@@ -508,6 +508,14 @@ $(document).ready(function() {
         CategoriesSubMenuWidth.css('top', '0');
         let CategoriesMenuWidth = $('.main_categories_list').width();
         let CategoriesSubMenuPosition = $('.main_categories_submenu_list').css('left', CategoriesMenuWidth);
+
+
+        $('.main_categories_submenu_list').each(function() {
+        	mainCategoriesListChildrenCount = $(this).children().length;
+        	if (mainCategoriesListChildrenCount == 1) {
+        		$(this).css('columns', '1');
+        	}
+        });
     }
 
 
