@@ -735,11 +735,16 @@ $(document).ready(function() {
             $(this).css('height', tableHeadSectionHeight + (tableHeadSectionPadding * 2));
             $(this).find('h3').css('height', tableHeadSectionTitleHeight);
         });
+    }
     
     function suppliersMainPageImageSizing() {
         let suppliersTileCompanyLinksBlockHeight = $('.suppliers_tile_long.suppliers_tile .suppliers_tile_company_links_column').height();
         let suppliersTileCompanyImgBlockHeight = $('.suppliers_tile_long.suppliers_tile .suppliers_tile_company_img_column').css('height', suppliersTileCompanyLinksBlockHeight);
     }
+    
+    function suppliersTileRadialBlockSizing() {
+        let suppliersTileCompanyLinksBlockWidth = $('.suppliers_tile_company_links_column').width();
+        let suppliersTileRadialblockWidth = $('.suppliers_tile_radial_block').css('width', suppliersTileCompanyLinksBlockWidth);
     }
 
 
@@ -774,6 +779,7 @@ $(document).ready(function() {
             accountPageToggleFilters();
             suppliers_Tile_Short_SummaryReview_Linear_Criteria_Width();
             suppliers_Tile_SummaryReview_Linear_Criteria_Width();
+            suppliersTileRadialBlockSizing();
         }
         if (window.matchMedia('screen and (min-width: 1320px)').matches) {
             suppliersMainPageImageSizing();            
