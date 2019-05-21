@@ -508,14 +508,6 @@ $(document).ready(function() {
         CategoriesSubMenuWidth.css('top', '0');
         let CategoriesMenuWidth = $('.main_categories_list').width();
         let CategoriesSubMenuPosition = $('.main_categories_submenu_list').css('left', CategoriesMenuWidth);
-
-
-        $('.main_categories_submenu_list').each(function() {
-        	mainCategoriesListChildrenCount = $(this).children().length;
-        	if (mainCategoriesListChildrenCount == 1) {
-        		$(this).addClass('one_column');
-        	}
-        });
     }
 
 
@@ -743,8 +735,25 @@ $(document).ready(function() {
             $(this).css('height', tableHeadSectionHeight + (tableHeadSectionPadding * 2));
             $(this).find('h3').css('height', tableHeadSectionTitleHeight);
         });
+    
+    function suppliersMainPageImageSizing() {
+        let suppliersTileCompanyLinksBlockHeight = $('.suppliers_tile_long.suppliers_tile .suppliers_tile_company_links_column').height();
+        let suppliersTileCompanyImgBlockHeight = $('.suppliers_tile_long.suppliers_tile .suppliers_tile_company_img_column').css('height', suppliersTileCompanyLinksBlockHeight);
+    }
     }
 
+
+    function suppliers_Tile_Short_SummaryReview_Linear_Criteria_Width() {
+        let suppliersTileCompanyInfoOveralAndMajorCategoriesWidth = $('.suppliers_tile_short.suppliers_tile .suppliers_tile_company_info_overal_and_major_categories_wrapper').width();
+        let suppliersTileLinearBlockWidth = $('.suppliers_tile_short.suppliers_tile .suppliers_tile_linear_block').css('width', suppliersTileCompanyInfoOveralAndMajorCategoriesWidth);
+    }
+
+
+
+    function suppliers_Tile_SummaryReview_Linear_Criteria_Width() {
+        let suppliersTileCompanyInfoAndHighlightsBlockWidth = $('.suppliers_tile_long.suppliers_tile .suppliers_tile_company_info_and_highlights_block').width();
+        let suppliersTileLinearBlockWidth = $('.suppliers_tile_long.suppliers_tile .suppliers_tile_linear_block').css('width', suppliersTileCompanyInfoAndHighlightsBlockWidth);
+    }
 
     $(window).on('load resize', function() {
 
@@ -763,8 +772,12 @@ $(document).ready(function() {
             yesNoFiltersWidth__Desktop_Settings();
             searchPageToggleFilters();
             accountPageToggleFilters();
+            suppliers_Tile_Short_SummaryReview_Linear_Criteria_Width();
+            suppliers_Tile_SummaryReview_Linear_Criteria_Width();
         }
-
+        if (window.matchMedia('screen and (min-width: 1320px)').matches) {
+            suppliersMainPageImageSizing();            
+        }
     });
 
 

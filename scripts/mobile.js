@@ -116,7 +116,7 @@ $(document).ready(function() {
 
         suppliersTileLocationOfficesTiles.css('height', suppliersTileLocationOfficesTileHeight__first);
 
-        $('.suppliers_tile_location_offices_tiles_wrapper').append('<div class="suppliers_tile_location_block__all_offices button"> <div class="button__icon"> <img src="/assets/all_offices_icon.svg" alt="Image" class="svg"> </div><span>See all offices</span> </div>');
+        $('.suppliers_tile_location_offices_tiles_wrapper').append('<div class="suppliers_tile_location_block__all_offices button"> <div class="button__icon"> <img src="/assets/all_offices_icon.svg" alt="Изображение" class="svg"> </div><span>See all offices</span> </div>');
 
 
         $('.suppliers_tile_location_offices_tiles_wrapper').on("click", ".suppliers_tile_location_block__all_offices", function() {
@@ -133,7 +133,7 @@ $(document).ready(function() {
 
         suppliersTileLocationOfficesTiles.css('height', suppliersTileLocationOfficesTile__maxHeight);
 
-        $('.suppliers_tile_location_offices_tiles_wrapper').append('<div class="suppliers_tile_location_block__all_offices button"> <div class="button__icon"> <img src="/assets/all_offices_icon.svg" alt="Image" class="svg"> </div><span>See all offices</span> </div>');
+        $('.suppliers_tile_location_offices_tiles_wrapper').append('<div class="suppliers_tile_location_block__all_offices button"> <div class="button__icon"> <img src="/assets/all_offices_icon.svg" alt="Изображение" class="svg"> </div><span>See all offices</span> </div>');
 
 
         $('.suppliers_tile_location_offices_tiles_wrapper').on("click", ".suppliers_tile_location_block__all_offices", function() {
