@@ -2392,13 +2392,14 @@ body {
 }
 
 .suppliers_tile_radial_block {
-	display: flex
+	display: flex;
+	justify-content: center;
 }
 
 .suppliers_tile_radial_criteria {
 	display: flex;
 	flex-direction: column;
-	padding: 0 20px
+	padding: 0;
 }
 
 .option_circle_chart_block,
@@ -5889,10 +5890,9 @@ span.search_page__search_results {
 	    align-items: center;	
 	    overflow: hidden;	
 	}
-	.suppliers_tile_long .suppliers_tile_company_img_column img {
-		width: 100%;
+	.suppliers_tile_company_img_column img {
 		max-width: 100%;
-		height: auto;
+    	height: auto;
 	}
 	.common_filtering_mobile_block {
 		display: none;
@@ -7815,6 +7815,7 @@ span.search_page__search_results {
 .suppliers_tile.suppliers_tile_short {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 }
 .suppliers_tile.suppliers_tile_short .suppliers_tile_company_img_column {
 	width: calc(20% - 15px);
