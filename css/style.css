@@ -1841,6 +1841,7 @@ body {
 }
 
 .main_categories_list>li {
+	position: relative;
 	margin-bottom: 5px;
 	list-style: none;
 	background: #f5f6f7;
@@ -4492,7 +4493,9 @@ p.expert_intelligance_tile_text {
 
 .latest_news_tile_date img,
 .latest_news_tile_date svg {
-	transform: scale(.8);
+    position: relative;	
+    transform: scale(.8);
+    left: -2px;
 }
 
 .search_page_header_block {
