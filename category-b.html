@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Category B | Daleel</title>
 </head>
@@ -30,7 +31,7 @@
                         <a href="index.html"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
                         <button onclick="void(0)" class="mobile_menu_icon hamburger hamburger--arrow blue" type="button">
                             <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
+					<span class="hamburger-inner"></span>
                             </span>
                         </button>
                     </div>
@@ -43,7 +44,7 @@
                         <a href="#" class="button button__yellow">Sign up</a>
                         <button onclick="void(0)" class="desktop_toggle_menu_icon hamburger hamburger--slider blue" type="button">
                             <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
+					<span class="hamburger-inner"></span>
                             </span>
                         </button>
                     </div>
@@ -114,7 +115,7 @@
                     </div>
 
                     <div class="category_page_banner_blocks_column">
-                        <div class="category_page_banner_importantce_block category_page_banner_block">
+                        <div class="category_page_banner_importantce_block category_page_banner_block active">
                             <h4 class="category_page_banner_blocks_title">IMPORTANCE</h4>
 
                             <div id="category_page_banner_importantce_block_inner" class="category_page_banner_block_inner">
@@ -126,29 +127,79 @@
 
                         </div>
 
-                        <div class="category_page_banner_buyer_block category_page_banner_block">
-                            <h4 class="category_page_banner_blocks_title">BUYER POWER</h4>
+                        <div class="category_page_banner_buyer_block">
+                            <div class="category_page_banner_buyer_block_strong category_page_banner_block active">
+                                <h4 class="category_page_banner_blocks_title">BUYER POWER</h4>
 
-                            <div class="category_page_banner_block_inner">
-                                <div class="category_page_banner_block_inner__img">
-                                    <img src="assets/categories/power_icon.svg" class="svg" alt="Image">
+                                <div class="category_page_banner_block_inner">
+                                    <div class="category_page_banner_block_inner__fill category_page_banner_block_inner__content">
+
+                                    </div>
+
+                                    <span class="category_page_banner_block_inner__text">STRONG</span>
                                 </div>
-
-                                <span class="category_page_banner_block_inner__text">STRONG</span>
                             </div>
+
+                            <div class="category_page_banner_buyer_block_balanced category_page_banner_block ">
+                                <h4 class="category_page_banner_blocks_title">BUYER POWER</h4>
+
+                                <div class="category_page_banner_block_inner">
+                                    <div class="category_page_banner_block_inner__fill category_page_banner_block_inner__content">
+                                    </div>
+
+                                    <span class="category_page_banner_block_inner__text">BALANCED</span>
+                                </div>
+                            </div>
+
+                            <div class="category_page_banner_buyer_block_weak category_page_banner_block ">
+                                <h4 class="category_page_banner_blocks_title">BUYER POWER</h4>
+
+                                <div class="category_page_banner_block_inner">
+                                    <div class="category_page_banner_block_inner__fill category_page_banner_block_inner__content">
+                                    </div>
+
+                                    <span class="category_page_banner_block_inner__text">WEAK</span>
+                                </div>
+                            </div>
+
                         </div>
 
-                        <div class="category_page_banner_trends_block category_page_banner_block">
-                            <h4 class="category_page_banner_blocks_title">PRICE TRENDS</h4>
+                        <div class="category_page_banner_trends_block">
 
-                            <div class="category_page_banner_block_inner">
-                                <div class="category_page_banner_block_inner__img">
-                                    <img src="assets/categories/arrow_icon.svg" class="svg" alt="Image">
+                            <div class="category_page_banner_trends_block_increasing category_page_banner_block active">
+                                <h4 class="category_page_banner_blocks_title">PRICE TRENDS</h4>
+
+                                <div class="category_page_banner_block_inner">
+                                    <div class="category_page_banner_block_inner__img category_page_banner_block_inner__content">
+                                        <img src="assets/categories/trends/price trends_icon.svg" class="svg" alt="Image">
+                                    </div>
+                                    <span class="category_page_banner_block_inner__text">INCREASING</span>
                                 </div>
-                                <span class="category_page_banner_block_inner__text">NO CHANGE</span>
                             </div>
-                        </div>
 
+                            <div class="category_page_banner_trends_block_balanced category_page_banner_block ">
+                                <h4 class="category_page_banner_blocks_title">PRICE TRENDS</h4>
+
+                                <div class="category_page_banner_block_inner">
+                                    <div class="category_page_banner_block_inner__img category_page_banner_block_inner__content">
+                                        <img src="assets/categories/trends/price trends_icon.svg" class="svg" alt="Image">
+                                    </div>
+                                    <span class="category_page_banner_block_inner__text">NO CHANGE</span>
+                                </div>
+                            </div>
+
+                            <div class="category_page_banner_trends_block_decreasing category_page_banner_block ">
+                                <h4 class="category_page_banner_blocks_title">PRICE TRENDS</h4>
+
+                                <div class="category_page_banner_block_inner">
+                                    <div class="category_page_banner_block_inner__img category_page_banner_block_inner__content">
+                                        <img src="assets/categories/trends/price trends_icon.svg" class="svg" alt="Image">
+                                    </div>
+                                    <span class="category_page_banner_block_inner__text">DECREASING</span>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
@@ -616,11 +667,13 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.min.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/mobile.js"></script>
     <script src="scripts/curcle_chart.js"></script>

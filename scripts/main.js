@@ -449,10 +449,10 @@ $(document).ready(function() {
 
 
     function pageNavScroll() {
-        if ($('body').hasClass('suppliers_profile')) {
+        if ($('div').hasClass('suppliers_profile')) {
             var pageBannerHeight = $('.suppliers_profile_banner_wrapper').height() + 150;
         }
-        if ($('body').hasClass('product')) {
+        if ($('div').hasClass('product')) {
             var pageBannerHeight = $('.product_page_banner_wrapper').height() + 60;
         }
 
@@ -499,6 +499,60 @@ $(document).ready(function() {
             let sortBy__set_title = $('.common_sorting_by_block .common_sorting__title span').html(sortBy__set_type);
         });
     });
+
+
+
+    function accountSettingsPage_Dropdowns() {
+
+            $('.account_settings_element_dropdown__title').on('click', function(e) {
+                    e.stopPropagation();
+                    if ($(this).siblings('.account_settings_element_dropdown_block').hasClass('opened')) {
+                        $(this).siblings('.account_settings_element_dropdown_block').removeClass('opened');
+                        $(this).parent('.account_settings_element_dropdown_wrapper').removeClass('active');
+                    } else {
+                        $('.account_settings_element_dropdown_block').removeClass('opened');
+                        $('.account_settings_element_dropdown_wrapper').removeClass('active');
+
+                        if (!($(this).siblings('.account_settings_element_dropdown_block').hasClass('opened'))) {
+                            $(this).siblings('.account_settings_element_dropdown_block').addClass('opened');
+                            $(this).parent('.account_settings_element_dropdown_wrapper').addClass('active');
+                        } else {
+                            $(this).siblings('.account_settings_element_dropdown_block').removeClass('opened');
+                            $(this).parent('.account_settings_element_dropdown_wrapper').removeClass('active');
+                        }
+                    }      
+            });
+
+
+            $('.account_settings_element_dropdown_element').on('click', function() {
+                if($(this).hasClass('active')) {
+                    $('.account_settings_element_dropdown_element').removeClass('active');                
+                    $(this).removeClass('active');
+                    $(this).find('input[type="radio"]').prop('checked', false);       
+                }
+                if(!$(this).hasClass('active')) {
+                    $('.account_settings_element_dropdown_element').removeClass('active');
+                    $(this).addClass('active');      
+                    $(this).find('input[type="radio"]').attr('checked', 'checked');     
+                    $(this).parents('.account_settings_element_dropdown_wrapper').find('.account_settings_element_dropdown__title span').html($(this).find('input[type="radio"]').val());                                                       
+                }
+            });
+
+
+
+            $(document).on("click", function(event) {
+                if ($(event.target).closest('.account_settings_element_dropdown_block').length == 0) {
+                    $('.account_settings_element_dropdown_block').removeClass('opened');
+                    $('.account_settings_element_dropdown_wrapper').removeClass('active');
+                }
+            });
+    }
+    accountSettingsPage_Dropdowns();
+
+
+
+
+
 
 
 
@@ -785,6 +839,31 @@ $(document).ready(function() {
             suppliersMainPageImageSizing();            
         }
     });
+
+
+
+        var readURL = function(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('.choose_profile_image_profile_picture').attr('src', e.target.result);
+                }
+        
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        
+
+        $(".choose_profile_image_file_upload").on('change', function(){
+            readURL(this);
+            $('.choose_profile_image_preview').addClass('active');
+        });
+        
+        $(".choose_profile_image_file_upload_button, .choose_profile_image_profile_picture_picker_block").on('click', function() {
+           $(".choose_profile_image_file_upload").click();
+        });
+
 
 
 });

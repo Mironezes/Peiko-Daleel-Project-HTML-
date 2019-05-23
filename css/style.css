@@ -141,7 +141,7 @@ body {
 }
 
 .inner_page {
-	padding-top: 88px;
+	padding-top: 78px;
 }
 
 .homepage {
@@ -887,8 +887,8 @@ body {
 .header_navigation_block {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 20px;
-	padding-bottom: 20px
+	padding-top: 15px;
+	padding-bottom: 15px
 }
 
 .header_navigation_block .button {
@@ -1574,13 +1574,14 @@ body {
 .latest_news_tiles_block {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between
+	justify-content: space-between;
 }
 
 .latest_news_tile {
-	width: calc(33.33% - 15px);
 	display: flex;
-	margin-bottom: 25px
+    width: calc(33.33% - 15px);
+    margin-bottom: 20px;
+    margin-right: 15px;
 }
 
 .latest_news_tile_inner {
@@ -2824,6 +2825,11 @@ body {
 	margin-bottom: 25px
 }
 
+.all_products_tiles_block .suppliers_product_services_tile {
+	width: calc(33.33% - 15px);
+	margin-right: 15px;
+}
+
 .suppliers_product_services_tile_inner {
 	display: flex;
 	flex-direction: column;
@@ -3698,11 +3704,15 @@ span.suppliers_product_services_work_history__title {
 }
 
 .category_page_banner_block {
-	display: flex;
+	display: none;
 	padding-top: 15px;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center
+}
+
+.category_page_banner_block.active {
+	display: flex;
 }
 
 .category_page_banner_block_inner {
@@ -3779,13 +3789,58 @@ span.suppliers_product_services_work_history__title {
 	align-items: center;
 	justify-content: center;
 	height: 70px;
-	margin-bottom: 10px
 }
 
 .category_page_banner_block_inner__text {
 	font-size: .6em;
 	color: #eceeee
 }
+
+
+.category_page_banner_block_inner__fill {
+	position: relative;
+	height: 100%;
+	width: 35px;
+	border: 2px solid #7C7C7C;
+	background: transparent;
+}
+
+.category_page_banner_block_inner__fill::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: .25px;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    background: #FFD559;
+    z-index: 1;
+}
+
+.category_page_banner_buyer_block_strong .category_page_banner_block_inner__fill::after {
+    height: 80%;
+}
+
+.category_page_banner_buyer_block_balanced .category_page_banner_block_inner__fill::after {
+    height: 50%;
+}
+
+.category_page_banner_buyer_block_weak .category_page_banner_block_inner__fill::after {
+    height: 25%;
+}
+
+.category_page_banner_block_inner__content {
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.category_page_banner_trends_block_increasing .category_page_banner_block_inner__img {
+	transform: rotate(-25deg);
+} 
+
+.category_page_banner_trends_block_decreasing .category_page_banner_block_inner__img {
+	transform: rotate(25deg);
+} 
 
 .verified_suppliers_heading_block {
 	justify-content: center
@@ -3896,6 +3951,7 @@ span.suppliers_product_services_work_history__title {
 }
 
 .expert_intelligance_tile {
+	width: 100%;
 	margin-bottom: 20px;
 	padding: 30px;
 	padding-bottom: 20px;
@@ -4427,7 +4483,7 @@ p.expert_intelligance_tile_text {
 .expert_intelligence_tiles_block {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between
+	justify-content: flex-start;
 }
 
 .latest_news_tile_date img,
@@ -4600,9 +4656,7 @@ span.search_page__search_results {
 	align-items: unset;
 }
 
-.all_products_tiles_block .suppliers_product_services_tile {
-	width: calc(33.33% - 15px);
-}
+
 
 .footer_wrapper {
 	display: flex;
@@ -4900,6 +4954,7 @@ span.search_page__search_results {
 
 .account_tabs_header {
 	display: flex;
+	width: fit-content;
 	margin-bottom: 50px;
 	border-bottom: 1px solid #D9D9D9;
 }
@@ -5569,9 +5624,12 @@ span.search_page__search_results {
 	border: 1px solid #4F58B8;
 }
 
-.common_sorting_region,
+.common_sorting_region {
+	width: 120px;
+}
+
 .common_sorting_clients {
-	width: 150px;
+	width: 180px;
 }
 
 .common_sorting_services {
@@ -5583,12 +5641,14 @@ span.search_page__search_results {
 }
 
 .common_sorting__title {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	height: 48px;
-	justify-content: center;
-	cursor: pointer;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    cursor: pointer;
+
 }
 
 .common_sorting.active .common_sorting__title span,
@@ -5865,6 +5925,364 @@ span.search_page__search_results {
 	top: 158px;
 }
 
+
+
+.account_tab_notification_section  {
+	margin-bottom: 50px;
+}
+
+.account_tab_notification_section h3 {
+	margin-top: 0;
+	margin-bottom: 25px;
+	font-weight: 600;
+}
+
+.account_tab_notification_section:last-of-type {
+	margin-bottom: 25px;
+}
+
+.account_tab_save_settings_button {
+	width: 180px;
+	justify-content: center;
+}
+
+.account_settings .profile_tab_content   {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.account_settings_personal_info_section{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.account_settings_work_company_section_inner {
+	display: flex;
+	flex-direction: column;
+}
+
+.account_settings_personal_info_inputs_column,
+.account_settings_personal_info_photo_column {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.account_settings_personal_info_inputs_column {
+	width: calc(60% - 15px);
+}
+
+.account_settings_personal_info_photo_column {
+	width: calc(40% - 15px);
+}
+
+.account_settings_personal_info_row {
+	display: flex;
+	flex-direction: row;
+}
+
+.choose_profile_image_block {
+	display: flex;
+}
+.choose_profile_image_file_upload {
+    display: none;
+}
+.choose_profile_image_preview {
+    position: relative;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    align-items: baseline;
+    margin-right: 15px;
+    margin-bottom: 15px;    
+    overflow: hidden;
+	border: 1px solid #E8E8E8;  
+    border-radius: 5px;  
+    cursor: pointer;
+}
+
+.choose_profile_image_preview .choose_profile_image_profile_picture {
+	display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.choose_profile_image_preview.active .choose_profile_image_profile_picture {
+	display: block;
+}
+
+.choose_profile_image_profile_picture_picker_block {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	transition: .3s;
+	cursor: pointer;	
+	z-index: 3;		
+} 
+
+.choose_profile_image_profile_picture_picker_block:hover:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0, .4);
+    z-index: 1;
+}
+
+.choose_profile_image_profile_picture_picker_block img,
+.choose_profile_image_profile_picture_picker_block svg {
+    display: none;
+}
+
+.choose_profile_image_profile_picture_picker_block:hover img,
+.choose_profile_image_profile_picture_picker_block:hover svg {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.choose_profile_image_preview:hover svg path {
+	fill: #4F58B8;
+	transition: .3s;
+}
+
+.choose_profile_image_loader {
+	position: relative;
+  	color: #666666;
+  	transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.choose_profile_image_loader:hover {
+  	transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.choose_profile_image_file_upload_button {
+	width: 180px;
+	justify-content: center;
+  	font-size: .9em;
+  	font-weight: 500;
+	color: #1F2569;
+	border: 1px solid #2E368F;
+}
+.choose_profile_image_file_upload_button:hover {
+	color: #FFF;
+	background: #4F58B8;
+	border-color: #4F58B8;
+}
+.choose_profile_image_file_upload_button:hover svg path {
+	fill: #FFF;
+}
+
+.account_settings_work_company_section {
+	margin-bottom: 50px;
+}
+
+.account_settings_work_company_section h3 {
+	margin-top: 0;
+	margin-bottom: 25px;
+	font-weight: 600;	
+}
+
+.account_settings_element {
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 50px;    
+}
+
+.account_settings_element span {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 5px;
+}
+
+.account_settings_element label {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.account_settings_element__long {
+	width: 350px;
+	margin-right: 30px;
+}
+.account_settings_element__short {
+	width: 250px;
+	margin-right: 30px;
+}
+
+.account_settings_element__date {
+	width: 180px;
+	margin-right: 30px;
+}
+
+.account_settings_element input {
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 1;
+	border: 1px solid #E8E8E8;
+	border-radius: 5px;
+}
+
+
+.account_settings_element_dropdown_block.opened {
+	visibility: visible;
+	border: 0;
+	padding: 0;
+	opacity: 1;
+	transition: .3s;	
+}
+
+.account_settings_element_dropdown_block {
+	width: 100%;
+	top: 48px;
+	flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    opacity: 0;
+    transition: .3s;
+    z-index: 4;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    background: #FFF;
+    border: 1px solid #eceeee;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
+}
+.account_settings_element_dropdown_block .account_settings_element_dropdown_element {
+	width: 100%;
+    transition: .3s;
+}
+.account_settings_element_dropdown_block .account_settings_element_dropdown_element input {
+	width: 0;
+	height: 0;
+	padding: 0;
+	border: unset;
+}
+
+.account_settings_element_dropdown_block .account_settings_element_dropdown_element label {
+	display: block;
+	width: 100%;
+	height: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.account_settings_element_dropdown_block .account_settings_element_dropdown_element:hover {
+	transition: .3s;
+	background: #4F58B8;
+}
+
+.account_settings_element_dropdown_block .account_settings_element_dropdown_element:hover label {
+	color: #FFF;
+}
+
+.account_settings_element_dropdown_block .account_settings_element_dropdown_element.active {
+	color: #4F58B8;
+}
+
+
+.account_settings_element_dropdown__title {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    cursor: pointer;	
+}
+
+.account_settings_element_dropdown__title > span {
+	margin-bottom: 0;
+}
+
+.account_settings_element_dropdown_wrapper.active .account_settings_element_dropdown__title span,
+.account_settings_element_dropdown_wrapper:hover .account_settings_element_dropdown__title span {
+	color: #4F58B8;
+}
+
+.account_settings_element_dropdown_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+	width: 100%;
+    height: 48px;
+    border: 1px solid #eceeee;
+    border-radius: 5px;
+    background: #FFF;
+    transition: .3s;
+}
+
+.account_settings_element_dropdown_wrapper.active, 
+.account_settings_element_dropdown_wrapper:hover {
+    border: 1px solid #4F58B8;
+}
+
+
+.account_settings_element {
+	line-height: 1;
+}
+
+.account_settings_element_checkbox_hidden {
+	display: none;
+}
+
+.common_sorting_element__checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 16px;
+	width: 16px;
+	background-image: url(../assets/filters/check_box_empty_icon.svg);
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.account_settings_element_checkbox_custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-image: url(../assets/filters/check_box_empty_icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.account_settings_element:hover input~.account_settings_element_checkbox_custom {
+	background-image: url(../assets/filters/check_box_hover_icon.svg)
+}
+
+.account_settings_element input:checked~.account_settings_element_checkbox_custom {
+	background-image: url(../assets/filters/check_box_checked_icon.svg)
+}
+
+.account_settings_still_work_here {
+	display: flex;
+	height: fit-content;
+	margin-bottom: 0;
+	padding-top: 32px;
+}
+.account_settings_still_work_here label {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 0;	
+}
+
+
+
 @media (min-width:1440px) {
 	.container {
 		max-width: 1440px;
@@ -6098,6 +6516,24 @@ span.search_page__search_results {
 	}
 	.suppliers_detailed_reviews_tile_review_diagrams .suppliers_tile_radial_criteria.first {
 		margin-bottom: 50px;
+	}
+	.account_settings_personal_info_section,
+	.account_settings_personal_info_row,
+	.account_settings .profile_tab_content {
+		flex-direction: column;
+	}
+	.account_settings_personal_info_section {
+		margin-bottom: 50px;
+	}
+	.account_settings_personal_info_inputs_column,
+	.account_settings_personal_info_photo_column {
+		width: 100%;
+	}
+	.account_settings_element {
+		margin-bottom: 30px;
+	}
+	.account_settings_still_work_here {
+		padding-top: 0;
 	}
 }
 
@@ -7116,9 +7552,6 @@ span.search_page__search_results {
 	.latest_news_tile_image {
 		height: 160px
 	}
-/*	.latest_news_tile_author {
-		display: none!important
-	}*/
 	.last_forum_messages_tile_info {
 		margin-bottom: 20px
 	}
@@ -7574,6 +8007,7 @@ span.search_page__search_results {
 	.suppliers_product_services_img,
 	.suppliers_product_services_title {
 		width: 100%;
+		margin-right: 0;
 	}
 	.suppliers_product_services_header {
 		flex-direction: column;
@@ -7659,6 +8093,56 @@ span.search_page__search_results {
 	.choose_perfect_plan_table__mobile_collpse>.choose_perfect_plan_table_cell {
 		width: 100% !important;
 	}
+	.account_settings .account_tabs_header_profile,
+	.account_settings .account_tabs_header_notification {
+		width: calc(50% - 15px);
+	}
+
+	.account_settings .account_tabs_header {
+	    width: 100%;
+	    flex-direction: row;
+	    margin-bottom: 25px;
+	}
+
+	.account_settings .account_tabs_header span {
+		width: 100%;
+		text-align: center;
+	}
+
+	.account_settings_personal_info_inputs_column,
+	.account_settings_personal_info_section,
+	.account_settings_personal_info_photo_column{
+		width: 100%;
+	}
+
+	.account_settings_personal_info_section,
+	.account_settings_personal_info_row,
+	.choose_profile_image_block {
+		flex-direction: column;
+	}
+
+	.choose_profile_image_block {
+		margin-bottom: 50px;
+	}
+
+	.account_settings_element {
+		margin-bottom: 25px;
+	}
+
+	.account_settings_still_work_here {
+		padding-top: 0;
+	}
+
+	.account_settings_element__short {
+		width: 80%;
+	}
+
+	.account_settings_element__long {
+		width: 100%;
+	}
+
+
+
 	.footer_logo_block svg {
 		width: 220px;
 		height: 70px;
