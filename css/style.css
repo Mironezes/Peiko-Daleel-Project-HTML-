@@ -2145,6 +2145,10 @@ body {
 	flex-direction: column
 }
 
+.suppliers_tile_short .suppliers_tile_linear_block {
+	width: 0%;
+}
+
 .suppliers_tile_linear_criteria {
 	display: flex;
 	margin-bottom: 10px
@@ -2393,7 +2397,7 @@ body {
 
 .suppliers_tile_radial_block {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 }
 
 .suppliers_tile_radial_criteria {
@@ -2932,7 +2936,12 @@ span.suppliers_product_services_work_history__title {
 
 .suppliers_reviews_block .suppliers_tile_summary_review_diagrams_block {
 	display: flex;
-	flex-direction: row
+	flex-direction: row;
+	justify-content: space-between
+}
+
+.suppliers_reviews_block .suppliers_tile_summary_review_diagrams_block .suppliers_tile_radial_criteria.first {
+	display: none;
 }
 
 .suppliers_reviews_block .suppliers_reviews_overal_info_block,
@@ -3030,6 +3039,7 @@ span.suppliers_product_services_work_history__title {
 }
 
 .suppliers_detailed_reviews_tile .suppliers_tile_linear_block {
+    width: calc(75% - 15px);	
 	flex-direction: column;
 }
 
@@ -6016,6 +6026,11 @@ span.search_page__search_results {
 	transition: .3s;
 	cursor: pointer;
 	z-index: 3;
+	transition: .3s;
+}
+
+.choose_profile_image_profile_picture_picker_block:hover {
+	transition: .3s;
 }
 
 .choose_profile_image_profile_picture_picker_block:hover:after {
@@ -6025,6 +6040,7 @@ span.search_page__search_results {
 	position: absolute;
 	background: rgba(0, 0, 0, .4);
 	z-index: 1;
+	transition: .3s;
 }
 
 .choose_profile_image_profile_picture_picker_block img,
@@ -6118,6 +6134,19 @@ span.search_page__search_results {
 .account_settings_element__date {
 	width: 180px;
 	margin-right: 30px;
+}
+
+.account_settings_element input,
+.datepicker-here,
+.datepicker-here:hover {
+	transition: .3s;
+}
+
+.account_settings_element input:focus,
+.account_settings_element input:hover,
+.datepicker-here:hover,
+.datepicker-here:focus {
+	border-color: #4F58B8;
 }
 
 .account_settings_element input {
@@ -8143,6 +8172,7 @@ span.search_page__search_results {
 	.category_page_banner_inner {
 		flex-direction: column;
 	}
+
 	.footer_logo_block svg {
 		width: 220px;
 		height: 70px;
@@ -8240,6 +8270,7 @@ span.search_page__search_results {
 	}
 	.expert_intelligance .main_content_inner {
 		padding: 0;
+		background: transparent;
 	}
 }
 
@@ -8408,4 +8439,84 @@ span.search_page__search_results {
 
 .suppliers_tile_long .suppliers_tile_summary_review__criteria__name {
 	width: 100%;
+}
+
+
+.categories_tags_modal_block {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	height: auto;
+	z-index: 12;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.categories_tags_modal_block.opened {
+	visibility: visible;
+}
+
+
+.categories_tags_modal_block .categories_tags_modal_content {
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	transform: scale(0.7);
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	padding: 20px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 130px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+}
+
+.categories_tags_modal_block.opened .categories_tags_modal_content {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+
+.categories_tags_modal_content {
+	position: relative;
+}
+
+.categories_tags_modal_inner_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    line-height: 1;	
+}
+
+.categories_tags_modal_inner_header h3 {
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+.categories_tags_modal_close {
+	cursor: pointer;
+}
+
+.categories_tags_modal_inner_body {
+	display: flex;
+	flex-wrap: wrap;	
+	max-height: 265px;
+	overflow-y: auto;
+}
+.categories_tags_modal_inner_body .tag__short,
+.categories_tags_modal_inner_body .tag__long {
+	margin-right: 15px;
+	margin-bottom: 15px;
 }

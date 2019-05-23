@@ -866,4 +866,19 @@ $(document).ready(function() {
 
 
 
+        function categoriesPageTagsModal() {
+            let modalTrigger = $('.to_tags_modal');
+            
+            $(modalTrigger).on('click', function(){
+                let tagsModal = $('.categories_tags_modal_block');
+                tagsModal.addClass('opened');
+                $('html').addClass('fixed');                
+                let closeModal = $('.categories_tags_modal_close');
+                closeModal.on('click', function(){
+                    $(this).parents('.categories_tags_modal_block').removeClass('opened');
+                    $('html').removeClass('fixed');
+                });
+            });
+        }
+        categoriesPageTagsModal();
 });
