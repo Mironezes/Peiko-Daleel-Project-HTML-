@@ -591,7 +591,6 @@ $(document).ready(function() {
                     $('.common_filter_show span').removeClass('active');
                     $('.common_filter_show__less').addClass('active');                    
                 }
-                commonFilterSelectedList.css('max-height', '45px');
             }
 
         });
