@@ -395,9 +395,9 @@ $(document).ready(function() {
 
     function CommonPageFilterBlock() {
 
-
-
         $('.common_sorting__title').on("click", function() {
+            $('.common_sorting_block').addClass('empty');
+            $('.common_filter_selected_list .common_sorting_block_choosen').remove();
             $('.common_sorting').removeClass('active');
             $(this).parent().addClass('active');
             $(this).removeClass('active');
@@ -441,6 +441,9 @@ $(document).ready(function() {
 
         $('.common_filter_clear').on("click", function() {
             commonFilterClearAll();
+            $('.common_filter_selected_list').find('.common_sorting_block_choosen').remove();
+            $('.common_filter_clear__small').removeClass('active');
+            $('.common_filter_show').removeClass('active');
         });
 
         function commonFilterClearAll() {
@@ -450,7 +453,7 @@ $(document).ready(function() {
             $('.common_sorting_element, .common_sorting_element_radio label').each(function() {
                 $(this).removeClass("checked");
             });
-            $('.common_sorting_block_choosen').empty();
+            $('.common_sorting_block_content_block .common_sorting_block_choosen').empty();
         }
 
 
@@ -491,6 +494,7 @@ $(document).ready(function() {
         $('.common_sorting_element_checkbox').each(function() {
             $(this).on("click", function(e) {
                 e.preventDefault();
+                $('.common_sorting_block').removeClass('empty');
                 $(this).addClass('checked');
 
                 if ($(this).find('input').is(":checked")) {
@@ -516,8 +520,7 @@ $(document).ready(function() {
 
         $('.common_sorting_element_radio label').each(function() {
             $(this).on("click", function() {
-
-
+                $('.common_sorting_block').removeClass('empty');
                 $('.common_sorting_element_radio label').removeClass('checked');
                 $(this).addClass('checked');
 
@@ -555,20 +558,74 @@ $(document).ready(function() {
             if ($(event.target).closest('.common_sorting_block').length == 0) {}
         });
 
+        $('.common_filter_clear__small').on("click", function() {
+            $(this).removeClass('active');
+        });
+
 
 
         $('.common_show_companies_button').on("click", function(e) {
             e.preventDefault();
-            $('.common_sorting_block').removeClass('opened');
-            $('.common_sorting').removeClass('active');
-            $('html').removeClass('fixed');
-            $('.modal_backdrop').removeClass('active');
-            $('.common_filter_selector_desktop_block').removeClass('fixed');
-            $('.header_navigation_block_wrapper').show();       
-            $('.common_filtering_desktop_block').addClass('active');     
-            commonFilterClearAll();
+
+            if($('.common_sorting_block').hasClass('empty')) {
+                $(this).attr('disabled');
+            }
+            else {           
+                $('.common_show_companies_button').removeAttr('disabled');  
+                $('.common_filter_clear__small').addClass('active');
+                $('.common_sorting_block_choosen').clone().appendTo('.common_filter_selected_list');
+                $('.common_sorting_block').removeClass('opened');
+                $('.common_sorting').removeClass('active');
+                $('html').removeClass('fixed');
+                $('.modal_backdrop').removeClass('active');
+                $('.common_filter_selector_desktop_block').removeClass('fixed');
+                $('.header_navigation_block_wrapper').show();       
+                $('.common_filtering_desktop_block').addClass('active');     
+                commonFilterClearAll();                      
+
+                let commonFilterSelectedListHeight = $('.common_filter_selected_list').height();
+                let commonFilterSelectedList = $('.common_filter_selected_list');
+
+                if(commonFilterSelectedListHeight > 50) {
+                    $('.common_filter_show').addClass('active');
+                    $('.common_filter_show span').removeClass('active');
+                    $('.common_filter_show__less').addClass('active');                    
+                }
+                commonFilterSelectedList.css('max-height', '45px');
+            }
+
         });
 
+        
+        $(".common_filter_selected_list .common_sorting_block_choosen span").on("click", function() {
+            $('body').addClass('pizdec');           
+        });
+
+
+        $('.common_filter_show__more').on("click", function() {
+            if($(this).hasClass('active')) {
+                $(this).removeClass('active');
+                $('.common_filter_show__less').addClass('active');
+                $('.common_filter_selected_list').css('max-height', 'unset');                
+            }
+            else {
+                $('.common_filter_selected_list .common_sorting_block_choosen').addClass('opened');        
+                $('.common_filter_selected_list').css('max-height', '45px');                       
+            }
+        });
+
+        $('.common_filter_show__less').on("click", function() {
+
+            if($(this).hasClass('active')) {
+                $(this).removeClass('active');
+                $('.common_filter_show__more').addClass('active');
+                $('.common_filter_selected_list').css('max-height', '45px');
+            }
+            else {
+                $('.common_filter_selected_list').css('max-height', 'unset');                
+                $('.common_filter_selected_list .common_sorting_block_choosen').removeClass('opened');             
+            }
+        });
     }
     CommonPageFilterBlock();
 
@@ -880,6 +937,8 @@ $(document).ready(function() {
             }
         });
     }
+
+
 
 
     $('img.svg').each(function() {
