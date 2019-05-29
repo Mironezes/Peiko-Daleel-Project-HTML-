@@ -181,10 +181,30 @@ $(document).ready(function() {
     }
 
 
-    $(window).on('load resize', function () {
+    function suppliersWorkHistoryTiles__Mobile_Settings() {
+        $('.suppliers_work_history_tile').on("click", function(e) {
+            e.stopPropagation();
+
+            $(this).find('.suppliers_work_history_tile_modal').addClass('fixed');
+            $('html').addClass('fixed');
+        });
+
+        $('.suppliers_work_history_tile_modal_close_icon').on("click", function(e) {
+            e.stopPropagation();
+
+            let suppliersWorkHistoryTileModal = $(this).parent('.suppliers_work_history_tile_modal');
+
+            suppliersWorkHistoryTileModal.removeClass('fixed');
+            $('html').removeClass('fixed');
+        });        
+    }
+
+
+    $(window).on('load', function () {
         if (window.matchMedia('screen and (max-width: 767px)').matches) {
             suppliersOfficesBlock__Mobile_Settings();
             categoriesMenu__Mobile_Settings();
+            suppliersWorkHistoryTiles__Mobile_Settings();
         }
 
         if (window.matchMedia('(min-width: 550px) and (max-width: 991px)').matches) {
