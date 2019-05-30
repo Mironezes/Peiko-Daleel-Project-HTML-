@@ -5914,6 +5914,7 @@ span.search_page__search_results {
 
 .common_sorting_by_block .common_sorting {
 	width: 190px;
+	height: 48px;
 }
 
 .common_sorting_location_country_column {
@@ -6845,7 +6846,16 @@ span.search_page__search_results {
 	border-color: #E8E8E8;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__rendered:hover {
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--single:hover
+.select2-container--default .select2-selection--multiple,
+.select2-container--default .select2-selection--multiple:hover {
+	transition: .3s;
+}
+
+.select2-container--default .select2-selection--single:hover, 
+.select2-container--default .select2-selection--multiple:hover,
+.select2-container--default .select2-selection--multiple:hover .select2-dropdown {
 	border-color: #4F58B8;
 }
 
@@ -9079,7 +9089,8 @@ span.search_page__search_results {
 }
 
 .main_content_wrapper .creation_page_add_image_tile:first-of-type,
-.main_content_wrapper .creation_page_add_video_tile:first-of-type {
+.main_content_wrapper .creation_page_add_video_tile:first-of-type,
+.main_content_wrapper .creation_page_add_location_tile:first-of-type {
 	display: none;
 }
 
@@ -9090,8 +9101,19 @@ span.search_page__search_results {
 }
 
 .creation_page_add_image_tile,
-.creation_page_add_video_tile {
+.creation_page_add_video_tile,
+.creation_page_add_location_tile {
 	margin-bottom: 10px;
+}
+
+.creation_page_add_location_tile {
+	display: flex;
+	flex-direction: row;
+}
+
+.creation_page_add_location_tile .creation_page_element {
+	margin-right: 10px;
+	margin-bottom: 0;
 }
 
 .creation_page_add_image_tile  .creation_page_element__file_title {

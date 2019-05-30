@@ -1110,13 +1110,27 @@ $(document).ready(function() {
 
 
     function creatingPage__removeMultimedia() {
-        $('.creation_page_add_image_tiles').on('click', '.creation_page_element__file_delete_button', function() {
-            // здесь мог быть мой код, но будет твой =(
+        $('.creation_page_add_image_tiles, .creation_page_add_video_tiles').on('click', '.creation_page_element__file_delete_button, .creation_page_element__remove_button', function() {
+           $(this).parents('.creation_page_add_video_tile, .creation_page_add_image_tile').remove();
         });
-
     }
     creatingPage__removeMultimedia();
 
+    // function creatingPage__addNewLocation() {
+    //     $('.creation_page_add_location_tile_button').on('click', function(){
+    //         $('.creation_page_add_location_tiles select').select2("destroy");
+    //         let divLength = $('.creation_page_add_location_tile').length;
+    //         let clonedDiv = $('.creation_page_add_location_tile').first().clone(true);
 
+    //         clonedDiv.appendTo('.creation_page_add_location_tiles');
+    //         clonedDiv.attr('id', 'tooltest' + divLength);
+
+    //         $('.creation_page_add_location_tiles select').select2({ 
+    //             allowClear: true
+    //         }); 
+
+    //     });
+    // }
+    // creatingPage__addNewLocation();
 
 });
