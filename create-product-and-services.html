@@ -103,7 +103,7 @@
 
                 <div class="main_content_inner">
 
-                    <div class="creation_page_element creation_page_element__short" name="creation_page_element__category_a_level">
+                    <div class="creation_page_element creation_page_element__short">
                         <label>
                             <span>Category A</span>
                             <select style="width: 100%">
@@ -115,7 +115,7 @@
                         </label>
                     </div>
 
-                    <div class="creation_page_element creation_page_element__short" name="creation_page_element__category_b_level">
+                    <div class="creation_page_element creation_page_element__short">
                         <label>
                             <span>Category B</span>
                             <select style="width: 100%">
@@ -158,26 +158,72 @@
                         <div class="creation_page_add_image">
                             <h3>Images</h3>
 
-                            <div class="creation_page_add_image_tile creation_page_elements_wrapper">
+                            <div class="creation_page_add_image_tiles">
+                                <div class="creation_page_add_image_tile creation_page_elements_wrapper">
 
-                                <div class="creation_page_element_content">
-                                    <div class="creation_page_element creation_page_element__file_title">
-                                        <label>
-                                            <span>Title</span>
-                                            <input type="text" maxlength="150">
-                                        </label>
-                                    </div>
+                                    <div class="creation_page_element_content">
+                                        <div class="creation_page_element creation_page_element__file_title">
+                                            <label>
+                                                <span>Title</span>
+                                                <input type="text" maxlength="150">
+                                            </label>
+                                        </div>
 
-                                    <div class="creation_page_element creation_page_element__file_chooser">
-                                        <label>
-                                            <input type="file" class="creation_page_element__file">
-                                            <span class="creation_page_element__browse button button__add button__light_blue">Browse</span>
-                                        </label>
+                                        <div class="creation_page_element creation_page_element__file_chooser">
+                                            <label>
+                                                <input type="file" class="creation_page_element__file">
+                                                <span class="creation_page_element__browse button button__add button__light_blue">Browse</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_delete">
+                                            <button class="button button__light_blue creation_page_element__file_delete_button">
+                                                <div class="button__icon">
+                                                    <img src="assets/delete_multimedia_icon.svg" alt="Image" class="svg">
+                                                </div>
+                                            </button>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_submit">
+                                            <button class="button button__blue creation_page_element_submit__file_submit_button">Submit</button>
+                                        </div>
                                     </div>
                                 </div>
+
+                                <div class="creation_page_add_image_tile creation_page_elements_wrapper">
+
+                                    <div class="creation_page_element_content">
+                                        <div class="creation_page_element creation_page_element__file_title">
+                                            <label>
+                                                <span>Title</span>
+                                                <input type="text" maxlength="150">
+                                            </label>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_chooser">
+                                            <label>
+                                                <input type="file" class="creation_page_element__file">
+                                                <span class="creation_page_element__browse button button__add button__light_blue">Browse</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_delete">
+                                            <button class="button button__light_blue creation_page_element__file_delete_button">
+                                                <div class="button__icon">
+                                                    <img src="assets/delete_multimedia_icon.svg" alt="Image" class="svg">
+                                                </div>
+                                            </button>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_submit">
+                                            <button class="button button__blue creation_page_element_submit__file_submit_button">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
 
-                            <button class="page_add_image_tile_button button button__add button__light_blue">
+                            <button class="create_page_add_image_tile_button button button__add button__light_blue">
                                 <div class="button__icon">
                                     <img src="assets/add_icon.svg" alt="Image" class="svg">
                                 </div>
@@ -189,28 +235,74 @@
                         <div class="creation_page_add_video">
                             <h3>Video</h3>
 
-                            <div class="creation_page_add_video_tile">
+                            <div class="creation_page_add_video_tiles">
+                                <div class="creation_page_add_video_tile">
 
-                                <div class="creation_page_element_content">
-                                    <div class="creation_page_element__title_and_link_block">
-                                        <div class="creation_page_element creation_page_element__long creation_page_element__file_title">
-                                            <label>
-                                                <span>Title</span>
-                                                <input type="text" maxlength="150">
-                                            </label>
+                                    <div class="creation_page_element_content">
+                                        <div class="creation_page_element__title_and_link_block">
+                                            <div class="creation_page_element creation_page_element__long creation_page_element__file_title">
+                                                <label>
+                                                    <span>Title</span>
+                                                    <input type="text" maxlength="150">
+                                                </label>
+                                            </div>
+
+                                            <div class="creation_page_element creation_page_element__long creation_page_element__file_link">
+                                                <label>
+                                                    <span>Link</span>
+                                                    <input type="text" maxlength="150">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="creation_page_element creation_page_element__file_delete">
+                                            <button class="button button__light_blue creation_page_element__file_delete_button">
+                                                <div class="button__icon">
+                                                    <img src="assets/delete_multimedia_icon.svg" alt="Image" class="svg">
+                                                </div>
+                                            </button>
                                         </div>
 
-                                        <div class="creation_page_element creation_page_element__long creation_page_element__file_link">
-                                            <label>
-                                                <span>Link</span>
-                                                <input type="text" maxlength="150">
-                                            </label>
+                                        <div class="creation_page_element creation_page_element__file_submit">
+                                            <button class="button button__blue creation_page_element_submit__file_submit_button">Submit</button>
                                         </div>
+                                    </div>
+                                </div>
+
+                                <div class="creation_page_add_video_tile">
+
+                                    <div class="creation_page_element_content">
+                                        <div class="creation_page_element__title_and_link_block">
+                                            <div class="creation_page_element creation_page_element__long creation_page_element__file_title">
+                                                <label>
+                                                    <span>Title</span>
+                                                    <input type="text" maxlength="150">
+                                                </label>
+                                            </div>
+
+                                            <div class="creation_page_element creation_page_element__long creation_page_element__file_link">
+                                                <label>
+                                                    <span>Link</span>
+                                                    <input type="text" maxlength="150">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="creation_page_element creation_page_element__file_delete">
+                                            <button class="button button__light_blue creation_page_element__file_delete_button">
+                                                <div class="button__icon">
+                                                    <img src="assets/delete_multimedia_icon.svg" alt="Image" class="svg">
+                                                </div>
+                                            </button>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_submit">
+                                            <button class="button button__blue creation_page_element_submit__file_submit_button">Submit</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
 
-                            <button class="page_add_image_tile_button button button__add button__light_blue">
+                            <button class="create_page_add_video_tile_button  button button__add button__light_blue">
                                 <div class="button__icon">
                                     <img src="assets/add_icon.svg" alt="Image" class="svg">
                                 </div>
@@ -235,88 +327,158 @@
                         <div class="creation_page_add_image">
                             <h3>Images</h3>
 
-                            <div class="creation_page_add_image_tile creation_page_add_image_tile__loaded creation_page_elements_wrapper">
+                            <div class="creation_page_add_image_tiles">
 
-                                <div class="creation_page_add_image_tile_preview">
-                                    <img src="img/image_preview.jpg" alt="Image">
+                                <div class="creation_page_add_image_tile creation_page_elements_wrapper">
+
+                                    <div class="creation_page_element_content">
+                                        <div class="creation_page_element creation_page_element__file_title">
+                                            <label>
+                                                <span>Title</span>
+                                                <input type="text" maxlength="150">
+                                            </label>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_chooser">
+                                            <label>
+                                                <input type="file" class="creation_page_element__file">
+                                                <span class="creation_page_element__browse button button__add button__light_blue">Browse</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_delete">
+                                            <button class="button button__light_blue creation_page_element__file_delete_button">
+                                                <div class="button__icon">
+                                                    <img src="assets/delete_multimedia_icon.svg" alt="Image" class="svg">
+                                                </div>
+                                            </button>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_submit">
+                                            <button class="button button__blue creation_page_element_submit__file_submit_button">Submit</button>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <div class="creation_page_element_content">
-                                    <div class="creation_page_element creation_page_element__file_title">
-                                        <label>
-                                            <span>Title</span>
-                                            <input type="text" maxlength="150" value="Seattle City View Urban Architecture Traffic Light Trail Dusk" disabled>
-                                        </label>
+                                <div class="creation_page_add_image_tile creation_page_add_image_tile__loaded creation_page_elements_wrapper">
+
+                                    <div class="creation_page_add_image_tile_preview">
+                                        <img src="img/image_preview.jpg" alt="Image">
                                     </div>
 
-                                    <div class="creation_page_element creation_page_element__file_chooser">
-                                        <label>
-                                            <input type="file" class="creation_page_element__file">
-                                            <span class="creation_page_element__browse button button__add button__light_blue">Browse</span>
-                                        </label>
-                                    </div>
-
-                                    <div class="creation_page_element creation_page_element__edit_buttons">
-                                        <button class="creation_page_element__edit_button button button__light_blue">Edit</button>
-                                        <button class="creation_page_element__remove_button button">
-                                            <div class="button__icon">
-                                                <img src="assets/trash_icon.svg" alt="Image" class="svg">
-                                            </div>
-                                            <span>Delete</span>
-                                        </button>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <button class="page_add_image_tile_button button button__add button__light_blue">
-                                <div class="button__icon">
-                                    <img src="assets/add_icon.svg" alt="Image" class="svg">
-                                </div>
-                                <span>Add more image</span>
-                            </button>
-
-                        </div>
-
-                        <div class="creation_page_add_video">
-                            <h3>Video</h3>
-
-                            <div class="creation_page_add_video_tile creation_page_add_video_tile__loaded creation_page_elements_wrapper">
-
-                                <div class="creation_page_add_video_tile_preview">
-                                    <img src="img/video_preview.jpg" alt="Image">
-                                </div>
-
-                                <div class="creation_page_element_content">
-                                    <div class="creation_page_element__title_and_link_block">
-                                        <div class="creation_page_element creation_page_element__long creation_page_element__file_title">
+                                    <div class="creation_page_element_content">
+                                        <div class="creation_page_element creation_page_element__file_title">
                                             <label>
                                                 <span>Title</span>
                                                 <input type="text" maxlength="150" value="Seattle City View Urban Architecture Traffic Light Trail Dusk" disabled>
                                             </label>
                                         </div>
 
-                                        <div class="creation_page_element creation_page_element__long creation_page_element__file_link">
+                                        <div class="creation_page_element creation_page_element__file_chooser">
                                             <label>
-                                                <span>Link</span>
-                                                <input type="text" maxlength="150" value="https://dribbble.com/shots/4301152-Upload-File" disabled>
+                                                <input type="file" class="creation_page_element__file">
+                                                <span class="creation_page_element__browse button button__add button__light_blue">Browse</span>
                                             </label>
                                         </div>
-                                    </div>
 
-                                    <div class="creation_page_element creation_page_element__edit_buttons">
-                                        <button class="creation_page_element__edit_button button button__light_blue">Edit</button>
-                                        <button class="creation_page_element__remove_button button">
-                                            <div class="button__icon">
-                                                <img src="assets/trash_icon.svg" alt="Image" class="svg">
-                                            </div>
-                                            <span>Delete</span>
-                                        </button>
+                                        <div class="creation_page_element creation_page_element__edit_buttons">
+                                            <button class="creation_page_element__edit_button button button__light_blue">Edit</button>
+                                            <button class="creation_page_element__remove_button button">
+                                                <div class="button__icon">
+                                                    <img src="assets/trash_icon.svg" alt="Image" class="">
+                                                </div>
+                                                <span>Delete</span>
+                                            </button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
 
-                            <button class="page_add_image_tile_button button button__add button__light_blue">
+                            <button class="create_page_add_image_tile_button button button__add button__light_blue">
+                                <div class="button__icon">
+                                    <img src="assets/add_icon.svg" alt="Image" class="svg">
+                                </div>
+                                <span>Add more image</span>
+                            </button>
+
+                        </div>
+
+                        <div class="creation_page_add_video">
+                            <h3>Video</h3>
+
+                            <div class="creation_page_add_video_tiles">
+
+                                <div class="creation_page_add_video_tile">
+
+                                    <div class="creation_page_element_content">
+                                        <div class="creation_page_element__title_and_link_block">
+                                            <div class="creation_page_element creation_page_element__long creation_page_element__file_title">
+                                                <label>
+                                                    <span>Title</span>
+                                                    <input type="text" maxlength="150">
+                                                </label>
+                                            </div>
+
+                                            <div class="creation_page_element creation_page_element__long creation_page_element__file_link">
+                                                <label>
+                                                    <span>Link</span>
+                                                    <input type="text" maxlength="150">
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_delete">
+                                            <button class="button button__light_blue creation_page_element__file_delete_button">
+                                                <div class="button__icon">
+                                                    <img src="assets/delete_multimedia_icon.svg" alt="Image" class="svg">
+                                                </div>
+                                            </button>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_submit">
+                                            <button class="button button__blue creation_page_element_submit__file_submit_button">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="creation_page_add_video_tile creation_page_add_video_tile__loaded creation_page_elements_wrapper">
+
+                                    <div class="creation_page_add_video_tile_preview">
+                                        <img src="img/video_preview.jpg" alt="Image">
+                                    </div>
+
+                                    <div class="creation_page_element_content">
+                                        <div class="creation_page_element__title_and_link_block">
+                                            <div class="creation_page_element creation_page_element__long creation_page_element__file_title">
+                                                <label>
+                                                    <span>Title</span>
+                                                    <input type="text" maxlength="150" value="Seattle City View Urban Architecture Traffic Light Trail Dusk" disabled>
+                                                </label>
+                                            </div>
+
+                                            <div class="creation_page_element creation_page_element__long creation_page_element__file_link">
+                                                <label>
+                                                    <span>Link</span>
+                                                    <input type="text" maxlength="150" value="https://dribbble.com/shots/4301152-Upload-File" disabled>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__edit_buttons">
+                                            <button class="creation_page_element__edit_button button button__light_blue">Edit</button>
+                                            <button class="creation_page_element__remove_button button">
+                                                <div class="button__icon">
+                                                    <img src="assets/trash_icon.svg" alt="Image" class="svg">
+                                                </div>
+                                                <span>Delete</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="create_page_add_video_tile_button button button__add button__light_blue">
                                 <div class="button__icon">
                                     <img src="assets/add_icon.svg" alt="Image" class="svg">
                                 </div>
@@ -341,46 +503,80 @@
                         <div class="creation_page_add_image">
                             <h3>Images</h3>
 
-                            <div class="creation_page_add_image_tile creation_page_add_image_tile__loaded creation_page_elements_wrapper">
+                            <div class="creation_page_add_image_tiles">
 
-                                <div class="creation_page_add_image_tile_preview">
-                                    <img src="img/image_preview.jpg" alt="Image">
-                                </div>
+                                <div class="creation_page_add_image_tile creation_page_elements_wrapper">
 
-                                <div class="creation_page_element_content">
-                                    <div class="creation_page_element creation_page_element__file_title">
-                                        <label>
-                                            <span>Title</span>
-                                            <input type="text" maxlength="150" value="Seattle City View Urban Architecture Traffic Light Trail Dusk">
-                                        </label>
-                                    </div>
-
-                                    <div class="creation_page_element creation_page_element__file_chooser">
-                                        <label>
-                                            <input type="file" class="creation_page_element__file">
-                                            <span class="creation_page_element__browse button button__add button__light_blue">Browse</span>
-                                        </label>
-                                    </div>
-
-                                    <div class="creation_page_element creation_page_element__edit_buttons">
-
-                                        <div class="creation_page_element_save_and_cancel_buttons_block">
-                                            <button class="creation_page_element__save_button button button__blue">Save</button>
-                                            <button class="creation_page_element__cancel_button button button__light_blue">Cancel</button>
+                                    <div class="creation_page_element_content">
+                                        <div class="creation_page_element creation_page_element__file_title">
+                                            <label>
+                                                <span>Title</span>
+                                                <input type="text" maxlength="150">
+                                            </label>
                                         </div>
 
-                                        <button class="creation_page_element__remove_button button">
-                                            <div class="button__icon">
-                                                <img src="assets/trash_icon.svg" alt="Image" class="svg">
-                                            </div>
-                                            <span>Delete</span>
-                                        </button>
+                                        <div class="creation_page_element creation_page_element__file_chooser">
+                                            <label>
+                                                <input type="file" class="creation_page_element__file">
+                                                <span class="creation_page_element__browse button button__add button__light_blue">Browse</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_delete">
+                                            <button class="button button__light_blue creation_page_element__file_delete_button">
+                                                <div class="button__icon">
+                                                    <img src="assets/delete_multimedia_icon.svg" alt="Image" class="svg">
+                                                </div>
+                                            </button>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_submit">
+                                            <button class="button button__blue creation_page_element_submit__file_submit_button">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="creation_page_add_image_tile creation_page_add_image_tile__loaded creation_page_elements_wrapper">
+
+                                    <div class="creation_page_add_image_tile_preview">
+                                        <img src="img/image_preview.jpg" alt="Image">
                                     </div>
 
+                                    <div class="creation_page_element_content">
+                                        <div class="creation_page_element creation_page_element__file_title">
+                                            <label>
+                                                <span>Title</span>
+                                                <input type="text" maxlength="150" value="Seattle City View Urban Architecture Traffic Light Trail Dusk">
+                                            </label>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_chooser">
+                                            <label>
+                                                <input type="file" class="creation_page_element__file">
+                                                <span class="creation_page_element__browse button button__add button__light_blue">Browse</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__edit_buttons">
+
+                                            <div class="creation_page_element_save_and_cancel_buttons_block">
+                                                <button class="creation_page_element__save_button button button__blue">Save</button>
+                                                <button class="creation_page_element__cancel_button button button__light_blue">Cancel</button>
+                                            </div>
+
+                                            <button class="creation_page_element__remove_button button">
+                                                <div class="button__icon">
+                                                    <img src="assets/trash_icon.svg" alt="Image" class="">
+                                                </div>
+                                                <span>Delete</span>
+                                            </button>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
 
-                            <button class="page_add_image_tile_button button button__add button__light_blue">
+                            <button class="create_page_add_image_tile_button button button__add button__light_blue">
                                 <div class="button__icon">
                                     <img src="assets/add_icon.svg" alt="Image" class="svg">
                                 </div>
@@ -392,47 +588,83 @@
                         <div class="creation_page_add_video">
                             <h3>Video</h3>
 
-                            <div class="creation_page_add_video_tile creation_page_add_video_tile__loaded creation_page_add_video_tile__edit creation_page_elements_wrapper">
+                            <div class="creation_page_add_video_tiles">
 
-                                <div class="creation_page_add_video_tile_preview">
-                                    <img src="img/video_preview.jpg" alt="Image">
-                                </div>
+                                <div class="creation_page_add_video_tile">
 
-                                <div class="creation_page_element_content">
-                                    <div class="creation_page_element__title_and_link_block">
-                                        <div class="creation_page_element creation_page_element__long creation_page_element__file_title">
-                                            <label>
-                                                <span>Title</span>
-                                                <input type="text" maxlength="150" value="Seattle City View Urban Architecture Traffic Light Trail Dusk">
-                                            </label>
+                                    <div class="creation_page_element_content">
+                                        <div class="creation_page_element__title_and_link_block">
+                                            <div class="creation_page_element creation_page_element__long creation_page_element__file_title">
+                                                <label>
+                                                    <span>Title</span>
+                                                    <input type="text" maxlength="150">
+                                                </label>
+                                            </div>
+
+                                            <div class="creation_page_element creation_page_element__long creation_page_element__file_link">
+                                                <label>
+                                                    <span>Link</span>
+                                                    <input type="text" maxlength="150">
+                                                </label>
+                                            </div>
                                         </div>
 
-                                        <div class="creation_page_element creation_page_element__long creation_page_element__file_link">
-                                            <label>
-                                                <span>Link</span>
-                                                <input type="text" maxlength="150" value="https://dribbble.com/shots/4301152-Upload-File" disabled>
-                                            </label>
+                                        <div class="creation_page_element creation_page_element__file_delete">
+                                            <button class="button button__light_blue creation_page_element__file_delete_button">
+                                                <div class="button__icon">
+                                                    <img src="assets/delete_multimedia_icon.svg" alt="Image" class="svg">
+                                                </div>
+                                            </button>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_submit">
+                                            <button class="button button__blue creation_page_element_submit__file_submit_button">Submit</button>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <div class="creation_page_element creation_page_element__edit_buttons">
+                                <div class="creation_page_add_video_tile creation_page_add_video_tile__loaded creation_page_add_video_tile__edit creation_page_elements_wrapper">
 
-                                        <div class="creation_page_element_save_and_cancel_buttons_block">
-                                            <button class="creation_page_element__save_button button button__blue">Save</button>
-                                            <button class="creation_page_element__cancel_button button button__light_blue">Cancel</button>
+                                    <div class="creation_page_add_video_tile_preview">
+                                        <img src="img/video_preview.jpg" alt="Image">
+                                    </div>
+
+                                    <div class="creation_page_element_content">
+                                        <div class="creation_page_element__title_and_link_block">
+                                            <div class="creation_page_element creation_page_element__long creation_page_element__file_title">
+                                                <label>
+                                                    <span>Title</span>
+                                                    <input type="text" maxlength="150" value="Seattle City View Urban Architecture Traffic Light Trail Dusk">
+                                                </label>
+                                            </div>
+
+                                            <div class="creation_page_element creation_page_element__long creation_page_element__file_link">
+                                                <label>
+                                                    <span>Link</span>
+                                                    <input type="text" maxlength="150" value="https://dribbble.com/shots/4301152-Upload-File" disabled>
+                                                </label>
+                                            </div>
                                         </div>
 
-                                        <button class="creation_page_element__remove_button button">
-                                            <div class="button__icon">
-                                                <img src="assets/trash_icon.svg" alt="Image" class="svg">
+                                        <div class="creation_page_element creation_page_element__edit_buttons">
+
+                                            <div class="creation_page_element_save_and_cancel_buttons_block">
+                                                <button class="creation_page_element__save_button button button__blue">Save</button>
+                                                <button class="creation_page_element__cancel_button button button__light_blue">Cancel</button>
                                             </div>
-                                            <span>Delete</span>
-                                        </button>
+
+                                            <button class="creation_page_element__remove_button button">
+                                                <div class="button__icon">
+                                                    <img src="assets/trash_icon.svg" alt="Image" class="">
+                                                </div>
+                                                <span>Delete</span>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <button class="page_add_image_tile_button button button__add button__light_blue">
+                            <button class="create_page_add_video_tile_button button button__add button__light_blue">
                                 <div class="button__icon">
                                     <img src="assets/add_icon.svg" alt="Image" class="svg">
                                 </div>
@@ -479,7 +711,7 @@
                         <input type="email" placeholder="Email adress" maxlength="100" required>
                         <button type="submit">Subscribe</button>
                     </div>
-                    <span class="footer_info__copyright">© 2015 All rights reserved Daleel</span>
+                    <span class="footer_info__copyright">© 2019 All rights reserved Daleel</span>
                 </div>
             </div>
         </div>

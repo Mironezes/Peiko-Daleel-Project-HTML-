@@ -1,211 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
 
-
-    <!DOCTYPE html>
-    <html lang="ru">
-
-    <head>
-        <!--[if lte IE 9]>
+<head>
+    <!--[if lte IE 9]>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 <![endif]-->
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-<link rel="apple-touch-icon-precomposed" href="apple_touch_icon.png" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css">
-<link rel="stylesheet" href="css/style.css">            <title>Create Expert Artcile & Services | Daleel</title>
-    </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="apple-touch-icon-precomposed" href="apple_touch_icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Create Work History | Daleel</title>
+</head>
 
-    <body class="non_authorized">
+<body class="non_authorized">
 
-        <div class="creation_page inner_page">
-            <header class="header_wrapper white">
-	<div class="header_navigation_block_wrapper">
-		<div class="container">
-			<div class="header_navigation_block">
-				<div class="header_logo_column">
-					<a href="index.php"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
-					<button onclick = "void(0)" class="mobile_menu_icon hamburger hamburger--arrow blue" type="button">
-					<span class="hamburger-box">
+    <div class="creation_page inner_page">
+        <header class="header_wrapper white">
+            <div class="header_navigation_block_wrapper">
+                <div class="container">
+                    <div class="header_navigation_block">
+                        <div class="header_logo_column">
+                            <a href="index.html"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
+                            <button onclick="void(0)" class="mobile_menu_icon hamburger hamburger--arrow blue" type="button">
+                                <span class="hamburger-box">
 					<span class="hamburger-inner"></span>
-					</span>
-					</button>	
-				</div>
-				<div class="header_navigation_column">
-					<div class="header_navigation_search">
-						<input type="search" placeholder="Search request" maxlength="100" required>		
-						<button>Search</button>					
-					</div>
-					<a href="#" class="button button__blue">Log in</a>
-					<a href="#" class="button button__yellow">Sign up</a>
-					<button onclick = "void(0)" class="desktop_toggle_menu_icon hamburger hamburger--slider blue" type="button">
-					<span class="hamburger-box">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="header_navigation_column">
+                            <div class="header_navigation_search">
+                                <input type="search" placeholder="Search request" maxlength="100" required>
+                                <button>Search</button>
+                            </div>
+                            <a href="#" class="button button__blue">Log in</a>
+                            <a href="#" class="button button__yellow">Sign up</a>
+                            <button onclick="void(0)" class="desktop_toggle_menu_icon hamburger hamburger--slider blue" type="button">
+                                <span class="hamburger-box">
 					<span class="hamburger-inner"></span>
-					</span>
-					</button>						
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="desktop_toggle_menu_block_wrapper">
-		<div class="container">
-			<div class="desktop_toggle_menu_block">
-				<ul class="desktop_toggle_menu">
-					<li class="desktop_toggle_menu__item"><a href="#">Suppliers</a></li>
-					<li class="desktop_toggle_menu__item"><a href="#">Intelligence</a></li>
-					<li class="desktop_toggle_menu__item"><a href="#">News</a></li>
-					<li class="desktop_toggle_menu__item"><a href="#">Expert articles</a></li>
-					<li class="desktop_toggle_menu__item"><a href="#">Indices</a></li>
-					<li class="desktop_toggle_menu__item"><a href="#">Contacts</a></li>
-				</ul>
-				<a href="#" class="button button__yellow">
-					<div class="button__icon">
-						<img class="svg" src="assets/plus_icon.svg" alt="Image"> 					
-					</div>
-					<span>Add company</span>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="mobile_toggle_menu_block">
-		<div class="container">
-			<ul class="mobile_toggle_menu">
-				<li class="mobile_search_block">
-					<input type="search" placeholder="Search request" maxlength="100" required>		
-					<button>Search</button>					
-				</li>
-				<li class="mobile_toggle_menu__item"><a href="#">Suppliers</a></li>
-				<li class="mobile_toggle_menu__item"><a href="#">Intelligence</a></li>
-				<li class="mobile_toggle_menu__item"><a href="#">News</a></li>
-				<li class="mobile_toggle_menu__item"><a href="#">Expert articles</a></li>
-				<li class="mobile_toggle_menu__item"><a href="#">Indices</a></li>
-				<li class="mobile_toggle_menu__item"><a href="#">Contacts</a></li>
-			</ul>
-			<div class="mobile_toggle_buttons">
-				<a href="#" class="button login_button button__blue">Log in</a>
-				<a href="#" class="button registration_button button__yellow">Registration</a>
-				<a href="#" class="button add_company_button button__yellow"><img class="svg" src="assets/plus_icon.svg" alt="Image"> Add company</a>							
-			</div>
-		</div>
-	</div>
-</header>
-                <section class="main_content_wrapper">
-                    <div class="container">
-
-                        <h1>Create Expert Artcile</h1>
-
-                        <div class="main_content_inner">
-
-						<div class="creation_page_element creation_page_element__short" name="creation_page_element__category_a_level">
-			                <label>
-			                    <span>Category A</span>
-			                   	<select style="width: 100%">
-			                   		<option value="Category A">Category A</option>
-			                   		<option value="Category B">Category B</option>
-			                   		<option value="Category C">Category C</option>
-			                   		<option value="Category D">Category D</option>			                   		
-			                   	</select>
-			                </label>
-		            	</div>
-
-						<div class="creation_page_element creation_page_element__short" name="creation_page_element__category_b_level">
-			                <label>
-			                    <span>Category B</span>
-			                   	<select style="width: 100%">
-			                   		<option value="Category A">Category A</option>
-			                   		<option value="Category B">Category B</option>
-			                   		<option value="Category C">Category C</option>
-			                   		<option value="Category D">Category D</option>			                   		
-			                   	</select>
-			                </label>
-		            	</div>
-
-						<div class="creation_page_element creation_page_element__long">
-			                <label>
-			                    <span>Add tags fot this product & services</span>
-								<select class="creation_page_element__tags_selector" multiple="multiple" style="width: 100%" name="creation_page_element__tags[]">
-									<option value="UX Design">UX Design</option>
-									<option value="Something else">Something else</option>
-								</select>			
-							</label>
-		            	</div>
-
-
-						<div class="creation_page_element creation_page_element__long">
-			                <label>
-			                    <span>Title</span>
-			                    <input type="text" maxlength="150">
-			                </label>
-		            	</div>
-
-
-						<div class="creation_page_element creation_page_element__textarea">
-			                <label>
-			                    <span>Small Description</span>
-			                    <textarea cols="30" rows="10"></textarea>
-			                </label>
-		            	</div>
-
-
-						<div class="creation_page_buttons">
-							<a href="#" class="button button__white creation_page_cancel_button">Cancel</a>
-							<a href="#" class="button button__blue creation_page_save_button">Save</a>
-						</div>
-		
+                                </span>
+                            </button>
                         </div>
                     </div>
-                </section>
+                </div>
+            </div>
+            <div class="desktop_toggle_menu_block_wrapper">
+                <div class="container">
+                    <div class="desktop_toggle_menu_block">
+                        <ul class="desktop_toggle_menu">
+                            <li class="desktop_toggle_menu__item"><a href="#">Suppliers</a></li>
+                            <li class="desktop_toggle_menu__item"><a href="#">Intelligence</a></li>
+                            <li class="desktop_toggle_menu__item"><a href="#">News</a></li>
+                            <li class="desktop_toggle_menu__item"><a href="#">Expert articles</a></li>
+                            <li class="desktop_toggle_menu__item"><a href="#">Indices</a></li>
+                            <li class="desktop_toggle_menu__item"><a href="#">Contacts</a></li>
+                        </ul>
+                        <a href="#" class="button button__yellow">
+                            <div class="button__icon">
+                                <img class="svg" src="assets/plus_icon.svg" alt="Image">
+                            </div>
+                            <span>Add company</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile_toggle_menu_block">
+                <div class="container">
+                    <ul class="mobile_toggle_menu">
+                        <li class="mobile_search_block">
+                            <input type="search" placeholder="Search request" maxlength="100" required>
+                            <button>Search</button>
+                        </li>
+                        <li class="mobile_toggle_menu__item"><a href="#">Suppliers</a></li>
+                        <li class="mobile_toggle_menu__item"><a href="#">Intelligence</a></li>
+                        <li class="mobile_toggle_menu__item"><a href="#">News</a></li>
+                        <li class="mobile_toggle_menu__item"><a href="#">Expert articles</a></li>
+                        <li class="mobile_toggle_menu__item"><a href="#">Indices</a></li>
+                        <li class="mobile_toggle_menu__item"><a href="#">Contacts</a></li>
+                    </ul>
+                    <div class="mobile_toggle_buttons">
+                        <a href="#" class="button login_button button__blue">Log in</a>
+                        <a href="#" class="button registration_button button__yellow">Registration</a>
+                        <a href="#" class="button add_company_button button__yellow"><img class="svg" src="assets/plus_icon.svg" alt="Image"> Add company</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="main_content_wrapper">
+            <div class="container">
 
+                <h1>Create Work History</h1>
+
+                <div class="main_content_inner">
+
+                    <div class="creation_page_element creation_page_element__short">
+                        <label>
+                            <span>Project Name</span>
+                            <input type="text" maxlength="100">
+                        </label>
+                    </div>
+
+                    <div class="creation_page_element creation_page_element__short">
+                        <label>
+                            <span>Company Name</span>
+                            <select style="width: 100%">
+                                <option value="Company Name 1">Company Name 1</option>
+                                <option value="Company Name 2">Company Name 2</option>
+                                <option value="Company Name 3">Company Name 3</option>
+                                <option value="Company Name 4">Company Name 4</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="creation_page_element creation_page_element__long">
+                        <label>
+                            <span>Title 1</span>
+                            <input type="text" maxlength="150">
+                        </label>
+                    </div>
+
+                    <div class="creation_page_element creation_page_element__textarea">
+                        <label>
+                            <span>Title 2</span>
+                            <textarea cols="30" rows="10"></textarea>
+                        </label>
+                    </div>
+
+                    <div class="creation_page_elements_wrapper creation_page_elements_categories">
+                        <div class="creation_page_element creation_page_element__short">
+                            <label>
+                                <span>Category A</span>
+                                <select style="width: 100%">
+                                    <option value="Category A">Category A</option>
+                                    <option value="Category B">Category B</option>
+                                    <option value="Category C">Category C</option>
+                                    <option value="Category D">Category D</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="creation_page_element creation_page_element__short">
+                            <label>
+                                <span>Category B</span>
+                                <select style="width: 100%">
+                                    <option value="Category A">Category A</option>
+                                    <option value="Category B">Category B</option>
+                                    <option value="Category C">Category C</option>
+                                    <option value="Category D">Category D</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="creation_page_element creation_page_element__short">
+                        <label>
+                            <span>Product & Services</span>
+                            <select style="width: 100%">
+                                <option value="Product 1">Product 1</option>
+                                <option value="Product 2">Product 2</option>
+                                <option value="Product 3">Product 3</option>
+                                <option value="Product 4">Product 4</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="creation_page_element_location_block">
+
+                        <div class="creation_page_element_location_tile">
+                            <div class="creation_page_element creation_page_element__short">
+                                <label>
+                                    <span>Location</span>
+                                    <select style="width: 100%">
+                                        <option value="Location 1">Location 1</option>
+                                        <option value="Location 2">Location 2</option>
+                                        <option value="Location 3">Location 3</option>
+                                        <option value="Location 4">Location 4</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="page_add_image_tile_button button button__add button__light_blue">
+                            <div class="button__icon">
+                                <img src="assets/add_icon.svg" alt="Image" class="svg">
+                            </div>
+                            <span>Add more location</span>
+                        </button>
+
+                    </div>
+
+                    <div class="creation_page_contact_date_block">
+                        <div class="creation_page_element creation_page_element__short">
+                            <label>
+                                <span>Date From</span>
+                                <input type="text" class="datepicker-here" data-language='en' data-min-view="months" data-view="months" data-date-divat="MM yyyy">
+                            </label>
+                        </div>
+
+                        <div class="creation_page_element creation_page_element__short">
+                            <label>
+                                <span>Date To</span>
+                                <input type="text" class="datepicker-here" data-language='en' data-min-view="months" data-view="months" data-date-divat="MM yyyy">
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="creation_page_contact_info_block">
+
+                        <h3>Contacts Info</h3>
+
+                        <div class="creation_page_element creation_page_element__short">
+                            <label>
+                                <span>Contact Name</span>
+                                <input type="text" maxlength="100">
+                            </label>
+                        </div>
+
+                        <div class="creation_page_elements_wrapper creation_page_elements_contact_info">
+                            <div class="creation_page_element creation_page_element__short">
+                                <label>
+                                    <span>Phone Number</span>
+                                    <input type="text" maxlength="20">
+                                </label>
+                            </div>
+
+                            <div class="creation_page_element creation_page_element__short">
+                                <label>
+                                    <span>Email</span>
+                                    <input type="email" maxlength="120">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="creation_page_add_multimedia_block">
+                        <div class="creation_page_add_image">
+                            <h3>Images</h3>
+
+                            <div class="creation_page_add_image_tiles">
+                                <div class="creation_page_add_image_tile creation_page_elements_wrapper">
+
+                                    <div class="creation_page_element_content">
+                                        <div class="creation_page_element creation_page_element__file_title">
+                                            <label>
+                                                <span>Title</span>
+                                                <input type="text" maxlength="150">
+                                            </label>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_chooser">
+                                            <label>
+                                                <input type="file" class="creation_page_element__file">
+                                                <span class="creation_page_element__browse button button__add button__light_blue">Browse</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_delete">
+                                            <button class="button button__light_blue creation_page_element__file_delete_button">
+                                                <div class="button__icon">
+                                                    <img src="assets/delete_multimedia_icon.svg" alt="Image" class="svg">
+                                                </div>
+                                            </button>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_submit">
+                                            <button class="button button__blue creation_page_element_submit__file_submit_button">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="creation_page_add_image_tile creation_page_elements_wrapper">
+
+                                    <div class="creation_page_element_content">
+                                        <div class="creation_page_element creation_page_element__file_title">
+                                            <label>
+                                                <span>Title</span>
+                                                <input type="text" maxlength="150">
+                                            </label>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_chooser">
+                                            <label>
+                                                <input type="file" class="creation_page_element__file">
+                                                <span class="creation_page_element__browse button button__add button__light_blue">Browse</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_delete">
+                                            <button class="button button__light_blue creation_page_element__file_delete_button">
+                                                <div class="button__icon">
+                                                    <img src="assets/delete_multimedia_icon.svg" alt="Image" class="svg">
+                                                </div>
+                                            </button>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_submit">
+                                            <button class="button button__blue creation_page_element_submit__file_submit_button">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <button class="create_page_add_image_tile_button button button__add button__light_blue">
+                                <div class="button__icon">
+                                    <img src="assets/add_icon.svg" alt="Image" class="svg">
+                                </div>
+                                <span>Add more image</span>
+                            </button>
+
+                        </div>
+
+                        <div class="creation_page_add_video">
+                            <h3>Video</h3>
+
+                            <div class="creation_page_add_video_tiles">
+                                <div class="creation_page_add_video_tile">
+
+                                    <div class="creation_page_element_content">
+                                        <div class="creation_page_element__title_and_link_block">
+                                            <div class="creation_page_element creation_page_element__long creation_page_element__file_title">
+                                                <label>
+                                                    <span>Title</span>
+                                                    <input type="text" maxlength="150">
+                                                </label>
+                                            </div>
+
+                                            <div class="creation_page_element creation_page_element__long creation_page_element__file_link">
+                                                <label>
+                                                    <span>Link</span>
+                                                    <input type="text" maxlength="150">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="creation_page_element creation_page_element__file_delete">
+                                            <button class="button button__light_blue creation_page_element__file_delete_button">
+                                                <div class="button__icon">
+                                                    <img src="assets/delete_multimedia_icon.svg" alt="Image" class="svg">
+                                                </div>
+                                            </button>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_submit">
+                                            <button class="button button__blue creation_page_element_submit__file_submit_button">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="creation_page_add_video_tile">
+
+                                    <div class="creation_page_element_content">
+                                        <div class="creation_page_element__title_and_link_block">
+                                            <div class="creation_page_element creation_page_element__long creation_page_element__file_title">
+                                                <label>
+                                                    <span>Title</span>
+                                                    <input type="text" maxlength="150">
+                                                </label>
+                                            </div>
+
+                                            <div class="creation_page_element creation_page_element__long creation_page_element__file_link">
+                                                <label>
+                                                    <span>Link</span>
+                                                    <input type="text" maxlength="150">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="creation_page_element creation_page_element__file_delete">
+                                            <button class="button button__light_blue creation_page_element__file_delete_button">
+                                                <div class="button__icon">
+                                                    <img src="assets/delete_multimedia_icon.svg" alt="Image" class="svg">
+                                                </div>
+                                            </button>
+                                        </div>
+
+                                        <div class="creation_page_element creation_page_element__file_submit">
+                                            <button class="button button__blue creation_page_element_submit__file_submit_button">Submit</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="create_page_add_video_tile_button  button button__add button__light_blue">
+                                <div class="button__icon">
+                                    <img src="assets/add_icon.svg" alt="Image" class="svg">
+                                </div>
+                                <span>Add more videos</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="creation_page_buttons">
+                        <a href="#" class="button button__white creation_page_cancel_button">Cancel</a>
+                        <a href="#" class="button button__blue creation_page_save_button">Save</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer_wrapper">
+        <div class="container">
+            <div class="footer_logo_block">
+                <img class="svg" src="assets/header/logo__dark.svg" alt="Логотип">
+            </div>
+            <div class="footer_info_block">
+                <div class="footer_info_about_us_column">
+                    <h4 class="footer_info__title">About Us</h4>
+                    <p class="footer_info__desc">Daleel is a portal that provides unique business intelligence to make the best decisions and allows exchange of knowledge that our industry needs to best meet its requirements.</p>
+                </div>
+                <div class="footer_info_resources_column">
+                    <h4 class="footer_info__title">Resources</h4>
+                    <ul class="footer_info_resources_list">
+                        <li class="footer_info_resources_list__item"><a href="#">Our Story and Why We Do It</a></li>
+                        <li class="footer_info_resources_list__item"><a href="#">Privacy Policy</a></li>
+                        <li class="footer_info_resources_list__item"><a href="#">Terms Of Use</a></li>
+                        <li class="footer_info_resources_list__item"><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer_info_block_newsletter_column">
+                    <h4 class="footer_info__title">Newsletter</h4>
+                    <div class="footer_info_block_newsletter">
+                        <input type="email" placeholder="Email adress" maxlength="100" required>
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <span class="footer_info__copyright">© 2019 All rights reserved Daleel</span>
+                </div>
+            </div>
         </div>
+    </footer>
 
-        <footer class="footer_wrapper">
-	<div class="container">
-		<div class="footer_logo_block">
-			<img class="svg" src="assets/header/logo__dark.svg" alt="Логотип">
-		</div>
-		<div class="footer_info_block">
-			<div class="footer_info_about_us_column">
-				<h4 class="footer_info__title">About Us</h4>
-				<p class="footer_info__desc">Daleel is a portal that provides unique business intelligence to make the best decisions and allows exchange of knowledge that our industry needs to best meet its requirements.</p>
-			</div>
-			<div class="footer_info_resources_column">
-				<h4 class="footer_info__title">Resources</h4>
-				<ul class="footer_info_resources_list">
-					<li class="footer_info_resources_list__item"><a href="#">Our Story and Why We Do It</a></li>
-					<li class="footer_info_resources_list__item"><a href="#">Privacy Policy</a></li>
-					<li class="footer_info_resources_list__item"><a href="#">Terms Of Use</a></li>
-					<li class="footer_info_resources_list__item"><a href="#">Contacts</a></li>
-				</ul>
-			</div>
-			<div class="footer_info_block_newsletter_column">
-				<h4 class="footer_info__title">Newsletter</h4>
-				<div class="footer_info_block_newsletter">
-					<input type="email" placeholder="Email adress" maxlength="100" required>
-					<button type="submit">Subscribe</button>
-				</div>
-				<span class="footer_info__copyright">© 2015 All rights reserved Daleel</span>											
-			</div>
-		</div>
-	</div>
-</footer>
-
-<div class="modal_backdrop"></div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/i18n/en.js"></script>
-<script src="scripts/main.js"></script>
-<script src="scripts/mobile.js"></script>
-<script src="scripts/curcle_chart.js"></script>    </body>
+    <div class="modal_backdrop"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/i18n/en.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/mobile.js"></script>
+    <script src="scripts/curcle_chart.js"></script>
+</body>
