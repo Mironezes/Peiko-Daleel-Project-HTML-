@@ -8986,6 +8986,17 @@ span.search_page__search_results {
     align-items: flex-end;
 }
 
+
+.creation_page_elements_categories,
+.creation_page_elements_contact_info {
+	justify-content: space-between;
+}
+
+.creation_page_elements_categories .creation_page_element,
+.creation_page_elements_contact_info .creation_page_element {
+	width: calc(50% - 15px);
+} 
+
 .creation_page_add_image,
 .creation_page_add_video {
 	margin-bottom: 50px;
@@ -9121,4 +9132,28 @@ span.search_page__search_results {
 }
 .creation_page_element__save_button {
 	margin-right: 15px;
+}
+
+.creation_page_element_location_tile {
+	margin-bottom: 10px;
+}
+
+.creation_page_element_location_tile .creation_page_element {
+	margin-bottom: 0;
+}
+
+.creation_page_element_location_block,
+.creation_page_contact_info_block {
+	margin-bottom: 25px;
+}
+
+.creation_page_contact_date_block {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.creation_page_contact_date_block .creation_page_element  {
+	width: calc(50% - 15px);
 }
