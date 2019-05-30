@@ -304,9 +304,11 @@ $(document).ready(function() {
 
     BasicTextLimiter($('.latest_news_tile__desc'), 150);
     BasicTextLimiter($('.expert_intelligance_tile_text'), 462);
-    BasicTextLimiter($('.main_page_categories_tile .main_page_categories_tile_desc'), 280);
 
 
+    $(".main_page_categories_tile_desc").each(function() {   
+      BasicTextLimiter($(this), 280);
+    });
 
     function authorNameLimiter() {
 
