@@ -139,6 +139,14 @@ input[type=search]::-webkit-search-results-decoration {
 	-webkit-appearance: none
 }
 
+.input_warning {
+	color: #FF4848;
+}
+.warning input,
+.warning textarea {
+	border-color: #FF4848 !important;
+}
+
 body {
 	background: #f5f6f7
 }
@@ -203,6 +211,20 @@ body {
 	background: #2e368f
 }
 
+
+.button__light_blue {
+	color: #2E368F;
+	border: 1px solid #2E368F;
+	background: #F5F6F7;
+	justify-content: center;
+}
+
+.button__light_blue:hover {
+	color: #FFF;
+	background: #4F58B8;
+	border: 1px solid #4F58B8;	
+}
+
 .button__cv {
 	display: flex;
 	width: 260px;
@@ -224,6 +246,10 @@ body {
 	display: flex;
 	align-items: center;
 	margin: 0 auto;
+}
+
+.button__add:hover svg path {
+	fill: #FFF;
 }
 
 .header_account_button {
@@ -8777,6 +8803,12 @@ span.search_page__search_results {
 	.creation_page_save_button, .creation_page_cancel_button {
 		padding: 0 10px;
 	}
+	.select2-container .select2-selection--multiple {
+		height: auto;
+	}
+	.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+		flex-wrap: wrap;
+	}
 	.footer_logo_block svg {
 		width: 220px;
 		height: 70px;
@@ -8946,3 +8978,147 @@ span.search_page__search_results {
 	text-decoration: underline
 }
 
+
+.creation_page_elements_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.creation_page_add_image,
+.creation_page_add_video {
+	margin-bottom: 50px;
+}
+
+
+.creation_page_element__file_title,
+.creation_page_element__file_chooser {
+	flex-direction: row;	
+	margin: 0;
+} 
+
+.creation_page_element_content {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+.creation_page_add_image_tile__loaded .creation_page_element_content,
+.creation_page_add_video_tile__loaded .creation_page_element_content {
+	align-items: unset;
+	justify-content: unset;
+}
+
+.creation_page_add_image_tile,
+.creation_page_add_video_tile {
+	margin-bottom: 10px;
+}
+
+.creation_page_add_image_tile  .creation_page_element__file_title {
+	width: calc(80% - 15px);
+}
+
+.creation_page_element__title_and_link_block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.creation_page_element__file_title input {
+	height: 48px;
+}
+
+.creation_page_element__file_chooser {
+	width: calc(20% - 15px);
+}
+
+.creation_page_element__file {
+	display: none;
+}
+
+.creation_page_element__browse {
+	position: relative;
+	justify-content: center;
+	top: 5px;
+}
+
+.creation_page_add_image_tile__loaded label span,
+.creation_page_add_video_tile__loaded label span,
+.creation_page_add_image_tile__loaded .creation_page_element__file_chooser {
+	display: none;
+}
+
+.creation_page_element.creation_page_element__file_title input:disabled,
+.creation_page_element.creation_page_element__file_link  input:disabled {
+	height: auto;
+	padding: 0;
+	font-size: 1.15em;
+	line-height: 1;
+	font-weight: 500;
+	border: unset;
+	color: #21222B;
+	background: transparent;
+}
+
+.creation_page_element.creation_page_element__file_link  input:disabled {
+	font-size: .9em;
+}
+
+.creation_page_add_image_tile__loaded,
+.creation_page_add_video_tile__loaded {
+	align-items: stretch;
+}
+
+.creation_page_add_image_tile__loaded .creation_page_add_image_tile_preview,
+.creation_page_add_video_tile__loaded .creation_page_add_video_tile_preview {
+	width: calc(25% - 15px);
+}
+
+.creation_page_add_image_tile_preview img,
+.creation_page_add_video_tile_preview img {
+    width: auto;
+    height: 100%;
+}
+
+.creation_page_add_image_tile__loaded .creation_page_element_content,
+.creation_page_add_video_tile__loaded .creation_page_element_content {
+    width: calc(75% - 15px);
+    display: flex;
+    flex-direction: column;
+	justify-content: space-between;    
+}
+
+.creation_page_element__edit_buttons {
+    width: 100%;	
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.creation_page_element__edit_buttons button {
+	width: fit-content;
+    margin-bottom: 0;
+}
+.creation_page_element__remove_button .button__icon {
+	position: relative;
+	top: -2px;
+}
+
+.creation_page_element__remove_button span {
+	color: #2E368F;
+}
+
+.creation_page_add_video_tile__edit .creation_page_element__file_link {
+	display: none;
+}
+
+.creation_page_element_save_and_cancel_buttons_block {
+	display: flex;
+}
+.creation_page_element__save_button {
+	margin-right: 15px;
+}
