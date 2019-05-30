@@ -9178,3 +9178,7 @@ span.search_page__search_results {
 .creation_page_add_video_tile .creation_page_element__file_title {
 	margin-bottom: 15px;
 }
+
+.creation_page_element label {
+	cursor: default;
+}
