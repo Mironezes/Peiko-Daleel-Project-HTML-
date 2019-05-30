@@ -6818,6 +6818,17 @@ span.search_page__search_results {
     padding-right: 25px;
 }
 
+
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple,
+.select2-dropdown {
+	border-color: #E8E8E8;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered:hover {
+	border-color: #4F58B8;
+}
+
 .select2-container--default .select2-selection--multiple .select2-selection__rendered {
 	display: flex;
 	flex-wrap: wrap;
