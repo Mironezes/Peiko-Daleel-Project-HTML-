@@ -6729,9 +6729,7 @@ span.search_page__search_results {
 	margin-bottom: 25px;
 }
 
-.creation_page_element span {
-	display: flex;
-	flex-direction: column;
+.creation_page_element > span {
 	margin-bottom: 5px;
 }
 
@@ -6809,21 +6807,30 @@ span.search_page__search_results {
 	margin-right: 25px;
 }
 
-.select2-container .select2-selection--multiple,
 .select2-container .select2-selection--single {
 	height: 48px;
 }
 .select2-container .select2-selection--single .select2-selection__rendered {
     display: flex;
     height: 100%;
-    justify-content: center;
+    align-items: center;
     padding-left: 15px;
     padding-right: 25px;
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__rendered {
 	display: flex;
+	flex-wrap: wrap;
 	height: 100%;
+	margin: 0;
+}
+.select2-container .select2-search--inline .select2-search__field {
+	height: 100%;
+}
+
+.select2-container .select2-search--inline .select2-search__field,
+.select2-container .select2-search--inline {
+	margin: 0;
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
