@@ -9206,3 +9206,6 @@ span.search_page__search_results {
 .creation_page_element label {
 	cursor: default;
 }
+.select2-container--open {
+	z-index: 2;
+}
