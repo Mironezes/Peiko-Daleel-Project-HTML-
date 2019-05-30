@@ -13,6 +13,10 @@ html {
 	box-sizing: inherit
 }
 
+* {
+	outline: none !important;
+}
+
 .container {
 	width: 100%;
 	padding-right: 15px;
@@ -115,11 +119,10 @@ button,
 input,
 option,
 select {
-	outline: 0;
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	-webkit-border-radius: 0;
-	appearance: none
+	-moz-appearance: none ;
+	-webkit-appearance: none ;
+	-webkit-border-radius: 0 ;
+	appearance: none 
 }
 
 button {
@@ -8807,4 +8810,132 @@ span.search_page__search_results {
 
 .creation_page .main_content_wrapper {
 	padding-top: 50px;
+}
+
+.creation_page_element {
+	position: relative;
+	flex-direction: column;
+	margin-bottom: 25px;
+}
+
+.creation_page_element span {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 5px;
+}
+
+.creation_page_element label {
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.creation_page_element__long {
+	width: 100%;
+}
+
+.creation_page_element__short {
+	width: 50%;
+}
+
+.creation_page_element__date {
+	width: 25%;
+}
+
+.creation_page_element__textarea {
+	width: 100%;
+}
+
+
+
+.creation_page_element input,
+.creation_page_element textarea,
+.datepicker-here,
+.datepicker-here:hover {
+	transition: .3s;
+}
+
+.creation_page_element input:focus,
+.creation_page_element input:hover,
+.creation_page_element textarea:focus,
+.creation_page_element textarea:hover,
+.datepicker-here:hover,
+.datepicker-here:focus {
+	border-color: #4F58B8;
+}
+
+.creation_page_element input,
+.creation_page_element textarea {
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 1;
+	border: 1px solid #E8E8E8;
+	border-radius: 5px;
+}
+
+.creation_page_element textarea {
+	resize: none;
+}
+
+
+.creation_page_buttons {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.creation_page_save_button,
+.creation_page_cancel_button {
+	width: 180px;
+	justify-content: center;
+}
+
+.creation_page_cancel_button {
+	margin-right: 25px;
+}
+
+.select2-container .select2-selection--multiple,
+.select2-container .select2-selection--single {
+	height: 48px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 25px;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__rendered {
+	display: flex;
+	height: 100%;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+	display: flex;
+	align-items: center;
+}
+
+.select2-container--default.select2-container--focus .select2-selection {
+	border-color: #4F58B8;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 46px;
+	right: 15px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: #21222B;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #1A1625 transparent transparent transparent;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+	margin-bottom: 2.5px;
 }

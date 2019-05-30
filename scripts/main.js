@@ -102,6 +102,11 @@ $(document).ready(function() {
         owlSuppliersCategory.trigger('prev.owl.carousel');
     })
 
+    $('select').select2({
+        minimumResultsForSearch: -1,
+        width: 'resolve',
+        theme: "default"
+    });
 
 
     function navScroll() {
