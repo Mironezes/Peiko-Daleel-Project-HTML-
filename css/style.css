@@ -6834,6 +6834,7 @@ span.search_page__search_results {
 	flex-wrap: wrap;
 	height: 48px;
 	margin: 0;
+	padding: 0;
 }
 .select2-container .select2-search--inline .select2-search__field {
 	height: 100%;
@@ -6855,6 +6856,8 @@ span.search_page__search_results {
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
 	display: flex;
 	align-items: center;
+	margin: 2px;
+    margin-right: 10px;	
 }
 
 .select2-container--default.select2-container--focus .select2-selection {
