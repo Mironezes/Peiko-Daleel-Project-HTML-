@@ -9071,7 +9071,6 @@ span.search_page__search_results {
 .creation_page_element__browse {
 	position: relative;
 	justify-content: center;
-	top: 5px;
 }
 
 .creation_page_add_image_tile__loaded label span,
@@ -9174,4 +9173,8 @@ span.search_page__search_results {
 
 .creation_page_contact_date_block .creation_page_element  {
 	width: calc(50% - 15px);
+}
+
+.creation_page_add_video_tile .creation_page_element__file_title {
+	margin-bottom: 15px;
 }
