@@ -6841,12 +6841,29 @@ span.search_page__search_results {
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
+	position: relative;
     padding: 0 15px;
+    padding-right: 45px;
 	border: none;
 	border-radius: 1px;
 	color: #21222B;
 	background: #E8E8E8;
 }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    position: absolute;
+    right: 15px;
+    margin: 0;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    color: transparent;
+    font-size: 0;
+    background: url('../assets/creation_delete_tag_icon.svg') no-repeat;
+}
+
+
+
 
 .select2-container .select2-search--inline .select2-search__field,
 .select2-container .select2-search--inline {
@@ -6874,10 +6891,6 @@ span.search_page__search_results {
 }
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
     border-color: #1A1625 transparent transparent transparent;
-}
-
-.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
-	margin-bottom: 2.5px;
 }
 
 
