@@ -338,6 +338,26 @@ body {
 	border: 1px solid #9ea8ab
 }
 
+.creation_page_element_submit__file_submit_button {
+	width: 100%;
+	justify-content: center;
+}
+
+.creation_page_element__file_delete_button {
+	width: 100%;
+    justify-content: center;
+	padding: 0;
+}
+
+.creation_page_element__file_delete_button .button__icon {
+	margin: 0;
+}
+
+.creation_page_element__file_delete_button:hover svg path {
+	fill: #FFF;
+}
+
+
 .main_categories_show_companies_button span {
 	padding: 0 5px
 }
@@ -9058,6 +9078,10 @@ span.search_page__search_results {
     justify-content: space-between;
 }
 
+.main_content_wrapper .creation_page_add_image_tile:first-of-type,
+.main_content_wrapper .creation_page_add_video_tile:first-of-type {
+	display: none;
+}
 
 .creation_page_add_image_tile__loaded .creation_page_element_content,
 .creation_page_add_video_tile__loaded .creation_page_element_content {
@@ -9071,21 +9095,46 @@ span.search_page__search_results {
 }
 
 .creation_page_add_image_tile  .creation_page_element__file_title {
-	width: calc(80% - 15px);
+	width: calc(70% - 15px);
 }
+
+.creation_page_add_image_tile  .creation_page_element__file_delete {
+	width: calc(5% - 15px);
+	margin-bottom: 0;
+}
+
 
 .creation_page_element__title_and_link_block {
-    width: 100%;
+    width: 80%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.creation_page_element__title_and_link_block div {
+	width: calc(50% - 15px);
 }
 
-.creation_page_element__file_title input {
+.creation_page_element__file_delete {
+	width: calc(5% - 15px);
+}
+
+.creation_page_element__file_title input,
+.creation_page_element__file_link input {
 	height: 48px;
 }
 
+.creation_page_add_image_tile .creation_page_element,
+.creation_page_add_video_tile .creation_page_element {
+	margin-bottom: 0;
+}
+
 .creation_page_element__file_chooser {
-	width: calc(20% - 15px);
+	width: calc(10% - 15px);
+}
+
+.creation_page_element__file_submit {
+	width: calc(15% - 15px);
+	margin-bottom: 0;
 }
 
 .creation_page_element__file {
@@ -9157,7 +9206,6 @@ span.search_page__search_results {
 }
 .creation_page_element__remove_button .button__icon {
 	position: relative;
-	top: -2px;
 }
 
 .creation_page_element__remove_button span {
@@ -9200,7 +9248,7 @@ span.search_page__search_results {
 }
 
 .creation_page_add_video_tile .creation_page_element__file_title {
-	margin-bottom: 15px;
+	margin-bottom: 0;
 }
 
 .creation_page_element label {

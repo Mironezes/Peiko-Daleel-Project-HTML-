@@ -1088,4 +1088,33 @@ $(document).ready(function() {
     });
 
 
+    function creatingPage__addNewImage() {
+        $('.create_page_add_image_tile_button').on('click', function(){
+            let siblings = $(this).siblings('.creation_page_add_image_tiles');
+            let content = $(this).siblings('.creation_page_add_image_tiles').find('.creation_page_add_image_tile:first').clone();
+            content.appendTo(siblings);
+        });
+    }
+    creatingPage__addNewImage();
+
+    function creatingPage__addNewVideo() {
+        $('.create_page_add_video_tile_button').on('click', function(){
+            let siblings = $(this).siblings('.creation_page_add_video_tiles');
+            let content = $(this).siblings('.creation_page_add_video_tiles').find('.creation_page_add_video_tile:first').clone();
+            content.appendTo(siblings);
+        });
+    }
+    creatingPage__addNewVideo();
+
+
+    function creatingPage__removeMultimedia() {
+        $('.creation_page_add_image_tiles').on('click', '.creation_page_element__file_delete_button', function() {
+            // здесь мог быть мой код, но будет твой =(
+        });
+
+    }
+    creatingPage__removeMultimedia();
+
+
+
 });
