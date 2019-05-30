@@ -6832,11 +6832,18 @@ span.search_page__search_results {
 .select2-container--default .select2-selection--multiple .select2-selection__rendered {
 	display: flex;
 	flex-wrap: wrap;
-	height: 100%;
+	height: 48px;
 	margin: 0;
 }
 .select2-container .select2-search--inline .select2-search__field {
 	height: 100%;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    padding: 0 15px;
+	border: none;
+	border-radius: 1px;
+	background: #E8E8E8;
 }
 
 .select2-container .select2-search--inline .select2-search__field,
