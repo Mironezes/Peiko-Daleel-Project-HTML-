@@ -32,7 +32,7 @@
                         <a href="index.html"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
                         <button onclick="void(0)" class="mobile_menu_icon hamburger hamburger--arrow blue" type="button">
                             <span class="hamburger-box">
-					<span class="hamburger-inner"></span>
+                    <span class="hamburger-inner"></span>
                             </span>
                         </button>
                     </div>
@@ -45,7 +45,7 @@
                         <a href="#" class="button button__yellow">Sign up</a>
                         <button onclick="void(0)" class="desktop_toggle_menu_icon hamburger hamburger--slider blue" type="button">
                             <span class="hamburger-box">
-					<span class="hamburger-inner"></span>
+                    <span class="hamburger-inner"></span>
                             </span>
                         </button>
                     </div>
@@ -115,39 +115,13 @@
                         <div class="common_sorting_by_block">
                             <span class="common_sorting_by__title">Sort By:</span>
 
-                            <div class="common_sorting">
-                                <div class="common_sorting__title"><span></span> <img src="assets/drop_down_arrow_icon.svg" alt="Image" class="svg"></div>
+                            <select class="sort_by_selector" name="sort-by" style="width: 180px">
+                                <option value="News">News</option>
+                                <option value="Articles">Articles</option>
+                                <option value="Companies">Companies</option>
+                                <option value="Topics">Topics</option>
+                            </select>
 
-                                <form class="common_sorting_block">
-                                    <div class="common_sorting_element">
-                                        <label> News
-                                            <input class="common_sorting_element__checkbox" type="radio" name="SortingBySort" value="News" checked>
-                                            <span class="common_sorting_element__radiomark"></span>
-                                        </label>
-                                    </div>
-
-                                    <div class="common_sorting_element">
-                                        <label> Articles
-                                            <input class="common_sorting_element__checkbox" type="radio" value="Articles" name="SortingBySort">
-                                            <span class="common_sorting_element__radiomark"></span>
-                                        </label>
-                                    </div>
-
-                                    <div class="common_sorting_element">
-                                        <label> Companies
-                                            <input class="common_sorting_element__checkbox" type="radio" value="Companies" name="SortingBySort">
-                                            <span class="common_sorting_element__radiomark"></span>
-                                        </label>
-                                    </div>
-
-                                    <div class="common_sorting_element">
-                                        <label> Topics
-                                            <input class="common_sorting_element__checkbox" type="radio" value="Topics" name="SortingBySort">
-                                            <span class="common_sorting_element__radiomark"></span>
-                                        </label>
-                                    </div>
-                                </form>
-                            </div>
                         </div>
                     </div>
                     <div class="main_categories_content_block">
@@ -161,21 +135,6 @@
                                                 <li><a href="#">Drill String Tools & Equipment</a></li>
                                                 <li><a href="#">Perforation Services</a></li>
                                                 <li><a href="#">Hammer And Conductor Installation Services</a></li>
-                                                <!-- 										<li><a href="#">OCTG & Accessories</a></li>
-										<li><a href="#">Tubular And Casing Running Services</a></li>
-										<li><a href="#">Well Bore Enlargement</a></li>
-										<li><a href="#">OCTG & Accessories</a></li>
-										<li><a href="#">Semi-Submersible Drilling Rig</a></li>
-										<li><a href="#">Solids Control And Waste Management</a></li>
-										<li><a href="#">Integrated Project Management</a></li>
-										<li><a href="#">Drill Bits</a></li>
-										<li><a href="#">Well Project Management</a></li>
-										<li><a href="#">Completion Equipment</a></li>
-										<li><a href="#">Managed Pressure Drilling Services</a></li>
-										<li><a href="#">Drilling Rig Onshore</a></li>
-										<li><a href="#">Casing-While-Drilling</a></li>
-										<li><a href="#">Drillship</a></li>
-										<li><a href="#">Fishing & Drilling Services</a></li> -->
                                             </ul>
                                         </div>
                                     </li>
@@ -399,6 +358,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/i18n/en.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/mobile.js"></script>
     <script src="scripts/curcle_chart.js"></script>
