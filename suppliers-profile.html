@@ -1,1420 +1,1405 @@
-<!DOCTYPE html>
-<html lang="ru">
 
-<head>
-    <!--[if lte IE 9]>
+
+    <!DOCTYPE html>
+    <html lang="ru">
+
+    <head>
+        <!--[if lte IE 9]>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 <![endif]-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-    <link rel="apple-touch-icon-precomposed" href="apple_touch_icon.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Suppliers Profile | Daleel</title>
-</head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<link rel="apple-touch-icon-precomposed" href="apple_touch_icon.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css">
+<link rel="stylesheet" href="css/style.css">            <title>Suppliers Profile | Daleel</title>
+    </head>
 
-<body class="authorized">
-    <header class="header_wrapper white logined">
-        <div class="header_navigation_block_wrapper">
-            <div class="container">
-                <div class="header_navigation_block">
-                    <div class="header_logo_column">
-                        <a href="index.html"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
-                        <div class="mobile_navigation_buttons_block">
-                            <button onclick="void(0)" class="mobile_account_icon" type="button"><img src="assets/header_logined/account_icon.svg" alt="Image" class="svg"></button>
-                            <button onclick="void(0)" class="mobile_menu_icon hamburger hamburger--arrow blue" type="button"> <span class="hamburger-box"><span class="hamburger-inner"></span> </span>
-                            </button>
-                        </div>
+    <body class="authorized">
+        <header class="header_wrapper white logined">
+    <div class="header_navigation_block_wrapper">
+        <div class="container">
+            <div class="header_navigation_block">
+                <div class="header_logo_column">
+                    <a href="index.html"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
+                    <div class="mobile_navigation_buttons_block">
+                        <button onclick="void(0)" class="mobile_account_icon" type="button"><img src="assets/header_logined/account_icon.svg" alt="Image" class="svg"></button>
+                        <button onclick="void(0)" class="mobile_menu_icon hamburger hamburger--arrow blue" type="button"> <span class="hamburger-box"><span class="hamburger-inner"></span> </span>
+                        </button>
                     </div>
-                    <div class="header_navigation_column">
-                        <ul class="desktop_toggle_menu">
-                            <li class="desktop_toggle_menu__item"><a href="#">Suppliers</a></li>
-                            <li class="desktop_toggle_menu__item"><a href="#">Intelligence</a></li>
-                            <li class="desktop_toggle_menu__item"><a href="#">News</a></li>
-                            <li class="desktop_toggle_menu__item"><a href="#">Expert articles</a></li>
-                            <li class="desktop_toggle_menu__item"><a href="#">Indices</a></li>
+                </div>
+                <div class="header_navigation_column">
+                    <ul class="desktop_toggle_menu">
+                        <li class="desktop_toggle_menu__item"><a href="#">Suppliers</a></li>
+                        <li class="desktop_toggle_menu__item"><a href="#">Intelligence</a></li>
+                        <li class="desktop_toggle_menu__item"><a href="#">News</a></li>
+                        <li class="desktop_toggle_menu__item"><a href="#">Expert articles</a></li>
+                        <li class="desktop_toggle_menu__item"><a href="#">Indices</a></li>
+                    </ul>
+                    <div class="header_navigation_search_toggle">
+                        <img src="assets/header_logined/search_icon_blue.svg" alt="Image" class="svg search_icon visible">
+                        <img src="assets/close_icon.svg" alt="Image" class="svg close_icon">                     
+                    </div>
+                    <button class="button button__yellow header_account_button">
+                        <div class="button__icon"> <img class="svg" src="assets/header_logined/account_icon.svg" alt="Image"> </div><span>Account</span> </button>
+                    <div class="desktop_account_toggle_menu">
+                        <ul>
+                            <li><a href="#"><span>Profile</span>  <div class="button__icon"><img  src="assets/header_logined/profile_icon.svg" alt="Image"> </div></a>
+                            </li>
+                            <li><a href="#"><span>Settings</span> <div class="button__icon"><img  src="assets/header_logined/settings_icon.svg" alt="Image"> </div></a>
+                            </li>
+                            <li class="desktop_account_toggle_menu__faq"><a href="#"><span>FAQ</span><div class="button__icon"><img  src="assets/header_logined/faq_icon.svg" alt="Image"> </div> </a>
+                            </li>
+                            <li class="desktop_account_toggle_menu__logout"><a href="#"><span>Log Out</span> <div class="button__icon"> <img src="assets/header_logined/log_out_icon.svg" alt="Image"> </div> </a>
+                            </li>
                         </ul>
-                        <div class="header_navigation_search_toggle">
-                            <img src="assets/header_logined/search_icon_blue.svg" alt="Image" class="svg search_icon visible">
-                            <img src="assets/close_icon.svg" alt="Image" class="svg close_icon">
-                        </div>
-                        <button class="button button__yellow header_account_button">
-                            <div class="button__icon"> <img class="svg" src="assets/header_logined/account_icon.svg" alt="Image"> </div><span>Account</span> </button>
-                        <div class="desktop_account_toggle_menu">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <div class="button__icon"> <img class="svg" src="assets/header_logined/account_icon.svg" alt="Image"> </div><span>Profile</span> </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="button__icon"> <img class="svg" src="assets/header_logined/settings_icon.svg" alt="Image"> </div><span>Settings</span> </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="button__icon"> <img class="svg" src="assets/header_logined/faq_icon.svg" alt="Image"> </div><span>FAQ</span> </a>
-                                </li>
-                                <li class="desktop_account_toggle_menu__logout">
-                                    <a href="#">
-                                        <div class="button__icon"> <img class="svg" src="assets/header_logined/logout_icon.svg" alt="Image"> </div><span>Log Out</span> </a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="desktop_toggle_menu_block_wrapper">
-            <div class="container">
-                <div class="desktop_toggle_menu_block">
-                    <input type="search" placeholder="Search request" maxlength="100" class="desktop_toggle_menu__search_bar" required>
-                    <button class="button button__blue desktop_toggle_menu__search_button">Search</button>
-                </div>
+    </div>
+    <div class="desktop_toggle_menu_block_wrapper">
+        <div class="container">
+            <div class="desktop_toggle_menu_block">
+                <input type="search" placeholder="Search request" maxlength="100" class="desktop_toggle_menu__search_bar" required>               
+                <button class="button button__blue desktop_toggle_menu__search_button">Search</button>
             </div>
         </div>
-        <div class="mobile_account_toggle_menu_block">
-            <div class="container">
-                <ul class="mobile_account_toggle_menu">
-                    <li class="mobile_toggle_menu__item">
-                        <a href="#">
-                            <div class="button__icon"><img class="svg" src="assets/header_logined/account_icon.svg" alt="Image"></div><span>Profile</span></a>
-                    </li>
-                    <li class="mobile_toggle_menu__item">
-                        <a href="#">
-                            <div class="button__icon"><img class="svg" src="assets/header_logined/settings_icon.svg" alt="Image"></div><span>Settings</span></a>
-                    </li>
-                    <li class="mobile_toggle_menu__item">
-                        <a href="#">
-                            <div class="button__icon"><img class="svg" src="assets/header_logined/faq_icon.svg" alt="Image"></div><span>FAQ</span> </a>
-                    </li>
-                    <li class="mobile_toggle_menu__item desktop_account_toggle_menu__logout">
-                        <a href="#">
-                            <div class="button__icon"><img class="svg" src="assets/header_logined/logout_icon.svg" alt="Image"> </div><span>Log Out</span></a>
-                    </li>
-                </ul>
+    </div>
+    <div class="mobile_account_toggle_menu_block">
+        <div class="container">
+            <ul class="mobile_account_toggle_menu">
+                <li class="mobile_toggle_menu__item"><a href="#"><div class="button__icon"><img src="assets/header_logined/profile_icon.svg" alt="Image"></div><span>Profile</span></a>
+                </li>
+                <li class="mobile_toggle_menu__item"><a href="#"><div class="button__icon"><img src="assets/header_logined/settings_icon.svg" alt="Image"></div><span>Settings</span></a>
+                </li>
+                <li class="mobile_toggle_menu__item"><a href="#"><div class="button__icon"><img src="assets/header_logined/faq_icon.svg" alt="Image"></div><span>FAQ</span> </a>
+                </li>
+                <li class="mobile_toggle_menu__item desktop_account_toggle_menu__logout"><a href="#"><div class="button__icon"><img src="assets/header_logined/log_out_icon.svg" alt="Image"> </div><span>Log Out</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mobile_toggle_menu_block">
+        <div class="container">
+            <ul class="mobile_toggle_menu">
+                <li class="mobile_search_block">
+                    <input type="search" placeholder="Search request" maxlength="100" required>
+                    <button>Search</button>
+                </li>
+                <li class="mobile_toggle_menu__item"><a href="#">Suppliers</a></li>
+                <li class="mobile_toggle_menu__item"><a href="#">Intelligence</a></li>
+                <li class="mobile_toggle_menu__item"><a href="#">News</a></li>
+                <li class="mobile_toggle_menu__item"><a href="#">Expert articles</a></li>
+                <li class="mobile_toggle_menu__item"><a href="#">Indices</a></li>
+                <li class="mobile_toggle_menu__item"><a href="#">Contacts</a></li>
+            </ul>
+            <div class="mobile_toggle_buttons"> <a href="#" class="button login_button button__blue">Log in</a> <a href="#" class="button registration_button button__yellow">Registration</a>
+                <a href="#" class="button add_company_button button__yellow"><img class="svg" src="assets/plus_icon.svg" alt="Image"> Add company</a>
             </div>
         </div>
-        <div class="mobile_toggle_menu_block">
-            <div class="container">
-                <ul class="mobile_toggle_menu">
-                    <li class="mobile_search_block">
-                        <input type="search" placeholder="Search request" maxlength="100" required>
-                        <button>Search</button>
-                    </li>
-                    <li class="mobile_toggle_menu__item"><a href="#">Suppliers</a></li>
-                    <li class="mobile_toggle_menu__item"><a href="#">Intelligence</a></li>
-                    <li class="mobile_toggle_menu__item"><a href="#">News</a></li>
-                    <li class="mobile_toggle_menu__item"><a href="#">Expert articles</a></li>
-                    <li class="mobile_toggle_menu__item"><a href="#">Indices</a></li>
-                    <li class="mobile_toggle_menu__item"><a href="#">Contacts</a></li>
-                </ul>
-                <div class="mobile_toggle_buttons"> <a href="#" class="button login_button button__blue">Log in</a> <a href="#" class="button registration_button button__yellow">Registration</a>
-                    <a href="#" class="button add_company_button button__yellow"><img class="svg" src="assets/plus_icon.svg" alt="Image"> Add company</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="suppliers_profile inner_page">
+    </div>
+</header>
+            <div class="suppliers_profile inner_page">
 
-        <section class="suppliers_profile_banner_wrapper" style="background-image: url('img/supplier_bg_img.jpg');">
-            <div class="container">
-                <div class="suppliers_profile_banner_inner">
+                <section class="suppliers_profile_banner_wrapper" style="background-image: url('img/supplier_bg_img.jpg');">
+    <div class="container">
+        <div class="suppliers_profile_banner_inner">
+
+            <div class="suppliers_profile_img_column">
+                <img src="img/suppliers/supplier_logo.png" alt="Image">               
+            </div>
+
+            <div class="suppliers_profile_content_column">
+
+                <div class="suppliers_profile_content_info_block">
 
                     <div class="suppliers_profile_img_column">
-                        <img src="img/suppliers/supplier_logo.png" alt="Image">
+                        <img src="img/suppliers/supplier_logo.png" alt="Image">               
                     </div>
 
-                    <div class="suppliers_profile_content_column">
+                    <div class="suppliers_profile_content_info_title">
 
-                        <div class="suppliers_profile_content_info_block">
-
-                            <div class="suppliers_profile_img_column">
-                                <img src="img/suppliers/supplier_logo.png" alt="Image">
-                            </div>
-
-                            <div class="suppliers_profile_content_info_title">
-
-                                <div class="suppliers_profile_img_column">
-                                    <img src="img/suppliers/supplier_logo.png" alt="Image">
-                                </div>
-
-                                <h1>National Oilwell Varco</h1>
-                            </div>
-
-                            <div class="suppliers_profile_content_info_detailed">
-                                <div class="suppliers_profile_banner_socials_block_and_rating_block">
-                                    <div class="suppliers_profile_banner_socials_block">
-                                        <span class="suppliers_profile_banner_socials__title">Socials</span>
-
-                                        <div class="suppliers_profile_banner_socials_links_block">
-                                            <a class="suppliers_profile_socials__link" href="#">
-                                                <img src="assets/socials_white/fb_icon.svg" alt="Image" class="svg">
-                                            </a>
-                                            <a class="suppliers_profile_socials__link" href="#">
-                                                <img src="assets/socials_white/in_icon.svg" alt="Image" class="svg">
-                                            </a>
-                                            <a class="suppliers_profile_socials__link" href="#">
-                                                <img src="assets/socials_white/link_icon.svg" alt="Image" class="svg">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="suppliers_profile_banner_rating_block">
-                                        <span class="suppliers_tile_rating__total_rating">5,0</span>
-                                        <div class="suppliers_tile_rating__stars">
-                                            <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                            <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                            <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                            <img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">
-                                            <img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="suppliers_profile_banner_buttons_block">
-                                    <a href="#" class="button button__bordered_yellow">Subscribe</a>
-                                    <a href="#" class="button button__yellow">Leave a review</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="suppliers_profile_banner_menu_block">
-                            <ul class="suppliers_profile_banner_menu_list">
-                                <li class="suppliers_profile_banner_menu__item active"><a href="#overview">Overview</a></li>
-                                <li class="suppliers_profile_banner_menu__item"><a href="#contacts">Contacts</a></li>
-                                <li class="suppliers_profile_banner_menu__item"><a href="#product-and-services">Products & services</a></li>
-                                <li class="suppliers_profile_banner_menu__item"><a href="#work-history">Work history</a></li>
-                                <li class="suppliers_profile_banner_menu__item"><a href="#reviews">Reviews</a></li>
-                                <li class="suppliers_profile_banner_menu__item"><a href="#documents">Documents</a></li>
-                                <li class="suppliers_profile_banner_menu__item"><a href="#last-news">Expert artciles</a></li>
-                                <li class="suppliers_profile_banner_menu__item"><a href="#competitors">Competitors</a></li>
-                            </ul>
-                        </div>
+	                    <div class="suppliers_profile_img_column">
+	                        <img src="img/suppliers/supplier_logo.png" alt="Image">               
+	                    </div>
+	                    	
+                        <h1>National Oilwell Varco</h1>                        
                     </div>
 
+                    <div class="suppliers_profile_content_info_detailed">
+                        <div class="suppliers_profile_banner_socials_block_and_rating_block">
+                            <div class="suppliers_profile_banner_socials_block">
+                                <span class="suppliers_profile_banner_socials__title">Socials</span>
+
+                                <div class="suppliers_profile_banner_socials_links_block">
+                                    <a class="suppliers_profile_socials__link" href="#">
+                                        <img src="assets/socials_white/fb_icon.svg" alt="Image" class="svg">
+                                    </a>
+                                    <a class="suppliers_profile_socials__link" href="#">
+                                        <img src="assets/socials_white/in_icon.svg" alt="Image" class="svg">
+                                    </a>
+                                    <a class="suppliers_profile_socials__link" href="#">
+                                        <img src="assets/socials_white/link_icon.svg" alt="Image" class="svg">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="suppliers_profile_banner_rating_block">
+                                <span class="suppliers_tile_rating__total_rating">5,0</span>
+                                <div class="suppliers_tile_rating__stars">
+                                    <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
+                                    <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
+                                    <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
+                                    <img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">
+                                    <img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">
+                                </div>
+                            </div>                            
+                        </div>
+
+
+                        <div class="suppliers_profile_banner_buttons_block">
+                            <a href="#" class="button button__bordered_yellow">Subscribe</a>
+                            <a href="#" class="button button__yellow">Leave a review</a>
+                        </div>                          
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="breadcrumbs_wrapper">
-            <div class="container">
-                <div class="breadcrumbs_block row">
-                    <ul class="breadcrumbs_list">
-                        <li class="breadcrumbs_list__item"><a href="/">Homepage</a></li>
-                        <li class="breadcrumbs_list__item"><a href="/">Suppliers</a></li>
-                        <li class="breadcrumbs_list__item current"><span>National Oilwell Varco</span></li>
+
+
+                <div class="suppliers_profile_banner_menu_block">
+                    <ul class="suppliers_profile_banner_menu_list">
+                        <li class="suppliers_profile_banner_menu__item active"><a href="#overview">Overview</a></li>
+                        <li class="suppliers_profile_banner_menu__item"><a href="#contacts">Contacts</a></li>                         
+                        <li class="suppliers_profile_banner_menu__item"><a href="#product-and-services">Products & services</a></li>                     
+                        <li class="suppliers_profile_banner_menu__item"><a href="#work-history">Work history</a></li>               
+                        <li class="suppliers_profile_banner_menu__item"><a href="#reviews">Reviews</a></li>                                 
+                        <li class="suppliers_profile_banner_menu__item"><a href="#documents">Documents</a></li>
+                        <li class="suppliers_profile_banner_menu__item"><a href="#last-news">Expert artciles</a></li>
+                        <li class="suppliers_profile_banner_menu__item"><a href="#competitors">Competitors</a></li>
                     </ul>
-                </div>
+                </div>                
             </div>
-        </section>
 
-        <section class="main_content_wrapper">
-            <div class="container">
-                <div class="main_content_inner">
-
-                    <div class="page_fixed_menu_wrapper">
+        </div>
+    </div>
+</section>
+                    <section class="breadcrumbs_wrapper">
                         <div class="container">
-                            <div class="page_fixed_menu_inner">
-                                <div class="page_fixed_menu_img">
-                                    <img src="img/supplier_logo_2.png" alt="Image">
-                                </div>
-                                <ul class="page_fixed_menu_list">
-                                    <li class="page_fixed_menu__item"><a href="#overview">Overview</a></li>
-                                    <li class="page_fixed_menu__item"><a href="#contacts">Contacts</a></li>
-                                    <li class="page_fixed_menu__item"><a href="#product-and-services">Products &amp; services</a></li>
-                                    <li class="page_fixed_menu__item"><a href="#work-history">Work history</a></li>
-                                    <li class="page_fixed_menu__item"><a href="#reviews">Reviews</a></li>
-                                    <li class="page_fixed_menu__item"><a href="#documents">Documents</a></li>
-                                    <li class="page_fixed_menu__item"><a href="#last-news">Expert artciles</a></li>
-                                    <li class="page_fixed_menu__item"><a href="#competitors">Competitors</a></li>
+                            <div class="breadcrumbs_block row">
+                                <ul class="breadcrumbs_list">
+                                    <li class="breadcrumbs_list__item"><a href="/">Homepage</a></li>
+                                    <li class="breadcrumbs_list__item"><a href="/">Suppliers</a></li>
+                                    <li class="breadcrumbs_list__item current"><span>National Oilwell Varco</span></li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <section id="overview" class="suppliers_detailed_info_block">
-                        <h2 class="toggled_section_heading">Overview <img src="assets/suppliers/toggled_sections/open_section_icon.svg" alt="Image" class="svg"></h2>
-                        <div class="suppliers_detailed_info_inner_content toggled_section_inner_content">
-                            <div class="suppliers_detailed_info_overview_column">
-                                <div class="suppliers_detailed_info_overview">
-                                    <div class="suppliers_detailed_info_overview__summary">
-                                        <h2>Overview</h2>
-                                        <p>Reactive is a global Digital Solutions Company. We deliver software engineering excellence to Fortune 500 and fast-growing organisations around the world. Our 3,000+ Developers provide the clients with a range of services including Software development teams, QA, R&D, IoT, Big Data, Product development and Consulting. What do you get with National Oilwell Varco?</p>
-                                        <p>Up to 50% savings compared to local resources
-                                            <br> Access to 357,000 IT specialists
-                                            <br> 90% retention rate in team
-                                        </p>
-                                    </div>
-                                    <div class="suppliers_detailed_info_overview__detailed">
-                                        <p>Reactive is a global Digital Solutions Company. We deliver software engineering excellence to Fortune 500 and fast-growing organisations around the world.</p>
-                                        <p>Our 3,000+ Developers provide the clients with a range of services including Software development teams, QA, R&D, IoT, Big Data, Product development and Consulting.</p>
-                                    </div>
-                                    <span class="suppliers_detailed_info_overview__show_more">Show more</span>
-                                </div>
-                            </div>
-                            <div class="suppliers_tile_company_highlights_and_location_block">
-                                <div class="suppliers_detailed_info_highlights_column">
-                                    <div class="suppliers_tile_company_highlights_block">
-                                        <h2 class="suppliers_tile__highlight_title">Highlights</h2>
-                                        <ul class="suppliers_tile_company_highlights_list">
-                                            <li>
-                                                <div class="suppliers_tile_company_highlights_list__icon">
-                                                    <img src="assets/suppliers/hightlights/stuff_amount_icon.svg" class="svg" alt="Image">
-                                                </div>
-                                                <span>10 - 49</span>
-                                            </li>
-                                            <li>
-                                                <div class="suppliers_tile_company_highlights_list__icon">
-                                                    <img src="assets/suppliers/hightlights/salary_icon.svg" class="svg" alt="Image">
-                                                </div>
-                                                <span>$25,000+</span>
-                                            </li>
-                                            <li>
-                                                <div class="suppliers_tile_company_highlights_list__icon">
-                                                    <img src="assets/suppliers/hightlights/work_exp_icon.svg" class="svg" alt="Image">
-                                                </div>
-                                                <span>Over 10 years</span>
-                                            </li>
-                                            <li>
-                                                <div class="suppliers_tile_company_highlights_list__icon">
-                                                    <img src="assets/suppliers/hightlights/location_icon.svg" class="svg" alt="Image">
-                                                </div>
-                                                <span>Singapore</span>
-                                            </li>
-                                            <li>
-                                                <div class="suppliers_tile_company_highlights_list__icon">
-                                                    <img src="assets/suppliers/hightlights/public_icon.svg" class="svg" alt="Image">
-                                                </div>
-                                                <span>Public</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="suppliers_tile_magor_categories_block">
-                                        <h2 class="suppliers_tile_magor_categories_block__title">Magor Categories</h2>
-                                        <p>Artificial Lift - Summary
-                                            <br> Asset Maintenance & Integrity
-                                            <br> Borehole Enlargement Systems the
-                                            <br> Cementing Services
-                                        </p>
-                                    </div>
-                                </div>
-                                <section id="contacts" class="suppliers_detailed_info_location_column">
-                                    <div class="suppliers_tile_location_block">
-                                        <div class="suppliers_tile_location_header">
-                                            <h2 class="suppliers_tile_location_block__title">Location</h2>
-                                            <div class="suppliers_tile_location_block__all_offices button">
-                                                <div class="button__icon">
-                                                    <img src="assets/all_offices_icon.svg" alt="Image" class="svg">
-                                                </div>
-                                                <span>See all offices</span>
-                                            </div>
-                                        </div>
-                                        <div class="suppliers_tile_location_map active">
-                                            <iframe src="https://snazzymaps.com/embed/153171" style="border:none;"></iframe>
-                                        </div>
-                                        <div class="suppliers_tile_location_offices_tiles_wrapper">
-                                            <div class="suppliers_tile_location_offices_tiles">
-                                                <div class="suppliers_tile_location_offices_tile">
-                                                    <h3>Kyiv, Ukraine</h3>
-                                                    <div class="suppliers_tile_location_office_tile_address">
-                                                        <img src="assets/address_icon__blue.svg" alt="Image" class="svg">
-                                                        <span>03021, Ukraine, Kyiv, Valeria Lobanovskogo blvd, 56, Office 14</span>
-                                                    </div>
-
-                                                    <a class="button button__bordered_blue" href="#" target="_blank">View on map</a>
-                                                </div>
-
-                                                <div class="suppliers_tile_location_offices_tile">
-                                                    <h3>Kyiv, Ukraine</h3>
-                                                    <div class="suppliers_tile_location_office_tile_address">
-                                                        <img src="assets/address_icon__blue.svg" alt="Image" class="svg">
-                                                        <span>03021, The United States Of America, New York, Brodway St, 56, Office 14</span>
-                                                    </div>
-
-                                                    <a class="button button__bordered_blue" href="#" target="_blank">View on map</a>
-                                                </div>
-
-                                                <div class="suppliers_tile_location_offices_tile">
-                                                    <h3>Kyiv, Ukraine</h3>
-                                                    <div class="suppliers_tile_location_office_tile_address">
-                                                        <img src="assets/address_icon__blue.svg" alt="Image" class="svg">
-                                                        <span>03021, Ukraine, Kyiv, Valeria Lobanovskogo blvd, 56, Office 14</span>
-                                                    </div>
-
-                                                    <a class="button button__bordered_blue" href="#" target="_blank">View on map</a>
-                                                </div>
-
-                                                <div class="suppliers_tile_location_offices_tile">
-                                                    <h3>Kyiv, Ukraine</h3>
-                                                    <div class="suppliers_tile_location_office_tile_address">
-                                                        <img src="assets/address_icon__blue.svg" alt="Image" class="svg">
-                                                        <span>03021, Ukraine, Kyiv, Valeria Lobanovskogo blvd, 56, Office 14</span>
-                                                    </div>
-
-                                                    <a class="button button__bordered_blue" href="#" target="_blank">View on map</a>
-                                                </div>
-
-                                                <div class="suppliers_tile_location_offices_tile">
-                                                    <h3>Kyiv, Ukraine</h3>
-                                                    <div class="suppliers_tile_location_office_tile_address">
-                                                        <img src="assets/address_icon__blue.svg" alt="Image" class="svg">
-                                                        <span>03021, The United States Of America, New York, Brodway St, 56, Office 14</span>
-                                                    </div>
-
-                                                    <a class="button button__bordered_blue" href="#" target="_blank">View on map</a>
-                                                </div>
-
-                                                <div class="suppliers_tile_location_offices_tile">
-                                                    <h3>Kyiv, Ukraine</h3>
-                                                    <div class="suppliers_tile_location_office_tile_address">
-                                                        <img src="assets/address_icon__blue.svg" alt="Image" class="svg">
-                                                        <span>03021, Ukraine, Kyiv, Valeria Lobanovskogo blvd, 56, Office 14</span>
-                                                    </div>
-
-                                                    <a class="button button__bordered_blue" href="#" target="_blank">View on map</a>
-                                                </div>
-
-                                                <div class="suppliers_tile_location_offices_tile">
-                                                    <h3>Kyiv, Ukraine</h3>
-                                                    <div class="suppliers_tile_location_office_tile_address">
-                                                        <img src="assets/address_icon__blue.svg" alt="Image" class="svg">
-                                                        <span>03021, Ukraine, Kyiv, Valeria Lobanovskogo blvd, 56, Office 14</span>
-                                                    </div>
-
-                                                    <a class="button button__bordered_blue" href="#" target="_blank">View on map</a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="product-and-services" class="suppliers_product_services_block">
-                        <h2 class="toggled_section_heading">Product & Services <img src="assets/suppliers/toggled_sections/open_section_icon.svg" alt="Image" class="svg"></h2>
-                        <div class="suppliers_product_services_inner_content toggled_section_inner_content">
-                            <h2>Product & Services</h2>
-
-                            <div class="suppliers_product_services_tiles">
-                                <div class="suppliers_product_services_tile">
-                                    <div class="suppliers_product_services_tile_inner">
-                                        <div class="suppliers_product_services_body">
-                                            <h4>Seismic Survey and Data Acquisition</h4>
-
-                                            <div class="suppliers_product_services_reviews">
-                                                <span class="suppliers_product_services_reviews__title">Reviews:</span>
-                                                <div class="suppliers_product_services_reviews_stars">
-                                                    <span class="suppliers_product_services_reviews__total_rating">5,0</span>
-                                                    <div class="suppliers_product_services_reviews_stars_block">
-                                                        <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">
-                                                    </div>
-                                                    <span class="suppliers_product_services_reviews__counter">(14)</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="suppliers_product_services_work_history">
-                                                <span class="suppliers_product_services_work_history__title">Work History:</span>
-                                                <span class="suppliers_product_services_work_history__counter">12</span>
-                                            </div>
-                                        </div>
-                                        <div class="suppliers_competitors_tile_link">
-                                            <a href="#">
-                                                <span>View Details</span>
-                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="suppliers_product_services_tile">
-                                    <div class="suppliers_product_services_tile_inner">
-                                        <div class="suppliers_product_services_body">
-                                            <h4>Seismic Survey and Data Acquisition</h4>
-
-                                            <div class="suppliers_product_services_reviews">
-                                                <span class="suppliers_product_services_reviews__title">Reviews:</span>
-                                                <div class="suppliers_product_services_reviews_stars">
-                                                    <span class="suppliers_product_services_reviews__total_rating">5,0</span>
-                                                    <div class="suppliers_product_services_reviews_stars_block">
-                                                        <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">
-                                                    </div>
-                                                    <span class="suppliers_product_services_reviews__counter">(14)</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="suppliers_product_services_work_history">
-                                                <span class="suppliers_product_services_work_history__title">Work History:</span>
-                                                <span class="suppliers_product_services_work_history__counter">12</span>
-                                            </div>
-                                        </div>
-                                        <div class="suppliers_competitors_tile_link">
-                                            <a href="#">
-                                                <span>View Details</span>
-                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="suppliers_product_services_tile">
-                                    <div class="suppliers_product_services_tile_inner">
-                                        <div class="suppliers_product_services_body">
-                                            <h4>Seismic Survey and Data Acquisition</h4>
-
-                                            <div class="suppliers_product_services_reviews">
-                                                <span class="suppliers_product_services_reviews__title">Reviews:</span>
-                                                <div class="suppliers_product_services_reviews_stars">
-                                                    <span class="suppliers_product_services_reviews__total_rating">5,0</span>
-                                                    <div class="suppliers_product_services_reviews_stars_block">
-                                                        <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">
-                                                    </div>
-                                                    <span class="suppliers_product_services_reviews__counter">(14)</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="suppliers_product_services_work_history">
-                                                <span class="suppliers_product_services_work_history__title">Work History:</span>
-                                                <span class="suppliers_product_services_work_history__counter">12</span>
-                                            </div>
-                                        </div>
-                                        <div class="suppliers_competitors_tile_link">
-                                            <a href="#">
-                                                <span>View Details</span>
-                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="suppliers_product_services_tile">
-                                    <div class="suppliers_product_services_tile_inner">
-                                        <div class="suppliers_product_services_body">
-                                            <h4>Seismic Survey and Data Acquisition</h4>
-
-                                            <div class="suppliers_product_services_reviews">
-                                                <span class="suppliers_product_services_reviews__title">Reviews:</span>
-                                                <div class="suppliers_product_services_reviews_stars">
-                                                    <span class="suppliers_product_services_reviews__total_rating">5,0</span>
-                                                    <div class="suppliers_product_services_reviews_stars_block">
-                                                        <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">
-                                                    </div>
-                                                    <span class="suppliers_product_services_reviews__counter">(14)</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="suppliers_product_services_work_history">
-                                                <span class="suppliers_product_services_work_history__title">Work History:</span>
-                                                <span class="suppliers_product_services_work_history__counter">12</span>
-                                            </div>
-                                        </div>
-                                        <div class="suppliers_competitors_tile_link">
-                                            <a href="#">
-                                                <span>View Details</span>
-                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="view_all_posts_block">
-                                <a href="#" class="button load_more_button full_width">
-                                    <span>View All Products (28)</span>
-                                </a>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="work-history" class="suppliers_work_history_block">
-                        <h2 class="toggled_section_heading">Work History <img src="assets/suppliers/toggled_sections/open_section_icon.svg" alt="Image" class="svg"></h2>
-                        <div class="suppliers_work_history_inner_content toggled_section_inner_content">
-
-                            <h2>Work History</h2>
-
-                            <div class="suppliers_work_history_content">
-                                <div class="suppliers_work_history_major_clients_column">
-                                    <div class="suppliers_work_history_major_clients">
-                                        <h3>Major Clients</h3>
-                                        <ul class="suppliers_work_history_major_clients_list">
-                                            <li class="suppliers_work_history_major_clients_list__item">BP</li>
-                                            <li class="suppliers_work_history_major_clients_list__item">ExxonMobil</li>
-                                            <li class="suppliers_work_history_major_clients_list__item">Shell</li>
-                                            <li class="suppliers_work_history_major_clients_list__item">Total</li>
-                                            <li class="suppliers_work_history_major_clients_list__item">Chevron</li>
-                                            <li class="suppliers_work_history_major_clients_list__item">ConocoPhillips</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="suppliers_work_history_tiles_column">
-                                    <div class="suppliers_work_history_tiles">
-                                        <div class="suppliers_work_history_tile">
-                                            <div class="suppliers_work_history_tile_modal">
-                                                <div class="suppliers_work_history_tile_modal_close_icon">
-                                                    <img src="assets/close_icon.svg" alt="Image" class="svg">
-                                                </div>
-                                                <div class="suppliers_work_history_tile_modal_info_column">
-                                                    <div class="suppliers_work_history_tile_modal_category">
-                                                        <span>Category</span>
-                                                        <h3>Norwegian Firm Smarts to Offshore Coring</h3>
-                                                        <p>Collars, Stabilizers, Lift Subs, Bit Jars, Crossover Subs, Float Subs</p>
-                                                    </div>
-                                                    <div class="suppliers_work_history_tile_modal_location">
-                                                        <span>Location</span>
-                                                        <h3>South Africa</h3>
-                                                    </div>
-                                                    <div class="suppliers_work_history_tile_modal_partner">
-                                                        <span>Partner</span>
-                                                        <h3>DALEEL</h3>
-                                                    </div>
-                                                </div>
-
-                                                <div class="suppliers_work_history_tile_modal_overview_column">
-                                                    <div class="suppliers_work_history_tile_modal_overview">
-                                                        <span>Overview</span>
-                                                        <h3>Maintenance of Oil suppliing ring in south Africa</h3>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
-                                                        <div class="suppliers_work_history_tile_modal_link">
-                                                            <a href="#">
-                                                                <span>Show Details</span>
-                                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="suppliers_work_history_tile_inner">
-                                                <span class="suppliers_work_history_tile__read_more">Click to read more details</span>
-                                                <div class="suppliers_work_history_tile_img">
-                                                    <img src="img/product_small_img.png" alt="Image">
-                                                </div>
-                                                <div class="suppliers_work_history_tile_content">
-                                                    <h3>Norwegian Firm Smarts to Offshore Coring</h3>
-                                                    <div class="suppliers_work_history_tile_statistics">
-
-                                                        <div class="suppliers_work_history_tile_statistics__company_name">
-                                                            <img src="assets/news/author_icon.svg" alt="Image" class="svg">
-                                                            <span>Shell</span>
-                                                        </div>
-
-                                                        <div class="suppliers_work_history_tile_statistics__date">
-                                                            <img src="assets/news/publication_date_icon.svg" alt="Image" class="svg">
-                                                            <span>2 Quater 2018</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="suppliers_work_history_tile">
-                                            <div class="suppliers_work_history_tile_modal">
-                                                <div class="suppliers_work_history_tile_modal_close_icon">
-                                                    <img src="assets/close_icon.svg" alt="Image" class="svg">
-                                                </div>
-                                                <div class="suppliers_work_history_tile_modal_info_column">
-                                                    <div class="suppliers_work_history_tile_modal_category">
-                                                        <span>Category</span>
-                                                        <h3>Batteries cut fuel needs on board</h3>
-                                                        <p>Collars, Stabilizers, Lift Subs, Bit Jars, Crossover Subs, Float Subs</p>
-                                                    </div>
-                                                    <div class="suppliers_work_history_tile_modal_location">
-                                                        <span>Location</span>
-                                                        <h3>South Africa</h3>
-                                                    </div>
-                                                    <div class="suppliers_work_history_tile_modal_partner">
-                                                        <span>Partner</span>
-                                                        <h3>DALEEL</h3>
-                                                    </div>
-                                                </div>
-
-                                                <div class="suppliers_work_history_tile_modal_overview_column">
-                                                    <div class="suppliers_work_history_tile_modal_overview">
-                                                        <span>Overview</span>
-                                                        <h3>Maintenance of Oil suppliing ring in south Africa</h3>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
-                                                        <div class="suppliers_work_history_tile_modal_link">
-                                                            <a href="#">
-                                                                <span>Show Details</span>
-                                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="suppliers_work_history_tile_inner">
-                                                <span class="suppliers_work_history_tile__read_more">Click to read more details</span>
-                                                <div class="suppliers_work_history_tile_img">
-                                                    <img src="img/product_small_img.png" alt="Image">
-                                                </div>
-                                                <div class="suppliers_work_history_tile_content">
-                                                    <h3>Batteries cut fuel needs on board</h3>
-                                                    <div class="suppliers_work_history_tile_statistics">
-
-                                                        <div class="suppliers_work_history_tile_statistics__company_name">
-                                                            <img src="assets/news/author_icon.svg" alt="Image" class="svg">
-                                                            <span>Shell</span>
-                                                        </div>
-
-                                                        <div class="suppliers_work_history_tile_statistics__date">
-                                                            <img src="assets/news/publication_date_icon.svg" alt="Image" class="svg">
-                                                            <span>2 Quater 2018</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="suppliers_work_history_tile">
-                                            <div class="suppliers_work_history_tile_modal">
-                                                <div class="suppliers_work_history_tile_modal_close_icon">
-                                                    <img src="assets/close_icon.svg" alt="Image" class="svg">
-                                                </div>
-                                                <div class="suppliers_work_history_tile_modal_info_column">
-                                                    <div class="suppliers_work_history_tile_modal_category">
-                                                        <span>Category</span>
-                                                        <h3>Rigless Abandoment using Hydrallic Workover Unit</h3>
-                                                        <p>Collars, Stabilizers, Lift Subs, Bit Jars, Crossover Subs, Float Subs</p>
-                                                    </div>
-                                                    <div class="suppliers_work_history_tile_modal_location">
-                                                        <span>Location</span>
-                                                        <h3>South Africa</h3>
-                                                    </div>
-                                                    <div class="suppliers_work_history_tile_modal_partner">
-                                                        <span>Partner</span>
-                                                        <h3>DALEEL</h3>
-                                                    </div>
-                                                </div>
-
-                                                <div class="suppliers_work_history_tile_modal_overview_column">
-                                                    <div class="suppliers_work_history_tile_modal_overview">
-                                                        <span>Overview</span>
-                                                        <h3>Maintenance of Oil suppliing ring in south Africa</h3>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
-                                                        <div class="suppliers_work_history_tile_modal_link">
-                                                            <a href="#">
-                                                                <span>Show Details</span>
-                                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="suppliers_work_history_tile_inner">
-                                                <span class="suppliers_work_history_tile__read_more">Click to read more details</span>
-                                                <div class="suppliers_work_history_tile_img">
-                                                    <img src="img/product_small_img.png" alt="Image">
-                                                </div>
-                                                <div class="suppliers_work_history_tile_content">
-                                                    <h3>Rigless Abandoment using Hydrallic Workover Unit</h3>
-                                                    <div class="suppliers_work_history_tile_statistics">
-
-                                                        <div class="suppliers_work_history_tile_statistics__company_name">
-                                                            <img src="assets/news/author_icon.svg" alt="Image" class="svg">
-                                                            <span>Shell</span>
-                                                        </div>
-
-                                                        <div class="suppliers_work_history_tile_statistics__date">
-                                                            <img src="assets/news/publication_date_icon.svg" alt="Image" class="svg">
-                                                            <span>2 Quater 2018</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="suppliers_work_history_tile">
-                                            <div class="suppliers_work_history_tile_modal">
-                                                <div class="suppliers_work_history_tile_modal_close_icon">
-                                                    <img src="assets/close_icon.svg" alt="Image" class="svg">
-                                                </div>
-                                                <div class="suppliers_work_history_tile_modal_info_column">
-                                                    <div class="suppliers_work_history_tile_modal_category">
-                                                        <span>Category</span>
-                                                        <h3>Where Well Testing Goes Wrong</h3>
-                                                        <p>Collars, Stabilizers, Lift Subs, Bit Jars, Crossover Subs, Float Subs</p>
-                                                    </div>
-                                                    <div class="suppliers_work_history_tile_modal_location">
-                                                        <span>Location</span>
-                                                        <h3>South Africa</h3>
-                                                    </div>
-                                                    <div class="suppliers_work_history_tile_modal_partner">
-                                                        <span>Partner</span>
-                                                        <h3>DALEEL</h3>
-                                                    </div>
-                                                </div>
-
-                                                <div class="suppliers_work_history_tile_modal_overview_column">
-                                                    <div class="suppliers_work_history_tile_modal_overview">
-                                                        <span>Overview</span>
-                                                        <h3>Maintenance of Oil suppliing ring in south Africa</h3>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
-                                                        <div class="suppliers_work_history_tile_modal_link">
-                                                            <a href="#">
-                                                                <span>Show Details</span>
-                                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="suppliers_work_history_tile_inner">
-                                                <span class="suppliers_work_history_tile__read_more">Click to read more details</span>
-                                                <div class="suppliers_work_history_tile_img">
-                                                    <img src="img/product_small_img.png" alt="Image">
-                                                </div>
-                                                <div class="suppliers_work_history_tile_content">
-                                                    <h3>Where Well Testing Goes Wrong</h3>
-                                                    <div class="suppliers_work_history_tile_statistics">
-
-                                                        <div class="suppliers_work_history_tile_statistics__company_name">
-                                                            <img src="assets/news/author_icon.svg" alt="Image" class="svg">
-                                                            <span>Shell</span>
-                                                        </div>
-
-                                                        <div class="suppliers_work_history_tile_statistics__date">
-                                                            <img src="assets/news/publication_date_icon.svg" alt="Image" class="svg">
-                                                            <span>2 Quater 2018</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="view_all_posts_block">
-                                <a href="#" class="button load_more_button full_width">
-                                    <span>View All Works (31)</span>
-                                </a>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="reviews" class="suppliers_reviews_block">
-                        <h2 class="toggled_section_heading">Reviews <img src="assets/suppliers/toggled_sections/open_section_icon.svg" alt="Image" class="svg"></h2>
-                        <div class="suppliers_reviews_inner_content toggled_section_inner_content">
-                            <div class="suppliers_reviews_block">
-
-                                <h2>Reviews</h2>
-                                <div class="suppliers_tile_summary_review_diagrams_block">
-                                    <div class="suppliers_tile_linear_block">
-                                        <div class="suppliers_tile_linear_block_left_column">
-                                            <div class="suppliers_tile_linear_criteria first">
-                                                <div class="suppliers_tile_linear_criteria_info">
-                                                    <span class="suppliers_tile_summary_review__criteria__name">Criteria 1</span>
-                                                    <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
-                                                </div>
-                                                <span class="suppliers_tile_summary_review__criteria__indicator">
-                            <span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="10"></span>
-                                                </span>
-                                            </div>
-
-                                            <div class="suppliers_tile_linear_criteria second">
-                                                <div class="suppliers_tile_linear_criteria_info">
-                                                    <span class="suppliers_tile_summary_review__criteria__name">Criteria 2</span>
-                                                    <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
-                                                </div>
-                                                <span class="suppliers_tile_summary_review__criteria__indicator">
-                            <span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="20"></span>
-                                                </span>
-                                            </div>
-                                        </div>
-
-                                        <div class="suppliers_tile_linear_block_right_column">
-
-                                            <div class="suppliers_tile_linear_criteria third">
-                                                <div class="suppliers_tile_linear_criteria_info">
-                                                    <span class="suppliers_tile_summary_review__criteria__name">Criteria 3</span>
-                                                    <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
-                                                </div>
-                                                <span class="suppliers_tile_summary_review__criteria__indicator">
-                            <span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="30"></span>
-                                                </span>
-                                            </div>
-
-                                            <div class="suppliers_tile_linear_criteria fourth">
-                                                <div class="suppliers_tile_linear_criteria_info">
-                                                    <span class="suppliers_tile_summary_review__criteria__name">Criteria 4</span>
-                                                    <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
-                                                </div>
-                                                <span class="suppliers_tile_summary_review__criteria__indicator">
-                            <span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="40"></span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="suppliers_reviews_overal_info_block">
-                                    <div class="suppliers_reviews_overal_info_left_columm">
-                                        <div class="suppliers_tile_linear_criteria suppliers_reviews_source_criteria">
-                                            <div class="suppliers_tile_linear_criteria_info">
-                                                <span class="suppliers_tile_summary_review__criteria__name">Review Source</span>
-                                                <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
-                                            </div>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator">
-                                <span class="suppliers_tile_summary_review__criteria__indicator_value invited_by_company_criteria" data-value="10"></span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator_value invited_by_daleel_criteria" data-value="20"></span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator_value invited_by_user_criteria" data-value="30"></span>
-                                            <span class="suppliers_tile_summary_review__criteria__indicator_value other_criteria" data-value="40"></span>
-                                            </span>
-                                        </div>
-                                        <div class="suppliers_reviews_source_criteria_info">
-                                            <div class="suppliers_reviews_source_criteria_info__invited_by_company">
-                                                <span class="suppliers_reviews_source_criteria_info__icon"></span>
-                                                <span class="suppliers_reviews_source_criteria_info__title">Invited by company</span>
-                                            </div>
-
-                                            <div class="suppliers_reviews_source_criteria_info__invited_by_daleel">
-                                                <span class="suppliers_reviews_source_criteria_info__icon"></span>
-                                                <span class="suppliers_reviews_source_criteria_info__title">Invited by DALEEL</span>
-                                            </div>
-
-                                            <div class="suppliers_reviews_source_criteria_info__invited_by_user">
-                                                <span class="suppliers_reviews_source_criteria_info__icon"></span>
-                                                <span class="suppliers_reviews_source_criteria_info__title">Invited by user</span>
-                                            </div>
-
-                                            <div class="suppliers_reviews_source_criteria_info__other">
-                                                <span class="suppliers_reviews_source_criteria_info__icon"></span>
-                                                <span class="suppliers_reviews_source_criteria_info__title">Other</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="suppliers_reviews_overal_info_right_columm">
-
-                                        <div class="suppliers_tile_radial_block">
-                                            <div class="suppliers_tile_radial_criteria first">
-                                                <div class="recommend_circle_chart_block">
-                                                    <canvas class="recommend_сircle_сhart" width="120" height="120" style='width:120px;height:120px'></canvas>
-                                                </div>
-                                                <span>Of reviewers recommend this<br>supplier</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="suppliers_detailed_reviews_block">
-                                <h2 class="suppliers_detailed_reviews_title">Detailed Review</h2>
-                                <div class="suppliers_detailed_reviews_tiles">
-                                    <div class="suppliers_detailed_reviews_tile">
-                                        <div class="suppliers_detailed_reviews_tile_company_info_column">
-
-                                            <div class="suppliers_detailed_reviews_tile_header">
-                                                <div class="suppliers_detailed_reviews_tile_header_image_block">
-                                                    <img src="img/supplier_logo_2.png" alt="Image">
-                                                </div>
-
-                                                <div class="suppliers_detailed_reviews_tile_header_person_info_block">
-                                                    <span class="suppliers_detailed_reviews_tile__person">Johnathan<br>Cambell</span>
-                                                    <span class="suppliers_detailed_reviews_tile__duty">General Manager</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="suppliers_detailed_reviews_tile_body">
-                                                <h3 class="suppliers_detailed_reviews_tile__company_name">Seismic Survey and Data Acquisition</h3>
-
-                                                <div class="suppliers_detailed_reviews_tile_company_rating_block">
-                                                    <span class="suppliers_detailed_reviews_tile_company_rating_block__total_rating">5,0</span>
-                                                    <div class="suppliers_detailed_reviews_tile_company_rating_stars_block">
-                                                        <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">
-                                                    </div>
-                                                </div>
-
-                                                <div class="suppliers_detailed_reviews_tile_detailed_info_block">
-                                                    <div class="suppliers_detailed_reviews_tile_detailed_info_row">
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__key">Region</span>
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__value">Middle East</span>
-                                                    </div>
-
-                                                    <div class="suppliers_detailed_reviews_tile_detailed_info_row">
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__key">Company Type</span>
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__value">Gas Supplier</span>
-                                                    </div>
-
-                                                    <div class="suppliers_detailed_reviews_tile_detailed_info_row">
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__key">Department</span>
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__value">Marketing</span>
-                                                    </div>
-
-                                                    <div class="suppliers_detailed_reviews_tile_detailed_info_row">
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__key">Status</span>
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__value">Authorized via Linkedin</span>
-                                                    </div>
-
-                                                    <div class="suppliers_detailed_reviews_tile_detailed_info_row">
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__key">Sourse</span>
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__value">Invited bt Daleel</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="suppliers_detailed_reviews_tile_review_column">
-                                            <div class="suppliers_detailed_reviews_tile_review_diagrams suppliers_tile_summary_review_diagrams_block">
-                                                <div class="suppliers_tile_linear_block">
-                                                    <div class="suppliers_tile_linear_criteria first">
-                                                        <span class="suppliers_tile_summary_review__criteria__name">Criteria 1</span>
-                                                        <span class="suppliers_tile_summary_review__criteria__indicator">
-														<span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="10"></span>
-                                                        </span>
-                                                        <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
-                                                    </div>
-
-                                                    <div class="suppliers_tile_linear_criteria second">
-                                                        <span class="suppliers_tile_summary_review__criteria__name">Criteria 2</span>
-                                                        <span class="suppliers_tile_summary_review__criteria__indicator">
-														<span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="20"></span>
-                                                        </span>
-                                                        <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
-                                                    </div>
-
-                                                    <div class="suppliers_tile_linear_criteria third">
-                                                        <span class="suppliers_tile_summary_review__criteria__name">Criteria 3</span>
-                                                        <span class="suppliers_tile_summary_review__criteria__indicator">
-														<span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="30"></span>
-                                                        </span>
-                                                        <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
-                                                    </div>
-
-                                                    <div class="suppliers_tile_linear_criteria fourth">
-                                                        <span class="suppliers_tile_summary_review__criteria__name">Criteria 4</span>
-                                                        <span class="suppliers_tile_summary_review__criteria__indicator">
-														<span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="40"></span>
-                                                        </span>
-                                                        <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="suppliers_tile_radial_block">
-                                                    <div class="suppliers_tile_radial_criteria first">
-                                                        <div class="recommend_circle_chart_block">
-                                                            <canvas class="recommend_сircle_сhart" width="120" height="120" style='width:120px;height:120px'></canvas>
-                                                        </div>
-                                                        <span>Of reviewers recommend this<br>supplier</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="suppliers_detailed_reviews_tile_review_summary">
-                                                <h3>Summary</h3>
-                                                <p>We work with them on a regular basis and they provide us manpower rather than deliverables. It’s not project based. We work in sprints and for each sprint we have a deliverable. There’s always something more happening.
-                                                    <br> Beyond that, they ran several rounds of load testing for us to see that our production environment scales well. We ran a mobile application QA session, too. What is the team composition?</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="suppliers_detailed_reviews_tile">
-                                        <div class="suppliers_detailed_reviews_tile_company_info_column">
-
-                                            <div class="suppliers_detailed_reviews_tile_header">
-                                                <div class="suppliers_detailed_reviews_tile_header_image_block">
-                                                    <img src="img/supplier_logo_2.png" alt="Image">
-                                                </div>
-
-                                                <div class="suppliers_detailed_reviews_tile_header_person_info_block">
-                                                    <span class="suppliers_detailed_reviews_tile__person">Johnathan<br>Cambell</span>
-                                                    <span class="suppliers_detailed_reviews_tile__duty">General Manager</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="suppliers_detailed_reviews_tile_body">
-                                                <h3 class="suppliers_detailed_reviews_tile__company_name">Seismic Survey and Data Acquisition</h3>
-
-                                                <div class="suppliers_detailed_reviews_tile_company_rating_block">
-                                                    <span class="suppliers_detailed_reviews_tile_company_rating_block__total_rating">5,0</span>
-                                                    <div class="suppliers_detailed_reviews_tile_company_rating_stars_block">
-                                                        <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">
-                                                        <img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">
-                                                    </div>
-                                                </div>
-
-                                                <div class="suppliers_detailed_reviews_tile_detailed_info_block">
-                                                    <div class="suppliers_detailed_reviews_tile_detailed_info_row">
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__key">Region</span>
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__value">Middle East</span>
-                                                    </div>
-
-                                                    <div class="suppliers_detailed_reviews_tile_detailed_info_row">
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__key">Company Type</span>
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__value">Gas Supplier</span>
-                                                    </div>
-
-                                                    <div class="suppliers_detailed_reviews_tile_detailed_info_row">
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__key">Department</span>
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__value">Marketing</span>
-                                                    </div>
-
-                                                    <div class="suppliers_detailed_reviews_tile_detailed_info_row">
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__key">Status</span>
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__value">Authorized via Linkedin</span>
-                                                    </div>
-
-                                                    <div class="suppliers_detailed_reviews_tile_detailed_info_row">
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__key">Sourse</span>
-                                                        <span class="suppliers_detailed_reviews_tile_detailed_info__value">Invited bt Daleel</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="suppliers_detailed_reviews_tile_review_column">
-                                            <div class="suppliers_detailed_reviews_tile_review_diagrams suppliers_tile_summary_review_diagrams_block">
-                                                <div class="suppliers_tile_linear_block">
-                                                    <div class="suppliers_tile_linear_criteria first">
-                                                        <span class="suppliers_tile_summary_review__criteria__name">Criteria 1</span>
-                                                        <span class="suppliers_tile_summary_review__criteria__indicator">
-														<span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="10"></span>
-                                                        </span>
-                                                        <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
-                                                    </div>
-
-                                                    <div class="suppliers_tile_linear_criteria second">
-                                                        <span class="suppliers_tile_summary_review__criteria__name">Criteria 2</span>
-                                                        <span class="suppliers_tile_summary_review__criteria__indicator">
-														<span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="20"></span>
-                                                        </span>
-                                                        <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
-                                                    </div>
-
-                                                    <div class="suppliers_tile_linear_criteria third">
-                                                        <span class="suppliers_tile_summary_review__criteria__name">Criteria 3</span>
-                                                        <span class="suppliers_tile_summary_review__criteria__indicator">
-														<span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="30"></span>
-                                                        </span>
-                                                        <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
-                                                    </div>
-
-                                                    <div class="suppliers_tile_linear_criteria fourth">
-                                                        <span class="suppliers_tile_summary_review__criteria__name">Criteria 4</span>
-                                                        <span class="suppliers_tile_summary_review__criteria__indicator">
-														<span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="40"></span>
-                                                        </span>
-                                                        <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="suppliers_tile_radial_block">
-                                                    <div class="suppliers_tile_radial_criteria first">
-                                                        <div class="recommend_circle_chart_block">
-                                                            <canvas class="recommend_сircle_сhart" width="120" height="120" style='width:120px;height:120px'></canvas>
-                                                        </div>
-                                                        <span>Of reviewers recommend this<br>supplier</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="suppliers_detailed_reviews_tile_review_summary">
-                                                <h3>Summary</h3>
-                                                <p>We work with them on a regular basis and they provide us manpower rather than deliverables. It’s not project based. We work in sprints and for each sprint we have a deliverable. There’s always something more happening.
-                                                    <br> Beyond that, they ran several rounds of load testing for us to see that our production environment scales well. We ran a mobile application QA session, too. What is the team composition?</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
                     </section>
 
-                    <section id="documents" class="suppliers_documents_block">
-                        <h2 class="toggled_section_heading">Document <img src="assets/suppliers/toggled_sections/open_section_icon.svg" alt="Image" class="svg"></h2>
-                        <div class="suppliers_documents_inner_content toggled_section_inner_content">
+                    <section class="main_content_wrapper">
+                        <div class="container">
+                            <div class="main_content_inner">
 
-                            <h2>Document</h2>
-
-                            <div class="suppliers_documents_tiles">
-                                <div class="suppliers_documents_tile">
-                                    <a href="#" target="_blank" class="suppliers_documents_tile_inner">
-                                        <div class="suppliers_documents_tile_img">
-                                            <img src="assets/documents/xls_icon.svg" alt="Image">
-                                        </div>
-                                        <div class="suppliers_competitors_tile_body">
-                                            <h4>OilSupplier licence</h4>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="suppliers_documents_tile">
-                                    <a href="#" target="_blank" class="suppliers_documents_tile_inner">
-                                        <div class="suppliers_documents_tile_img">
-                                            <img src="assets/documents/pdf_icon.svg" alt="Image">
-                                        </div>
-                                        <div class="suppliers_competitors_tile_body">
-                                            <h4>OilSupplier licence</h4>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="suppliers_documents_tile">
-                                    <a href="#" target="_blank" class="suppliers_documents_tile_inner">
-                                        <div class="suppliers_documents_tile_img">
-                                            <img src="assets/documents/doc_icon.svg" alt="Image">
-                                        </div>
-                                        <div class="suppliers_competitors_tile_body">
-                                            <h4>OilSupplier licence</h4>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="view_all_posts_block">
-                                <a href="#" class="button load_more_button full_width">
-                                    <span>View All Documents (23)</span>
-                                </a>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="last-news" class="suppliers_latest_news_block latest_news_wrapper">
-
-                        <h2 class="toggled_section_heading">News and Expert articles <img src="assets/suppliers/toggled_sections/open_section_icon.svg" alt="Image" class="svg"></h2>
-                        <div class="latest_news_inner_content toggled_section_inner_content">
-
-                            <h2>News and Expert articles</h2>
-
-                            <div class="latest_news_tiles">
-                                <div class="latest_news_tile">
-                                    <a href="#" class="latest_news_tile_inner">
-                                        <div class="latest_news_tile_image">
-                                            <img src="img/news/01.jpg" alt="Image">
-                                        </div>
-                                        <div class="latest_news_tile_content">
-                                            <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
-                                            <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
-                                            <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
-                                        </div>
-                                        <div class="latest_news_tile_content_info">
-                                            <div class="latest_news_tile_author">
-                                                <img class="svg" src="assets/news/author_icon.svg" alt="Image">
-                                                <span>Adam Boyshik</span>
-                                            </div>
-                                            <div class="latest_news_tile_views">
-                                                <img class="svg" src="assets/news/view_counter_icon.svg" alt="Image">
-                                                <span>56251</span>
-                                            </div>
-                                            <div class="latest_news_tile_date">
-                                                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                                <span>24.01.2019</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="latest_news_tile">
-                                    <a href="#" class="latest_news_tile_inner">
-                                        <div class="latest_news_tile_image">
-                                            <img src="img/news/02.jpg" alt="Image">
-                                        </div>
-                                        <div class="latest_news_tile_content">
-                                            <span class="latest_news_tile_category latest_news_tile_category__article">Expert article</span>
-                                            <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
-                                            <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
-                                        </div>
-                                        <div class="latest_news_tile_content_info">
-                                            <div class="latest_news_tile_author">
-                                                <img class="svg" src="assets/news/author_icon.svg" alt="Image">
-                                                <span>Adam Boyshik</span>
-                                            </div>
-                                            <div class="latest_news_tile_views">
-                                                <img class="svg" src="assets/news/view_counter_icon.svg" alt="Image">
-                                                <span>56251</span>
-                                            </div>
-                                            <div class="latest_news_tile_date">
-                                                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                                <span>24.01.2019</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="latest_news_tile">
-                                    <a href="#" class="latest_news_tile_inner">
-                                        <div class="latest_news_tile_image">
-                                            <img src="img/news/03.jpg" alt="Image">
-                                        </div>
-                                        <div class="latest_news_tile_content">
-                                            <span class="latest_news_tile_category latest_news_tile_category__news">News</span>
-                                            <h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
-                                            <p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
-                                        </div>
-                                        <div class="latest_news_tile_content_info">
-                                            <div class="latest_news_tile_author">
-                                                <img class="svg" src="assets/news/author_icon.svg" alt="Image">
-                                                <span>Adam Boyshik</span>
-                                            </div>
-                                            <div class="latest_news_tile_views">
-                                                <img class="svg" src="assets/news/view_counter_icon.svg" alt="Image">
-                                                <span>56251</span>
-                                            </div>
-                                            <div class="latest_news_tile_date">
-                                                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                                <span>24.01.2019</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="view_all_posts_block">
-                                <a href="#" class="button load_more_button full_width">
-                                    <span>View All News (23)</span>
-                                </a>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="competitors" class="suppliers_competitors_block">
-                        <h2 class="toggled_section_heading">Competitors <img src="assets/suppliers/toggled_sections/open_section_icon.svg" alt="Image" class="svg"></h2>
-                        <div class="suppliers_competitors_block_inner_content toggled_section_inner_content">
-
-                            <h2>Competitors</h2>
-
-                            <div class="suppliers_competitors_tiles">
-                                <div class="suppliers_competitors_tile">
-                                    <div class="suppliers_competitors_tile_inner">
-                                        <div class="suppliers_competitors_tile_img">
-                                            <img src="img/suppliers/supplier_logo_2.png" alt="Image">
-                                        </div>
-                                        <div class="suppliers_competitors_tile_body">
-                                            <h4>Johnathan Cambell</h4>
-                                        </div>
-                                        <div class="suppliers_competitors_tile_link">
-                                            <a href="#">
-                                                <span>Go to Supplier's Page</span>
-                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="suppliers_competitors_tile">
-                                    <div class="suppliers_competitors_tile_inner">
-                                        <div class="suppliers_competitors_tile_img">
-                                            <img src="img/suppliers/supplier_logo_2.png" alt="Image">
-                                        </div>
-                                        <div class="suppliers_competitors_tile_body">
-                                            <h4>Johnathan Cambell</h4>
-                                        </div>
-                                        <div class="suppliers_competitors_tile_link">
-                                            <a href="#">
-                                                <span>Go to Supplier's Page</span>
-                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="suppliers_competitors_tile">
-                                    <div class="suppliers_competitors_tile_inner">
-                                        <div class="suppliers_competitors_tile_img">
-                                            <img src="img/suppliers/supplier_logo_2.png" alt="Image">
-                                        </div>
-                                        <div class="suppliers_competitors_tile_body">
-                                            <h4>Johnathan Cambell</h4>
-                                        </div>
-                                        <div class="suppliers_competitors_tile_link">
-                                            <a href="#">
-                                                <span>Go to Supplier's Page</span>
-                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="suppliers_competitors_tile">
-                                    <div class="suppliers_competitors_tile_inner">
-                                        <div class="suppliers_competitors_tile_img">
-                                            <img src="img/suppliers/supplier_logo_2.png" alt="Image">
-                                        </div>
-                                        <div class="suppliers_competitors_tile_body">
-                                            <h4>Johnathan Cambell</h4>
-                                        </div>
-                                        <div class="suppliers_competitors_tile_link">
-                                            <a href="#">
-                                                <span>Go to Supplier's Page</span>
-                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="view_all_posts_block">
-                                <a href="#" class="button load_more_button full_width">
-                                    <span>View All News (23)</span>
-                                </a>
-                            </div>
-                        </div>
-                    </section>
-                </div>
+                                <div class="page_fixed_menu_wrapper">
+    <div class="container">
+        <div class="page_fixed_menu_inner">
+            <div class="page_fixed_menu_img">
+                <img src="img/supplier_logo_2.png" alt="Image">
             </div>
-        </section>
-
+            <ul class="page_fixed_menu_list">
+                <li class="page_fixed_menu__item"><a href="#overview">Overview</a></li>
+                <li class="page_fixed_menu__item"><a href="#contacts">Contacts</a></li>                
+                <li class="page_fixed_menu__item"><a href="#product-and-services">Products &amp; services</a></li>
+                <li class="page_fixed_menu__item"><a href="#work-history">Work history</a></li>           
+                <li class="page_fixed_menu__item"><a href="#reviews">Reviews</a></li>
+                <li class="page_fixed_menu__item"><a href="#documents">Documents</a></li>
+                <li class="page_fixed_menu__item"><a href="#last-news">Expert artciles</a></li>
+                <li class="page_fixed_menu__item"><a href="#competitors">Competitors</a></li>
+            </ul>  
+        </div>     
     </div>
+ </div>
+                                    <section id="overview" class="suppliers_detailed_info_block">
+	<h2 class="toggled_section_heading">Overview <img src="assets/suppliers/toggled_sections/open_section_icon.svg" alt="Image" class="svg"></h2>
+	<div class="suppliers_detailed_info_inner_content toggled_section_inner_content">
+		<div class="suppliers_detailed_info_overview_column">
+			<div class="suppliers_detailed_info_overview">
+				<div class="suppliers_detailed_info_overview__summary">
+					<h2>Overview</h2>
+					<p>Reactive is a global Digital Solutions Company. We deliver software engineering excellence to Fortune 500 and fast-growing organisations around the world. Our 3,000+ Developers provide the clients with a range of services including Software development teams, QA, R&D, IoT, Big Data, Product development and Consulting. What do you get with National Oilwell Varco?</p>
+					<p>Up to 50% savings compared to local resources
+						<br> Access to 357,000 IT specialists
+						<br> 90% retention rate in team
+					</p>
+				</div>
+				<div class="suppliers_detailed_info_overview__detailed">
+					<p>Reactive is a global Digital Solutions Company. We deliver software engineering excellence to Fortune 500 and fast-growing organisations around the world.</p>
+					<p>Our 3,000+ Developers provide the clients with a range of services including Software development teams, QA, R&D, IoT, Big Data, Product development and Consulting.</p>
+				</div>
+				<span class="suppliers_detailed_info_overview__show_more">Show more</span>
+			</div>
+		</div>
+		<div class="suppliers_tile_company_highlights_and_location_block">
+			<div class="suppliers_detailed_info_highlights_column">
+				<div class="suppliers_tile_company_highlights_block">
+					<h2 class="suppliers_tile__highlight_title">Highlights</h2>
+					<ul class="suppliers_tile_company_highlights_list">
+						<li>
+							<div class="suppliers_tile_company_highlights_list__icon">
+								<img src="assets/suppliers/hightlights/stuff_amount_icon.svg" class="svg" alt="Image"> 	
+							</div>
+							<span>10 - 49</span>
+						</li>
+						<li>
+							<div class="suppliers_tile_company_highlights_list__icon">
+								<img src="assets/suppliers/hightlights/salary_icon.svg" class="svg" alt="Image">
+							</div>
+							<span>$25,000+</span>
+						</li>
+						<li>
+							<div class="suppliers_tile_company_highlights_list__icon">
+								<img src="assets/suppliers/hightlights/work_exp_icon.svg" class="svg" alt="Image">
+							</div>
+							<span>Over 10 years</span>
+						</li>
+						<li>
+							<div class="suppliers_tile_company_highlights_list__icon">
+								<img src="assets/suppliers/hightlights/location_icon.svg" class="svg" alt="Image">
+							</div>
+							<span>Singapore</span>
+						</li>
+						<li>
+							<div class="suppliers_tile_company_highlights_list__icon">
+								<img src="assets/suppliers/hightlights/public_icon.svg" class="svg" alt="Image">
+							</div>
+							<span>Public</span>
+						</li>
+					</ul>
+				</div>
+				<div class="suppliers_tile_magor_categories_block">
+					<h2 class="suppliers_tile_magor_categories_block__title">Magor Categories</h2>
+					<p>Artificial Lift - Summary
+						<br> Asset Maintenance & Integrity
+						<br> Borehole Enlargement Systems the
+						<br> Cementing Services
+					</p>
+				</div>
+			</div>
+			<section id="contacts" class="suppliers_detailed_info_location_column">
+				<div class="suppliers_tile_location_block">
+					<div class="suppliers_tile_location_header">
+						<h2 class="suppliers_tile_location_block__title">Location</h2>
+						<div class="suppliers_tile_location_block__all_offices button">
+							<div class="button__icon">
+								<img src="assets/all_offices_icon.svg" alt="Image" class="svg">
+							</div>
+							<span>See all offices</span>
+						</div>
+					</div>
+					<div class="suppliers_tile_location_map active">
+						<iframe src="https://snazzymaps.com/embed/153171" style="border:none;"></iframe>
+					</div>
+					<div class="suppliers_tile_location_offices_tiles_wrapper">
+						<div class="suppliers_tile_location_offices_tiles">
+							<div class="suppliers_tile_location_offices_tile">
+								<h3>Kyiv, Ukraine</h3>
+								<div class="suppliers_tile_location_office_tile_address">
+									<img src="assets/address_icon__blue.svg" alt="Image" class="svg">
+									<span>03021, Ukraine, Kyiv, Valeria Lobanovskogo blvd, 56, Office 14</span>							
+								</div>
 
-    <footer class="footer_wrapper">
-        <div class="container">
-            <div class="footer_logo_block">
-                <img class="svg" src="assets/header/logo__dark.svg" alt="Логотип">
-            </div>
-            <div class="footer_info_block">
-                <div class="footer_info_about_us_column">
-                    <h4 class="footer_info__title">About Us</h4>
-                    <p class="footer_info__desc">Daleel is a portal that provides unique business intelligence to make the best decisions and allows exchange of knowledge that our industry needs to best meet its requirements.</p>
-                </div>
-                <div class="footer_info_resources_column">
-                    <h4 class="footer_info__title">Resources</h4>
-                    <ul class="footer_info_resources_list">
-                        <li class="footer_info_resources_list__item"><a href="#">Our Story and Why We Do It</a></li>
-                        <li class="footer_info_resources_list__item"><a href="#">Privacy Policy</a></li>
-                        <li class="footer_info_resources_list__item"><a href="#">Terms Of Use</a></li>
-                        <li class="footer_info_resources_list__item"><a href="#">Contacts</a></li>
-                    </ul>
-                </div>
-                <div class="footer_info_block_newsletter_column">
-                    <h4 class="footer_info__title">Newsletter</h4>
-                    <div class="footer_info_block_newsletter">
-                        <input type="email" placeholder="Email adress" maxlength="100" required>
-                        <button type="submit">Subscribe</button>
+								<a class="button button__bordered_blue" href="#" target="_blank">View on map</a>
+							</div>
+
+							<div class="suppliers_tile_location_offices_tile">
+								<h3>Kyiv, Ukraine</h3>
+								<div class="suppliers_tile_location_office_tile_address">
+									<img src="assets/address_icon__blue.svg" alt="Image" class="svg">
+									<span>03021, The United States Of America, New York, Brodway St, 56, Office 14</span>							
+								</div>
+
+								<a class="button button__bordered_blue" href="#" target="_blank">View on map</a>
+							</div>
+
+							<div class="suppliers_tile_location_offices_tile">
+								<h3>Kyiv, Ukraine</h3>
+								<div class="suppliers_tile_location_office_tile_address">
+									<img src="assets/address_icon__blue.svg" alt="Image" class="svg">
+									<span>03021, Ukraine, Kyiv, Valeria Lobanovskogo blvd, 56, Office 14</span>							
+								</div>
+
+								<a class="button button__bordered_blue" href="#" target="_blank">View on map</a>
+							</div>
+
+							<div class="suppliers_tile_location_offices_tile">
+								<h3>Kyiv, Ukraine</h3>
+								<div class="suppliers_tile_location_office_tile_address">
+									<img src="assets/address_icon__blue.svg" alt="Image" class="svg">
+									<span>03021, Ukraine, Kyiv, Valeria Lobanovskogo blvd, 56, Office 14</span>							
+								</div>
+
+								<a class="button button__bordered_blue" href="#" target="_blank">View on map</a>
+							</div>
+
+							<div class="suppliers_tile_location_offices_tile">
+								<h3>Kyiv, Ukraine</h3>
+								<div class="suppliers_tile_location_office_tile_address">
+									<img src="assets/address_icon__blue.svg" alt="Image" class="svg">
+									<span>03021, The United States Of America, New York, Brodway St, 56, Office 14</span>							
+								</div>
+
+								<a class="button button__bordered_blue" href="#" target="_blank">View on map</a>
+							</div>
+
+							<div class="suppliers_tile_location_offices_tile">
+								<h3>Kyiv, Ukraine</h3>
+								<div class="suppliers_tile_location_office_tile_address">
+									<img src="assets/address_icon__blue.svg" alt="Image" class="svg">
+									<span>03021, Ukraine, Kyiv, Valeria Lobanovskogo blvd, 56, Office 14</span>							
+								</div>
+
+								<a class="button button__bordered_blue" href="#" target="_blank">View on map</a>
+							</div>
+
+							<div class="suppliers_tile_location_offices_tile">
+								<h3>Kyiv, Ukraine</h3>
+								<div class="suppliers_tile_location_office_tile_address">
+									<img src="assets/address_icon__blue.svg" alt="Image" class="svg">
+									<span>03021, Ukraine, Kyiv, Valeria Lobanovskogo blvd, 56, Office 14</span>							
+								</div>
+
+								<a class="button button__bordered_blue" href="#" target="_blank">View on map</a>
+							</div>
+
+						</div>		
+					</div>
+				</div>
+			</section>
+		</div>		
+	</div>
+</section>
+                                        <section id="product-and-services" class="suppliers_product_services_block">
+	<h2 class="toggled_section_heading">Product & Services <img src="assets/suppliers/toggled_sections/open_section_icon.svg" alt="Image" class="svg"></h2>
+	<div class="suppliers_product_services_inner_content toggled_section_inner_content">	
+		<h2>Product & Services</h2>
+
+		<div class="suppliers_product_services_tiles">
+			<div class="suppliers_product_services_tile">
+				<div class="suppliers_product_services_tile_inner">
+					<div class="suppliers_product_services_body">
+						<h4>Seismic Survey and Data Acquisition</h4>
+
+						<div class="suppliers_product_services_reviews">
+							<span class="suppliers_product_services_reviews__title">Reviews:</span>
+								<div class="suppliers_product_services_reviews_stars">
+									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
+									<div class="suppliers_product_services_reviews_stars_block">
+										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
+										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
+										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
+										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
+										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
+									</div>								
+									<span class="suppliers_product_services_reviews__counter">(14)</span>												
+								</div>						
+						</div>
+
+						<div class="suppliers_product_services_work_history">
+							<span class="suppliers_product_services_work_history__title">Work History:</span>
+							<span class="suppliers_product_services_work_history__counter">12</span>
+						</div>
+					</div>
+					<div class="suppliers_competitors_tile_link">
+						<a href="#">
+							<span>View Details</span>
+							<img class="svg" src="assets/small_arrow_icon.svg" alt="Image">												
+						</a>	
+					</div>			
+				</div>
+			</div>
+
+			<div class="suppliers_product_services_tile">
+				<div class="suppliers_product_services_tile_inner">
+					<div class="suppliers_product_services_body">
+						<h4>Seismic Survey and Data Acquisition</h4>
+
+						<div class="suppliers_product_services_reviews">
+							<span class="suppliers_product_services_reviews__title">Reviews:</span>
+								<div class="suppliers_product_services_reviews_stars">
+									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
+									<div class="suppliers_product_services_reviews_stars_block">
+										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
+										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
+										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
+										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
+										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
+									</div>								
+									<span class="suppliers_product_services_reviews__counter">(14)</span>												
+								</div>						
+						</div>
+
+						<div class="suppliers_product_services_work_history">
+							<span class="suppliers_product_services_work_history__title">Work History:</span>
+							<span class="suppliers_product_services_work_history__counter">12</span>
+						</div>
+					</div>
+					<div class="suppliers_competitors_tile_link">
+						<a href="#">
+							<span>View Details</span>
+							<img class="svg" src="assets/small_arrow_icon.svg" alt="Image">												
+						</a>	
+					</div>			
+				</div>
+			</div>
+
+			<div class="suppliers_product_services_tile">
+				<div class="suppliers_product_services_tile_inner">
+					<div class="suppliers_product_services_body">
+						<h4>Seismic Survey and Data Acquisition</h4>
+
+						<div class="suppliers_product_services_reviews">
+							<span class="suppliers_product_services_reviews__title">Reviews:</span>
+								<div class="suppliers_product_services_reviews_stars">
+									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
+									<div class="suppliers_product_services_reviews_stars_block">
+										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
+										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
+										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
+										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
+										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
+									</div>								
+									<span class="suppliers_product_services_reviews__counter">(14)</span>												
+								</div>						
+						</div>
+
+						<div class="suppliers_product_services_work_history">
+							<span class="suppliers_product_services_work_history__title">Work History:</span>
+							<span class="suppliers_product_services_work_history__counter">12</span>
+						</div>
+					</div>
+					<div class="suppliers_competitors_tile_link">
+						<a href="#">
+							<span>View Details</span>
+							<img class="svg" src="assets/small_arrow_icon.svg" alt="Image">												
+						</a>	
+					</div>			
+				</div>
+			</div>
+
+			<div class="suppliers_product_services_tile">
+				<div class="suppliers_product_services_tile_inner">
+					<div class="suppliers_product_services_body">
+						<h4>Seismic Survey and Data Acquisition</h4>
+
+						<div class="suppliers_product_services_reviews">
+							<span class="suppliers_product_services_reviews__title">Reviews:</span>
+								<div class="suppliers_product_services_reviews_stars">
+									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
+									<div class="suppliers_product_services_reviews_stars_block">
+										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
+										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
+										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
+										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
+										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
+									</div>								
+									<span class="suppliers_product_services_reviews__counter">(14)</span>												
+								</div>						
+						</div>
+
+						<div class="suppliers_product_services_work_history">
+							<span class="suppliers_product_services_work_history__title">Work History:</span>
+							<span class="suppliers_product_services_work_history__counter">12</span>
+						</div>
+					</div>
+					<div class="suppliers_competitors_tile_link">
+						<a href="#">
+							<span>View Details</span>
+							<img class="svg" src="assets/small_arrow_icon.svg" alt="Image">												
+						</a>	
+					</div>			
+				</div>
+			</div>
+		</div>
+
+		<div class="view_all_posts_block">
+			<a href="#" class="button load_more_button full_width">
+				<span>View All Products (28)</span>
+			</a>
+		</div>
+	</div>
+</section>
+                                            <section id="work-history" class="suppliers_work_history_block">
+	<h2 class="toggled_section_heading">Work History <img src="assets/suppliers/toggled_sections/open_section_icon.svg" alt="Image" class="svg"></h2>
+	<div class="suppliers_work_history_inner_content toggled_section_inner_content">	
+
+		<h2>Work History</h2>
+
+		<div class="suppliers_work_history_content">
+			<div class="suppliers_work_history_major_clients_column">
+				<div class="suppliers_work_history_major_clients">
+					<h3>Major Clients</h3>
+					<ul class="suppliers_work_history_major_clients_list">
+						<li class="suppliers_work_history_major_clients_list__item">BP</li>
+						<li class="suppliers_work_history_major_clients_list__item">ExxonMobil</li>
+						<li class="suppliers_work_history_major_clients_list__item">Shell</li>
+						<li class="suppliers_work_history_major_clients_list__item">Total</li>
+						<li class="suppliers_work_history_major_clients_list__item">Chevron</li>
+						<li class="suppliers_work_history_major_clients_list__item">ConocoPhillips</li>
+					</ul>
+				</div>
+			</div>
+			<div class="suppliers_work_history_tiles_column">
+				<div class="suppliers_work_history_tiles">
+					<div class="suppliers_work_history_tile">
+						<div class="suppliers_work_history_tile_modal">
+							<div class="suppliers_work_history_tile_modal_close_icon">
+								<img src="assets/close_icon.svg" alt="Image" class="svg">
+							</div>						
+							<div class="suppliers_work_history_tile_modal_info_column">
+								<div class="suppliers_work_history_tile_modal_category">
+									<span>Category</span>
+									<h3>Norwegian Firm Smarts to Offshore Coring</h3>
+									<p>Collars, Stabilizers, Lift Subs, Bit Jars, Crossover Subs, Float Subs</p>
+								</div>
+								<div class="suppliers_work_history_tile_modal_location">
+									<span>Location</span>
+									<h3>South Africa</h3>
+								</div>
+								<div class="suppliers_work_history_tile_modal_partner">
+									<span>Partner</span>
+									<h3>DALEEL</h3>
+								</div>						
+							</div>
+
+							<div class="suppliers_work_history_tile_modal_overview_column">
+								<div class="suppliers_work_history_tile_modal_overview">
+									<span>Overview</span>
+									<h3>Maintenance of Oil suppliing ring in south Africa</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+									<div class="suppliers_work_history_tile_modal_link">
+										<a href="#">
+											<span>Show Details</span>
+											<img class="svg" src="assets/small_arrow_icon.svg" alt="Image">												
+										</a>	
+									</div>
+								</div>
+							</div>
+						</div>	
+						<div class="suppliers_work_history_tile_inner">
+							<span class="suppliers_work_history_tile__read_more">Click to read more details</span>						
+							<div class="suppliers_work_history_tile_img">
+								<img src="img/product_small_img.png" alt="Image">
+							</div>
+							<div class="suppliers_work_history_tile_content">
+								<h3>Norwegian Firm Smarts to Offshore Coring</h3>	
+								<div class="suppliers_work_history_tile_statistics">
+
+									<div class="suppliers_work_history_tile_statistics__company_name">
+										<img src="assets/news/author_icon.svg" alt="Image" class="svg">
+										<span>Shell</span>
+									</div>
+
+									<div class="suppliers_work_history_tile_statistics__date">
+										<img src="assets/news/publication_date_icon.svg" alt="Image" class="svg">									
+										<span>2 Quater 2018</span>
+									</div>
+								</div>						
+							</div>
+						</div>
+					</div>
+
+					<div class="suppliers_work_history_tile">
+						<div class="suppliers_work_history_tile_modal">
+							<div class="suppliers_work_history_tile_modal_close_icon">
+								<img src="assets/close_icon.svg" alt="Image" class="svg">
+							</div>						
+							<div class="suppliers_work_history_tile_modal_info_column">
+								<div class="suppliers_work_history_tile_modal_category">
+									<span>Category</span>
+									<h3>Batteries cut fuel needs on board</h3>
+									<p>Collars, Stabilizers, Lift Subs, Bit Jars, Crossover Subs, Float Subs</p>
+								</div>
+								<div class="suppliers_work_history_tile_modal_location">
+									<span>Location</span>
+									<h3>South Africa</h3>
+								</div>
+								<div class="suppliers_work_history_tile_modal_partner">
+									<span>Partner</span>
+									<h3>DALEEL</h3>
+								</div>						
+							</div>
+
+							<div class="suppliers_work_history_tile_modal_overview_column">
+								<div class="suppliers_work_history_tile_modal_overview">
+									<span>Overview</span>
+									<h3>Maintenance of Oil suppliing ring in south Africa</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+									<div class="suppliers_work_history_tile_modal_link">
+										<a href="#">
+											<span>Show Details</span>
+											<img class="svg" src="assets/small_arrow_icon.svg" alt="Image">												
+										</a>	
+									</div>
+								</div>
+							</div>
+						</div>						
+						<div class="suppliers_work_history_tile_inner">
+							<span class="suppliers_work_history_tile__read_more">Click to read more details</span>
+							<div class="suppliers_work_history_tile_img">
+								<img src="img/product_small_img.png" alt="Image">
+							</div>
+							<div class="suppliers_work_history_tile_content">
+								<h3>Batteries cut fuel needs on board</h3>	
+								<div class="suppliers_work_history_tile_statistics">
+
+									<div class="suppliers_work_history_tile_statistics__company_name">
+										<img src="assets/news/author_icon.svg" alt="Image" class="svg">
+										<span>Shell</span>
+									</div>
+
+									<div class="suppliers_work_history_tile_statistics__date">
+										<img src="assets/news/publication_date_icon.svg" alt="Image" class="svg">									
+										<span>2 Quater 2018</span>
+									</div>
+								</div>						
+							</div>
+						</div>
+					</div>
+
+					<div class="suppliers_work_history_tile">
+						<div class="suppliers_work_history_tile_modal">
+							<div class="suppliers_work_history_tile_modal_close_icon">
+								<img src="assets/close_icon.svg" alt="Image" class="svg">
+							</div>						
+							<div class="suppliers_work_history_tile_modal_info_column">
+								<div class="suppliers_work_history_tile_modal_category">
+									<span>Category</span>
+									<h3>Rigless Abandoment using Hydrallic Workover Unit</h3>
+									<p>Collars, Stabilizers, Lift Subs, Bit Jars, Crossover Subs, Float Subs</p>
+								</div>
+								<div class="suppliers_work_history_tile_modal_location">
+									<span>Location</span>
+									<h3>South Africa</h3>
+								</div>
+								<div class="suppliers_work_history_tile_modal_partner">
+									<span>Partner</span>
+									<h3>DALEEL</h3>
+								</div>						
+							</div>
+
+							<div class="suppliers_work_history_tile_modal_overview_column">
+								<div class="suppliers_work_history_tile_modal_overview">
+									<span>Overview</span>
+									<h3>Maintenance of Oil suppliing ring in south Africa</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+									<div class="suppliers_work_history_tile_modal_link">
+										<a href="#">
+											<span>Show Details</span>
+											<img class="svg" src="assets/small_arrow_icon.svg" alt="Image">												
+										</a>	
+									</div>
+								</div>
+							</div>
+						</div>					
+						<div class="suppliers_work_history_tile_inner">
+							<span class="suppliers_work_history_tile__read_more">Click to read more details</span>
+							<div class="suppliers_work_history_tile_img">
+								<img src="img/product_small_img.png" alt="Image">
+							</div>
+							<div class="suppliers_work_history_tile_content">
+								<h3>Rigless Abandoment using Hydrallic Workover Unit</h3>	
+								<div class="suppliers_work_history_tile_statistics">
+
+									<div class="suppliers_work_history_tile_statistics__company_name">
+										<img src="assets/news/author_icon.svg" alt="Image" class="svg">
+										<span>Shell</span>
+									</div>
+
+									<div class="suppliers_work_history_tile_statistics__date">
+										<img src="assets/news/publication_date_icon.svg" alt="Image" class="svg">									
+										<span>2 Quater 2018</span>
+									</div>
+								</div>						
+							</div>
+						</div>
+					</div>
+
+					<div class="suppliers_work_history_tile">
+						<div class="suppliers_work_history_tile_modal">
+							<div class="suppliers_work_history_tile_modal_close_icon">
+								<img src="assets/close_icon.svg" alt="Image" class="svg">
+							</div>
+							<div class="suppliers_work_history_tile_modal_info_column">
+								<div class="suppliers_work_history_tile_modal_category">
+									<span>Category</span>
+									<h3>Where Well Testing Goes Wrong</h3>
+									<p>Collars, Stabilizers, Lift Subs, Bit Jars, Crossover Subs, Float Subs</p>
+								</div>
+								<div class="suppliers_work_history_tile_modal_location">
+									<span>Location</span>
+									<h3>South Africa</h3>
+								</div>
+								<div class="suppliers_work_history_tile_modal_partner">
+									<span>Partner</span>
+									<h3>DALEEL</h3>
+								</div>						
+							</div>
+
+							<div class="suppliers_work_history_tile_modal_overview_column">
+								<div class="suppliers_work_history_tile_modal_overview">
+									<span>Overview</span>
+									<h3>Maintenance of Oil suppliing ring in south Africa</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+									<div class="suppliers_work_history_tile_modal_link">
+										<a href="#">
+											<span>Show Details</span>
+											<img class="svg" src="assets/small_arrow_icon.svg" alt="Image">												
+										</a>	
+									</div>
+								</div>
+							</div>
+						</div>					
+						<div class="suppliers_work_history_tile_inner">
+							<span class="suppliers_work_history_tile__read_more">Click to read more details</span>
+							<div class="suppliers_work_history_tile_img">
+								<img src="img/product_small_img.png" alt="Image">
+							</div>
+							<div class="suppliers_work_history_tile_content">
+								<h3>Where Well Testing Goes Wrong</h3>	
+								<div class="suppliers_work_history_tile_statistics">
+
+									<div class="suppliers_work_history_tile_statistics__company_name">
+										<img src="assets/news/author_icon.svg" alt="Image" class="svg">
+										<span>Shell</span>
+									</div>
+
+									<div class="suppliers_work_history_tile_statistics__date">
+										<img src="assets/news/publication_date_icon.svg" alt="Image" class="svg">									
+										<span>2 Quater 2018</span>
+									</div>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="view_all_posts_block">
+			<a href="#" class="button load_more_button full_width">
+				<span>View All Works (31)</span>
+			</a>
+		</div>
+	</div>
+</section>
+                                                <section id="reviews" class="suppliers_reviews_block">
+                                                    <h2 class="toggled_section_heading">Reviews <img src="assets/suppliers/toggled_sections/open_section_icon.svg" alt="Image" class="svg"></h2>
+                                                    <div class="suppliers_reviews_inner_content toggled_section_inner_content">
+                                                         <div class="suppliers_reviews_block">       
+
+        <h2>Reviews</h2>
+        <div class="suppliers_tile_summary_review_diagrams_block">
+            <div class="suppliers_tile_linear_block">
+                <div class="suppliers_tile_linear_block_left_column">
+                    <div class="suppliers_tile_linear_criteria first">
+                        <div class="suppliers_tile_linear_criteria_info">
+                            <span class="suppliers_tile_summary_review__criteria__name">Criteria 1</span>
+                            <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>                   
+                        </div>
+                        <span class="suppliers_tile_summary_review__criteria__indicator">
+                            <span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="10"></span>
+                        </span>
                     </div>
-                    <span class="footer_info__copyright">© 2019 All rights reserved Daleel</span>
+
+                    <div class="suppliers_tile_linear_criteria second">
+                        <div class="suppliers_tile_linear_criteria_info">
+                            <span class="suppliers_tile_summary_review__criteria__name">Criteria 2</span>
+                            <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>                   
+                        </div>
+                        <span class="suppliers_tile_summary_review__criteria__indicator">
+                            <span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="20"></span>
+                        </span>
+                    </div>             
+                </div>
+
+                <div class="suppliers_tile_linear_block_right_column">
+
+                    <div class="suppliers_tile_linear_criteria third">
+                        <div class="suppliers_tile_linear_criteria_info">
+                            <span class="suppliers_tile_summary_review__criteria__name">Criteria 3</span>
+                            <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>                   
+                        </div>
+                        <span class="suppliers_tile_summary_review__criteria__indicator">
+                            <span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="30"></span>
+                        </span>
+                    </div> 
+
+                    <div class="suppliers_tile_linear_criteria fourth">
+                        <div class="suppliers_tile_linear_criteria_info">
+                            <span class="suppliers_tile_summary_review__criteria__name">Criteria 4</span>
+                            <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>                   
+                        </div>
+                        <span class="suppliers_tile_summary_review__criteria__indicator">
+                            <span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="40"></span>
+                        </span>
+                    </div>  
                 </div>
             </div>
         </div>
-    </footer>
 
-    <div class="modal_backdrop"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/i18n/en.js"></script>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/mobile.js"></script>
-    <script src="scripts/curcle_chart.js"></script>
-</body>
+        <div class="suppliers_reviews_overal_info_block">
+                    <div class="suppliers_reviews_overal_info_left_columm">
+                        <div class="suppliers_tile_linear_criteria suppliers_reviews_source_criteria">
+                            <div class="suppliers_tile_linear_criteria_info">
+                                <span class="suppliers_tile_summary_review__criteria__name">Review Source</span>
+                                <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>                   
+                            </div>
+                            <span class="suppliers_tile_summary_review__criteria__indicator">
+                                <span class="suppliers_tile_summary_review__criteria__indicator_value invited_by_company_criteria" data-value="10"></span>
+                                <span class="suppliers_tile_summary_review__criteria__indicator_value invited_by_daleel_criteria" data-value="20"></span>
+                                <span class="suppliers_tile_summary_review__criteria__indicator_value invited_by_user_criteria" data-value="30"></span>
+                                <span class="suppliers_tile_summary_review__criteria__indicator_value other_criteria" data-value="40"></span> 
+                            </span>
+                        </div>     
+                        <div class="suppliers_reviews_source_criteria_info">
+                            <div class="suppliers_reviews_source_criteria_info__invited_by_company">
+                                <span class="suppliers_reviews_source_criteria_info__icon"></span>
+                                <span class="suppliers_reviews_source_criteria_info__title">Invited by company</span>
+                            </div>
+
+                            <div class="suppliers_reviews_source_criteria_info__invited_by_daleel">
+                                 <span class="suppliers_reviews_source_criteria_info__icon"></span>                           
+                                <span class="suppliers_reviews_source_criteria_info__title">Invited by DALEEL</span>
+                            </div>
+
+                           <div class="suppliers_reviews_source_criteria_info__invited_by_user">
+                                <span class="suppliers_reviews_source_criteria_info__icon"></span>                        
+                                <span class="suppliers_reviews_source_criteria_info__title">Invited by user</span>
+                            </div>
+
+                           <div class="suppliers_reviews_source_criteria_info__other">
+                                <span class="suppliers_reviews_source_criteria_info__icon"></span>                       
+                                <span class="suppliers_reviews_source_criteria_info__title">Other</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="suppliers_reviews_overal_info_right_columm">
+
+                                            <div class="suppliers_tile_radial_block">
+                                                <div class="suppliers_tile_radial_criteria first">
+                                                    <div class="recommend_circle_chart_block">
+                                                        <canvas class="recommend_сircle_сhart" width="120" height="120" style='width:120px;height:120px'></canvas>                      
+                                                    </div>
+                                                    <span>Of reviewers recommend this<br>supplier</span>                                            
+                                                </div>
+                                            </div>                    
+                    </div>
+        </div>
+</div>
+                                                        <div class="suppliers_detailed_reviews_block">
+    <h2 class="suppliers_detailed_reviews_title">Detailed Review</h2>
+    <div class="suppliers_detailed_reviews_tiles">
+        <div class="suppliers_detailed_reviews_tile">
+            <div class="suppliers_detailed_reviews_tile_company_info_column">
+
+                <div class="suppliers_detailed_reviews_tile_header">
+                    <div class="suppliers_detailed_reviews_tile_header_image_block">
+                        <img src="img/supplier_logo_2.png" alt="Image">
+                    </div>
+
+                    <div class="suppliers_detailed_reviews_tile_header_person_info_block">
+                        <span class="suppliers_detailed_reviews_tile__person">Johnathan<br>Cambell</span>
+                        <span class="suppliers_detailed_reviews_tile__duty">General Manager</span>
+                    </div>
+                </div>
+
+                <div class="suppliers_detailed_reviews_tile_body">
+                    <h3 class="suppliers_detailed_reviews_tile__company_name">Seismic Survey and Data Acquisition</h3>
+
+                    <div class="suppliers_detailed_reviews_tile_company_rating_block">
+                        <span class="suppliers_detailed_reviews_tile_company_rating_block__total_rating">5,0</span>
+                        <div class="suppliers_detailed_reviews_tile_company_rating_stars_block">
+                            <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
+                            <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
+                            <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
+                            <img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">
+                            <img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">
+                        </div>
+                    </div>
+
+                    <div class="suppliers_detailed_reviews_tile_detailed_info_block">
+                        <div class="suppliers_detailed_reviews_tile_detailed_info_row">
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__key">Region</span>
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__value">Middle East</span>
+                        </div>
+
+                        <div class="suppliers_detailed_reviews_tile_detailed_info_row">
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__key">Company Type</span>
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__value">Gas Supplier</span>
+                        </div>
+
+                        <div class="suppliers_detailed_reviews_tile_detailed_info_row">
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__key">Department</span>
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__value">Marketing</span>
+                        </div>
+
+                        <div class="suppliers_detailed_reviews_tile_detailed_info_row">
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__key">Status</span>
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__value">Authorized via Linkedin</span>
+                        </div>
+
+                        <div class="suppliers_detailed_reviews_tile_detailed_info_row">
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__key">Sourse</span>
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__value">Invited bt Daleel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="suppliers_detailed_reviews_tile_review_column">
+                <div class="suppliers_detailed_reviews_tile_review_diagrams suppliers_tile_summary_review_diagrams_block">
+                    <div class="suppliers_tile_linear_block">
+                        <div class="suppliers_tile_linear_criteria first">
+                            <span class="suppliers_tile_summary_review__criteria__name">Criteria 1</span>
+                            <span class="suppliers_tile_summary_review__criteria__indicator">
+														<span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="10"></span>
+                            </span>
+                            <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
+                        </div>
+
+                        <div class="suppliers_tile_linear_criteria second">
+                            <span class="suppliers_tile_summary_review__criteria__name">Criteria 2</span>
+                            <span class="suppliers_tile_summary_review__criteria__indicator">
+														<span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="20"></span>
+                            </span>
+                            <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
+                        </div>
+
+                        <div class="suppliers_tile_linear_criteria third">
+                            <span class="suppliers_tile_summary_review__criteria__name">Criteria 3</span>
+                            <span class="suppliers_tile_summary_review__criteria__indicator">
+														<span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="30"></span>
+                            </span>
+                            <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
+                        </div>
+
+                        <div class="suppliers_tile_linear_criteria fourth">
+                            <span class="suppliers_tile_summary_review__criteria__name">Criteria 4</span>
+                            <span class="suppliers_tile_summary_review__criteria__indicator">
+														<span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="40"></span>
+                            </span>
+                            <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
+                        </div>
+                    </div>
+
+                    <div class="suppliers_tile_radial_block">
+                        <div class="suppliers_tile_radial_criteria first">
+                            <div class="recommend_circle_chart_block">
+                                <canvas class="recommend_сircle_сhart" width="120" height="120" style='width:120px;height:120px'></canvas>
+                            </div>
+                            <span>Of reviewers recommend this<br>supplier</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="suppliers_detailed_reviews_tile_review_summary">
+                    <h3>Summary</h3>
+                    <p>We work with them on a regular basis and they provide us manpower rather than deliverables. It’s not project based. We work in sprints and for each sprint we have a deliverable. There’s always something more happening.
+                        <br> Beyond that, they ran several rounds of load testing for us to see that our production environment scales well. We ran a mobile application QA session, too. What is the team composition?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="suppliers_detailed_reviews_tile">
+            <div class="suppliers_detailed_reviews_tile_company_info_column">
+
+                <div class="suppliers_detailed_reviews_tile_header">
+                    <div class="suppliers_detailed_reviews_tile_header_image_block">
+                        <img src="img/supplier_logo_2.png" alt="Image">
+                    </div>
+
+                    <div class="suppliers_detailed_reviews_tile_header_person_info_block">
+                        <span class="suppliers_detailed_reviews_tile__person">Johnathan<br>Cambell</span>
+                        <span class="suppliers_detailed_reviews_tile__duty">General Manager</span>
+                    </div>
+                </div>
+
+                <div class="suppliers_detailed_reviews_tile_body">
+                    <h3 class="suppliers_detailed_reviews_tile__company_name">Seismic Survey and Data Acquisition</h3>
+
+                    <div class="suppliers_detailed_reviews_tile_company_rating_block">
+                        <span class="suppliers_detailed_reviews_tile_company_rating_block__total_rating">5,0</span>
+                        <div class="suppliers_detailed_reviews_tile_company_rating_stars_block">
+                            <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
+                            <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
+                            <img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
+                            <img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">
+                            <img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">
+                        </div>
+                    </div>
+
+                    <div class="suppliers_detailed_reviews_tile_detailed_info_block">
+                        <div class="suppliers_detailed_reviews_tile_detailed_info_row">
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__key">Region</span>
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__value">Middle East</span>
+                        </div>
+
+                        <div class="suppliers_detailed_reviews_tile_detailed_info_row">
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__key">Company Type</span>
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__value">Gas Supplier</span>
+                        </div>
+
+                        <div class="suppliers_detailed_reviews_tile_detailed_info_row">
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__key">Department</span>
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__value">Marketing</span>
+                        </div>
+
+                        <div class="suppliers_detailed_reviews_tile_detailed_info_row">
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__key">Status</span>
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__value">Authorized via Linkedin</span>
+                        </div>
+
+                        <div class="suppliers_detailed_reviews_tile_detailed_info_row">
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__key">Sourse</span>
+                            <span class="suppliers_detailed_reviews_tile_detailed_info__value">Invited bt Daleel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="suppliers_detailed_reviews_tile_review_column">
+                <div class="suppliers_detailed_reviews_tile_review_diagrams suppliers_tile_summary_review_diagrams_block">
+                    <div class="suppliers_tile_linear_block">
+                        <div class="suppliers_tile_linear_criteria first">
+                            <span class="suppliers_tile_summary_review__criteria__name">Criteria 1</span>
+                            <span class="suppliers_tile_summary_review__criteria__indicator">
+														<span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="10"></span>
+                            </span>
+                            <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
+                        </div>
+
+                        <div class="suppliers_tile_linear_criteria second">
+                            <span class="suppliers_tile_summary_review__criteria__name">Criteria 2</span>
+                            <span class="suppliers_tile_summary_review__criteria__indicator">
+														<span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="20"></span>
+                            </span>
+                            <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
+                        </div>
+
+                        <div class="suppliers_tile_linear_criteria third">
+                            <span class="suppliers_tile_summary_review__criteria__name">Criteria 3</span>
+                            <span class="suppliers_tile_summary_review__criteria__indicator">
+														<span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="30"></span>
+                            </span>
+                            <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
+                        </div>
+
+                        <div class="suppliers_tile_linear_criteria fourth">
+                            <span class="suppliers_tile_summary_review__criteria__name">Criteria 4</span>
+                            <span class="suppliers_tile_summary_review__criteria__indicator">
+														<span class="suppliers_tile_summary_review__criteria__indicator_value" data-value="40"></span>
+                            </span>
+                            <span class="suppliers_tile_summary_review__criteria__avg">4,1</span>
+                        </div>
+                    </div>
+
+                    <div class="suppliers_tile_radial_block">
+                        <div class="suppliers_tile_radial_criteria first">
+                            <div class="recommend_circle_chart_block">
+                                <canvas class="recommend_сircle_сhart" width="120" height="120" style='width:120px;height:120px'></canvas>
+                            </div>
+                            <span>Of reviewers recommend this<br>supplier</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="suppliers_detailed_reviews_tile_review_summary">
+                    <h3>Summary</h3>
+                    <p>We work with them on a regular basis and they provide us manpower rather than deliverables. It’s not project based. We work in sprints and for each sprint we have a deliverable. There’s always something more happening.
+                        <br> Beyond that, they ran several rounds of load testing for us to see that our production environment scales well. We ran a mobile application QA session, too. What is the team composition?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>                                                    </div>
+                                                </section>
+
+                                                <section id="documents" class="suppliers_documents_block">
+	<h2 class="toggled_section_heading">Document <img src="assets/suppliers/toggled_sections/open_section_icon.svg" alt="Image" class="svg"></h2>
+	<div class="suppliers_documents_inner_content toggled_section_inner_content">
+
+		<h2>Document</h2>
+
+		<div class="suppliers_documents_tiles">
+			<div class="suppliers_documents_tile">
+				<a href="#" target="_blank" class="suppliers_documents_tile_inner">
+					<div class="suppliers_documents_tile_img">
+						<img src="assets/documents/xls_icon.svg" alt="Image">
+					</div>		
+					<div class="suppliers_competitors_tile_body">
+						<h4>OilSupplier licence</h4>
+					</div>		
+				</a>
+			</div>
+
+			<div class="suppliers_documents_tile">
+				<a href="#" target="_blank" class="suppliers_documents_tile_inner">
+					<div class="suppliers_documents_tile_img">
+						<img src="assets/documents/pdf_icon.svg" alt="Image">
+					</div>		
+					<div class="suppliers_competitors_tile_body">
+						<h4>OilSupplier licence</h4>
+					</div>		
+				</a>
+			</div>
+
+			<div class="suppliers_documents_tile">
+				<a href="#" target="_blank" class="suppliers_documents_tile_inner">
+					<div class="suppliers_documents_tile_img">
+						<img src="assets/documents/doc_icon.svg" alt="Image">
+					</div>		
+					<div class="suppliers_competitors_tile_body">
+						<h4>OilSupplier licence</h4>
+					</div>		
+				</a>
+			</div>
+		</div>
+
+		<div class="view_all_posts_block">
+			<a href="#" class="button load_more_button full_width">
+				<span>View All Documents (23)</span>
+			</a>
+		</div>
+	</div>
+</section>
+                                                <section id="last-news" class="suppliers_latest_news_block latest_news_wrapper">
+
+	<h2 class="toggled_section_heading">News and Expert articles <img src="assets/suppliers/toggled_sections/open_section_icon.svg" alt="Image" class="svg"></h2>
+	<div class="latest_news_inner_content toggled_section_inner_content">
+
+		<h2>News and Expert articles</h2>
+		
+		<div class="latest_news_tiles">
+			<div class="latest_news_tile">
+				<a href="#"  class="latest_news_tile_inner">
+					<div class="latest_news_tile_image">
+						<img src="img/news/01.jpg" alt="Image">
+					</div>
+					<div class="latest_news_tile_content">
+						<span class="latest_news_tile_category latest_news_tile_category__news">News</span>	
+						<h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+						<p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+					</div>
+					<div class="latest_news_tile_content_info">
+						<div class="latest_news_tile_author">
+							<img class="svg" src="assets/news/author_icon.svg" alt="Image">
+							<span>Adam Boyshik</span>
+						</div>
+						<div class="latest_news_tile_views">
+							<img class="svg" src="assets/news/view_counter_icon.svg" alt="Image">									
+							<span>56251</span>
+						</div>
+						<div class="latest_news_tile_date">
+							<img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">										
+							<span>24.01.2019</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="latest_news_tile">
+				<a href="#" class="latest_news_tile_inner">
+					<div class="latest_news_tile_image">
+						<img src="img/news/02.jpg" alt="Image">
+					</div>
+					<div class="latest_news_tile_content">
+						<span class="latest_news_tile_category latest_news_tile_category__article">Expert article</span>	
+						<h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+						<p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+					</div>
+					<div class="latest_news_tile_content_info">
+						<div class="latest_news_tile_author">
+							<img class="svg" src="assets/news/author_icon.svg" alt="Image">
+							<span>Adam Boyshik</span>
+						</div>
+						<div class="latest_news_tile_views">
+							<img class="svg" src="assets/news/view_counter_icon.svg" alt="Image">									
+							<span>56251</span>
+						</div>
+						<div class="latest_news_tile_date">
+							<img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">										
+							<span>24.01.2019</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="latest_news_tile">
+				<a href="#" class="latest_news_tile_inner">
+					<div class="latest_news_tile_image">
+						<img src="img/news/03.jpg" alt="Image">
+					</div>
+					<div class="latest_news_tile_content">
+						<span class="latest_news_tile_category latest_news_tile_category__news">News</span>	
+						<h3 class="latest_news_tile__title">Saudi Aramco awards contracts to L&T-led consortium</h3>
+						<p class="latest_news_tile__desc">L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields</p>
+					</div>
+					<div class="latest_news_tile_content_info">
+						<div class="latest_news_tile_author">
+							<img class="svg" src="assets/news/author_icon.svg" alt="Image">
+							<span>Adam Boyshik</span>
+						</div>
+						<div class="latest_news_tile_views">
+							<img class="svg" src="assets/news/view_counter_icon.svg" alt="Image">									
+							<span>56251</span>
+						</div>
+						<div class="latest_news_tile_date">
+							<img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">										
+							<span>24.01.2019</span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="view_all_posts_block">
+			<a href="#" class="button load_more_button full_width">
+				<span>View All News (23)</span>
+			</a>
+		</div>
+	</div>
+</section>
+                                                <section id="competitors" class="suppliers_competitors_block">
+	<h2 class="toggled_section_heading">Competitors <img src="assets/suppliers/toggled_sections/open_section_icon.svg" alt="Image" class="svg"></h2>
+	<div class="suppliers_competitors_block_inner_content toggled_section_inner_content">
+
+		<h2>Competitors</h2>
+
+		<div class="suppliers_competitors_tiles">
+			<div class="suppliers_competitors_tile">
+				<div class="suppliers_competitors_tile_inner">
+					<div class="suppliers_competitors_tile_img">
+						<img src="img/suppliers/supplier_logo_2.png" alt="Image">
+					</div>		
+					<div class="suppliers_competitors_tile_body">
+						<h4>Johnathan Cambell</h4>
+					</div>	
+					<div class="suppliers_competitors_tile_link">
+						<a href="#">
+							<span>Go to Supplier's Page</span>
+							<img class="svg" src="assets/small_arrow_icon.svg" alt="Image">												
+						</a>	
+					</div>	
+				</div>
+			</div>
+
+			<div class="suppliers_competitors_tile">
+				<div class="suppliers_competitors_tile_inner">
+					<div class="suppliers_competitors_tile_img">
+						<img src="img/suppliers/supplier_logo_2.png" alt="Image">
+					</div>		
+					<div class="suppliers_competitors_tile_body">
+						<h4>Johnathan Cambell</h4>
+					</div>	
+					<div class="suppliers_competitors_tile_link">
+						<a href="#">
+							<span>Go to Supplier's Page</span>
+							<img class="svg" src="assets/small_arrow_icon.svg" alt="Image">												
+						</a>	
+					</div>
+				</div>
+			</div>
+
+			<div class="suppliers_competitors_tile">
+				<div class="suppliers_competitors_tile_inner">
+					<div class="suppliers_competitors_tile_img">
+						<img src="img/suppliers/supplier_logo_2.png" alt="Image">
+					</div>		
+					<div class="suppliers_competitors_tile_body">
+						<h4>Johnathan Cambell</h4>
+					</div>	
+					<div class="suppliers_competitors_tile_link">
+						<a href="#">
+							<span>Go to Supplier's Page</span>
+							<img class="svg" src="assets/small_arrow_icon.svg" alt="Image">												
+						</a>	
+					</div>	
+				</div>
+			</div>
+
+			<div class="suppliers_competitors_tile">
+				<div class="suppliers_competitors_tile_inner">
+					<div class="suppliers_competitors_tile_img">
+						<img src="img/suppliers/supplier_logo_2.png" alt="Image">
+					</div>		
+					<div class="suppliers_competitors_tile_body">
+						<h4>Johnathan Cambell</h4>
+					</div>	
+					<div class="suppliers_competitors_tile_link">
+						<a href="#">
+							<span>Go to Supplier's Page</span>
+							<img class="svg" src="assets/small_arrow_icon.svg" alt="Image">												
+						</a>	
+					</div>	
+				</div>
+			</div>
+		</div>
+
+		<div class="view_all_posts_block">
+			<a href="#" class="button load_more_button full_width">
+				<span>View All News (23)</span>
+			</a>
+		</div>
+	</div>
+</section>                            </div>
+                        </div>
+                    </section>
+
+            </div>
+
+            <footer class="footer_wrapper">
+	<div class="container">
+		<div class="footer_logo_block">
+			<img class="svg" src="assets/header/logo__dark.svg" alt="Логотип">
+		</div>
+		<div class="footer_info_block">
+			<div class="footer_info_about_us_column">
+				<h4 class="footer_info__title">About Us</h4>
+				<p class="footer_info__desc">Daleel is a portal that provides unique business intelligence to make the best decisions and allows exchange of knowledge that our industry needs to best meet its requirements.</p>
+			</div>
+			<div class="footer_info_resources_column">
+				<h4 class="footer_info__title">Resources</h4>
+				<ul class="footer_info_resources_list">
+					<li class="footer_info_resources_list__item"><a href="#">Our Story and Why We Do It</a></li>
+					<li class="footer_info_resources_list__item"><a href="#">Privacy Policy</a></li>
+					<li class="footer_info_resources_list__item"><a href="#">Terms Of Use</a></li>
+					<li class="footer_info_resources_list__item"><a href="#">Contacts</a></li>
+				</ul>
+			</div>
+			<div class="footer_info_block_newsletter_column">
+				<h4 class="footer_info__title">Newsletter</h4>
+				<div class="footer_info_block_newsletter">
+					<input type="email" placeholder="Email adress" maxlength="100" required>
+					<button type="submit">Subscribe</button>
+				</div>
+				<span class="footer_info__copyright">© 2019 All rights reserved Daleel</span>											
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="modal_backdrop"></div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/i18n/en.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/mobile.js"></script>
+<script src="scripts/curcle_chart.js"></script>    </body>

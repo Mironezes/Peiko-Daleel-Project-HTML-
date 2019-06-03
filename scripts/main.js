@@ -274,8 +274,6 @@ $(document).ready(function() {
             }
         });
 
-        let DesktopAcoountButtonWidth = $('.header_account_button ').width();
-        $('.desktop_account_toggle_menu').css('width', DesktopAcoountButtonWidth + 45);
 
         $(document).on("click", function(event) {
 
@@ -553,6 +551,8 @@ $(document).ready(function() {
         $('.common_show_companies_button').on("click", function(e) {
             e.preventDefault();
 
+				$('.common_filter_selected_buttons').show();	
+
                 $('.common_show_companies_button').removeAttr('disabled');  
                 if($('.common_sorting_block').hasClass('empty')) {
                     $('.common_filter_clear__small').removeClass('active');                    
@@ -611,7 +611,24 @@ $(document).ready(function() {
                 $('.common_filter_selected_list .common_sorting_block_choosen').removeClass('opened');             
             }
         });
+
+
+
+
+        $('.common_filter_selected_list').on("click", '.tag', function() {
+			$(this).remove();         
+
+			if($('.common_filter_selected_list .common_sorting_block_choosen > span').length == 0) {
+				$('.common_filter_selected_buttons').hide();
+			}
+			else {
+
+			}
+
+        });
+
     }
+
     CommonPageFilterBlock();
 
 
@@ -904,11 +921,19 @@ $(document).ready(function() {
 
         $('.subscribe_page_faq_accordions_header').on('click', function() {
 
-            subscribePageFaqAccordionsBody.removeClass('opened');
-            subscribePageFaqAccordionsHeader.removeClass('active');
 
-            $(this).addClass('active');
-            $(this).parent().find(subscribePageFaqAccordionsBody).addClass('opened');
+        	if($(this).hasClass('active')) {
+            	$(this).removeClass('active');
+            	$(this).parent().find(subscribePageFaqAccordionsBody).removeClass('opened');        		
+        	}
+        	else {
+
+            	subscribePageFaqAccordionsBody.removeClass('opened');
+            	subscribePageFaqAccordionsHeader.removeClass('active');
+
+            	$(this).addClass('active');
+            	$(this).parent().find(subscribePageFaqAccordionsBody).addClass('opened');
+        	}
         });
 
 
@@ -1076,10 +1101,6 @@ $(document).ready(function() {
             });
 
         });
-
-
-
-
     }
     categoriesPageTagsModal();
 
@@ -1146,11 +1167,9 @@ $(".next").click(function(){
     if(animating) return false;
     animating = true;
     
-    current_fs = $(this).parent();
-    next_fs = $(this).parent().next();
+    current_fs = $(this).parents('.registration_form_inner');
+    next_fs = $(this).parents('.registration_form_inner').next();
     
-    //activate next step on progressbar using the index of next_fs
-    $(".registration_form_progress_bar li").eq($("fieldset").index(next_fs)).addClass("active");
     
     //show the next fieldset
     next_fs.show(); 
@@ -1187,8 +1206,6 @@ $(".previous").click(function(){
     current_fs = $(this).parent();
     previous_fs = $(this).parent().prev();
     
-    //de-activate current step on progressbar
-    $(".registration_form_progress_bar li").eq($("fieldset").index(current_fs)).removeClass("active");
     
     //show the previous fieldset
     previous_fs.show(); 

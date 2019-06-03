@@ -1,617 +1,599 @@
-<!DOCTYPE html>
-<html lang="ru">
 
-<head>
-    <!--[if lte IE 9]>
+
+    <!DOCTYPE html>
+    <html lang="ru">
+
+    <head>
+        <!--[if lte IE 9]>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 <![endif]-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-    <link rel="apple-touch-icon-precomposed" href="apple_touch_icon.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Account | Daleel</title>
-</head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<link rel="apple-touch-icon-precomposed" href="apple_touch_icon.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css">
+<link rel="stylesheet" href="css/style.css">            <title>Account | Daleel</title>
+    </head>
 
-<body class="authorized">
-    <header class="header_wrapper white logined">
-        <div class="header_navigation_block_wrapper">
-            <div class="container">
-                <div class="header_navigation_block">
-                    <div class="header_logo_column">
-                        <a href="index.html"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
-                        <div class="mobile_navigation_buttons_block">
-                            <button onclick="void(0)" class="mobile_account_icon" type="button"><img src="assets/header_logined/account_icon.svg" alt="Image" class="svg"></button>
-                            <button onclick="void(0)" class="mobile_menu_icon hamburger hamburger--arrow blue" type="button"> <span class="hamburger-box"><span class="hamburger-inner"></span> </span>
-                            </button>
-                        </div>
+    <body class="authorized">
+        <header class="header_wrapper white logined">
+    <div class="header_navigation_block_wrapper">
+        <div class="container">
+            <div class="header_navigation_block">
+                <div class="header_logo_column">
+                    <a href="index.html"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
+                    <div class="mobile_navigation_buttons_block">
+                        <button onclick="void(0)" class="mobile_account_icon" type="button"><img src="assets/header_logined/account_icon.svg" alt="Image" class="svg"></button>
+                        <button onclick="void(0)" class="mobile_menu_icon hamburger hamburger--arrow blue" type="button"> <span class="hamburger-box"><span class="hamburger-inner"></span> </span>
+                        </button>
                     </div>
-                    <div class="header_navigation_column">
-                        <ul class="desktop_toggle_menu">
-                            <li class="desktop_toggle_menu__item"><a href="#">Suppliers</a></li>
-                            <li class="desktop_toggle_menu__item"><a href="#">Intelligence</a></li>
-                            <li class="desktop_toggle_menu__item"><a href="#">News</a></li>
-                            <li class="desktop_toggle_menu__item"><a href="#">Expert articles</a></li>
-                            <li class="desktop_toggle_menu__item"><a href="#">Indices</a></li>
+                </div>
+                <div class="header_navigation_column">
+                    <ul class="desktop_toggle_menu">
+                        <li class="desktop_toggle_menu__item"><a href="#">Suppliers</a></li>
+                        <li class="desktop_toggle_menu__item"><a href="#">Intelligence</a></li>
+                        <li class="desktop_toggle_menu__item"><a href="#">News</a></li>
+                        <li class="desktop_toggle_menu__item"><a href="#">Expert articles</a></li>
+                        <li class="desktop_toggle_menu__item"><a href="#">Indices</a></li>
+                    </ul>
+                    <div class="header_navigation_search_toggle">
+                        <img src="assets/header_logined/search_icon_blue.svg" alt="Image" class="svg search_icon visible">
+                        <img src="assets/close_icon.svg" alt="Image" class="svg close_icon">                     
+                    </div>
+                    <button class="button button__yellow header_account_button">
+                        <div class="button__icon"> <img class="svg" src="assets/header_logined/account_icon.svg" alt="Image"> </div><span>Account</span> </button>
+                    <div class="desktop_account_toggle_menu">
+                        <ul>
+                            <li><a href="#"><span>Profile</span>  <div class="button__icon"><img  src="assets/header_logined/profile_icon.svg" alt="Image"> </div></a>
+                            </li>
+                            <li><a href="#"><span>Settings</span> <div class="button__icon"><img  src="assets/header_logined/settings_icon.svg" alt="Image"> </div></a>
+                            </li>
+                            <li class="desktop_account_toggle_menu__faq"><a href="#"><span>FAQ</span><div class="button__icon"><img  src="assets/header_logined/faq_icon.svg" alt="Image"> </div> </a>
+                            </li>
+                            <li class="desktop_account_toggle_menu__logout"><a href="#"><span>Log Out</span> <div class="button__icon"> <img src="assets/header_logined/log_out_icon.svg" alt="Image"> </div> </a>
+                            </li>
                         </ul>
-                        <div class="header_navigation_search_toggle">
-                            <img src="assets/header_logined/search_icon_blue.svg" alt="Image" class="svg search_icon visible">
-                            <img src="assets/close_icon.svg" alt="Image" class="svg close_icon">
-                        </div>
-                        <button class="button button__yellow header_account_button">
-                            <div class="button__icon"> <img class="svg" src="assets/header_logined/account_icon.svg" alt="Image"> </div><span>Account</span> </button>
-                        <div class="desktop_account_toggle_menu">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <div class="button__icon"> <img class="svg" src="assets/header_logined/account_icon.svg" alt="Image"> </div><span>Profile</span> </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="button__icon"> <img class="svg" src="assets/header_logined/settings_icon.svg" alt="Image"> </div><span>Settings</span> </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="button__icon"> <img class="svg" src="assets/header_logined/faq_icon.svg" alt="Image"> </div><span>FAQ</span> </a>
-                                </li>
-                                <li class="desktop_account_toggle_menu__logout">
-                                    <a href="#">
-                                        <div class="button__icon"> <img class="svg" src="assets/header_logined/logout_icon.svg" alt="Image"> </div><span>Log Out</span> </a>
-                                </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="desktop_toggle_menu_block_wrapper">
+        <div class="container">
+            <div class="desktop_toggle_menu_block">
+                <input type="search" placeholder="Search request" maxlength="100" class="desktop_toggle_menu__search_bar" required>               
+                <button class="button button__blue desktop_toggle_menu__search_button">Search</button>
+            </div>
+        </div>
+    </div>
+    <div class="mobile_account_toggle_menu_block">
+        <div class="container">
+            <ul class="mobile_account_toggle_menu">
+                <li class="mobile_toggle_menu__item"><a href="#"><div class="button__icon"><img src="assets/header_logined/profile_icon.svg" alt="Image"></div><span>Profile</span></a>
+                </li>
+                <li class="mobile_toggle_menu__item"><a href="#"><div class="button__icon"><img src="assets/header_logined/settings_icon.svg" alt="Image"></div><span>Settings</span></a>
+                </li>
+                <li class="mobile_toggle_menu__item"><a href="#"><div class="button__icon"><img src="assets/header_logined/faq_icon.svg" alt="Image"></div><span>FAQ</span> </a>
+                </li>
+                <li class="mobile_toggle_menu__item desktop_account_toggle_menu__logout"><a href="#"><div class="button__icon"><img src="assets/header_logined/log_out_icon.svg" alt="Image"> </div><span>Log Out</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mobile_toggle_menu_block">
+        <div class="container">
+            <ul class="mobile_toggle_menu">
+                <li class="mobile_search_block">
+                    <input type="search" placeholder="Search request" maxlength="100" required>
+                    <button>Search</button>
+                </li>
+                <li class="mobile_toggle_menu__item"><a href="#">Suppliers</a></li>
+                <li class="mobile_toggle_menu__item"><a href="#">Intelligence</a></li>
+                <li class="mobile_toggle_menu__item"><a href="#">News</a></li>
+                <li class="mobile_toggle_menu__item"><a href="#">Expert articles</a></li>
+                <li class="mobile_toggle_menu__item"><a href="#">Indices</a></li>
+                <li class="mobile_toggle_menu__item"><a href="#">Contacts</a></li>
+            </ul>
+            <div class="mobile_toggle_buttons"> <a href="#" class="button login_button button__blue">Log in</a> <a href="#" class="button registration_button button__yellow">Registration</a>
+                <a href="#" class="button add_company_button button__yellow"><img class="svg" src="assets/plus_icon.svg" alt="Image"> Add company</a>
+            </div>
+        </div>
+    </div>
+</header>
+            <div class="account inner_page">
+
+                <section class="breadcrumbs_wrapper">
+                    <div class="container">
+                        <div class="breadcrumbs_block row">
+                            <ul class="breadcrumbs_list">
+                                <li class="breadcrumbs_list__item"><a href="/">Homepage</a></li>
+                                <li class="breadcrumbs_list__item current"><span>Account</span></li>
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="desktop_toggle_menu_block_wrapper">
-            <div class="container">
-                <div class="desktop_toggle_menu_block">
-                    <input type="search" placeholder="Search request" maxlength="100" class="desktop_toggle_menu__search_bar" required>
-                    <button class="button button__blue desktop_toggle_menu__search_button">Search</button>
-                </div>
-            </div>
-        </div>
-        <div class="mobile_account_toggle_menu_block">
-            <div class="container">
-                <ul class="mobile_account_toggle_menu">
-                    <li class="mobile_toggle_menu__item">
-                        <a href="#">
-                            <div class="button__icon"><img class="svg" src="assets/header_logined/account_icon.svg" alt="Image"></div><span>Profile</span></a>
-                    </li>
-                    <li class="mobile_toggle_menu__item">
-                        <a href="#">
-                            <div class="button__icon"><img class="svg" src="assets/header_logined/settings_icon.svg" alt="Image"></div><span>Settings</span></a>
-                    </li>
-                    <li class="mobile_toggle_menu__item">
-                        <a href="#">
-                            <div class="button__icon"><img class="svg" src="assets/header_logined/faq_icon.svg" alt="Image"></div><span>FAQ</span> </a>
-                    </li>
-                    <li class="mobile_toggle_menu__item desktop_account_toggle_menu__logout">
-                        <a href="#">
-                            <div class="button__icon"><img class="svg" src="assets/header_logined/logout_icon.svg" alt="Image"> </div><span>Log Out</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="mobile_toggle_menu_block">
-            <div class="container">
-                <ul class="mobile_toggle_menu">
-                    <li class="mobile_search_block">
-                        <input type="search" placeholder="Search request" maxlength="100" required>
-                        <button>Search</button>
-                    </li>
-                    <li class="mobile_toggle_menu__item"><a href="#">Suppliers</a></li>
-                    <li class="mobile_toggle_menu__item"><a href="#">Intelligence</a></li>
-                    <li class="mobile_toggle_menu__item"><a href="#">News</a></li>
-                    <li class="mobile_toggle_menu__item"><a href="#">Expert articles</a></li>
-                    <li class="mobile_toggle_menu__item"><a href="#">Indices</a></li>
-                    <li class="mobile_toggle_menu__item"><a href="#">Contacts</a></li>
-                </ul>
-                <div class="mobile_toggle_buttons"> <a href="#" class="button login_button button__blue">Log in</a> <a href="#" class="button registration_button button__yellow">Registration</a>
-                    <a href="#" class="button add_company_button button__yellow"><img class="svg" src="assets/plus_icon.svg" alt="Image"> Add company</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="account inner_page">
+                </section>
 
-        <section class="breadcrumbs_wrapper">
-            <div class="container">
-                <div class="breadcrumbs_block row">
-                    <ul class="breadcrumbs_list">
-                        <li class="breadcrumbs_list__item"><a href="/">Homepage</a></li>
-                        <li class="breadcrumbs_list__item current"><span>Account</span></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="main_content_wrapper">
-            <div class="container">
-                <div class="main_content_inner">
-                    <div class="account_info_block">
-                        <div class="account_info_block_img">
-                            <img src="img/user_profile_photo.jpg" alt="Image">
-                        </div>
-
-                        <div class="account_info_block_name">
-                            <h2>Daniel Craig</h2>
-                        </div>
-
-                        <div class="account_info_block_rating">
-                            <div class="account_info_block_rating_header">
-                                <div class="account_info_block_rating_header_plus">
-                                    <img src="assets/account/thumb_up_icon.svg" alt="Image"> <span>160</span>
+                <section class="main_content_wrapper">
+                    <div class="container">
+                        <div class="main_content_inner">
+                            <div class="account_info_block">
+                                <div class="account_info_block_img">
+                                    <img src="img/user_profile_photo.jpg" alt="Image">
                                 </div>
-                                <div class="account_info_block_rating_header_minus">
-                                    <img src="assets/account/thumb_down_icon.svg" alt="Image"> <span>23</span>
+
+                                <div class="account_info_block_name">
+                                    <h2>Daniel Craig</h2>
                                 </div>
-                            </div>
-                            <div class="account_info_block_rating_line">
-                            </div>
-                        </div>
 
-                        <div class="account_info_block_personal_info">
-                            <span>Male   ·   36 y.o.</span>
-                        </div>
-
-                        <div class="account_info_block_stats">
-                            <div class="account_info_block_stats__element">
-                                <span class="account_info_block_stats__element__title">Comments</span>
-                                <span class="account_info_block_stats__element__value">9412</span>
-                            </div>
-                            <div class="account_info_block_stats__element">
-                                <span class="account_info_block_stats__element__title">Questions</span>
-                                <span class="account_info_block_stats__element__value">264</span>
-                            </div>
-                            <div class="account_info_block_stats__element">
-                                <span class="account_info_block_stats__element__title">Answers</span>
-                                <span class="account_info_block_stats__element__value">5123</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="account_tabs_block">
-                        <div class="account_tabs_header">
-                            <span class="account_tabs_header_account active">Profile</span>
-                            <span class="account_tabs_header_comments">Comments</span>
-                            <span class="account_tabs_header_answer">Questions & Answers</span>
-                        </div>
-
-                        <div class="account_tabs_body">
-                            <div class="account_tab_content profile_tab_content  active">
-
-                                <div class="profile_tab_contact_info">
-                                    <div class="profile_tab_contacts_block">
-                                        <h3>Contacts</h3>
-                                        <a href="tel:+3751252352">+3 7 512 523 52</a>
-                                        <a href="mailto:daniel.craig@mail.com">daniel.craig@mail.com</a>
-                                    </div>
-
-                                    <div class="profile_tab_socials_block">
-                                        <h3>Socials</h3>
-
-                                        <div class="socials_links_block">
-                                            <a class="socials__link" href="#">
-                                                <img src="assets/socials_dark/fb_icon.svg" alt="Image" class="svg">
-                                            </a>
-                                            <a class="socials__link" href="#">
-                                                <img src="assets/socials_dark/in_icon.svg" alt="Image" class="svg">
-                                            </a>
-                                            <a class="socials__link" href="#">
-                                                <img src="assets/socials_dark/link_icon.svg" alt="Image" class="svg">
-                                            </a>
+                                <div class="account_info_block_rating">
+                                    <div class="account_info_block_rating_header">
+                                        <div class="account_info_block_rating_header_plus">
+                                            <img src="assets/account/thumb_up_icon.svg" alt="Image"> <span>160</span>
                                         </div>
-
+                                        <div class="account_info_block_rating_header_minus">
+                                            <img src="assets/account/thumb_down_icon.svg" alt="Image"> <span>23</span>
+                                        </div>
+                                    </div>
+                                    <div class="account_info_block_rating_line">
                                     </div>
                                 </div>
 
-                                <div class="profile_tab_cv_block">
-                                    <a href="#" class="button button__cv">
-                                        <span class="button__cv_content">
+                                <div class="account_info_block_personal_info">
+                                    <span>Male   ·   36 y.o.</span>
+                                </div>
+
+                                <div class="account_info_block_stats">
+                                    <div class="account_info_block_stats__element">
+                                        <span class="account_info_block_stats__element__title">Comments</span>
+                                        <span class="account_info_block_stats__element__value">9412</span>
+                                    </div>
+                                    <div class="account_info_block_stats__element">
+                                        <span class="account_info_block_stats__element__title">Questions</span>
+                                        <span class="account_info_block_stats__element__value">264</span>
+                                    </div>
+                                    <div class="account_info_block_stats__element">
+                                        <span class="account_info_block_stats__element__title">Answers</span>
+                                        <span class="account_info_block_stats__element__value">5123</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="account_tabs_block">
+                                <div class="account_tabs_header">
+                                    <span class="account_tabs_header_account active">Profile</span>
+                                    <span class="account_tabs_header_comments">Comments</span>
+                                    <span class="account_tabs_header_answer">Questions & Answers</span>
+                                </div>
+
+                                <div class="account_tabs_body">
+                                    <div class="account_tab_content profile_tab_content  active">
+
+    <div class="profile_tab_contact_info">
+        <div class="profile_tab_contacts_block">
+            <h3>Contacts</h3>
+            <a href="tel:+3751252352">+3 7 512 523 52</a>
+            <a href="mailto:daniel.craig@mail.com">daniel.craig@mail.com</a>
+        </div>
+
+        <div class="profile_tab_socials_block">
+            <h3>Socials</h3>
+
+            <div class="socials_links_block">
+                <a class="socials__link" href="#">
+                    <img src="assets/socials_dark/fb_icon.svg" alt="Image" class="svg">
+                </a>
+                <a class="socials__link" href="#">
+                    <img src="assets/socials_dark/in_icon.svg" alt="Image" class="svg">
+                </a>
+                <a class="socials__link" href="#">
+                    <img src="assets/socials_dark/link_icon.svg" alt="Image" class="svg">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="profile_tab_cv_block">
+        <a href="#" class="button button__cv">
+            <span class="button__cv_content">
 				<div class="button__icon">
 					<img src="assets/download_icon.svg" class="svg" alt="Image">
 				</div>
 				<span>Download my CV</span>
-                                        </span>
-                                    </a>
-                                </div>
-
-                                <div class="profile_tab_work_history_block">
-                                    <h3>Business Analyst</h3>
-                                    <span class="profile_tab_work_history__company">National Oilwell Varco</span>
-                                    <span class="profile_tab_work_history__time">06.2018 - Present</span>
-                                    <span class="profile_tab_work_history__location">Los Angeles, United States</span>
-                                </div>
-
-                                <div class="profile_tab_popular_qa_block">
-                                    <h3>Popular Q&A</h3>
-
-                                    <div class="last_forum_messages_tiles">
-                                        <div class="last_forum_messages_tile">
-                                            <div class="last_forum_messages_tile_inner">
-                                                <div class="last_forum_messages_tile_category">
-                                                    <span class="last_forum_messages_tile_category__name">Category</span>
-                                                    <span class="last_forum_messages_tile_category__title">Seismic Survey and Data Acquisition</span>
-                                                </div>
-                                                <div class="last_forum_messages_tile_question">
-                                                    <span class="last_forum_messages_tile_question__name">Question</span>
-                                                    <span class="last_forum_messages_tile_question__title">What is the purpouse of drilling rings in gas supply industry?</span>
-                                                </div>
-                                                <div class="last_forum_messages_tile_info">
-                                                    <div class="last_forum_messages_tile_info_answers">
-                                                        <img class="svg" src="assets/news/comments_counter_icon.svg" alt="Image">
-                                                        <span>118 answers</span>
-                                                    </div>
-                                                    <div class="latest_news_tile_date">
-                                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                                        <span>24.01.2019</span>
-                                                    </div>
-                                                </div>
-                                                <div class="latest_news_tile_link_block">
-                                                    <a href="#">
-                                                        <span>Go to Question</span>
-                                                        <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="last_forum_messages_tile">
-                                            <div class="last_forum_messages_tile_inner">
-                                                <div class="last_forum_messages_tile_category">
-                                                    <span class="last_forum_messages_tile_category__name">Category</span>
-                                                    <span class="last_forum_messages_tile_category__title">Storage & Warehousing</span>
-                                                </div>
-                                                <div class="last_forum_messages_tile_question">
-                                                    <span class="last_forum_messages_tile_question__name">Question</span>
-                                                    <span class="last_forum_messages_tile_question__title">What is the purpouse of drilling rings in gas supply industry?</span>
-                                                </div>
-                                                <div class="last_forum_messages_tile_info">
-                                                    <div class="last_forum_messages_tile_info_answers">
-                                                        <img class="svg" src="assets/news/comments_counter_icon.svg" alt="Image">
-                                                        <span>118 answers</span>
-                                                    </div>
-                                                    <div class="latest_news_tile_date">
-                                                        <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                                        <span>24.01.2019</span>
-                                                    </div>
-                                                </div>
-                                                <div class="latest_news_tile_link_block">
-                                                    <a href="#">
-                                                        <span>Go to Question</span>
-                                                        <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="account_tab_content comments_tab_content">
-                                <div class="comments_tab_content_tiles">
-
-                                    <div class="comments_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
-
-                                        <div class="comments_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="comments_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <p>The app was intuitive, modern, and sleek. It performed well in beta tests and received enthusiastic user feedback. A collaborative partner, WillowTree complied with the timeline and delivered value. Their UI design and development skills were particularly strong.</p>
-
-                                        <div class="comments_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="comments_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
-
-                                        <div class="comments_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="comments_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <p>The app was intuitive, modern, and sleek. It performed well in beta tests and received enthusiastic user feedback. A collaborative partner, WillowTree complied with the timeline and delivered value. Their UI design and development skills were particularly strong.</p>
-
-                                        <div class="comments_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="comments_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
-
-                                        <div class="comments_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="comments_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
-
-                                        <div class="comments_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="comments_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
-
-                                        <div class="comments_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="comments_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
-
-                                        <div class="comments_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="comments_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
-
-                                        <div class="comments_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="comments_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
-
-                                        <div class="comments_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="comments_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
-
-                                        <div class="comments_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="comments_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
-
-                                        <div class="comments_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="comments_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
-
-                                        <div class="comments_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="load_more_button_block row">
-                                        <a href="#" class="button load_more_button">
-                                            <div class="button__icon">
-                                                <img class="svg" src="assets/load_icon.svg" alt="Image">
-                                            </div>
-                                            <span>Load More</span>
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="account_tab_content answers_tab_content">
-
-                                <div class="account_filtering_desktop_block">
-
-                                    <div class="account_page_filtering_block">
-                                        <button id="account_page_filtering__all_results" class="button active">All Results</button>
-                                        <button class="button">Questions</button>
-                                        <button class="button">Answers</button>
-                                    </div>
-                                </div>
-
-                                <div class="answers_tab_content_tiles">
-                                    <div class="answers_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <div class="answers_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                        <p>The app was intuitive, modern, and sleek. It performed well in beta tests and received enthusiastic user feedback. A collaborative partner, WillowTree complied with the timeline and delivered value. Their UI design and development skills were particularly strong.</p>
-                                        <div class="latest_news_tile_link_block">
-                                            <a href="#">
-                                                <span>Read More</span>
-                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="answers_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <div class="answers_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                        <p>The app was intuitive, modern, and sleek. It performed well in beta tests and received enthusiastic user feedback. A collaborative partner, WillowTree complied with the timeline and delivered value. Their UI design and development skills were particularly strong.</p>
-                                        <div class="latest_news_tile_link_block">
-                                            <a href="#">
-                                                <span>Read More</span>
-                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="answers_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <div class="answers_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                        <p>The app was intuitive, modern, and sleek. It performed well in beta tests and received enthusiastic user feedback. A collaborative partner, WillowTree complied with the timeline and delivered value. Their UI design and development skills were particularly strong.</p>
-                                        <div class="latest_news_tile_link_block">
-                                            <a href="#">
-                                                <span>Read More</span>
-                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="answers_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <div class="answers_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                        <p>The app was intuitive, modern, and sleek. It performed well in beta tests and received enthusiastic user feedback. A collaborative partner, WillowTree complied with the timeline and delivered value. Their UI design and development skills were particularly strong.</p>
-                                        <div class="latest_news_tile_link_block">
-                                            <a href="#">
-                                                <span>Read More</span>
-                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="answers_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <div class="answers_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                        <p>The app was intuitive, modern, and sleek. It performed well in beta tests and received enthusiastic user feedback. A collaborative partner, WillowTree complied with the timeline and delivered value. Their UI design and development skills were particularly strong.</p>
-                                        <div class="latest_news_tile_link_block">
-                                            <a href="#">
-                                                <span>Read More</span>
-                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="answers_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <div class="answers_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                        <p>The app was intuitive, modern, and sleek. It performed well in beta tests and received enthusiastic user feedback. A collaborative partner, WillowTree complied with the timeline and delivered value. Their UI design and development skills were particularly strong.</p>
-                                        <div class="latest_news_tile_link_block">
-                                            <a href="#">
-                                                <span>Read More</span>
-                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="answers_tab_content_tile">
-                                        <h3>National Oilwell Varco</h3>
-                                        <div class="answers_tab_content_tile_date">
-                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
-                                            <span>24.01.2019</span>
-                                        </div>
-                                        <p>The app was intuitive, modern, and sleek. It performed well in beta tests and received enthusiastic user feedback. A collaborative partner, WillowTree complied with the timeline and delivered value. Their UI design and development skills were particularly strong.</p>
-                                        <div class="latest_news_tile_link_block">
-                                            <a href="#">
-                                                <span>Read More</span>
-                                                <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
+            </span>
+        </a>
     </div>
 
-    <footer class="footer_wrapper">
-        <div class="container">
-            <div class="footer_logo_block">
-                <img class="svg" src="assets/header/logo__dark.svg" alt="Логотип">
-            </div>
-            <div class="footer_info_block">
-                <div class="footer_info_about_us_column">
-                    <h4 class="footer_info__title">About Us</h4>
-                    <p class="footer_info__desc">Daleel is a portal that provides unique business intelligence to make the best decisions and allows exchange of knowledge that our industry needs to best meet its requirements.</p>
-                </div>
-                <div class="footer_info_resources_column">
-                    <h4 class="footer_info__title">Resources</h4>
-                    <ul class="footer_info_resources_list">
-                        <li class="footer_info_resources_list__item"><a href="#">Our Story and Why We Do It</a></li>
-                        <li class="footer_info_resources_list__item"><a href="#">Privacy Policy</a></li>
-                        <li class="footer_info_resources_list__item"><a href="#">Terms Of Use</a></li>
-                        <li class="footer_info_resources_list__item"><a href="#">Contacts</a></li>
-                    </ul>
-                </div>
-                <div class="footer_info_block_newsletter_column">
-                    <h4 class="footer_info__title">Newsletter</h4>
-                    <div class="footer_info_block_newsletter">
-                        <input type="email" placeholder="Email adress" maxlength="100" required>
-                        <button type="submit">Subscribe</button>
+    <div class="profile_tab_work_history_block">
+        <h3>Business Analyst</h3>
+        <span class="profile_tab_work_history__company">National Oilwell Varco</span>
+        <span class="profile_tab_work_history__time">06.2018 - Present</span>
+        <span class="profile_tab_work_history__location">Los Angeles, United States</span>
+    </div>
+
+    <div class="profile_tab_popular_qa_block">
+        <h3>Popular Q&A</h3>
+
+        <div class="last_forum_messages_tiles">
+            <div class="last_forum_messages_tile">
+                <div class="last_forum_messages_tile_inner">
+                    <div class="last_forum_messages_tile_category">
+                        <span class="last_forum_messages_tile_category__name">Category</span>
+                        <span class="last_forum_messages_tile_category__title">Seismic Survey and Data Acquisition</span>
                     </div>
-                    <span class="footer_info__copyright">© 2019 All rights reserved Daleel</span>
+                    <div class="last_forum_messages_tile_question">
+                        <span class="last_forum_messages_tile_question__name">Question</span>
+                        <span class="last_forum_messages_tile_question__title">What is the purpouse of drilling rings in gas supply industry?</span>
+                    </div>
+                    <div class="last_forum_messages_tile_info">
+                        <div class="last_forum_messages_tile_info_answers">
+                            <img class="svg" src="assets/news/comments_counter_icon.svg" alt="Image">
+                            <span>118 answers</span>
+                        </div>
+                        <div class="latest_news_tile_date">
+                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                            <span>24.01.2019</span>
+                        </div>
+                    </div>
+                    <div class="latest_news_tile_link_block">
+                        <a href="#">
+                            <span>Go to Question</span>
+                            <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="last_forum_messages_tile">
+                <div class="last_forum_messages_tile_inner">
+                    <div class="last_forum_messages_tile_category">
+                        <span class="last_forum_messages_tile_category__name">Category</span>
+                        <span class="last_forum_messages_tile_category__title">Storage & Warehousing</span>
+                    </div>
+                    <div class="last_forum_messages_tile_question">
+                        <span class="last_forum_messages_tile_question__name">Question</span>
+                        <span class="last_forum_messages_tile_question__title">What is the purpouse of drilling rings in gas supply industry?</span>
+                    </div>
+                    <div class="last_forum_messages_tile_info">
+                        <div class="last_forum_messages_tile_info_answers">
+                            <img class="svg" src="assets/news/comments_counter_icon.svg" alt="Image">
+                            <span>118 answers</span>
+                        </div>
+                        <div class="latest_news_tile_date">
+                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                            <span>24.01.2019</span>
+                        </div>
+                    </div>
+                    <div class="latest_news_tile_link_block">
+                        <a href="#">
+                            <span>Go to Question</span>
+                            <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
 
-    <div class="modal_backdrop"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/i18n/en.js"></script>
-    <script src="scripts/main.js"></script>
-    <script src="scripts/mobile.js"></script>
-    <script src="scripts/curcle_chart.js"></script>
-</body>
+    </div>
+
+</div>                                        <div class="account_tab_content comments_tab_content">
+    <div class="comments_tab_content_tiles">
+
+        <div class="comments_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
+
+            <div class="comments_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+        </div>
+
+        <div class="comments_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <p>The app was intuitive, modern, and sleek. It performed well in beta tests and received enthusiastic user feedback. A collaborative partner, WillowTree complied with the timeline and delivered value. Their UI design and development skills were particularly strong.</p>
+
+            <div class="comments_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+        </div>
+
+        <div class="comments_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
+
+            <div class="comments_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+        </div>
+
+        <div class="comments_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <p>The app was intuitive, modern, and sleek. It performed well in beta tests and received enthusiastic user feedback. A collaborative partner, WillowTree complied with the timeline and delivered value. Their UI design and development skills were particularly strong.</p>
+
+            <div class="comments_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+        </div>
+
+        <div class="comments_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
+
+            <div class="comments_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+        </div>
+
+        <div class="comments_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
+
+            <div class="comments_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+        </div>
+
+        <div class="comments_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
+
+            <div class="comments_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+        </div>
+
+        <div class="comments_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
+
+            <div class="comments_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+        </div>
+
+        <div class="comments_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
+
+            <div class="comments_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+        </div>
+
+        <div class="comments_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
+
+            <div class="comments_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+        </div>
+
+        <div class="comments_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
+
+            <div class="comments_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+        </div>
+
+        <div class="comments_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
+
+            <div class="comments_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+        </div>
+
+        <div class="comments_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <p>“A pump is a machine used to move liquid through a piping system and to raise the pressure of the liquid...”</p>
+
+            <div class="comments_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+        </div>
+
+        <div class="load_more_button_block row">
+            <a href="#" class="button load_more_button">
+                <div class="button__icon">
+                    <img class="svg" src="assets/load_icon.svg" alt="Image">
+                </div>
+                <span>Load More</span>
+            </a>
+        </div>
+
+    </div>
+</div>                                            <div class="account_tab_content answers_tab_content">
+
+<div class="account_filtering_desktop_block">
+
+    <div class="account_page_filtering_block">
+        <button id="account_page_filtering__all_results" class="button active" data-value="all">All Results</button>
+        <button class="button" data-value="questions">Questions</button>
+        <button class="button" data-value="answers">Answers</button>
+    </div>
+</div>
+
+    <div class="answers_tab_content_tiles">
+        <div class="answers_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <div class="answers_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+            <p>The app was intuitive, modern, and sleek. It performed well in beta tests and received enthusiastic user feedback. A collaborative partner, WillowTree complied with the timeline and delivered value. Their UI design and development skills were particularly strong.</p>
+            <div class="latest_news_tile_link_block">
+                <a href="#">
+                    <span>Read More</span>
+                    <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
+                </a>
+            </div>
+        </div>
+
+        <div class="answers_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <div class="answers_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+            <p>The app was intuitive, modern, and sleek. It performed well in beta tests and received enthusiastic user feedback. A collaborative partner, WillowTree complied with the timeline and delivered value. Their UI design and development skills were particularly strong.</p>
+            <div class="latest_news_tile_link_block">
+                <a href="#">
+                    <span>Read More</span>
+                    <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
+                </a>
+            </div>
+        </div>
+
+        <div class="answers_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <div class="answers_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+            <p>The app was intuitive, modern, and sleek. It performed well in beta tests and received enthusiastic user feedback. A collaborative partner, WillowTree complied with the timeline and delivered value. Their UI design and development skills were particularly strong.</p>
+            <div class="latest_news_tile_link_block">
+                <a href="#">
+                    <span>Read More</span>
+                    <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
+                </a>
+            </div>
+        </div>
+
+        <div class="answers_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <div class="answers_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+            <p>The app was intuitive, modern, and sleek. It performed well in beta tests and received enthusiastic user feedback. A collaborative partner, WillowTree complied with the timeline and delivered value. Their UI design and development skills were particularly strong.</p>
+            <div class="latest_news_tile_link_block">
+                <a href="#">
+                    <span>Read More</span>
+                    <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
+                </a>
+            </div>
+        </div>
+
+        <div class="answers_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <div class="answers_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+            <p>The app was intuitive, modern, and sleek. It performed well in beta tests and received enthusiastic user feedback. A collaborative partner, WillowTree complied with the timeline and delivered value. Their UI design and development skills were particularly strong.</p>
+            <div class="latest_news_tile_link_block">
+                <a href="#">
+                    <span>Read More</span>
+                    <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
+                </a>
+            </div>
+        </div>
+
+        <div class="answers_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <div class="answers_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+            <p>The app was intuitive, modern, and sleek. It performed well in beta tests and received enthusiastic user feedback. A collaborative partner, WillowTree complied with the timeline and delivered value. Their UI design and development skills were particularly strong.</p>
+            <div class="latest_news_tile_link_block">
+                <a href="#">
+                    <span>Read More</span>
+                    <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
+                </a>
+            </div>
+        </div>
+
+        <div class="answers_tab_content_tile">
+            <h3>National Oilwell Varco</h3>
+            <div class="answers_tab_content_tile_date">
+                <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                <span>24.01.2019</span>
+            </div>
+            <p>The app was intuitive, modern, and sleek. It performed well in beta tests and received enthusiastic user feedback. A collaborative partner, WillowTree complied with the timeline and delivered value. Their UI design and development skills were particularly strong.</p>
+            <div class="latest_news_tile_link_block">
+                <a href="#">
+                    <span>Read More</span>
+                    <img class="svg" src="assets/small_arrow_icon.svg" alt="Image">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <footer class="footer_wrapper">
+	<div class="container">
+		<div class="footer_logo_block">
+			<img class="svg" src="assets/header/logo__dark.svg" alt="Логотип">
+		</div>
+		<div class="footer_info_block">
+			<div class="footer_info_about_us_column">
+				<h4 class="footer_info__title">About Us</h4>
+				<p class="footer_info__desc">Daleel is a portal that provides unique business intelligence to make the best decisions and allows exchange of knowledge that our industry needs to best meet its requirements.</p>
+			</div>
+			<div class="footer_info_resources_column">
+				<h4 class="footer_info__title">Resources</h4>
+				<ul class="footer_info_resources_list">
+					<li class="footer_info_resources_list__item"><a href="#">Our Story and Why We Do It</a></li>
+					<li class="footer_info_resources_list__item"><a href="#">Privacy Policy</a></li>
+					<li class="footer_info_resources_list__item"><a href="#">Terms Of Use</a></li>
+					<li class="footer_info_resources_list__item"><a href="#">Contacts</a></li>
+				</ul>
+			</div>
+			<div class="footer_info_block_newsletter_column">
+				<h4 class="footer_info__title">Newsletter</h4>
+				<div class="footer_info_block_newsletter">
+					<input type="email" placeholder="Email adress" maxlength="100" required>
+					<button type="submit">Subscribe</button>
+				</div>
+				<span class="footer_info__copyright">© 2019 All rights reserved Daleel</span>											
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="modal_backdrop"></div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/i18n/en.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/mobile.js"></script>
+<script src="scripts/curcle_chart.js"></script>    </body>
