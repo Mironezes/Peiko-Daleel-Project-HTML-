@@ -125,6 +125,10 @@ select {
 	appearance: none
 }
 
+textarea {
+	resize: none;
+}
+
 button {
 	padding: 0;
 	border: unset;
@@ -9715,7 +9719,7 @@ span.search_page__search_results {
 	border-radius: 50%;
 }
 
-.registration_form_progress_bar li.active span {
+.registration_form_progress_bar li span.active {
 	color: #FFF;
 	background: #00C853;
 }
@@ -9813,8 +9817,8 @@ span.search_page__search_results {
 	border-radius: 5px;
 }
 
-.creation_page_element textarea {
-	resize: none;
+.registration_page_element textarea {
+	height: inherit !important;
 }
 
 .registration_form_inner.email_confirmation h1,
@@ -9855,4 +9859,93 @@ span.search_page__search_results {
 .box__success,
 .box__error {
   display: none;
+}
+
+.registration_form_inner.congratulation img {
+	display: flex;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.registration_form_inner.congratulation h1 {
+	margin-bottom: 20px;
+}
+
+.registration_form_inner.congratulation span {
+    display: flex;
+    justify-content: center;
+	margin-bottom: 50px;
+	font-size: 1.15em;
+	font-weight: 500;
+}
+
+.registration_form_inner.congratulation a {
+	width: 250px;
+    margin: 0 auto;
+    justify-content: center;	
+}
+
+
+.common_element_radio {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    line-height: 1;
+    cursor: pointer;
+}
+
+
+.common_element_radio>label,
+.common_element_radio>div {
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 15px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+.common_element_radio.checked span {
+	color: #2E368F;
+}
+
+.common_element_radio input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0
+}
+
+.common_element_radio__radiomark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 16px;
+	width: 16px;
+	background-image: url(../assets/filters/radio_box_empty_icon.svg);
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.common_element_radio:hover input~.common_element_radio__radiomark {
+	background-image: url(../assets/filters/radio_box_hover_icon.svg)
+}
+
+.common_element_radio input:checked~.common_element_radio__radiomark {
+	background-image: url(../assets/filters/radio_box_checked_icon.svg)
+}
+
+.common_element_radio__radiomark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 16px;
+	width: 16px;
+	background-image: url(../assets/filters/radio_box_empty_icon.svg);
+	background-repeat: no-repeat;
+	background-size: cover
 }

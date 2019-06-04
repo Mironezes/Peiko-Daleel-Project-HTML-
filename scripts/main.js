@@ -431,6 +431,7 @@ $(document).ready(function() {
             $('input').each(function() {
                 $(this).removeAttr("checked");
             });
+            $('select').val([]);
             $('.common_sorting_element, .common_sorting_element_radio label').each(function() {
                 $(this).removeClass("checked");
             });
@@ -536,6 +537,14 @@ $(document).ready(function() {
             }
             $(this).remove();
         });
+
+
+        $("body").on("click", ".select2-results__option", function() {
+            let content = $(this).text();
+
+            alert(content);
+        });
+
 
 
         $(document).on("click", function(event) {
@@ -1157,84 +1166,86 @@ $(document).ready(function() {
 
 
 
+function registrationPage() {
 
-//jQuery time
-var current_fs, next_fs, previous_fs; //fieldsets
-var left, opacity, scale; //fieldset properties which we will animate
-var animating; //flag to prevent quick multi-click glitches
+    var current_fs, next_fs, previous_fs; 
+    var left, opacity, scale; 
+    var animating; 
+    var progressBarLine;
 
-$(".next").click(function(){
-    if(animating) return false;
-    animating = true;
-    
-    current_fs = $(this).parents('.registration_form_inner');
-    next_fs = $(this).parents('.registration_form_inner').next();
-    
-    
-    //show the next fieldset
-    next_fs.show(); 
-    //hide the current fieldset with style
-    current_fs.animate({opacity: 0}, {
-        step: function(now, mx) {
-            //as the opacity of current_fs reduces to 0 - stored in "now"
-            //1. scale current_fs down to 80%
-            scale = 1 - (1 - now) * 0.2;
-            //2. bring next_fs from the right(50%)
-            left = (now * 50)+"%";
-            //3. increase opacity of next_fs to 1 as it moves in
-            opacity = 1 - now;
-            current_fs.css({
-        'transform': 'scale('+scale+')',
-        'position': 'absolute'
-      });
-            next_fs.css({'left': left, 'opacity': opacity});
-        }, 
-        duration: 800, 
-        complete: function(){
-            current_fs.hide();
-            animating = false;
-        }, 
-        //this comes from the custom easing plugin
-        easing: 'easeInOutBack'
+    $(".next").click(function(){
+        if(animating) return false;
+        animating = true;
+        
+        current_fs = $(this).parents('.registration_form_inner');
+        next_fs = $(this).parents('.registration_form_inner').next();
+        progressBarLine =  $('.registration_form_progress_bar').find('.active').next().addClass('active');
+
+        next_fs.show(); 
+        current_fs.removeClass('active');
+
+        if($('.registration_form_progress_bar__third_step').hasClass('active')) {
+            $('.registration_form_progress_bar__third_step').find('span').addClass('active');
+        }
+
+        next_fs.addClass('active'); 
+
+
+        current_fs.animate({opacity: 0}, {
+            step: function(now, mx) {
+                scale = 1 - (1 - now) * 0.2;
+                left = (now * 50)+"%";
+                opacity = 1 - now;
+                current_fs.css({
+            'transform': 'scale('+scale+')',
+            'position': 'absolute'
+          });
+                next_fs.css({'left': left, 'opacity': opacity});
+            }, 
+            duration: 800, 
+            complete: function(){
+                current_fs.hide();
+                animating = false;
+            }, 
+            easing: 'easeInOutBack'
+        });
     });
-});
 
-$(".previous").click(function(){
-    if(animating) return false;
-    animating = true;
-    
-    current_fs = $(this).parent();
-    previous_fs = $(this).parent().prev();
-    
-    
-    //show the previous fieldset
-    previous_fs.show(); 
-    //hide the current fieldset with style
-    current_fs.animate({opacity: 0}, {
-        step: function(now, mx) {
-            //as the opacity of current_fs reduces to 0 - stored in "now"
-            //1. scale previous_fs from 80% to 100%
-            scale = 0.8 + (1 - now) * 0.2;
-            //2. take current_fs to the right(50%) - from 0%
-            left = ((1-now) * 50)+"%";
-            //3. increase opacity of previous_fs to 1 as it moves in
-            opacity = 1 - now;
-            current_fs.css({'left': left});
-            previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
-        }, 
-        duration: 800, 
-        complete: function(){
-            current_fs.hide();
-            animating = false;
-        }, 
-        //this comes from the custom easing plugin
-        easing: 'easeInOutBack'
+    $(".previous").click(function(){
+        if(animating) return false;
+        animating = true;
+        
+        current_fs = $(this).parent();
+        previous_fs = $(this).parent().prev();
+        
+
+        previous_fs.show(); 
+        current_fs.animate({opacity: 0}, {
+            step: function(now, mx) {
+                scale = 0.8 + (1 - now) * 0.2;
+                left = ((1-now) * 50)+"%";
+                opacity = 1 - now;
+                current_fs.css({'left': left});
+                previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
+            }, 
+            duration: 800, 
+            complete: function(){
+                current_fs.hide();
+                animating = false;
+            }, 
+            easing: 'easeInOutBack'
+        });
     });
-});
 
-$(".submit").click(function(){
-    return false;
-})
+    $(".submit").click(function(){
+        return false;
+    })
+
+
+}
+registrationPage();
+
+
 
 
     
