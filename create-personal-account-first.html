@@ -26,82 +26,182 @@
 
     <body class="non_authorized">
 
-        <form class="registration_form registration_form_first_step" autocomplete="off">
-            <ul class="registration_form_progress_bar">
-                <li class="registration_form_progress_bar__first_step active">
-                    <span class="registration_form_progress_bar__line"></span>
-                    <span class="registration_form_progress_bar__title active">1</span>
-                </li>
-                <li class="registration_form_progress_bar__second_step">
-                    <span class="registration_form_progress_bar__line"></span>                    
-                    <span class="registration_form_progress_bar__title">2</span>
-                </li>
-                <li class="registration_form_progress_bar__third_step">
-                    <span class="registration_form_progress_bar__line"></span>                    
-                    <span class="registration_form_progress_bar__title"><img src="assets/form_done_icon__small.svg" alt="Image" class="svg"></span>
-                </li>
-            </ul>
-            <fieldset class="registration_form_inner first_step active">
-                <h1>Create Personal Account</h1>
+        <header class="header_wrapper white">
+	<div class="header_navigation_block_wrapper">
+		<div class="container">
+			<div class="header_navigation_block">
+				<div class="header_logo_column">
+					<a href="index.html"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
+					<button onclick = "void(0)" class="mobile_menu_icon hamburger hamburger--arrow blue" type="button">
+					<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+					</span>
+					</button>	
+				</div>
+				<div class="header_navigation_column">
+					<div class="header_navigation_search">
+						<input type="search" placeholder="Search request" maxlength="100" required>		
+						<button>Search</button>					
+					</div>
+					<a href="#" class="button button__blue">Log in</a>
+					<a href="#" class="button button__yellow">Sign up</a>
+					<button onclick = "void(0)" class="desktop_toggle_menu_icon hamburger hamburger--slider blue" type="button">
+					<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+					</span>
+					</button>						
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="desktop_toggle_menu_block_wrapper">
+		<div class="container">
+			<div class="desktop_toggle_menu_block">
+				<ul class="desktop_toggle_menu">
+					<li class="desktop_toggle_menu__item"><a href="#">Suppliers</a></li>
+					<li class="desktop_toggle_menu__item"><a href="#">Intelligence</a></li>
+					<li class="desktop_toggle_menu__item"><a href="#">News</a></li>
+					<li class="desktop_toggle_menu__item"><a href="#">Expert articles</a></li>
+					<li class="desktop_toggle_menu__item"><a href="#">Indices</a></li>
+					<li class="desktop_toggle_menu__item"><a href="#">Contacts</a></li>
+				</ul>
+				<a href="#" class="button button__yellow">
+					<div class="button__icon">
+						<img class="svg" src="assets/plus_icon.svg" alt="Image"> 					
+					</div>
+					<span>Add company</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="mobile_toggle_menu_block">
+		<div class="container">
+			<ul class="mobile_toggle_menu">
+				<li class="mobile_search_block">
+					<input type="search" placeholder="Search request" maxlength="100" required>		
+					<button>Search</button>					
+				</li>
+				<li class="mobile_toggle_menu__item"><a href="#">Suppliers</a></li>
+				<li class="mobile_toggle_menu__item"><a href="#">Intelligence</a></li>
+				<li class="mobile_toggle_menu__item"><a href="#">News</a></li>
+				<li class="mobile_toggle_menu__item"><a href="#">Expert articles</a></li>
+				<li class="mobile_toggle_menu__item"><a href="#">Indices</a></li>
+				<li class="mobile_toggle_menu__item"><a href="#">Contacts</a></li>
+			</ul>
+			<div class="mobile_toggle_buttons">
+				<a href="#" class="button login_button button__blue">Log in</a>
+				<a href="#" class="button registration_button button__yellow">Registration</a>
+				<a href="#" class="button add_company_button button__yellow"><img class="svg" src="assets/plus_icon.svg" alt="Image"> Add company</a>							
+			</div>
+		</div>
+	</div>
+</header>
+        <div class="registration inner_page">
+	        <form class="registration_form registration_form_personal_first_step registration_form_personal" autocomplete="off">
+	            <ul class="registration_form_progress_bar">
+	                <li class="registration_form_progress_bar__first_step active">
+	                    
+	                    <span class="registration_form_progress_bar__title active">1</span>
+	                </li>
+	                <li class="registration_form_progress_bar__second_step">
+	                                        
+	                    <span class="registration_form_progress_bar__title">2</span>
+	                </li>
+	                <li class="registration_form_progress_bar__third_step">
+	                                        
+	                    <span class="registration_form_progress_bar__title"><img src="assets/form_done_icon__small.svg" alt="Image" class="svg"></span>
+	                </li>
+	            </ul>
+	            <fieldset class="registration_form_inner first_step active">
+	                <h1>Create Personal Account</h1>
 
-                <a class="button button__blue linked_in__button" href="#">Sign Up via Linked In</a>
+	                <div class="registration_form_input_block">
+	                    <div class="registration_page_element">
+	                            <span>First Name</span>
+	                            <input type="text" maxlength="50">
+	                    </div>
 
-                <div class="registration_form_input_block">
-                    <div class="registration_page_element">
-                            <span>First Name</span>
-                            <input type="text" maxlength="50">
-                    </div>
+	                    <div class="registration_page_element">
+	                            <span>Last Name</span>
+	                            <input type="text" maxlength="50">
+	                    </div>
 
-                    <div class="registration_page_element">
-                            <span>Last Name</span>
-                            <input type="text" maxlength="50">
-                    </div>
+	                    <div class="registration_page_element">
+	                            <span>Email</span>
+	                            <input type="email" maxlength="150" placeholder="example@mail.com">
+	                    </div>
 
-                    <div class="registration_page_element">
-                            <span>Email</span>
-                            <input type="email" maxlength="150" placeholder="example@mail.com">
-                    </div>
+	                    <div class="registration_page_element">
+	                            <span>Password</span>
+	                            <input type="password" maxlength="36">
+	                            <span class="input_notation">Password may include characters: A, a, 0-9</span>
+	                    </div>
 
-                    <div class="registration_page_element">
-                            <span>Password</span>
-                            <input type="password" maxlength="36">
-                            <span class="input_notation">Password may include characters: A, a, 0-9</span>
-                    </div>
+	                    <div class="registration_page_element">
+	                            <span>Confirm Password</span>
+	                            <input type="password" maxlength="36">
+	                    </div>
 
-                    <div class="registration_page_element">
-                            <span>Confirm Password</span>
-                            <input type="password" maxlength="36">
-                    </div>
+	                    <div class="registration_page_element">
+	                            <span>Region</span>
+	                             <select style="width: 100%">
+	                                <option value="" disabled selected>Choose region</option>                        
+	                                <option value="Region 1">Region 1</option>
+	                                <option value="Region 2">Region 2</option>
+	                                <option value="Region 3">Region 3</option>
+	                                <option value="Region 4">Region 4</option>
+	                            </select>
+	                    </div>
 
-                    <div class="registration_page_element">
-                            <span>Region</span>
-                             <select style="width: 100%">
-                                <option value="" disabled selected>Choose region</option>                        
-                                <option value="Region 1">Region 1</option>
-                                <option value="Region 2">Region 2</option>
-                                <option value="Region 3">Region 3</option>
-                                <option value="Region 4">Region 4</option>
-                            </select>
-                    </div>
+	                </div>
+	                <div class="registration_form_buttons_block">
+	                    <a class="button button__light_blue" href="#">Cancel</a>
+	                    <input type="button" name="next" class="next button button__blue" value="Continue" />                     
+	                </div>
+	            </fieldset>
 
-                </div>
-                <div class="registration_form_buttons_block">
-                    <a class="button button__light_blue" href="#">Cancel</a>
-                    <input type="button" name="next" class="next button button__blue" value="Continue" />                     
-                </div>
-            </fieldset>
-
-            <fieldset class="registration_form_inner email_confirmation">
-                <img src="assets/email_confirmation_icon.svg" alt="Image">
-                <h1>Email Confirmation</h1>
-                <h2>We send you email confirmation</h2>
-                <span>Please check your email box and follow the link to<br>confirmation registration</span>
-            </fieldset>
-        </form>
-
+	            <fieldset class="registration_form_inner email_confirmation">
+	                <img src="assets/email_confirmation_icon.svg" alt="Image">
+	                <h1>Email Confirmation</h1>
+	                <h2>We send you email confirmation</h2>
+	                <span>Please check your email box and follow the link to<br>confirmation registration</span>
+	            </fieldset>
+	        </form>
+	    </div>
 
 
+        <footer class="footer_wrapper">
+	<div class="container">
+		<div class="footer_logo_block">
+			<img class="svg" src="assets/header/logo__dark.svg" alt="Логотип">
+		</div>
+		<div class="footer_info_block">
+			<div class="footer_info_about_us_column">
+				<h4 class="footer_info__title">About Us</h4>
+				<p class="footer_info__desc">Daleel is a portal that provides unique business intelligence to make the best decisions and allows exchange of knowledge that our industry needs to best meet its requirements.</p>
+			</div>
+			<div class="footer_info_resources_column">
+				<h4 class="footer_info__title">Resources</h4>
+				<ul class="footer_info_resources_list">
+					<li class="footer_info_resources_list__item"><a href="#">Our Story and Why We Do It</a></li>
+					<li class="footer_info_resources_list__item"><a href="#">Privacy Policy</a></li>
+					<li class="footer_info_resources_list__item"><a href="#">Terms Of Use</a></li>
+					<li class="footer_info_resources_list__item"><a href="#">Contacts</a></li>
+				</ul>
+			</div>
+			<div class="footer_info_block_newsletter_column">
+				<h4 class="footer_info__title">Newsletter</h4>
+				<div class="footer_info_block_newsletter">
+					<input type="email" placeholder="Email adress" maxlength="100" required>
+					<button type="submit">Subscribe</button>
+				</div>
+				<span class="footer_info__copyright">© 2019 All rights reserved Daleel</span>											
+			</div>
+		</div>
+	</div>
+</footer>
 
+<div class="modal_backdrop"></div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>

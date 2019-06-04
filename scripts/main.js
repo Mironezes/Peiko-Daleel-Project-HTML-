@@ -1179,15 +1179,11 @@ function registrationPage() {
         
         current_fs = $(this).parents('.registration_form_inner');
         next_fs = $(this).parents('.registration_form_inner').next();
-        progressBarLine =  $('.registration_form_progress_bar').find('.active').next().addClass('active');
+
+
 
         next_fs.show(); 
         current_fs.removeClass('active');
-
-        if($('.registration_form_progress_bar__third_step').hasClass('active')) {
-            $('.registration_form_progress_bar__third_step').find('span').addClass('active');
-        }
-
         next_fs.addClass('active'); 
 
 
@@ -1209,14 +1205,31 @@ function registrationPage() {
             }, 
             easing: 'easeInOutBack'
         });
+
+        if($('.registration_form').hasClass('registration_form_personal_second_step')) {
+            if($('.registration_form_progress_bar__third_step').hasClass('active')) {
+                $('.registration_form_progress_bar__third_step').find('span').addClass('active');
+            }            
+        }
+
+        if($('.registration_form').hasClass('registration_form_company_second_step')) {
+            if($('.registration_form_progress_bar__second_step').hasClass('active')) {
+                $('.registration_form_progress_bar__second_step').find('span').addClass('active');
+            }            
+        }
+
+        else {
+            progressBarLine =  $('.registration_form_progress_bar').find('li.active').next().addClass('active');
+        }
+
     });
 
     $(".previous").click(function(){
         if(animating) return false;
         animating = true;
         
-        current_fs = $(this).parent();
-        previous_fs = $(this).parent().prev();
+        current_fs = $(this).parents('.registration_form_inner');
+        previous_fs =  $(this).parents('.registration_form_inner').prev();
         
 
         previous_fs.show(); 
