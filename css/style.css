@@ -9687,19 +9687,8 @@ span.search_page__search_results {
 	list-style-type: none;
 	color: white;
 	text-transform: uppercase;
-	width: 33.33%;
 }
 
-.registration_form_progress_bar li:before {
-	width: 20px;
-	line-height: 20px;
-	display: block;
-	font-size: 10px;
-	color: #333;
-	background: white;
-	border-radius: 3px;
-	margin: 0 auto 5px auto;
-}
 
 .registration_form_progress_bar li:after {
 	content: '';
@@ -9707,14 +9696,12 @@ span.search_page__search_results {
 	height: 2px;
 	background: white;
 	position: absolute;
-	left: -50%;
+	left: 0%;
 	top: 9px;
 	z-index: -1;
 }
 
-.registration_form_progress_bar li:first-child:after {
-	content: none;
-}
+
 
 .registration_form_progress_bar li.active:before,
 .registration_form_progress_bar li.active:after {
@@ -9873,6 +9860,41 @@ span.search_page__search_results {
 }
 
 
+
+.registration_form_company .registration_form_inner.choose_plan {
+	width: 85%;
+}
+
+.log_in.inner_page,
+.registration.inner_page {
+	padding-top: 120px;
+}
+
+.registration_form_input_section {
+	margin-bottom: 50px;
+}
+
+.registration_form_input_section:last-of-type,
+.registration_page_element:last-of-type {
+	margin-bottom: 0;
+}
+
+.registration_form_input_section h4 {
+	margin-top: 0;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+
+.registration_form_progress_bar li.registration_form_progress_bar__first_step {
+	justify-content: flex-start;
+	width: 50%;
+}
+.registration_form_progress_bar li.registration_form_progress_bar__third_step {
+	justify-content: flex-end;
+	width: 50%;	
+}
+
 .box__dragndrop,
 .box__uploading,
 .box__success,
@@ -9967,37 +9989,4 @@ span.search_page__search_results {
 	background-image: url(../assets/filters/radio_box_empty_icon.svg);
 	background-repeat: no-repeat;
 	background-size: cover
-}
-
-
-.registration_form_company .registration_form_inner.choose_plan {
-	width: 85%;
-}
-
-.log_in.inner_page,
-.registration.inner_page {
-	padding-top: 120px;
-}
-
-.registration_form_input_section {
-	margin-bottom: 50px;
-}
-
-.registration_form_input_section:last-of-type,
-.registration_page_element:last-of-type {
-	margin-bottom: 0;
-}
-
-.registration_form_input_section h4 {
-	margin-top: 0;
-	margin-bottom: 20px;
-	text-align: left;
-}
-
-
-.registration_form_progress_bar li.registration_form_progress_bar__first_step {
-	justify-content: flex-start;
-}
-.registration_form_progress_bar li.registration_form_progress_bar__third_step {
-	justify-content: flex-end;
 }
