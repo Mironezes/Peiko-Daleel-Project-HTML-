@@ -3328,8 +3328,9 @@ span.suppliers_product_services_work_history__title {
 
 .suppliers_work_history_content {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .suppliers_work_history_major_clients h3 {
