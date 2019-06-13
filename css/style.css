@@ -3026,6 +3026,7 @@ body {
 
 .suppliers_product_services_title {
 	width: calc(75% - 15px);
+	margin-bottom: 25px;
 }
 
 .suppliers_product_services_title h2 {
