@@ -182,7 +182,7 @@ $(document).ready(function() {
 
 
     function suppliersWorkHistoryTiles__Mobile_Settings() {
-        $('.suppliers_work_history_tile').on("click", function(e) {
+        $('.suppliers_profile .suppliers_work_history_tile').on("click", function(e) {
             e.stopPropagation();
 
             $(this).find('.suppliers_work_history_tile_modal').addClass('fixed');
