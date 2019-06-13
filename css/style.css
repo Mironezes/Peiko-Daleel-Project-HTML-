@@ -10589,6 +10589,9 @@ span.search_page__search_results {
     margin: 0;	
 }
 
+.button__delete .tooltip__top {
+	left: 5px;
+}
 
 .tooltip__top::before {
     content: '';
