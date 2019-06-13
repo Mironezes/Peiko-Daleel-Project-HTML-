@@ -3516,7 +3516,8 @@ span.suppliers_product_services_work_history__title {
 	transition: .3s
 }
 
-.suppliers_work_history_tile__read_more {
+.suppliers_work_history_tile__read_more, 
+.suppliers_work_history_tile__edit_buttons {
 	display: none;
 	position: absolute;
 	width: -webkit-fill-available;
