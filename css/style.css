@@ -3523,7 +3523,8 @@ span.suppliers_product_services_work_history__title {
 	content: '';
 	background: rgba(255, 255, 255, .8);
 	border-radius: 5px;
-	transition: .3s
+	transition: .3s;
+	z-index: 2;
 }
 
 .suppliers_work_history_tile__read_more, 
