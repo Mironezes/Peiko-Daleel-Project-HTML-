@@ -189,6 +189,8 @@ body {
 	}
 }
 
+
+
 .button {
 	display: flex;
 	align-items: center;
@@ -199,6 +201,11 @@ body {
 	border-radius: 5px;
 	transition: .3s;
 	cursor: pointer;
+}
+
+.button svg path,
+.button svg path:hover {
+	transition: .3s;
 }
 
 .button.full_width {
@@ -376,13 +383,12 @@ body {
 }
 
 .button__archive span {
-	color: #FF4848
+	color: #2E368F
 }
 
 .button__archive:hover {
-	color: #FFF;
-	border: 1px solid #FF4848;
-	background: #FF4848;
+	border: 1px solid #4F58B8;
+	background: #4F58B8;
 }
 
 .button__archive:hover span {
