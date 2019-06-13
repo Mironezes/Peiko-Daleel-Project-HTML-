@@ -3679,6 +3679,30 @@ span.suppliers_product_services_work_history__title {
 	padding-bottom: 10px;
 }
 
+.suppliers_competitors_tile_body_edit,
+.suppliers_product_services_body_edit {
+	display: flex;
+	width: 100%;
+}
+
+.suppliers_competitors_tile_body_edit a,
+.suppliers_product_services_body_edit a {
+	margin-right: 10px;
+}
+
+.suppliers_product_services_body_edit a { 
+	padding: 0 20px;
+}
+
+.suppliers_competitors_tile_body_edit a:last-of-type,
+.suppliers_product_services_body_edit a:last-of-type {
+	margin-right: 0;
+}
+
+.suppliers_competitors_tile_body_edit .button__archive {
+	padding: 0 15px;
+}
+
 .suppliers_profile .latest_news_wrapper {
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -10716,4 +10740,5 @@ span.search_page__search_results {
 
 .latest_news_tile_edit_buttons a {
 	width: calc(50% - 15px);
+	justify-content: center;
 }
