@@ -1291,13 +1291,16 @@ $(document).ready(function() {
             $('.header_wrapper').addClass('overlay');
         });
 
-        let closeModal = $('.modal_close');
+        let closeModal = $('.modal_close, .button__cancel');
         closeModal.on('click', function() {
             $(this).parents('.delete_element_modal_block').removeClass('opened');
             $('html').removeClass('fixed');
             $('.header_wrapper').removeClass('overlay');
             $('.modal_backdrop').removeClass('active');
         });
+
+
+
 
         $(document).mouseup(function(e) {
             let container = $(".delete_element_modal_block");
