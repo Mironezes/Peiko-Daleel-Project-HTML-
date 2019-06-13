@@ -10530,7 +10530,14 @@ span.search_page__search_results {
 .suppliers_competitors_tile_body_edit {
 	display: flex;
 	width: 100%;
-	justify-content: space-between;
+}
+
+.suppliers_competitors_tile_body_edit a {
+	margin-right: 10px;	
+}
+
+.suppliers_competitors_tile_body_edit a:last-of-type {
+	margin-right: 0px;	
 }
 
 .archived h2,
