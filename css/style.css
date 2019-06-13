@@ -3529,7 +3529,7 @@ span.suppliers_product_services_work_history__title {
 	text-align: center;
 	color: #2e368f;
 	opacity: 0;
-	transition: .3s
+	transition: .3s;
 }
 
 .suppliers_work_history_tile_inner:hover {
