@@ -203,8 +203,8 @@ body {
 	cursor: pointer;
 }
 
-.button svg path,
-.button svg path:hover {
+.button:hover svg path,
+.button svg path {
 	transition: .3s;
 }
 
@@ -10697,5 +10697,5 @@ span.search_page__search_results {
 }
 
 .latest_news_tile_edit_buttons a {
-	width: calc(50% - 25px);
+	width: calc(50% - 15px);
 }
