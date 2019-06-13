@@ -1,1234 +1,1227 @@
+<!DOCTYPE html>
+<html lang="ru">
 
-
-    <!DOCTYPE html>
-    <html lang="ru">
-
-    <head>
-        <!--[if lte IE 9]>
+<head>
+    <!--[if lte IE 9]>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 <![endif]-->
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-<link rel="apple-touch-icon-precomposed" href="apple_touch_icon.png" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css">
-<link rel="stylesheet" href="css/style.css">            <title>Expert Articles | Daleel</title>
-    </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="apple-touch-icon-precomposed" href="apple_touch_icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Expert Articles | Daleel</title>
+</head>
 
-    <body class="authorized">
-        <header class="header_wrapper white logined">
-    <div class="header_navigation_block_wrapper">
-        <div class="container">
-            <div class="header_navigation_block">
-                <div class="header_logo_column">
-                    <a href="index.html"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
-                    <div class="mobile_navigation_buttons_block">
-                        <button onclick="void(0)" class="mobile_account_icon" type="button"><img src="assets/header_logined/account_icon.svg" alt="Image" class="svg"></button>
-                        <button onclick="void(0)" class="mobile_menu_icon hamburger hamburger--arrow blue" type="button"> <span class="hamburger-box"><span class="hamburger-inner"></span> </span>
-                        </button>
+<body class="authorized">
+    <header class="header_wrapper white logined">
+        <div class="header_navigation_block_wrapper">
+            <div class="container">
+                <div class="header_navigation_block">
+                    <div class="header_logo_column">
+                        <a href="index.html"><img class="logo" src="assets/header/logo__dark.svg" alt="Логотип"></a>
+                        <div class="mobile_navigation_buttons_block">
+                            <button onclick="void(0)" class="mobile_account_icon" type="button"><img src="assets/header_logined/account_icon.svg" alt="Image" class="svg"></button>
+                            <button onclick="void(0)" class="mobile_menu_icon hamburger hamburger--arrow blue" type="button"> <span class="hamburger-box"><span class="hamburger-inner"></span> </span>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="header_navigation_column">
-                    <ul class="desktop_toggle_menu">
-                        <li class="desktop_toggle_menu__item"><a href="#">Suppliers</a></li>
-                        <li class="desktop_toggle_menu__item"><a href="#">Intelligence</a></li>
-                        <li class="desktop_toggle_menu__item"><a href="#">News</a></li>
-                        <li class="desktop_toggle_menu__item"><a href="#">Expert articles</a></li>
-                        <li class="desktop_toggle_menu__item"><a href="#">Indices</a></li>
-                    </ul>
-                    <div class="header_navigation_search_toggle">
-                        <img src="assets/header_logined/search_icon_blue.svg" alt="Image" class="svg search_icon visible">
-                        <img src="assets/close_icon.svg" alt="Image" class="svg close_icon">                     
-                    </div>
-                    <button class="button button__yellow header_account_button">
-                        <div class="button__icon"> <img class="svg" src="assets/header_logined/account_icon.svg" alt="Image"> </div><span>Account</span> </button>
-                    <div class="desktop_account_toggle_menu">
-                        <ul>
-                            <li><a href="#"><span>Profile</span>  <div class="button__icon"><img  src="assets/header_logined/profile_icon.svg" alt="Image"> </div></a>
-                            </li>
-                            <li><a href="#"><span>Settings</span> <div class="button__icon"><img  src="assets/header_logined/settings_icon.svg" alt="Image"> </div></a>
-                            </li>
-                            <li class="desktop_account_toggle_menu__faq"><a href="#"><span>FAQ</span><div class="button__icon"><img  src="assets/header_logined/faq_icon.svg" alt="Image"> </div> </a>
-                            </li>
-                            <li class="desktop_account_toggle_menu__logout"><a href="#"><span>Log Out</span> <div class="button__icon"> <img src="assets/header_logined/log_out_icon.svg" alt="Image"> </div> </a>
-                            </li>
+                    <div class="header_navigation_column">
+                        <ul class="desktop_toggle_menu">
+                            <li class="desktop_toggle_menu__item"><a href="#">Suppliers</a></li>
+                            <li class="desktop_toggle_menu__item"><a href="#">Intelligence</a></li>
+                            <li class="desktop_toggle_menu__item"><a href="#">News</a></li>
+                            <li class="desktop_toggle_menu__item"><a href="#">Expert articles</a></li>
+                            <li class="desktop_toggle_menu__item"><a href="#">Indices</a></li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="desktop_toggle_menu_block_wrapper">
-        <div class="container">
-            <div class="desktop_toggle_menu_block">
-                <input type="search" placeholder="Search request" maxlength="100" class="desktop_toggle_menu__search_bar" required>               
-                <button class="button button__blue desktop_toggle_menu__search_button">Search</button>
-            </div>
-        </div>
-    </div>
-    <div class="mobile_account_toggle_menu_block">
-        <div class="container">
-            <ul class="mobile_account_toggle_menu">
-                <li class="mobile_toggle_menu__item"><a href="#"><div class="button__icon"><img src="assets/header_logined/profile_icon.svg" alt="Image"></div><span>Profile</span></a>
-                </li>
-                <li class="mobile_toggle_menu__item"><a href="#"><div class="button__icon"><img src="assets/header_logined/settings_icon.svg" alt="Image"></div><span>Settings</span></a>
-                </li>
-                <li class="mobile_toggle_menu__item"><a href="#"><div class="button__icon"><img src="assets/header_logined/faq_icon.svg" alt="Image"></div><span>FAQ</span> </a>
-                </li>
-                <li class="mobile_toggle_menu__item desktop_account_toggle_menu__logout"><a href="#"><div class="button__icon"><img src="assets/header_logined/log_out_icon.svg" alt="Image"> </div><span>Log Out</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="mobile_toggle_menu_block">
-        <div class="container">
-            <ul class="mobile_toggle_menu">
-                <li class="mobile_search_block">
-                    <input type="search" placeholder="Search request" maxlength="100" required>
-                    <button>Search</button>
-                </li>
-                <li class="mobile_toggle_menu__item"><a href="#">Suppliers</a></li>
-                <li class="mobile_toggle_menu__item"><a href="#">Intelligence</a></li>
-                <li class="mobile_toggle_menu__item"><a href="#">News</a></li>
-                <li class="mobile_toggle_menu__item"><a href="#">Expert articles</a></li>
-                <li class="mobile_toggle_menu__item"><a href="#">Indices</a></li>
-                <li class="mobile_toggle_menu__item"><a href="#">Contacts</a></li>
-            </ul>
-            <div class="mobile_toggle_buttons"> <a href="#" class="button login_button button__blue">Log in</a> <a href="#" class="button registration_button button__yellow">Registration</a>
-                <a href="#" class="button add_company_button button__yellow"><img class="svg" src="assets/plus_icon.svg" alt="Image"> Add company</a>
-            </div>
-        </div>
-    </div>
-</header>
-            <div class="expert_intelligance inner_page ">
-                <section class="breadcrumbs_wrapper">
-                    <div class="container">
-                        <div class="breadcrumbs_block row">
-                            <ul class="breadcrumbs_list">
-                                <li class="breadcrumbs_list__item"><a href="/">Homepage</a></li>
-                                <li class="breadcrumbs_list__item current"><span>Expert Intelligence</span></li>
+                        <div class="header_navigation_search_toggle">
+                            <img src="assets/header_logined/search_icon_blue.svg" alt="Image" class="svg search_icon visible">
+                            <img src="assets/close_icon.svg" alt="Image" class="svg close_icon">
+                        </div>
+                        <button class="button button__yellow header_account_button">
+                            <div class="button__icon"> <img class="svg" src="assets/header_logined/account_icon.svg" alt="Image"> </div><span>Account</span> </button>
+                        <div class="desktop_account_toggle_menu">
+                            <ul>
+                                <li><a href="#"><span>Profile</span>  <div class="button__icon"><img  src="assets/header_logined/profile_icon.svg" alt="Image"> </div></a>
+                                </li>
+                                <li><a href="#"><span>Settings</span> <div class="button__icon"><img  src="assets/header_logined/settings_icon.svg" alt="Image"> </div></a>
+                                </li>
+                                <li class="desktop_account_toggle_menu__faq"><a href="#"><span>FAQ</span><div class="button__icon"><img  src="assets/header_logined/faq_icon.svg" alt="Image"> </div> </a>
+                                </li>
+                                <li class="desktop_account_toggle_menu__logout"><a href="#"><span>Log Out</span> <div class="button__icon"> <img src="assets/header_logined/log_out_icon.svg" alt="Image"> </div> </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                </section>
-
-                <section class="main_content_wrapper">
-                    <div class="container">
-
-                        <div class="expert_intelligance_header_block">
-                            <h1>Expert Articles</h1>
-
-                            <div class="inner_page_search">
-                                <input type="search" placeholder="Search" maxlength="100" required>
-                                <button>Search</button>
-                            </div>
-                        </div>
-
-                        <div class="common_filtering_desktop_block">
-    <div class="common_filter_selector_desktop_block">
-        <div class="common_filters_block">
-            <div class="common_sorting common_sorting_region">
-                <div class="common_sorting__title"><span>Region</span> <img src="assets/drop_down_arrow_icon.svg" alt="Image" class="svg"></div>
-            </div>
-
-            <div class="common_sorting common_sorting_major_clients">
-                <div class="common_sorting__title"><span>Major Clients</span> <img src="assets/drop_down_arrow_icon.svg" alt="Image" class="svg"></div>
-            </div>
-
-            <div class="common_sorting common_sorting_services">
-                <div class="common_sorting__title"><span>Products & Services</span> <img src="assets/drop_down_arrow_icon.svg" alt="Image" class="svg">
-                </div>       
-            </div>
-
-            <div class="common_sorting common_sorting_verifed_track_record">
-                <div class="common_sorting__title"><span>Verified Track Record</span> <img src="assets/drop_down_arrow_icon.svg" alt="Image" class="svg"></div>          
-            </div>
-
-            <div class="common_sorting common_sorting_product_perfomance_data">
-                <div class="common_sorting__title"><span>Verified Perfomance Data</span> <img src="assets/drop_down_arrow_icon.svg" alt="Image" class="svg"></div> 
+                </div>
             </div>
         </div>
+        <div class="desktop_toggle_menu_block_wrapper">
+            <div class="container">
+                <div class="desktop_toggle_menu_block">
+                    <input type="search" placeholder="Search request" maxlength="100" class="desktop_toggle_menu__search_bar" required>
+                    <button class="button button__blue desktop_toggle_menu__search_button">Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_account_toggle_menu_block">
+            <div class="container">
+                <ul class="mobile_account_toggle_menu">
+                    <li class="mobile_toggle_menu__item">
+                        <a href="#">
+                            <div class="button__icon"><img src="assets/header_logined/profile_icon.svg" alt="Image"></div><span>Profile</span></a>
+                    </li>
+                    <li class="mobile_toggle_menu__item">
+                        <a href="#">
+                            <div class="button__icon"><img src="assets/header_logined/settings_icon.svg" alt="Image"></div><span>Settings</span></a>
+                    </li>
+                    <li class="mobile_toggle_menu__item">
+                        <a href="#">
+                            <div class="button__icon"><img src="assets/header_logined/faq_icon.svg" alt="Image"></div><span>FAQ</span> </a>
+                    </li>
+                    <li class="mobile_toggle_menu__item desktop_account_toggle_menu__logout">
+                        <a href="#">
+                            <div class="button__icon"><img src="assets/header_logined/log_out_icon.svg" alt="Image"> </div><span>Log Out</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobile_toggle_menu_block">
+            <div class="container">
+                <ul class="mobile_toggle_menu">
+                    <li class="mobile_search_block">
+                        <input type="search" placeholder="Search request" maxlength="100" required>
+                        <button>Search</button>
+                    </li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Suppliers</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Intelligence</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">News</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Expert articles</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Indices</a></li>
+                    <li class="mobile_toggle_menu__item"><a href="#">Contacts</a></li>
+                </ul>
+                <div class="mobile_toggle_buttons"> <a href="#" class="button login_button button__blue">Log in</a> <a href="#" class="button registration_button button__yellow">Registration</a>
+                    <a href="#" class="button add_company_button button__yellow"><img class="svg" src="assets/plus_icon.svg" alt="Image"> Add company</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="expert_intelligance inner_page ">
+        <section class="breadcrumbs_wrapper">
+            <div class="container">
+                <div class="breadcrumbs_block row">
+                    <ul class="breadcrumbs_list">
+                        <li class="breadcrumbs_list__item"><a href="/">Homepage</a></li>
+                        <li class="breadcrumbs_list__item current"><span>Expert Intelligence</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
+        <section class="main_content_wrapper">
+            <div class="container">
 
-                <form class="common_sorting_block" autocomplete="off">
+                <div class="expert_intelligance_header_block">
+                    <h1>Expert Articles</h1>
 
-                    <div class="common_sorting_block_content_block">
-                        <div class="common_sorting_block_choosen_column">
-                            <h4>You choose</h4>
+                    <div class="inner_page_search">
+                        <input type="search" placeholder="Search" maxlength="100" required>
+                        <button>Search</button>
+                    </div>
+                </div>
 
-                            <div class="common_sorting_block_choosen">
+                <div class="common_filtering_desktop_block">
+                    <div class="common_filter_selector_desktop_block">
+                        <div class="common_filters_block">
+                            <div class="common_sorting common_sorting_region">
+                                <div class="common_sorting__title"><span>Region</span> <img src="assets/drop_down_arrow_icon.svg" alt="Image" class="svg"></div>
+                            </div>
+
+                            <div class="common_sorting common_sorting_major_clients">
+                                <div class="common_sorting__title"><span>Major Clients</span> <img src="assets/drop_down_arrow_icon.svg" alt="Image" class="svg"></div>
+                            </div>
+
+                            <div class="common_sorting common_sorting_services">
+                                <div class="common_sorting__title"><span>Products & Services</span> <img src="assets/drop_down_arrow_icon.svg" alt="Image" class="svg">
+                                </div>
+                            </div>
+
+                            <div class="common_sorting common_sorting_verifed_track_record">
+                                <div class="common_sorting__title"><span>Verified Track Record</span> <img src="assets/drop_down_arrow_icon.svg" alt="Image" class="svg"></div>
+                            </div>
+
+                            <div class="common_sorting common_sorting_product_perfomance_data">
+                                <div class="common_sorting__title"><span>Verified Perfomance Data</span> <img src="assets/drop_down_arrow_icon.svg" alt="Image" class="svg"></div>
+                            </div>
+                        </div>
+
+                        <form class="common_sorting_block" autocomplete="off">
+
+                            <div class="common_sorting_block_content_block">
+                                <div class="common_sorting_block_choosen_column">
+                                    <h4>You choose</h4>
+
+                                    <div class="common_sorting_block_choosen">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="common_sorting_block_content_column">
+
+                                    <div class="common_sorting_block_content common_sorting_block_content__region">
+                                        <h4>Countries</h4>
+
+                                        <div class="common_sorting_block_region_list">
+                                            <div class="common_sorting_element common_sorting_element_checkbox">
+                                                <label>
+                                                    <span>Gulf of Mexico</span>
+                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Gulf of Mexico">
+                                                    <span class="common_sorting_element__checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="common_sorting_element common_sorting_element_checkbox">
+                                                <label>
+                                                    <span>Asia</span>
+                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Asia">
+                                                    <span class="common_sorting_element__checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="common_sorting_element common_sorting_element_checkbox">
+                                                <label>
+                                                    <span>Middle East</span>
+                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Middle East">
+                                                    <span class="common_sorting_element__checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="common_sorting_element common_sorting_element_checkbox">
+                                                <label>
+                                                    <span>Africa</span>
+                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Africa">
+                                                    <span class="common_sorting_element__checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="common_sorting_element common_sorting_element_checkbox">
+                                                <label>
+                                                    <span>Caspian</span>
+                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Caspian">
+                                                    <span class="common_sorting_element__checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="common_sorting_element common_sorting_element_checkbox">
+                                                <label>
+                                                    <span>Russia & CIS</span>
+                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Russia & CIS">
+                                                    <span class="common_sorting_element__checkmark"></span>
+                                                </label>
+                                            </div>
+
+                                            <div class="common_sorting_element common_sorting_element_checkbox">
+                                                <label>
+                                                    <span>North America</span>
+                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="North America">
+                                                    <span class="common_sorting_element__checkmark"></span>
+                                                </label>
+                                            </div>
+
+                                            <div class="common_sorting_element common_sorting_element_checkbox">
+                                                <label>
+                                                    <span>South America</span>
+                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="South America">
+                                                    <span class="common_sorting_element__checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="common_sorting_element common_sorting_element_checkbox">
+                                                <label>
+                                                    <span>North Sea</span>
+                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="North Sea">
+                                                    <span class="common_sorting_element__checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="common_sorting_element common_sorting_element_checkbox">
+                                                <label>
+                                                    <span>Europe</span>
+                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Europe">
+                                                    <span class="common_sorting_element__checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="common_sorting_block_content common_sorting_block_content__major_clients">
+                                        <div class="common_sorting_block_content__major_clients_most_popular_column">
+                                            <h4>Most Popular Companies</h4>
+
+                                            <div class="common_sorting_block_content__major_clients_most_popular_list">
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>BP</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="BP">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>ExxonMobil</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="ExxonMobil">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Shell</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Shell">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Total</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Total">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Chevron</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Chevron">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>ConocoPhilips</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="ConocoPhilips">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Occidental Petroleum</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Occidental Petroleum">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="common_sorting_block_content__major_clients_list_column">
+                                            <div class="common_sorting_block_content__major_clients_list">
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>BP</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="BP">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>ExxonMobil</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="ExxonMobil">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Shell</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Shell">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Total</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Total">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Chevron</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Chevron">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>ConocoPhilips</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="ConocoPhilips">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Occidental Petroleum</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Occidental Petroleum">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Petronas</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Petronas">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Mubadala Petroleum</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Mubadala Petroleum">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Saudi Aramco</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Saudi Aramco">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Sinopec</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Sinopec">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Occidental Petroleum</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Occidental Petroleum">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Petronas</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Petronas">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Mubadala Petroleum</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Mubadala Petroleum">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Saudi Aramco</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Saudi Aramco">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Sinopec</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Sinopec">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Occidental Petroleum</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Occidental Petroleum">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Petronas</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Petronas">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Mubadala Petroleum</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Mubadala Petroleum">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Saudi Aramco</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Saudi Aramco">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Sinopec</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Sinopec">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="common_sorting_block_content common_sorting_block_content__services">
+                                        <div class="common_sorting_block_content__services_categories_column">
+                                            <h4>Сategories</h4>
+
+                                            <div class="common_sorting_block_content__services_categories_list">
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Drilling</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Drilling">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Bulk Materials, Chemicals, Paints and Oils</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Bulk Materials, Chemicals, Paints and Oils">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Seismic, Survey And Positioning</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Seismic, Survey And Positioning">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Inspection And Testing</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Inspection And Testing">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Logistics And Transport</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Logistics And Transport">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Engineering, Consultancy And Professional Services</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Engineering, Consultancy And Professional Services">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Production</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Production">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Rotating & Static Equipment</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Rotating & Static Equipment">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Subsea Services & Pipeline Equipment</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Subsea Services & Pipeline Equipment">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Construction, Maintenance, & Overhaul</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Construction, Maintenance, & Overhaul">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Multidiscipline & Turnkey Services</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Multidiscipline & Turnkey Services">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="common_sorting_element common_sorting_element_checkbox">
+                                                    <label>
+                                                        <span>Other Support Services</span>
+                                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Other Support Services">
+                                                        <span class="common_sorting_element__checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="common_sorting_block_content__services_column">
+
+                                            <div class="common_sorting_element_tags_list">
+                                                <label>
+                                                    <span>Related Tags</span>
+                                                    <select class="common_sorting_element__tags_selector" multiple="multiple" style="width: 100%" name="common_sorting_element__tags[]">
+                                                        <option value="UX Design">UX Design</option>
+                                                        <option value="Photoshop">Photoshop</option>
+                                                        <option value="Something else">Japan</option>
+                                                        <option value="Something else">China</option>
+                                                        <option value="Something else">Singapur</option>
+                                                        <option value="Something else">Saudi</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+
+                                            <div class="common_sorting_block_content__services_list">
+                                                <h4>Services</h4>
+
+                                                <div class="common_sorting_category">
+                                                    <h4>Drilling</h4>
+                                                    <div class="common_sorting_element common_sorting_element_checkbox">
+                                                        <label>
+                                                            <span>Drilling</span>
+                                                            <input class="common_sorting_element__checkbox" type="checkbox" data-set="Drilling">
+                                                            <span class="common_sorting_element__checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="common_sorting_element common_sorting_element_checkbox">
+                                                        <label>
+                                                            <span>Bulk Materials, Chemicals, Paints and Oils</span>
+                                                            <input class="common_sorting_element__checkbox" type="checkbox" data-set="Bulk Materials, Chemicals, Paints and Oils">
+                                                            <span class="common_sorting_element__checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="common_sorting_element common_sorting_element_checkbox">
+                                                        <label>
+                                                            <span>Seismic, Survey And Positioning</span>
+                                                            <input class="common_sorting_element__checkbox" type="checkbox" data-set="Seismic, Survey And Positioning">
+                                                            <span class="common_sorting_element__checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="common_sorting_element common_sorting_element_checkbox">
+                                                        <label>
+                                                            <span>Inspection And Testing</span>
+                                                            <input class="common_sorting_element__checkbox" type="checkbox" data-set="Inspection And Testing">
+                                                            <span class="common_sorting_element__checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="common_sorting_element common_sorting_element_checkbox">
+                                                        <label>
+                                                            <span>Logistics And Transport</span>
+                                                            <input class="common_sorting_element__checkbox" type="checkbox" data-set="Logistics And Transport">
+                                                            <span class="common_sorting_element__checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="common_sorting_element common_sorting_element_checkbox">
+                                                        <label>
+                                                            <span>Engineering, Consultancy And Professional Services</span>
+                                                            <input class="common_sorting_element__checkbox" type="checkbox" data-set="Engineering, Consultancy And Professional Services">
+                                                            <span class="common_sorting_element__checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="common_sorting_element common_sorting_element_checkbox">
+                                                        <label>
+                                                            <span>Production</span>
+                                                            <input class="common_sorting_element__checkbox" type="checkbox" data-set="Production">
+                                                            <span class="common_sorting_element__checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="common_sorting_category">
+                                                    <h4>Drilling</h4>
+                                                    <div class="common_sorting_element common_sorting_element_checkbox">
+                                                        <label>
+                                                            <span>Drilling</span>
+                                                            <input class="common_sorting_element__checkbox" type="checkbox" data-set="Drilling">
+                                                            <span class="common_sorting_element__checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="common_sorting_element common_sorting_element_checkbox">
+                                                        <label>
+                                                            <span>Bulk Materials, Chemicals, Paints and Oils</span>
+                                                            <input class="common_sorting_element__checkbox" type="checkbox" data-set="Bulk Materials, Chemicals, Paints and Oils">
+                                                            <span class="common_sorting_element__checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="common_sorting_element common_sorting_element_checkbox">
+                                                        <label>
+                                                            <span>Seismic, Survey And Positioning</span>
+                                                            <input class="common_sorting_element__checkbox" type="checkbox" data-set="Seismic, Survey And Positioning">
+                                                            <span class="common_sorting_element__checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="common_sorting_element common_sorting_element_checkbox">
+                                                        <label>
+                                                            <span>Inspection And Testing</span>
+                                                            <input class="common_sorting_element__checkbox" type="checkbox" data-set="Inspection And Testing">
+                                                            <span class="common_sorting_element__checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="common_sorting_element common_sorting_element_checkbox">
+                                                        <label>
+                                                            <span>Logistics And Transport</span>
+                                                            <input class="common_sorting_element__checkbox" type="checkbox" data-set="Logistics And Transport">
+                                                            <span class="common_sorting_element__checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="common_sorting_element common_sorting_element_checkbox">
+                                                        <label>
+                                                            <span>Engineering, Consultancy And Professional Services</span>
+                                                            <input class="common_sorting_element__checkbox" type="checkbox" data-set="Engineering, Consultancy And Professional Services">
+                                                            <span class="common_sorting_element__checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="common_sorting_element common_sorting_element_checkbox">
+                                                        <label>
+                                                            <span>Production</span>
+                                                            <input class="common_sorting_element__checkbox" type="checkbox" data-set="Production">
+                                                            <span class="common_sorting_element__checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="common_sorting_block_content common_sorting_block_content__verifed_track_record">
+
+                                        <h4>Verification status</h4>
+
+                                        <div class="common_sorting_element common_sorting_element_radio">
+                                            <label>
+                                                <span>Yes</span>
+                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="Verification status" data-type="boolean" data-name="verification_status" name="verification-status">
+                                                <span class="common_sorting_element__radiomark"></span>
+                                            </label>
+
+                                            <label>
+                                                <span>No</span>
+                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="No Verification status" data-type="boolean" data-name="verification_status" name="verification-status">
+                                                <span class="common_sorting_element__radiomark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="common_sorting_block_content common_sorting_block_content__product_perfomance_data">
+
+                                        <h4>Verified Perfomance Data</h4>
+
+                                        <div class="common_sorting_element common_sorting_element_radio">
+                                            <label>
+                                                <span>Yes</span>
+                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="Verified Perfomance Data" data-type="boolean" data-name="verified_perfomance_data" name="verified-perfomance-data">
+                                                <span class="common_sorting_element__radiomark"></span>
+                                            </label>
+
+                                            <label>
+                                                <span>No</span>
+                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="No Verified Perfomance Data" data-type="boolean" data-name="verified_perfomance_data" name="verified-perfomance-data">
+                                                <span class="common_sorting_element__radiomark"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="common_sorting_buttons_block">
+
+                                <div class="common_sorting_buttons_left_column">
+                                    <span class="button button__white common_filter_clear">Clear All Filters</span>
+                                </div>
+
+                                <div class="common_sorting_buttons_right_column">
+                                    <span class="button button__white common_filter_cancel">Cancel</span>
+                                    <button class="button button__blue common_show_companies_button">Show <span>44</span> companies</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="common_filter_selected_list_desktop_block">
+                        <div class="common_filter_selected_list">
+
+                        </div>
+                        <div class="common_filter_selected_buttons">
+                            <button class="common_filter_show">
+                                <span class="common_filter_show__more active">Show More</span>
+                                <span class="common_filter_show__less">Show Less</span>
+                            </button>
+                            <button class="button button__white common_filter_clear common_filter_clear__small">Clear All Filters</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="main_content_inner">
+                    <div class="expert_intelligence_tiles_block">
+
+                        <div class="expert_intelligance_tile">
+                            <div class="expert_intelligance_tile_header_block">
+                                <div class="expert_intelligance_tile_img">
+                                    <img src="img/suppliers/supplier_logo.png" alt="Image">
+                                </div>
+                                <div class="expert_intelligance_tile_main_info">
+                                    <h2>Rising Demand for OBN Seismic and Source/ 2D vessels</h2>
+
+                                    <div class="verification_block mobile">
+                                        <img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>
+                                    </div>
+
+                                    <div class="article_statistics_block">
+                                        <div class="article_statistics_block_author">
+                                            <h4>Reactive</h4>
+                                        </div>
+
+                                        <div class="article_statistics_block_date">
+                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                                            <span>24.01.2019</span>
+                                        </div>
+
+                                        <div class="article_statistics_block_veiws">
+                                            <img class="svg" src="assets/news/view_counter_icon.svg" alt="Image">
+                                            <span>56251</span>
+                                        </div>
+
+                                        <div class="article_statistics_block_comments">
+                                            <img class="svg" src="assets/news/comments_counter_icon.svg" alt="Image">
+                                            <span><i>485</i> Comments</span>
+                                        </div>
+
+                                        <div class="article_statistics_block_shares">
+                                            <img class="svg" src="assets/news/shares_counter_icon.svg" alt="Image">
+                                            <span><i>165</i> Sharings</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="verification_block">
+                                    <img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>
+                                </div>
+
+                            </div>
+
+                            <div class="expert_intelligance_tile_body_block">
+                                <p class="expert_intelligance_tile_text">ABERDEEN, UK – Rotech Subsea has won two contracts for work offshore Saudi Arabia.
+                                    <br> The first program for the subsea excavation contractor – cable post-trenching – involved mobilization from Aberdeen of the TRS1-LD tool. This was followed by collection by the client from Rotech’s fabrication yard. Seeking talented team members who are passionate about changing the world, one solution at a time. Search for your new career at NOV and become part of something invisible lorem</p>
+                            </div>
+
+                            <div class="expert_intelligance_tile_footer_block">
+
+                                <div class="expert_intelligance_tile_tags">
+                                    <a href="#" class="tag">#Connections</a>
+                                    <a href="#" class="tag">#Casing</a>
+                                    <a href="#" class="tag">#Casing Centrailizers</a>
+                                    <a href="#" class="tag">#Pipe</a>
+                                    <a href="#" class="tag">#Producting Tubing</a>
+                                    <button class="tag to_tags_modal">...</button>
+                                </div>
+
+                                <div class="expert_intelligance_tile_read">
+                                    <a href="#" class="button button__blue">Read</a>
+                                </div>
 
                             </div>
 
                         </div>
+                        <div class="expert_intelligance_tile">
+                            <div class="expert_intelligance_tile_header_block">
+                                <div class="expert_intelligance_tile_img">
+                                    <img src="img/suppliers/supplier_logo.png" alt="Image">
+                                </div>
+                                <div class="expert_intelligance_tile_main_info">
+                                    <h2>Rising Demand for OBN Seismic and Source/ 2D vessels</h2>
 
-
-                        <div class="common_sorting_block_content_column">
-
-                            <div class="common_sorting_block_content common_sorting_block_content__region">
-                                <h4>Countries</h4>
-
-                                <div class="common_sorting_block_region_list">
-                                    <div class="common_sorting_element common_sorting_element_checkbox">
-                                        <label> 
-                                            <span>Gulf of Mexico</span>
-                                            <input class="common_sorting_element__checkbox" type="checkbox" data-set="Gulf of Mexico">
-                                            <span class="common_sorting_element__checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="common_sorting_element common_sorting_element_checkbox">
-                                        <label> 
-                                            <span>Asia</span>
-                                            <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Asia">
-                                            <span class="common_sorting_element__checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="common_sorting_element common_sorting_element_checkbox">
-                                        <label> 
-                                            <span>Middle East</span>
-                                            <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Middle East">
-                                            <span class="common_sorting_element__checkmark"></span>
-                                        </label>
-                                    </div>   
-                                    <div class="common_sorting_element common_sorting_element_checkbox">
-                                        <label> 
-                                            <span>Africa</span>
-                                            <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Africa">
-                                            <span class="common_sorting_element__checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="common_sorting_element common_sorting_element_checkbox">
-                                        <label> 
-                                            <span>Caspian</span>
-                                            <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Caspian">
-                                            <span class="common_sorting_element__checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="common_sorting_element common_sorting_element_checkbox">
-                                        <label> 
-                                            <span>Russia & CIS</span>
-                                            <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Russia & CIS">
-                                            <span class="common_sorting_element__checkmark"></span>
-                                        </label>
-                                    </div>
-                                    
-                                    <div class="common_sorting_element common_sorting_element_checkbox">
-                                        <label>
-                                            <span>North America</span>
-                                            <input class="common_sorting_element__checkbox" type="checkbox"  data-set="North America">
-                                            <span class="common_sorting_element__checkmark"></span>
-                                        </label>
+                                    <div class="verification_block mobile">
+                                        <img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>
                                     </div>
 
-                                    <div class="common_sorting_element common_sorting_element_checkbox">
-                                        <label>
-                                            <span>South America</span>
-                                            <input class="common_sorting_element__checkbox" type="checkbox"  data-set="South America">
-                                            <span class="common_sorting_element__checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="common_sorting_element common_sorting_element_checkbox">
-                                        <label> 
-                                            <span>North Sea</span>
-                                            <input class="common_sorting_element__checkbox" type="checkbox"  data-set="North Sea">
-                                            <span class="common_sorting_element__checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="common_sorting_element common_sorting_element_checkbox">
-                                        <label>
-                                            <span>Europe</span>
-                                            <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Europe">
-                                            <span class="common_sorting_element__checkmark"></span>
-                                        </label>
-                                    </div>                        
-                                </div>                        
-                            </div>
-                        
-                            <div class="common_sorting_block_content common_sorting_block_content__major_clients">
-                                <div class="common_sorting_block_content__major_clients_most_popular_column">
-                                    <h4>Most Popular Companies</h4>
-                                
-                                    <div class="common_sorting_block_content__major_clients_most_popular_list">
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>BP</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="BP">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
+                                    <div class="article_statistics_block">
+                                        <div class="article_statistics_block_author">
+                                            <h4>Reactive</h4>
                                         </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>ExxonMobil</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="ExxonMobil">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
+
+                                        <div class="article_statistics_block_date">
+                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                                            <span>24.01.2019</span>
                                         </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Shell</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="Shell">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
+
+                                        <div class="article_statistics_block_veiws">
+                                            <img class="svg" src="assets/news/view_counter_icon.svg" alt="Image">
+                                            <span>56251</span>
                                         </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Total</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="Total">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
+
+                                        <div class="article_statistics_block_comments">
+                                            <img class="svg" src="assets/news/comments_counter_icon.svg" alt="Image">
+                                            <span><i>485</i> Comments</span>
                                         </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Chevron</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Chevron">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
+
+                                        <div class="article_statistics_block_shares">
+                                            <img class="svg" src="assets/news/shares_counter_icon.svg" alt="Image">
+                                            <span><i>165</i> Sharings</span>
                                         </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>ConocoPhilips</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="ConocoPhilips">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Occidental Petroleum</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Occidental Petroleum">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>                                
                                     </div>
                                 </div>
 
-                                <div class="common_sorting_block_content__major_clients_list_column">
-                                    <div class="common_sorting_block_content__major_clients_list">
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>BP</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="BP">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>ExxonMobil</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="ExxonMobil">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Shell</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Shell">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Total</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Total">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Chevron</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Chevron">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>ConocoPhilips</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="ConocoPhilips">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Occidental Petroleum</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Occidental Petroleum">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Petronas</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Petronas">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Mubadala Petroleum</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Mubadala Petroleum">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Saudi Aramco</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Saudi Aramco">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Sinopec</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Sinopec">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Occidental Petroleum</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Occidental Petroleum">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Petronas</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Petronas">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Mubadala Petroleum</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Mubadala Petroleum">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Saudi Aramco</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Saudi Aramco">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Sinopec</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Sinopec">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Occidental Petroleum</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Occidental Petroleum">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Petronas</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Petronas">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Mubadala Petroleum</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Mubadala Petroleum">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Saudi Aramco</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Saudi Aramco">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Sinopec</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Sinopec">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-
-                                    </div>
+                                <div class="verification_block">
+                                    <img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>
                                 </div>
+
                             </div>
 
-                            <div class="common_sorting_block_content common_sorting_block_content__services">
-                                <div class="common_sorting_block_content__services_categories_column">
-                                    <h4>Сategories</h4>
-                                
-                                    <div class="common_sorting_block_content__services_categories_list">
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Drilling</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="Drilling">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
+                            <div class="expert_intelligance_tile_body_block">
+                                <p class="expert_intelligance_tile_text">ABERDEEN, UK – Rotech Subsea has won two contracts for work offshore Saudi Arabia.
+                                    <br> The first program for the subsea excavation contractor – cable post-trenching – involved mobilization from Aberdeen of the TRS1-LD tool. This was followed by collection by the client from Rotech’s fabrication yard. Seeking talented team members who are passionate about changing the world, one solution at a time. Search for your new career at NOV and become part of something invisible lorem</p>
+                            </div>
+
+                            <div class="expert_intelligance_tile_footer_block">
+
+                                <div class="expert_intelligance_tile_tags">
+                                    <a href="#" class="tag">#Connections</a>
+                                    <a href="#" class="tag">#Casing</a>
+                                    <a href="#" class="tag">#Casing Centrailizers</a>
+                                    <a href="#" class="tag">#Pipe</a>
+                                    <a href="#" class="tag">#Producting Tubing</a>
+                                    <button class="tag to_tags_modal">...</button>
+                                </div>
+
+                                <div class="expert_intelligance_tile_read">
+                                    <a href="#" class="button button__blue">Read</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="expert_intelligance_tile">
+                            <div class="expert_intelligance_tile_header_block">
+                                <div class="expert_intelligance_tile_img">
+                                    <img src="img/suppliers/supplier_logo.png" alt="Image">
+                                </div>
+                                <div class="expert_intelligance_tile_main_info">
+                                    <h2>Rising Demand for OBN Seismic and Source/ 2D vessels</h2>
+
+                                    <div class="verification_block mobile">
+                                        <img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>
+                                    </div>
+
+                                    <div class="article_statistics_block">
+                                        <div class="article_statistics_block_author">
+                                            <h4>Reactive</h4>
                                         </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Bulk Materials, Chemicals, Paints and Oils</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="Bulk Materials, Chemicals, Paints and Oils">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
+
+                                        <div class="article_statistics_block_date">
+                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                                            <span>24.01.2019</span>
                                         </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Seismic, Survey And Positioning</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="Seismic, Survey And Positioning">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
+
+                                        <div class="article_statistics_block_veiws">
+                                            <img class="svg" src="assets/news/view_counter_icon.svg" alt="Image">
+                                            <span>56251</span>
                                         </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Inspection And Testing</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Inspection And Testing">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
+
+                                        <div class="article_statistics_block_comments">
+                                            <img class="svg" src="assets/news/comments_counter_icon.svg" alt="Image">
+                                            <span><i>485</i> Comments</span>
                                         </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Logistics And Transport</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="Logistics And Transport">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
+
+                                        <div class="article_statistics_block_shares">
+                                            <img class="svg" src="assets/news/shares_counter_icon.svg" alt="Image">
+                                            <span><i>165</i> Sharings</span>
                                         </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Engineering, Consultancy And Professional Services</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="Engineering, Consultancy And Professional Services">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Production</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="Production">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Rotating & Static Equipment</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="Rotating & Static Equipment">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Subsea Services & Pipeline Equipment</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="Subsea Services & Pipeline Equipment">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Construction, Maintenance, & Overhaul</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="Construction, Maintenance, & Overhaul">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Multidiscipline & Turnkey Services</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="Multidiscipline & Turnkey Services">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="common_sorting_element common_sorting_element_checkbox">
-                                            <label> 
-                                                <span>Other Support Services</span>
-                                                <input class="common_sorting_element__checkbox" type="checkbox" data-set="Other Support Services">
-                                                <span class="common_sorting_element__checkmark"></span>
-                                            </label>
-                                        </div>                                    
                                     </div>
                                 </div>
 
-
-                                <div class="common_sorting_block_content__services_column">
-
-                                <div class="common_sorting_element_tags_list">
-                                    <label>
-                                        <span>Related Tags</span>
-                                        <select class="common_sorting_element__tags_selector" multiple="multiple" style="width: 100%" name="common_sorting_element__tags[]">
-                                            <option value="UX Design">UX Design</option>
-                                            <option value="Photoshop">Photoshop</option>
-                                            <option value="Something else">Japan</option>
-                                            <option value="Something else">China</option>
-                                            <option value="Something else">Singapur</option>
-                                            <option value="Something else">Saudi</option>                                            
-                                        </select>
-                                    </label>                                    
+                                <div class="verification_block">
+                                    <img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>
                                 </div>
 
+                            </div>
 
+                            <div class="expert_intelligance_tile_body_block">
+                                <p class="expert_intelligance_tile_text">ABERDEEN, UK – Rotech Subsea has won two contracts for work offshore Saudi Arabia.
+                                    <br> The first program for the subsea excavation contractor – cable post-trenching – involved mobilization from Aberdeen of the TRS1-LD tool. This was followed by collection by the client from Rotech’s fabrication yard. Seeking talented team members who are passionate about changing the world, one solution at a time. Search for your new career at NOV and become part of something invisible lorem</p>
+                            </div>
 
+                            <div class="expert_intelligance_tile_footer_block">
 
-                                    <div class="common_sorting_block_content__services_list">
-                                        <h4>Services</h4>
+                                <div class="expert_intelligance_tile_tags">
+                                    <a href="#" class="tag">#Connections</a>
+                                    <a href="#" class="tag">#Casing</a>
+                                    <a href="#" class="tag">#Casing Centrailizers</a>
+                                    <a href="#" class="tag">#Pipe</a>
+                                    <a href="#" class="tag">#Producting Tubing</a>
+                                    <button class="tag to_tags_modal">...</button>
+                                </div>
 
-                                        <div class="common_sorting_category">
-                                            <h4>Drilling</h4>
-                                            <div class="common_sorting_element common_sorting_element_checkbox">
-                                                <label> 
-                                                    <span>Drilling</span>
-                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Drilling">
-                                                    <span class="common_sorting_element__checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="common_sorting_element common_sorting_element_checkbox">
-                                                <label> 
-                                                    <span>Bulk Materials, Chemicals, Paints and Oils</span>
-                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Bulk Materials, Chemicals, Paints and Oils">
-                                                    <span class="common_sorting_element__checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="common_sorting_element common_sorting_element_checkbox">
-                                                <label> 
-                                                    <span>Seismic, Survey And Positioning</span>
-                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Seismic, Survey And Positioning">
-                                                    <span class="common_sorting_element__checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="common_sorting_element common_sorting_element_checkbox">
-                                                <label> 
-                                                    <span>Inspection And Testing</span>
-                                                    <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Inspection And Testing">
-                                                    <span class="common_sorting_element__checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="common_sorting_element common_sorting_element_checkbox">
-                                                <label> 
-                                                    <span>Logistics And Transport</span>
-                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Logistics And Transport">
-                                                    <span class="common_sorting_element__checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="common_sorting_element common_sorting_element_checkbox">
-                                                <label> 
-                                                    <span>Engineering, Consultancy And Professional Services</span>
-                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Engineering, Consultancy And Professional Services">
-                                                    <span class="common_sorting_element__checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="common_sorting_element common_sorting_element_checkbox">
-                                                <label> 
-                                                    <span>Production</span>
-                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Production">
-                                                    <span class="common_sorting_element__checkmark"></span>
-                                                </label>
-                                            </div>                                      
+                                <div class="expert_intelligance_tile_read">
+                                    <a href="#" class="button button__blue">Read</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="expert_intelligance_tile">
+                            <div class="expert_intelligance_tile_header_block">
+                                <div class="expert_intelligance_tile_img">
+                                    <img src="img/suppliers/supplier_logo.png" alt="Image">
+                                </div>
+                                <div class="expert_intelligance_tile_main_info">
+                                    <h2>Rising Demand for OBN Seismic and Source/ 2D vessels</h2>
+
+                                    <div class="verification_block mobile">
+                                        <img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>
+                                    </div>
+
+                                    <div class="article_statistics_block">
+                                        <div class="article_statistics_block_author">
+                                            <h4>Reactive</h4>
                                         </div>
 
-                                        <div class="common_sorting_category">
-                                            <h4>Drilling</h4>
-                                            <div class="common_sorting_element common_sorting_element_checkbox">
-                                                <label> 
-                                                    <span>Drilling</span>
-                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Drilling">
-                                                    <span class="common_sorting_element__checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="common_sorting_element common_sorting_element_checkbox">
-                                                <label> 
-                                                    <span>Bulk Materials, Chemicals, Paints and Oils</span>
-                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Bulk Materials, Chemicals, Paints and Oils">
-                                                    <span class="common_sorting_element__checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="common_sorting_element common_sorting_element_checkbox">
-                                                <label> 
-                                                    <span>Seismic, Survey And Positioning</span>
-                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Seismic, Survey And Positioning">
-                                                    <span class="common_sorting_element__checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="common_sorting_element common_sorting_element_checkbox">
-                                                <label> 
-                                                    <span>Inspection And Testing</span>
-                                                    <input class="common_sorting_element__checkbox" type="checkbox"  data-set="Inspection And Testing">
-                                                    <span class="common_sorting_element__checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="common_sorting_element common_sorting_element_checkbox">
-                                                <label> 
-                                                    <span>Logistics And Transport</span>
-                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Logistics And Transport">
-                                                    <span class="common_sorting_element__checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="common_sorting_element common_sorting_element_checkbox">
-                                                <label> 
-                                                    <span>Engineering, Consultancy And Professional Services</span>
-                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Engineering, Consultancy And Professional Services">
-                                                    <span class="common_sorting_element__checkmark"></span>
-                                                </label>
-                                            </div>
-                                            <div class="common_sorting_element common_sorting_element_checkbox">
-                                                <label> 
-                                                    <span>Production</span>
-                                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Production">
-                                                    <span class="common_sorting_element__checkmark"></span>
-                                                </label>
-                                            </div>                                      
-                                        </div>                                    
+                                        <div class="article_statistics_block_date">
+                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                                            <span>24.01.2019</span>
+                                        </div>
+
+                                        <div class="article_statistics_block_veiws">
+                                            <img class="svg" src="assets/news/view_counter_icon.svg" alt="Image">
+                                            <span>56251</span>
+                                        </div>
+
+                                        <div class="article_statistics_block_comments">
+                                            <img class="svg" src="assets/news/comments_counter_icon.svg" alt="Image">
+                                            <span><i>485</i> Comments</span>
+                                        </div>
+
+                                        <div class="article_statistics_block_shares">
+                                            <img class="svg" src="assets/news/shares_counter_icon.svg" alt="Image">
+                                            <span><i>165</i> Sharings</span>
+                                        </div>
                                     </div>
                                 </div>
-        
+
+                                <div class="verification_block">
+                                    <img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>
+                                </div>
 
                             </div>
 
-                            <div class="common_sorting_block_content common_sorting_block_content__verifed_track_record">
-
-                                <h4>Verification status</h4>
-
-                                <div class="common_sorting_element common_sorting_element_radio">
-                                    <label>
-                                        <span>Yes</span> 
-                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="Verification status" data-type="boolean" data-name="verification_status" name="verification-status">
-                                        <span class="common_sorting_element__radiomark"></span>
-                                    </label>
-
-                                    <label>
-                                        <span>No</span>
-                                        <input class="common_sorting_element__checkbox" type="checkbox" data-set="No Verification status" data-type="boolean" data-name="verification_status" name="verification-status">
-                                        <span class="common_sorting_element__radiomark"></span>
-                                    </label>
-                                </div>  
+                            <div class="expert_intelligance_tile_body_block">
+                                <p class="expert_intelligance_tile_text">ABERDEEN, UK – Rotech Subsea has won two contracts for work offshore Saudi Arabia.
+                                    <br> The first program for the subsea excavation contractor – cable post-trenching – involved mobilization from Aberdeen of the TRS1-LD tool. This was followed by collection by the client from Rotech’s fabrication yard. Seeking talented team members who are passionate about changing the world, one solution at a time. Search for your new career at NOV and become part of something invisible lorem</p>
                             </div>
 
-                            <div class="common_sorting_block_content common_sorting_block_content__product_perfomance_data">
+                            <div class="expert_intelligance_tile_footer_block">
 
-                            <h4>Verified Perfomance Data</h4>
+                                <div class="expert_intelligance_tile_tags">
+                                    <a href="#" class="tag">#Connections</a>
+                                    <a href="#" class="tag">#Casing</a>
+                                    <a href="#" class="tag">#Casing Centrailizers</a>
+                                    <a href="#" class="tag">#Pipe</a>
+                                    <a href="#" class="tag">#Producting Tubing</a>
+                                    <button class="tag to_tags_modal">...</button>
+                                </div>
 
-                            <div class="common_sorting_element common_sorting_element_radio">
-                                <label> 
-                                    <span>Yes</span>
-                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="Verified Perfomance Data" data-type="boolean" data-name="verified_perfomance_data" name="verified-perfomance-data">
-                                    <span class="common_sorting_element__radiomark"></span>
-                                </label>
-
-                                <label>
-                                    <span>No</span>
-                                    <input class="common_sorting_element__checkbox" type="checkbox" data-set="No Verified Perfomance Data" data-type="boolean" data-name="verified_perfomance_data" name="verified-perfomance-data">
-                                    <span class="common_sorting_element__radiomark"></span>
-                                </label>
-                            </div>  
+                                <div class="expert_intelligance_tile_read">
+                                    <a href="#" class="button button__blue">Read</a>
+                                </div>
 
                             </div>
-                        </div>                    
-                    </div>
 
-                    <div class="common_sorting_buttons_block">
-        
-                        <div class="common_sorting_buttons_left_column">
-                            <span class="button button__white common_filter_clear">Clear All Filters</span>                        
+                        </div>
+                        <div class="expert_intelligance_tile">
+                            <div class="expert_intelligance_tile_header_block">
+                                <div class="expert_intelligance_tile_img">
+                                    <img src="img/suppliers/supplier_logo.png" alt="Image">
+                                </div>
+                                <div class="expert_intelligance_tile_main_info">
+                                    <h2>Rising Demand for OBN Seismic and Source/ 2D vessels</h2>
+
+                                    <div class="verification_block mobile">
+                                        <img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>
+                                    </div>
+
+                                    <div class="article_statistics_block">
+                                        <div class="article_statistics_block_author">
+                                            <h4>Reactive</h4>
+                                        </div>
+
+                                        <div class="article_statistics_block_date">
+                                            <img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">
+                                            <span>24.01.2019</span>
+                                        </div>
+
+                                        <div class="article_statistics_block_veiws">
+                                            <img class="svg" src="assets/news/view_counter_icon.svg" alt="Image">
+                                            <span>56251</span>
+                                        </div>
+
+                                        <div class="article_statistics_block_comments">
+                                            <img class="svg" src="assets/news/comments_counter_icon.svg" alt="Image">
+                                            <span><i>485</i> Comments</span>
+                                        </div>
+
+                                        <div class="article_statistics_block_shares">
+                                            <img class="svg" src="assets/news/shares_counter_icon.svg" alt="Image">
+                                            <span><i>165</i> Sharings</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="verification_block">
+                                    <img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>
+                                </div>
+
+                            </div>
+
+                            <div class="expert_intelligance_tile_body_block">
+                                <p class="expert_intelligance_tile_text">ABERDEEN, UK – Rotech Subsea has won two contracts for work offshore Saudi Arabia.
+                                    <br> The first program for the subsea excavation contractor – cable post-trenching – involved mobilization from Aberdeen of the TRS1-LD tool. This was followed by collection by the client from Rotech’s fabrication yard. Seeking talented team members who are passionate about changing the world, one solution at a time. Search for your new career at NOV and become part of something invisible lorem</p>
+                            </div>
+
+                            <div class="expert_intelligance_tile_footer_block">
+
+                                <div class="expert_intelligance_tile_tags">
+                                    <a href="#" class="tag">#Connections</a>
+                                    <a href="#" class="tag">#Casing</a>
+                                    <a href="#" class="tag">#Casing Centrailizers</a>
+                                    <a href="#" class="tag">#Pipe</a>
+                                    <a href="#" class="tag">#Producting Tubing</a>
+                                    <button class="tag to_tags_modal">...</button>
+                                </div>
+
+                                <div class="expert_intelligance_tile_read">
+                                    <a href="#" class="button button__blue">Read</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="load_more_button_block">
+                            <a href="#" class="button load_more_button full_width">
+                                <div class="button__icon">
+                                    <img class="svg" src="assets/load_icon.svg" alt="Image">
+                                </div>
+                                <span>Load More</span>
+                            </a>
                         </div>
 
-                        <div class="common_sorting_buttons_right_column">
-                            <span class="button button__white common_filter_cancel">Cancel</span>
-                            <button class="button button__blue common_show_companies_button">Show <span>44</span> companies</button>                       
-                        </div>                    
                     </div>
-                </form>
+                </div>
+            </div>
+        </section>
+        <section class="categories_tags_modal_block modal_block">
+
+            <div class="categories_tags_modal_content">
+                <div class="categories_tags_modal_inner_header">
+                    <h3>Tags</h3>
+                    <span class="categories_tags_modal_close"><img src="assets/modal_close_icon.svg" alt="Image"></span>
+                </div>
+                <div class="categories_tags_modal_inner_body">
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-
+	        <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#long-long-tag-2</a>
+                    <a href="#" class="tag">#tag-1</a>
+                    <a href="#" class="tag">#tag-1</a>
+                </div>
+
+            </div>
+
+        </section>
     </div>
-
-    <div class="common_filter_selected_list_desktop_block">
-        <div class="common_filter_selected_list">
-            
-        </div>
-		<div class="common_filter_selected_buttons">
-			<button class="common_filter_show">
-				<span class="common_filter_show__more active">Show More</span>
-				<span class="common_filter_show__less">Show Less</span>
-			</button>
-        	<button class="button button__white common_filter_clear common_filter_clear__small">Clear All Filters</button>			
-		</div>
-
-    </div>    
-</div>
-
-
-
-                            <div class="main_content_inner">
-                                <div class="expert_intelligence_tiles_block">
-
-                                    <div class="expert_intelligance_tile">
-	<div class="expert_intelligance_tile_header_block">
-		<div class="expert_intelligance_tile_img">
-			<img src="img/suppliers/supplier_logo.png" alt="Image">
-		</div>
-		<div class="expert_intelligance_tile_main_info">
-			<h2>Rising Demand for OBN Seismic and Source/ 2D vessels</h2>	
-			
-			<div class="verification_block mobile">
-				<img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>					
-			</div>
-
-
-					<div class="article_statistics_block">
-						<div class="article_statistics_block_author">
-							<h4>Reactive</h4>
-						</div>
-
-						<div class="article_statistics_block_date">
-							<img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">										
-							<span>24.01.2019</span>
-						</div>
-
-						<div class="article_statistics_block_veiws">
-							<img class="svg" src="assets/news/view_counter_icon.svg" alt="Image">									
-							<span>56251</span>
-						</div>
-
-						<div class="article_statistics_block_comments">
-							<img class="svg" src="assets/news/comments_counter_icon.svg" alt="Image">									
-							<span><i>485</i> Comments</span>
-						</div>
-
-						<div class="article_statistics_block_shares">
-							<img class="svg" src="assets/news/shares_counter_icon.svg" alt="Image">									
-							<span><i>165</i> Sharings</span>
-						</div>
-					</div>	
-		</div>
-
-		<div class="verification_block">
-			<img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>					
-		</div>
-
-	</div>
-
-	<div class="expert_intelligance_tile_body_block">
-		<p class="expert_intelligance_tile_text">ABERDEEN, UK – Rotech Subsea has won two contracts for work offshore Saudi Arabia.<br>
-		The first program for the subsea excavation contractor – cable post-trenching – involved mobilization from Aberdeen of the TRS1-LD tool. This was followed by collection by the client from Rotech’s fabrication yard. Seeking talented team members who are passionate about changing the world, one solution at a time. Search for your new career at NOV and become part of something invisible lorem</p>		
-	</div>
-
-	<div class="expert_intelligance_tile_footer_block">
-
-		<div class="expert_intelligance_tile_tags">
-			<a href="#" class="tag">#Connections</a>	
-			<a href="#" class="tag">#Casing</a>	
-			<a href="#" class="tag">#Casing Centrailizers</a>	
-			<a href="#" class="tag">#Pipe</a>												
-			<a href="#" class="tag">#Producting Tubing</a>	
-			<button class="tag to_tags_modal">...</button>		
-		</div>
-
-		<div class="expert_intelligance_tile_read">
-			<a href="#" class="button button__blue">Read</a>
-		</div>
-
-	</div>
-
-
-</div>                                        <div class="expert_intelligance_tile">
-	<div class="expert_intelligance_tile_header_block">
-		<div class="expert_intelligance_tile_img">
-			<img src="img/suppliers/supplier_logo.png" alt="Image">
-		</div>
-		<div class="expert_intelligance_tile_main_info">
-			<h2>Rising Demand for OBN Seismic and Source/ 2D vessels</h2>	
-			
-			<div class="verification_block mobile">
-				<img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>					
-			</div>
-
-
-					<div class="article_statistics_block">
-						<div class="article_statistics_block_author">
-							<h4>Reactive</h4>
-						</div>
-
-						<div class="article_statistics_block_date">
-							<img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">										
-							<span>24.01.2019</span>
-						</div>
-
-						<div class="article_statistics_block_veiws">
-							<img class="svg" src="assets/news/view_counter_icon.svg" alt="Image">									
-							<span>56251</span>
-						</div>
-
-						<div class="article_statistics_block_comments">
-							<img class="svg" src="assets/news/comments_counter_icon.svg" alt="Image">									
-							<span><i>485</i> Comments</span>
-						</div>
-
-						<div class="article_statistics_block_shares">
-							<img class="svg" src="assets/news/shares_counter_icon.svg" alt="Image">									
-							<span><i>165</i> Sharings</span>
-						</div>
-					</div>	
-		</div>
-
-		<div class="verification_block">
-			<img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>					
-		</div>
-
-	</div>
-
-	<div class="expert_intelligance_tile_body_block">
-		<p class="expert_intelligance_tile_text">ABERDEEN, UK – Rotech Subsea has won two contracts for work offshore Saudi Arabia.<br>
-		The first program for the subsea excavation contractor – cable post-trenching – involved mobilization from Aberdeen of the TRS1-LD tool. This was followed by collection by the client from Rotech’s fabrication yard. Seeking talented team members who are passionate about changing the world, one solution at a time. Search for your new career at NOV and become part of something invisible lorem</p>		
-	</div>
-
-	<div class="expert_intelligance_tile_footer_block">
-
-		<div class="expert_intelligance_tile_tags">
-			<a href="#" class="tag">#Connections</a>	
-			<a href="#" class="tag">#Casing</a>	
-			<a href="#" class="tag">#Casing Centrailizers</a>	
-			<a href="#" class="tag">#Pipe</a>												
-			<a href="#" class="tag">#Producting Tubing</a>	
-			<button class="tag to_tags_modal">...</button>		
-		</div>
-
-		<div class="expert_intelligance_tile_read">
-			<a href="#" class="button button__blue">Read</a>
-		</div>
-
-	</div>
-
-
-</div>                                            <div class="expert_intelligance_tile">
-	<div class="expert_intelligance_tile_header_block">
-		<div class="expert_intelligance_tile_img">
-			<img src="img/suppliers/supplier_logo.png" alt="Image">
-		</div>
-		<div class="expert_intelligance_tile_main_info">
-			<h2>Rising Demand for OBN Seismic and Source/ 2D vessels</h2>	
-			
-			<div class="verification_block mobile">
-				<img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>					
-			</div>
-
-
-					<div class="article_statistics_block">
-						<div class="article_statistics_block_author">
-							<h4>Reactive</h4>
-						</div>
-
-						<div class="article_statistics_block_date">
-							<img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">										
-							<span>24.01.2019</span>
-						</div>
-
-						<div class="article_statistics_block_veiws">
-							<img class="svg" src="assets/news/view_counter_icon.svg" alt="Image">									
-							<span>56251</span>
-						</div>
-
-						<div class="article_statistics_block_comments">
-							<img class="svg" src="assets/news/comments_counter_icon.svg" alt="Image">									
-							<span><i>485</i> Comments</span>
-						</div>
-
-						<div class="article_statistics_block_shares">
-							<img class="svg" src="assets/news/shares_counter_icon.svg" alt="Image">									
-							<span><i>165</i> Sharings</span>
-						</div>
-					</div>	
-		</div>
-
-		<div class="verification_block">
-			<img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>					
-		</div>
-
-	</div>
-
-	<div class="expert_intelligance_tile_body_block">
-		<p class="expert_intelligance_tile_text">ABERDEEN, UK – Rotech Subsea has won two contracts for work offshore Saudi Arabia.<br>
-		The first program for the subsea excavation contractor – cable post-trenching – involved mobilization from Aberdeen of the TRS1-LD tool. This was followed by collection by the client from Rotech’s fabrication yard. Seeking talented team members who are passionate about changing the world, one solution at a time. Search for your new career at NOV and become part of something invisible lorem</p>		
-	</div>
-
-	<div class="expert_intelligance_tile_footer_block">
-
-		<div class="expert_intelligance_tile_tags">
-			<a href="#" class="tag">#Connections</a>	
-			<a href="#" class="tag">#Casing</a>	
-			<a href="#" class="tag">#Casing Centrailizers</a>	
-			<a href="#" class="tag">#Pipe</a>												
-			<a href="#" class="tag">#Producting Tubing</a>	
-			<button class="tag to_tags_modal">...</button>		
-		</div>
-
-		<div class="expert_intelligance_tile_read">
-			<a href="#" class="button button__blue">Read</a>
-		</div>
-
-	</div>
-
-
-</div>                                                <div class="expert_intelligance_tile">
-	<div class="expert_intelligance_tile_header_block">
-		<div class="expert_intelligance_tile_img">
-			<img src="img/suppliers/supplier_logo.png" alt="Image">
-		</div>
-		<div class="expert_intelligance_tile_main_info">
-			<h2>Rising Demand for OBN Seismic and Source/ 2D vessels</h2>	
-			
-			<div class="verification_block mobile">
-				<img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>					
-			</div>
-
-
-					<div class="article_statistics_block">
-						<div class="article_statistics_block_author">
-							<h4>Reactive</h4>
-						</div>
-
-						<div class="article_statistics_block_date">
-							<img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">										
-							<span>24.01.2019</span>
-						</div>
-
-						<div class="article_statistics_block_veiws">
-							<img class="svg" src="assets/news/view_counter_icon.svg" alt="Image">									
-							<span>56251</span>
-						</div>
-
-						<div class="article_statistics_block_comments">
-							<img class="svg" src="assets/news/comments_counter_icon.svg" alt="Image">									
-							<span><i>485</i> Comments</span>
-						</div>
-
-						<div class="article_statistics_block_shares">
-							<img class="svg" src="assets/news/shares_counter_icon.svg" alt="Image">									
-							<span><i>165</i> Sharings</span>
-						</div>
-					</div>	
-		</div>
-
-		<div class="verification_block">
-			<img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>					
-		</div>
-
-	</div>
-
-	<div class="expert_intelligance_tile_body_block">
-		<p class="expert_intelligance_tile_text">ABERDEEN, UK – Rotech Subsea has won two contracts for work offshore Saudi Arabia.<br>
-		The first program for the subsea excavation contractor – cable post-trenching – involved mobilization from Aberdeen of the TRS1-LD tool. This was followed by collection by the client from Rotech’s fabrication yard. Seeking talented team members who are passionate about changing the world, one solution at a time. Search for your new career at NOV and become part of something invisible lorem</p>		
-	</div>
-
-	<div class="expert_intelligance_tile_footer_block">
-
-		<div class="expert_intelligance_tile_tags">
-			<a href="#" class="tag">#Connections</a>	
-			<a href="#" class="tag">#Casing</a>	
-			<a href="#" class="tag">#Casing Centrailizers</a>	
-			<a href="#" class="tag">#Pipe</a>												
-			<a href="#" class="tag">#Producting Tubing</a>	
-			<button class="tag to_tags_modal">...</button>		
-		</div>
-
-		<div class="expert_intelligance_tile_read">
-			<a href="#" class="button button__blue">Read</a>
-		</div>
-
-	</div>
-
-
-</div>                                                    <div class="expert_intelligance_tile">
-	<div class="expert_intelligance_tile_header_block">
-		<div class="expert_intelligance_tile_img">
-			<img src="img/suppliers/supplier_logo.png" alt="Image">
-		</div>
-		<div class="expert_intelligance_tile_main_info">
-			<h2>Rising Demand for OBN Seismic and Source/ 2D vessels</h2>	
-			
-			<div class="verification_block mobile">
-				<img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>					
-			</div>
-
-
-					<div class="article_statistics_block">
-						<div class="article_statistics_block_author">
-							<h4>Reactive</h4>
-						</div>
-
-						<div class="article_statistics_block_date">
-							<img class="svg" src="assets/news/publication_date_icon.svg" alt="Image">										
-							<span>24.01.2019</span>
-						</div>
-
-						<div class="article_statistics_block_veiws">
-							<img class="svg" src="assets/news/view_counter_icon.svg" alt="Image">									
-							<span>56251</span>
-						</div>
-
-						<div class="article_statistics_block_comments">
-							<img class="svg" src="assets/news/comments_counter_icon.svg" alt="Image">									
-							<span><i>485</i> Comments</span>
-						</div>
-
-						<div class="article_statistics_block_shares">
-							<img class="svg" src="assets/news/shares_counter_icon.svg" alt="Image">									
-							<span><i>165</i> Sharings</span>
-						</div>
-					</div>	
-		</div>
-
-		<div class="verification_block">
-			<img src="assets/suppliers/verified_icon.svg" alt="Image" class=""> <span>Verified supplier</span>					
-		</div>
-
-	</div>
-
-	<div class="expert_intelligance_tile_body_block">
-		<p class="expert_intelligance_tile_text">ABERDEEN, UK – Rotech Subsea has won two contracts for work offshore Saudi Arabia.<br>
-		The first program for the subsea excavation contractor – cable post-trenching – involved mobilization from Aberdeen of the TRS1-LD tool. This was followed by collection by the client from Rotech’s fabrication yard. Seeking talented team members who are passionate about changing the world, one solution at a time. Search for your new career at NOV and become part of something invisible lorem</p>		
-	</div>
-
-	<div class="expert_intelligance_tile_footer_block">
-
-		<div class="expert_intelligance_tile_tags">
-			<a href="#" class="tag">#Connections</a>	
-			<a href="#" class="tag">#Casing</a>	
-			<a href="#" class="tag">#Casing Centrailizers</a>	
-			<a href="#" class="tag">#Pipe</a>												
-			<a href="#" class="tag">#Producting Tubing</a>	
-			<button class="tag to_tags_modal">...</button>		
-		</div>
-
-		<div class="expert_intelligance_tile_read">
-			<a href="#" class="button button__blue">Read</a>
-		</div>
-
-	</div>
-
-
-</div>
-                                                        <div class="load_more_button_block">
-                                                            <a href="#" class="button load_more_button full_width">
-                                                                <div class="button__icon">
-                                                                    <img class="svg" src="assets/load_icon.svg" alt="Image">
-                                                                </div>
-                                                                <span>Load More</span>
-                                                            </a>
-                                                        </div>
-
-                                </div>
-                            </div>
-                    </div>
-                </section>
-            <section class="categories_tags_modal_block modal_block">
-
-	<div class="categories_tags_modal_content">
-		<div class="categories_tags_modal_inner_header">
-			<h3>Tags</h3>
-			<span class="categories_tags_modal_close"><img src="assets/modal_close_icon.svg" alt="Image"></span>
-		</div>
-		<div class="categories_tags_modal_inner_body">
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>
-	        <a href="#" class="tag">#long-long-tag-2</a>
-	        <a href="#" class="tag">#tag-1</a>  		        
-	        <a href="#" class="tag">#tag-1</a>  			
-		</div>
-      	
-	</div>
-                                
-</section>                
+    <footer class="footer_wrapper">
+        <div class="container">
+            <div class="footer_logo_block">
+                <img class="svg" src="assets/header/logo__dark.svg" alt="Логотип">
             </div>
-            <footer class="footer_wrapper">
-	<div class="container">
-		<div class="footer_logo_block">
-			<img class="svg" src="assets/header/logo__dark.svg" alt="Логотип">
-		</div>
-		<div class="footer_info_block">
-			<div class="footer_info_about_us_column">
-				<h4 class="footer_info__title">About Us</h4>
-				<p class="footer_info__desc">Daleel is a portal that provides unique business intelligence to make the best decisions and allows exchange of knowledge that our industry needs to best meet its requirements.</p>
-			</div>
-			<div class="footer_info_resources_column">
-				<h4 class="footer_info__title">Resources</h4>
-				<ul class="footer_info_resources_list">
-					<li class="footer_info_resources_list__item"><a href="#">Our Story and Why We Do It</a></li>
-					<li class="footer_info_resources_list__item"><a href="#">Privacy Policy</a></li>
-					<li class="footer_info_resources_list__item"><a href="#">Terms Of Use</a></li>
-					<li class="footer_info_resources_list__item"><a href="#">Contacts</a></li>
-				</ul>
-			</div>
-			<div class="footer_info_block_newsletter_column">
-				<h4 class="footer_info__title">Newsletter</h4>
-				<div class="footer_info_block_newsletter">
-					<input type="email" placeholder="Email adress" maxlength="100" required>
-					<button type="submit">Subscribe</button>
-				</div>
-				<span class="footer_info__copyright">© 2019 All rights reserved Daleel</span>											
-			</div>
-		</div>
-	</div>
-</footer>
+            <div class="footer_info_block">
+                <div class="footer_info_about_us_column">
+                    <h4 class="footer_info__title">About Us</h4>
+                    <p class="footer_info__desc">Daleel is a portal that provides unique business intelligence to make the best decisions and allows exchange of knowledge that our industry needs to best meet its requirements.</p>
+                </div>
+                <div class="footer_info_resources_column">
+                    <h4 class="footer_info__title">Resources</h4>
+                    <ul class="footer_info_resources_list">
+                        <li class="footer_info_resources_list__item"><a href="#">Our Story and Why We Do It</a></li>
+                        <li class="footer_info_resources_list__item"><a href="#">Privacy Policy</a></li>
+                        <li class="footer_info_resources_list__item"><a href="#">Terms Of Use</a></li>
+                        <li class="footer_info_resources_list__item"><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer_info_block_newsletter_column">
+                    <h4 class="footer_info__title">Newsletter</h4>
+                    <div class="footer_info_block_newsletter">
+                        <input type="email" placeholder="Email adress" maxlength="100" required>
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <span class="footer_info__copyright">© 2019 All rights reserved Daleel</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-<div class="modal_backdrop"></div>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/i18n/en.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
-<script src="scripts/main.js"></script>
-<script src="scripts/mobile.js"></script>
-<script src="scripts/curcle_chart.js"></script>    </body>
+    <div class="modal_backdrop"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/i18n/en.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/mobile.js"></script>
+    <script src="scripts/curcle_chart.js"></script>
+</body>
