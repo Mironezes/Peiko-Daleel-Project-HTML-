@@ -1892,7 +1892,8 @@ body {
 
 .view_all_posts_block {
 	display: flex;
-	justify-content: center
+	justify-content: center;
+	margin: 0 auto;
 }
 
 .company_registration_banner_wrapper {
@@ -3599,6 +3600,14 @@ span.suppliers_product_services_work_history__title {
 	display: flex;
 	margin-bottom: 25px;
 	flex-direction: row
+}
+
+.suppliers_documents_header {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+	margin-bottom: 30px;
 }
 
 .suppliers_documents_tile_inner {
