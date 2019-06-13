@@ -4109,9 +4109,21 @@ span.suppliers_product_services_work_history__title {
 	width: calc(25% - 15px)
 }
 
-.expert_intelligance_header_block {
+.expert_intelligance_header_block,
+.common_inner_page_header_block {
 	display: flex;
-	justify-content: space-between
+	justify-content: space-between;
+	align-items: center;
+}
+
+.common_inner_page_header_block {
+	margin-bottom: 25px;
+}
+
+
+.common_inner_page_header_block h1,
+.common_inner_page_header_block h2 {
+	margin: 0;
 }
 
 .expert_intelligance_tile {
