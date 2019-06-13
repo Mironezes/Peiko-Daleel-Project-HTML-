@@ -376,12 +376,13 @@ body {
 }
 
 .button__archive span {
-	color: #2E368F
+	color: #FF4848
 }
 
 .button__archive:hover {
-	border: 1px solid #4F58B8;
-	background: #4F58B8;
+	color: #FFF;
+	border: 1px solid #FF4848;
+	background: #FF4848;
 }
 
 .button__archive:hover span {
