@@ -3655,7 +3655,7 @@ span.suppliers_product_services_work_history__title {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 35px;
+	padding: 35px 50px;
 	background: #ffc519;
 	border-radius: 4px 0 0 4px
 }
