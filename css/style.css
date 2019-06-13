@@ -3534,10 +3534,22 @@ span.suppliers_product_services_work_history__title {
 	transition: .3s;
 }
 
+.suppliers_work_history_tile__edit_buttons a {
+	margin-right: 10px;
+}
+
+.suppliers_work_history_tile__edit_buttons a:last-of-type {
+	margin-right: 0;
+}
+
+.suppliers_work_history_tile__edit_buttons a span {
+	font-size: .9em;
+}
+
 .suppliers_work_history_tile_inner:hover {
 	border: 1px solid #4F58B8;
 	box-shadow: 0 0 12px rgba(0, 0, 0, .12);
-	transition: .3s
+	transition: .3s;
 }
 
 .suppliers_work_history_tile_inner:hover .suppliers_work_history_tile__read_more,
@@ -3556,6 +3568,7 @@ span.suppliers_product_services_work_history__title {
 .suppliers_work_history_tile_content h3 {
 	height: 60px;
 }
+
 
 
 .suppliers_work_history_tile_statistics {
