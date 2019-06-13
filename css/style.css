@@ -3636,6 +3636,10 @@ span.suppliers_product_services_work_history__title {
 	margin-bottom: 30px;
 }
 
+.suppliers_documents_header h2 {
+	margin: 0;
+}
+
 .suppliers_documents_tile_inner {
 	display: flex;
 	width: 100%;
