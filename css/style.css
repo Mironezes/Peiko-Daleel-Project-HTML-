@@ -203,11 +203,6 @@ body {
 	cursor: pointer;
 }
 
-.button:hover svg path,
-.button svg path {
-	transition: .3s;
-}
-
 .button.full_width {
 	padding: 0 50px
 }
