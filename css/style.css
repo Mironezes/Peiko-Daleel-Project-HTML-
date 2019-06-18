@@ -1675,7 +1675,6 @@ body {
 .latest_news_tile_link_block {
 	display: flex;
 	width: 165px;
-	padding: 0 15px;
 	height: 48px;
 	font-weight: 500;
 	border: 1px solid #4F58B8;
@@ -1696,6 +1695,8 @@ body {
 .latest_news_tile_link_block a {
 	display: flex;
 	width: 100%;
+	height: 100%;
+	padding: 0 15px;
 	justify-content: space-between;
 	align-items: center
 }
