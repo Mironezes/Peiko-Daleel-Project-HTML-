@@ -42,8 +42,37 @@
 						<input type="search" placeholder="Search request" maxlength="100" required>		
 						<button>Search</button>					
 					</div>
-					<a href="#" class="button button__blue">Log in</a>
-					<a href="#" class="button button__yellow">Sign up</a>
+                    <div class="header_buttons">
+                        <a href="#" class="button button__blue">Log in</a>
+                        <span class="button button__yellow registration_toggle_menu_button">
+                        	<span>Registration</span>
+                            <div class="button__icon">
+                        		<img src="assets/drop_down_menu_icon.svg" alt="Image">
+                        	</div>                        	
+                        </span>
+
+                        <div class="registration_toggle_menu">
+                            <div class="button__blue button">
+                                <a href="#">
+                                    <div class="button__icon">
+                                       <img src="assets/personal_account_icon.svg" alt="Image">
+                                    </div>
+                                    <span>Create Personal Account</span>
+                                </a>
+                            </div>
+
+                            <span class="registration_toggle_menu__line"></span>
+
+                            <div class="button__yellow button">
+	                            <a href="#">
+	                                    <div class="button__icon">
+	                                       <img src="assets/company_account_icon.svg" alt="Image">                            		
+	                            	</div>
+	                            	<span>Create Company Account</span>
+	                            </a>                            	
+                            </div>
+                        </div>
+                    </div>
 					<button onclick = "void(0)" class="desktop_toggle_menu_icon hamburger hamburger--slider blue" type="button">
 					<span class="hamburger-box">
 					<span class="hamburger-inner"></span>
@@ -61,7 +90,6 @@
 					<li class="desktop_toggle_menu__item"><a href="#">Intelligence</a></li>
 					<li class="desktop_toggle_menu__item"><a href="#">News</a></li>
 					<li class="desktop_toggle_menu__item"><a href="#">Expert articles</a></li>
-					<li class="desktop_toggle_menu__item"><a href="#">Indices</a></li>
 					<li class="desktop_toggle_menu__item"><a href="#">Contacts</a></li>
 				</ul>
 				<a href="#" class="button button__yellow">
@@ -84,7 +112,6 @@
 				<li class="mobile_toggle_menu__item"><a href="#">Intelligence</a></li>
 				<li class="mobile_toggle_menu__item"><a href="#">News</a></li>
 				<li class="mobile_toggle_menu__item"><a href="#">Expert articles</a></li>
-				<li class="mobile_toggle_menu__item"><a href="#">Indices</a></li>
 				<li class="mobile_toggle_menu__item"><a href="#">Contacts</a></li>
 			</ul>
 			<div class="mobile_toggle_buttons">
@@ -766,13 +793,9 @@
 							<span class="suppliers_product_services_reviews__title">Reviews:</span>
 								<div class="suppliers_product_services_reviews_stars">
 									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
-									<div class="suppliers_product_services_reviews_stars_block">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
-										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
-										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
-									</div>								
+	                                <div class="suppliers_tile_rating__stars">
+	                                    <div class="rating"></div>                                
+	                                </div>							
 									<span class="suppliers_product_services_reviews__counter">(14)</span>												
 								</div>						
 						</div>
@@ -804,13 +827,9 @@
 							<span class="suppliers_product_services_reviews__title">Reviews:</span>
 								<div class="suppliers_product_services_reviews_stars">
 									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
-									<div class="suppliers_product_services_reviews_stars_block">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
-										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
-										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
-									</div>								
+	                                <div class="suppliers_tile_rating__stars">
+	                                    <div class="rating"></div>                                
+	                                </div>							
 									<span class="suppliers_product_services_reviews__counter">(14)</span>												
 								</div>						
 						</div>
@@ -842,13 +861,9 @@
 							<span class="suppliers_product_services_reviews__title">Reviews:</span>
 								<div class="suppliers_product_services_reviews_stars">
 									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
-									<div class="suppliers_product_services_reviews_stars_block">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
-										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
-										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
-									</div>								
+	                                <div class="suppliers_tile_rating__stars">
+	                                    <div class="rating"></div>                                
+	                                </div>							
 									<span class="suppliers_product_services_reviews__counter">(14)</span>												
 								</div>						
 						</div>
@@ -880,13 +895,9 @@
 							<span class="suppliers_product_services_reviews__title">Reviews:</span>
 								<div class="suppliers_product_services_reviews_stars">
 									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
-									<div class="suppliers_product_services_reviews_stars_block">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
-										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
-										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
-									</div>								
+	                                <div class="suppliers_tile_rating__stars">
+	                                    <div class="rating"></div>                                
+	                                </div>							
 									<span class="suppliers_product_services_reviews__counter">(14)</span>												
 								</div>						
 						</div>
@@ -919,13 +930,9 @@
 							<span class="suppliers_product_services_reviews__title">Reviews:</span>
 								<div class="suppliers_product_services_reviews_stars">
 									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
-									<div class="suppliers_product_services_reviews_stars_block">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
-										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
-										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
-									</div>								
+	                                <div class="suppliers_tile_rating__stars">
+	                                    <div class="rating"></div>                                
+	                                </div>							
 									<span class="suppliers_product_services_reviews__counter">(14)</span>												
 								</div>						
 						</div>
@@ -957,13 +964,9 @@
 							<span class="suppliers_product_services_reviews__title">Reviews:</span>
 								<div class="suppliers_product_services_reviews_stars">
 									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
-									<div class="suppliers_product_services_reviews_stars_block">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
-										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
-										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
-									</div>								
+	                                <div class="suppliers_tile_rating__stars">
+	                                    <div class="rating"></div>                                
+	                                </div>							
 									<span class="suppliers_product_services_reviews__counter">(14)</span>												
 								</div>						
 						</div>
@@ -995,13 +998,9 @@
 							<span class="suppliers_product_services_reviews__title">Reviews:</span>
 								<div class="suppliers_product_services_reviews_stars">
 									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
-									<div class="suppliers_product_services_reviews_stars_block">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
-										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
-										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
-									</div>								
+	                                <div class="suppliers_tile_rating__stars">
+	                                    <div class="rating"></div>                                
+	                                </div>							
 									<span class="suppliers_product_services_reviews__counter">(14)</span>												
 								</div>						
 						</div>
@@ -1033,13 +1032,9 @@
 							<span class="suppliers_product_services_reviews__title">Reviews:</span>
 								<div class="suppliers_product_services_reviews_stars">
 									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
-									<div class="suppliers_product_services_reviews_stars_block">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
-										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
-										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
-									</div>								
+	                                <div class="suppliers_tile_rating__stars">
+	                                    <div class="rating"></div>                                
+	                                </div>							
 									<span class="suppliers_product_services_reviews__counter">(14)</span>												
 								</div>						
 						</div>
@@ -1071,13 +1066,9 @@
 							<span class="suppliers_product_services_reviews__title">Reviews:</span>
 								<div class="suppliers_product_services_reviews_stars">
 									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
-									<div class="suppliers_product_services_reviews_stars_block">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
-										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
-										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
-									</div>								
+	                                <div class="suppliers_tile_rating__stars">
+	                                    <div class="rating"></div>                                
+	                                </div>							
 									<span class="suppliers_product_services_reviews__counter">(14)</span>												
 								</div>						
 						</div>
@@ -1109,13 +1100,9 @@
 							<span class="suppliers_product_services_reviews__title">Reviews:</span>
 								<div class="suppliers_product_services_reviews_stars">
 									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
-									<div class="suppliers_product_services_reviews_stars_block">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
-										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
-										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
-									</div>								
+	                                <div class="suppliers_tile_rating__stars">
+	                                    <div class="rating"></div>                                
+	                                </div>							
 									<span class="suppliers_product_services_reviews__counter">(14)</span>												
 								</div>						
 						</div>
@@ -1148,13 +1135,9 @@
 							<span class="suppliers_product_services_reviews__title">Reviews:</span>
 								<div class="suppliers_product_services_reviews_stars">
 									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
-									<div class="suppliers_product_services_reviews_stars_block">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
-										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
-										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
-									</div>								
+	                                <div class="suppliers_tile_rating__stars">
+	                                    <div class="rating"></div>                                
+	                                </div>							
 									<span class="suppliers_product_services_reviews__counter">(14)</span>												
 								</div>						
 						</div>
@@ -1186,13 +1169,9 @@
 							<span class="suppliers_product_services_reviews__title">Reviews:</span>
 								<div class="suppliers_product_services_reviews_stars">
 									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
-									<div class="suppliers_product_services_reviews_stars_block">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
-										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
-										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
-									</div>								
+	                                <div class="suppliers_tile_rating__stars">
+	                                    <div class="rating"></div>                                
+	                                </div>							
 									<span class="suppliers_product_services_reviews__counter">(14)</span>												
 								</div>						
 						</div>
@@ -1224,13 +1203,9 @@
 							<span class="suppliers_product_services_reviews__title">Reviews:</span>
 								<div class="suppliers_product_services_reviews_stars">
 									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
-									<div class="suppliers_product_services_reviews_stars_block">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
-										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
-										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
-									</div>								
+	                                <div class="suppliers_tile_rating__stars">
+	                                    <div class="rating"></div>                                
+	                                </div>							
 									<span class="suppliers_product_services_reviews__counter">(14)</span>												
 								</div>						
 						</div>
@@ -1262,13 +1237,9 @@
 							<span class="suppliers_product_services_reviews__title">Reviews:</span>
 								<div class="suppliers_product_services_reviews_stars">
 									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
-									<div class="suppliers_product_services_reviews_stars_block">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
-										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
-										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
-									</div>								
+	                                <div class="suppliers_tile_rating__stars">
+	                                    <div class="rating"></div>                                
+	                                </div>							
 									<span class="suppliers_product_services_reviews__counter">(14)</span>												
 								</div>						
 						</div>
@@ -1300,13 +1271,9 @@
 							<span class="suppliers_product_services_reviews__title">Reviews:</span>
 								<div class="suppliers_product_services_reviews_stars">
 									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
-									<div class="suppliers_product_services_reviews_stars_block">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
-										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
-										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
-									</div>								
+	                                <div class="suppliers_tile_rating__stars">
+	                                    <div class="rating"></div>                                
+	                                </div>							
 									<span class="suppliers_product_services_reviews__counter">(14)</span>												
 								</div>						
 						</div>
@@ -1338,13 +1305,9 @@
 							<span class="suppliers_product_services_reviews__title">Reviews:</span>
 								<div class="suppliers_product_services_reviews_stars">
 									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
-									<div class="suppliers_product_services_reviews_stars_block">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
-										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
-										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
-									</div>								
+	                                <div class="suppliers_tile_rating__stars">
+	                                    <div class="rating"></div>                                
+	                                </div>							
 									<span class="suppliers_product_services_reviews__counter">(14)</span>												
 								</div>						
 						</div>
@@ -1377,13 +1340,9 @@
 							<span class="suppliers_product_services_reviews__title">Reviews:</span>
 								<div class="suppliers_product_services_reviews_stars">
 									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
-									<div class="suppliers_product_services_reviews_stars_block">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
-										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
-										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
-									</div>								
+	                                <div class="suppliers_tile_rating__stars">
+	                                    <div class="rating"></div>                                
+	                                </div>							
 									<span class="suppliers_product_services_reviews__counter">(14)</span>												
 								</div>						
 						</div>
@@ -1415,13 +1374,9 @@
 							<span class="suppliers_product_services_reviews__title">Reviews:</span>
 								<div class="suppliers_product_services_reviews_stars">
 									<span class="suppliers_product_services_reviews__total_rating">5,0</span>											
-									<div class="suppliers_product_services_reviews_stars_block">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">
-										<img src="assets/suppliers/start_icon_full.svg" alt="Image" class="svg">								
-										<img src="assets/suppliers/start_icon_half_filled.svg" alt="Image" class="svg">						
-										<img src="assets/suppliers/start_icon_empty.svg" alt="Image" class="svg">						
-									</div>								
+	                                <div class="suppliers_tile_rating__stars">
+	                                    <div class="rating"></div>                                
+	                                </div>							
 									<span class="suppliers_product_services_reviews__counter">(14)</span>												
 								</div>						
 						</div>
@@ -1486,7 +1441,7 @@
 </footer>
 
 <div class="modal_backdrop"></div>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
@@ -1497,4 +1452,5 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
 <script src="scripts/main.js"></script>
 <script src="scripts/mobile.js"></script>
-<script src="scripts/curcle_chart.js"></script>    </body>
+<script src="scripts/curcle_chart.js"></script>
+<script src="scripts/vendors/rater.js"></script>    </body>

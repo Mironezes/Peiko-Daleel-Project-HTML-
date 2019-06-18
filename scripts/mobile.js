@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+    if (window.matchMedia('screen and (max-width: 991px)').matches) {
+
+
     function navScroll() {
 
         let y = window.scrollY;
@@ -32,7 +35,7 @@ $(document).ready(function() {
 
     function mobileAccountMenu__Settings() {
         let fixedContent = $('html');
-        let mobileMenuIcon =  $('.mobile_menu_icon');
+        let mobileMenuIcon = $('.mobile_menu_icon');
         let mobileToggleMenuBlock = $('.mobile_toggle_menu_block');
         let mobileAccountToggleMenuBlock = $('.mobile_account_toggle_menu_block');
 
@@ -70,11 +73,10 @@ $(document).ready(function() {
                 fixedContent.removeClass('fixed');
                 toggleMenu.removeClass('opened');
                 toggleHeaderNavClass.removeClass('white');
-            }
-            else {
+            } else {
                 fixedContent.addClass('fixed');
                 toggleMenu.addClass('opened');
-                toggleHeaderNavClass.addClass('white');    
+                toggleHeaderNavClass.addClass('white');
             }
 
             if (headerWrapper.hasClass('mobile_transparent')) {
@@ -96,10 +98,16 @@ $(document).ready(function() {
     function categoriesMenu__Mobile_Settings() {
         let categoriesMenuItemHeight = $('.main_categories_list__item ').height();
         let categoriesSubMenuWidth = $('.main_categories_submenu_list').css('top', categoriesMenuItemHeight + 1);
-        categoriesSubMenuWidth.css({'width': '100%', 'left': '0'})
+        categoriesSubMenuWidth.css({
+            'width': '100%',
+            'left': '0'
+        })
         let categoriesMenuDropdownItem = $('.main_categories_list__dropdown_item');
 
         categoriesMenuDropdownItem.on("click", function() {
+    
+
+
             if ($(this).hasClass("opened")) {
                 $(this).removeClass("opened");
             } else {
@@ -116,7 +124,7 @@ $(document).ready(function() {
 
         suppliersTileLocationOfficesTiles.css('height', suppliersTileLocationOfficesTileHeight__first);
 
-        $('.suppliers_tile_location_offices_tiles_wrapper').append('<div class="suppliers_tile_location_block__all_offices button"> <div class="button__icon"> <img src="assets/all_offices_icon.svg" alt="Изображение" class="svg"> </div><span>See all offices</span> </div>');
+        $('.suppliers_tile_location_offices_tiles_wrapper').append('<div class="suppliers_tile_location_block__all_offices button"> <div class="button__icon"> <img src="/img/assets//all_offices_icon.svg" alt="Ð˜Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ" class="svg"> </div><span>See all offices</span> </div>');
 
 
         $('.suppliers_tile_location_offices_tiles_wrapper').on("click", ".suppliers_tile_location_block__all_offices", function() {
@@ -124,6 +132,7 @@ $(document).ready(function() {
             $(this).remove();
         });
     }
+
     function suppliersOfficesBlock__Tablet_Settings() {
         let suppliersTileLocationOfficesTiles = $('.suppliers_tile_location_offices_tiles');
         let suppliersTileLocationOfficesTileHeight__first = $('.suppliers_tile_location_offices_tile:eq(1)').height();
@@ -133,7 +142,7 @@ $(document).ready(function() {
 
         suppliersTileLocationOfficesTiles.css('height', suppliersTileLocationOfficesTile__maxHeight);
 
-        $('.suppliers_tile_location_offices_tiles_wrapper').append('<div class="suppliers_tile_location_block__all_offices button"> <div class="button__icon"> <img src="assets/all_offices_icon.svg" alt="Изображение" class="svg"> </div><span>See all offices</span> </div>');
+        $('.suppliers_tile_location_offices_tiles_wrapper').append('<div class="suppliers_tile_location_block__all_offices button"> <div class="button__icon"> <img src="/img/assets//all_offices_icon.svg" alt="Ð˜Ð·Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ" class="svg"> </div><span>See all offices</span> </div>');
 
 
         $('.suppliers_tile_location_offices_tiles_wrapper').on("click", ".suppliers_tile_location_block__all_offices", function() {
@@ -145,7 +154,7 @@ $(document).ready(function() {
 
 
 
-    function openToggledSection () {
+    function openToggledSection() {
         let toggledSectionContent = $(this).siblings('.toggled_section_inner_content');
         let toggleCollapseRemover = $(this).parents('.toggled_section');
 
@@ -153,36 +162,37 @@ $(document).ready(function() {
         toggleCollapseRemover.addClass('active');
         toggleCollapseRemover.css('height', '100%');
 
-        toggledSectionContent.addClass('opened');        
-        $(this).on('click', closeToggledSection);  
+        toggledSectionContent.addClass('opened');
+        $(this).on('click', closeToggledSection);
     }
-    function closeToggledSection () {
+
+    function closeToggledSection() {
         let toggledSectionContent = $(this).siblings('.toggled_section_inner_content');
         let toggledSectionHeadingHeight = $(this).height();
         let toggleCollapseRemover = $(this).parents('.toggled_section');
 
         toggleCollapseRemover.removeClass('active');
         toggleCollapseRemover.addClass('collapsed');
-        toggleCollapseRemover.css('height', toggledSectionHeadingHeight + 40);        
-        toggledSectionContent.removeClass('opened');         
+        toggleCollapseRemover.css('height', toggledSectionHeadingHeight + 40);
+        toggledSectionContent.removeClass('opened');
 
-        $(this).on('click', openToggledSection);        
+        $(this).on('click', openToggledSection);
     }
 
 
     function suppliersSortingByBlockStyling() {
         let suppliersSortingByBlock = $('.suppliers_sorting_by_block');
-        let mainCategoriesSortingLabelWidth  = $('.suppliers_sorting_by_block .main_categories_sorting').width();
-        let mainCategoriesSortingLabelHeight  = $('.suppliers_sorting_by_block .main_categories_sorting').height();
+        let mainCategoriesSortingLabelWidth = $('.suppliers_sorting_by_block .main_categories_sorting').width();
+        let mainCategoriesSortingLabelHeight = $('.suppliers_sorting_by_block .main_categories_sorting').height();
         let mainCategoriesSortingBlock = $('.suppliers_sorting_by_block .main_categories_sorting_block');
 
         mainCategoriesSortingBlock.css('width', mainCategoriesSortingLabelWidth);
-        mainCategoriesSortingBlock.css('top', mainCategoriesSortingLabelHeight + 2);       
+        mainCategoriesSortingBlock.css('top', mainCategoriesSortingLabelHeight + 2);
     }
 
 
     function suppliersWorkHistoryTiles__Mobile_Settings() {
-        $('.suppliers_profile .suppliers_work_history_tile').on("click", function(e) {
+        $('.suppliers_work_history_tile').on("click", function(e) {
             e.stopPropagation();
 
             $(this).find('.suppliers_work_history_tile_modal').addClass('fixed');
@@ -196,11 +206,77 @@ $(document).ready(function() {
 
             suppliersWorkHistoryTileModal.removeClass('fixed');
             $('html').removeClass('fixed');
-        });        
+        });
     }
 
 
-    $(window).on('load', function () {
+    if (window.matchMedia('screen and (max-width: 767px)').matches) {
+        suppliersOfficesBlock__Mobile_Settings();
+        categoriesMenu__Mobile_Settings();
+        suppliersWorkHistoryTiles__Mobile_Settings();
+    }
+
+    if (window.matchMedia('(min-width: 550px) and (max-width: 991px)').matches) {
+        suppliersOfficesBlock__Tablet_Settings();
+    }
+
+
+    if (window.matchMedia('screen and (max-width: 991px)').matches) {
+        $('.mobile_left_sidebar_menu__hidden').hide();
+
+        suppliersSortingByBlockStyling()
+
+        if ($('div').hasClass('suppliers_profile') || $('div').hasClass('product')) {
+            $('.main_content_inner section').addClass('toggled_section collapsed');
+
+            $('.toggled_section_heading').each(function() {
+
+                let toggleCollapseRemover = $(this).parents('.toggled_section');
+                let toggledSectionHeadingHeight = $(this).height();
+                toggleCollapseRemover.css('height', toggledSectionHeadingHeight + 40);
+
+
+                $(this).on('click', openToggledSection);
+            });
+        }
+
+        if ($('div').hasClass('category_a') || $('div').hasClass('category_b')) {
+            $('.main_content_inner section').each(function() {
+                $(this).addClass('toggled_section collapsed');
+            });
+
+            $('.toggled_section_heading').each(function() {
+
+                let toggleCollapseRemover = $(this).parents('.toggled_section');
+                let toggledSectionHeadingHeight = $(this).height();
+                toggleCollapseRemover.css('height', toggledSectionHeadingHeight + 40);
+
+
+                $(this).on('click', openToggledSection);
+            });
+        }
+    }
+
+    if (window.matchMedia('screen and (min-width: 992px)').matches) {
+        if ($('div').hasClass('suppliers_profile') || $('div').hasClass('product')) {
+            $('.main_content_inner section').removeClass('toggled_section collapsed');
+
+            $('toggled_section_inner_content').each(function() {
+                $(this).parents('section').removeAttr('style');
+            });
+        }
+
+        if ($('div').hasClass('category_a') || $('div').hasClass('category_b')) {
+            $('.main_content_inner section').removeClass('toggled_section collapsed');
+
+            $('toggled_section_inner_content').each(function() {
+                $(this).parents('section').removeAttr('style');
+            });
+        }
+    }
+
+
+    $(window).resize(function() {
         if (window.matchMedia('screen and (max-width: 767px)').matches) {
             suppliersOfficesBlock__Mobile_Settings();
             categoriesMenu__Mobile_Settings();
@@ -217,7 +293,7 @@ $(document).ready(function() {
 
             suppliersSortingByBlockStyling()
 
-            if($('div').hasClass('suppliers_profile') || $('div').hasClass('product')) {
+            if ($('div').hasClass('suppliers_profile') || $('div').hasClass('product')) {
                 $('.main_content_inner section').addClass('toggled_section collapsed');
 
                 $('.toggled_section_heading').each(function() {
@@ -228,45 +304,45 @@ $(document).ready(function() {
 
 
                     $(this).on('click', openToggledSection);
-                });  
+                });
             }
 
-            if($('div').hasClass('category_a') || $('div').hasClass('category_b') ) {
-                    $('.main_content_inner section').each(function() {
-                        $(this).addClass('toggled_section collapsed');
-                    });
+            if ($('div').hasClass('category_a') || $('div').hasClass('category_b')) {
+                $('.main_content_inner section').each(function() {
+                    $(this).addClass('toggled_section collapsed');
+                });
 
-                    $('.toggled_section_heading').each(function() {
+                $('.toggled_section_heading').each(function() {
 
-                        let toggleCollapseRemover = $(this).parents('.toggled_section');
-                        let toggledSectionHeadingHeight = $(this).height();
-                        toggleCollapseRemover.css('height', toggledSectionHeadingHeight + 40);
+                    let toggleCollapseRemover = $(this).parents('.toggled_section');
+                    let toggledSectionHeadingHeight = $(this).height();
+                    toggleCollapseRemover.css('height', toggledSectionHeadingHeight + 40);
 
 
-                        $(this).on('click', openToggledSection);
-                    });  
-                }            
+                    $(this).on('click', openToggledSection);
+                });
+            }
         }
 
-        if(window.matchMedia('screen and (min-width: 992px)').matches) { 
-            if($('div').hasClass('suppliers_profile') || $('div').hasClass('product') ) {
+        if (window.matchMedia('screen and (min-width: 992px)').matches) {
+            if ($('div').hasClass('suppliers_profile') || $('div').hasClass('product')) {
                 $('.main_content_inner section').removeClass('toggled_section collapsed');
 
                 $('toggled_section_inner_content').each(function() {
                     $(this).parents('section').removeAttr('style');
-                });  
+                });
             }
 
-            if($('div').hasClass('category_a') || $('div').hasClass('category_b') ) {
+            if ($('div').hasClass('category_a') || $('div').hasClass('category_b')) {
                 $('.main_content_inner section').removeClass('toggled_section collapsed');
 
                 $('toggled_section_inner_content').each(function() {
                     $(this).parents('section').removeAttr('style');
-                });   
+                });
             }
         }
     });
-
+}
 
 
 });
