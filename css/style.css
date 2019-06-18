@@ -3165,6 +3165,11 @@ span.suppliers_product_services_work_history__title {
 	padding-top: 15px;
 }
 
+.suppliers_profile  .suppliers_product_services_reviews__total_rating,
+.suppliers_profile  .suppliers_product_services_reviews__counter {
+	padding-top: 6px;
+}
+
 .suppliers_product_services_reviews {
 	display: flex;
 	flex-direction: row;
@@ -8179,13 +8184,16 @@ span.search_page__search_results {
     top: 4.5px;
 }
 
-.suppliers_tile_rating__stars .rating {	
+.suppliers_tile_rating__stars .rating,
+.suppliers_product_services_reviews_stars_block .rating {	
     font-size: 2em;
     margin: 0 auto;
     color: #FFC519;
 }
 
-
+.suppliers_product_services_reviews_stars_block .rating {	 
+	font-size: 1.5em;
+}
 
 
 @media (min-width:1440px) {

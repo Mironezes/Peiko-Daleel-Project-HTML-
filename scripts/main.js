@@ -1,13 +1,15 @@
 $(document).ready(function() {
 
-    $(".rating").rate();
+    options = {
+    max_value: 5,
+    step_size: 0.5,
+    initial_value: 0,
+    convert_to_utf8: false,
+    cursor: 'default',
+    readonly: true,
+};
 
-    //or for example
-    var options = {
-        max_value: 10,
-        step_size: 0.5,
-    }
-    $(".rating").rate(options);
+$(".rating").rate(options);
     
 
     $('.owl-carousel.testimonials_tiles_block').owlCarousel({
